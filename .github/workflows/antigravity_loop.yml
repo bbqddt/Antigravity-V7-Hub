@@ -3,13 +3,13 @@ name: Antigravity Cloud Evolution Loop
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 14 * * 2,4,7' # 每周二、四、日自动运行
+    - cron: '15 14 * * 2,4,7'
 
 jobs:
   evolve:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # 显式开启写入权限
+      contents: write
 
     steps:
       - name: 检出物理代码
@@ -28,10 +28,9 @@ jobs:
         run: python genesis_evolution.py
 
       - name: 封存最新因果数据
-        if: always() # 保证结果强制写回
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "🌌 Antigravity 3.1: 因果链条自动封存 [Skip CI]" || echo "No changes to commit"
+          git commit -m "🌌 Antigravity 3.1: 闭环回馈 [Skip CI]" || echo "No changes to commit"
           git push
