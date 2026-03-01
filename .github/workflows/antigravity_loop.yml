@@ -20,7 +20,7 @@ jobs:
 
       - name: 安装演进依赖
         run: |
-          pip install pandas xgboost requests
+          pip install pandas xgboost requests tqdm
 
       - name: 执行 G23 高维推演
         run: |
