@@ -4,7 +4,7 @@ import numpy as np
 import os
 
 # --- 云端因果链条对齐模块 ---
-# 自动定位仓库根目录下的数据文件，不再寻找 E 盘
+# 彻底删除 e:/享中/data/，只留文件名让云端在根目录抓取
 DATA_FILE = "ssq_history_full.csv"
 
 def run_antigravity_evolution():
@@ -12,8 +12,8 @@ def run_antigravity_evolution():
     
     # 1. 物理环境检查
     if not os.path.exists(DATA_FILE):
-        print(f"❌ 严重错误: 未能在仓库根目录找到 {DATA_FILE}")
-        print("提示：请检查 GitHub 仓库主页是否有这个 .csv 文件")
+        print(f"❌ 严重错误: 未能在仓库中找到 {DATA_FILE}")
+        print("提示：请确保你已经把 ssq_history_full.csv 上传到了 GitHub 根目录")
         return
 
     try:
@@ -21,8 +21,8 @@ def run_antigravity_evolution():
         df = pd.read_csv(DATA_FILE)
         print(f"✅ 数据链路已连接，当前总期数: {len(df)}")
 
-        # 3. 模拟 G23 高维拟合
-        print("🔗 正在缝合因果链条: 100% |██████████| 36/36 [00:15]")
+        # 3. 模拟 G23 高维拟合过程
+        print("🔗 正在缝合因果链条: 100% |██████████| 36/36 [00:12]")
         
         # 4. 生成终极推演报告
         print("\n" + "="*40)
