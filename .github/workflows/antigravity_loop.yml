@@ -1,36 +1,33 @@
-name: Antigravity Cloud Evolution Loop
+name: Antigravity Loop
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '15 14 * * 2,4,7'
 
 jobs:
-  evolve:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
-      - name: 检出物理代码
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: 配置 Python 环境
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: 安装演进依赖
-        run: |
-          pip install pandas xgboost numpy
+      - name: Install deps
+        run: pip install pandas xgboost numpy
 
-      - name: 执行 G23 高维推演
+      - name: Run evolution
         run: python genesis_evolution.py
 
-      - name: 封存最新因果数据
+      - name: Save results
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "🌌 Antigravity 3.1: 闭环回馈 [Skip CI]" || echo "No changes to commit"
+          git commit -m "update results" || exit 0
           git push
