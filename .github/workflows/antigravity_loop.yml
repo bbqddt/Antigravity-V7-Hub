@@ -2,6 +2,8 @@ name: Antigravity Loop
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '15 14 * * 2,4,7'
 
 jobs:
   build:
@@ -29,5 +31,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "update results" || exit 0
-          git push
+          # 核心修正：增加容错判断，防止空提交报错
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🌌 Antigravity 3.1: 闭环回馈" && git push)
