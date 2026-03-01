@@ -1,0 +1,37 @@
+name: Antigravity Cloud Evolution Loop
+
+on:
+  schedule:
+    # 每周二、四、日 晚上 22:15 自动运行 (北京时间)
+    - cron: '15 14 * * 0,2,4'
+  workflow_dispatch: # 支持手动触发测试
+
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出物理代码
+        uses: actions/checkout@v3
+
+      - name: 配置 Python 环境
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 安装演进依赖
+        run: |
+          pip install pandas xgboost requests
+
+      - name: 执行 G23 高维推演
+        run: |
+          # 运行爬虫更新数据，然后运行演进引擎
+          python genesis_crawler.py
+          python genesis_evolution.py
+
+      - name: 封存最新因果数据
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add ssq_history_full.csv
+          git commit -m "Auto-update: 因果矩阵已补全" || echo "No changes to commit"
+          git push
