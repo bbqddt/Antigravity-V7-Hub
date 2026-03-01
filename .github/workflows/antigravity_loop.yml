@@ -1,4 +1,34 @@
-- name: 封存最新因果数据
+name: Antigravity Cloud Evolution Loop
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 14 * * 2,4,7' # 每周二、四、日自动运行
+
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 显式开启写入权限
+
+    steps:
+      - name: 检出物理代码
+        uses: actions/checkout@v3
+
+      - name: 配置 Python 环境
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 安装演进依赖
+        run: |
+          pip install pandas xgboost numpy
+
+      - name: 执行 G23 高维推演
+        run: python genesis_evolution.py
+
+      - name: 封存最新因果数据
+        if: always() # 保证结果强制写回
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
