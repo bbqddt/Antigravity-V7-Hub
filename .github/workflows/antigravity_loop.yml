@@ -1,32 +1,34 @@
 name: Antigravity-Loop
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # 支持手动点火执行
 
 jobs:
   evolve:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write  # 赋予写入报告的权限
 
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Python
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Deps
-        run: pip install pandas
+      - name: Install AI Dependencies
+        run: pip install pandas google-generativeai  # 安装 Google AI 核心插件
 
-      - name: Run
+      - name: Execute AI Evolution
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}  # 从保险柜调取钥匙
         run: python genesis_evolution.py
 
-      - name: Push
+      - name: Commit & Push Report
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🌌 自动回馈" && git push)
+          git add Latest_Prediction.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🌌 Antigravity 3.1 Pro: 高维演进完成" && git push)
