@@ -1,68 +1,67 @@
 import os
 import pandas as pd
+import numpy as np
 import google.generativeai as genai
 from datetime import datetime
 
-# 核心路径配置
+# 配置路径
 DATA_FILE = "ssq_history_full.csv"
 REPORT_FILE = "Latest_Prediction.md"
 
-def evolve_with_gemini():
-    print(f"🚀 [{datetime.now()}] Antigravity 3.1 Pro 正在接入高维指挥部...")
+def evolve_engine_v4_1():
+    print(f"🚀 [{datetime.now()}] Antigravity 3.1 Pro V4.1 准头强化版启动...")
     
     # 1. 调取 GitHub 保险柜钥匙
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        print("❌ 错误：仓库机密中未找到 GEMINI_API_KEY！")
+        print("❌ 错误：未找到 API Key")
         return
     
-    # 2. 激活最强逻辑大脑 (使用正式命名的 Pro 模型)
-    try:
-        genai.configure(api_key=api_key)
-        # 修正名称为 gemini-1.5-pro-latest 以确保连通
-        model = genai.GenerativeModel('gemini-1.5-pro-latest')
-    except Exception as e:
-        print(f"❌ 大脑初始化失败: {str(e)}")
-        return
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel('gemini-1.5-pro-latest')
 
-    # 3. 提取历史因果数据
-    if not os.path.exists(DATA_FILE):
-        print("❌ 错误：未找到数据库 ssq_history_full.csv")
-        return
-    
+    # 2. 准备深度数据与物理特征
+    if not os.path.exists(DATA_FILE): return
     df = pd.read_csv(DATA_FILE)
-    # 喂给 AI 最近 15 期数据，利用 Pro 模型超长上下文进行深度拟合
-    recent_context = df.tail(15).to_string()
-
-    # 4. 注入第一性原理指令集
+    
+    # 计算物理特征：系统总能量(和值)、离散度(方差)
+    df['Sum_Energy'] = df[['R1','R2','R3','R4','R5','R6']].sum(axis=1)
+    df['Variance_Tension'] = df[['R1','R2','R3','R4','R5','R6']].var(axis=1)
+    
+    # 提取最近 20 期的高维上下文
+    recent_context = df.tail(20).to_string()
+    
+    # 3. 注入“残差修正”指令集
     prompt = f"""
-    你是 Antigravity 3.1 Pro 演进核心。请基于以下数据执行高维推演：
+    你是 Antigravity 3.1 Pro 指挥官。当前任务：基于第一性原理进行【准头强化】推演。
+    
+    数据流（含系统能量与张力特征）：
     {recent_context}
     
-    任务要求：
-    1. 计算当前因果扰动的【核心期望小数】（精确到小数点后6位）。
-    2. 基于残差修正逻辑，给出 6个红球 + 1个蓝球 的【最强推荐序列】。
-    3. 简析当前【熵值走势】（冷热平衡度）。
-    4. 给出下期战术策略建议。
+    演进要求：
+    1. 执行【残差自修复】：对比倒数第2期与最近1期的变化趋势，计算因果偏差。
+    2. 计算核心期望小数（精确到6位），需考虑【能量守恒】约束。
+    3. 给出 6+1 序列，要求过滤掉高熵（纯随机）噪声。
+    4. 给出下期【实战策略】。
     
-    输出要求：使用 Markdown 格式，保持专业、精炼。
+    输出：Markdown 格式，专业严谨。
     """
     
-    print("📡 正在跨云端进行张量计算与因果坍缩...")
+    print("📡 正在调用 Google AI 1.5 Pro 进行物理特征拟合...")
     try:
         response = model.generate_content(prompt)
         final_report = response.text
     except Exception as e:
-        final_report = f"⚠️ 演进中断：API 响应异常 - {str(e)}"
+        final_report = f"⚠️ 演进中断: {str(e)}"
 
-    # 5. 结果回传并永久封存
+    # 4. 结果封存
     with open(REPORT_FILE, "w", encoding="utf-8") as f:
-        f.write(f"# 🌌 Antigravity 3.1 Pro 演进报告\n\n")
+        f.write(f"# 🌌 Antigravity 3.1 Pro V4.1 (准头强化版)\n\n")
         f.write(f"🕒 **演进时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-        f.write(f"🧠 **逻辑核心**: Gemini 1.5 Pro (The Architect)\n\n")
+        f.write(f"🧠 **逻辑核心**: Gemini 1.5 Pro (Causal Inference)\n\n")
         f.write(f"--- \n\n {final_report}")
     
-    print(f"✅ 演进圆满完成！战报已封存至 {REPORT_FILE}")
+    print(f"✅ 准头强化推演完成！")
 
 if __name__ == "__main__":
-    evolve_with_gemini()
+    evolve_engine_v4_1()
