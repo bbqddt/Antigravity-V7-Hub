@@ -21,6 +21,7 @@ jobs:
       - name: Install Libs
         run: |
           python -m pip install --upgrade pip
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }} # 新增这一行
           pip install pandas numpy google-genai
 
       - name: Execute V6.5 Agent
