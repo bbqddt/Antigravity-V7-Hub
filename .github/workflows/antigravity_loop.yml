@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas numpy google-genai
 
-      - name: Execute V6.4 Engine
+      - name: Execute V6.5 Agent
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python genesis_crawler.py
@@ -31,7 +31,7 @@ jobs:
       - name: Commit & Push
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.name "The Architect"
           git add Latest_Prediction.md
-          git commit -m "🌌 V6.4: 算力避险协议点火" || echo "No changes"
+          git commit -m "🌌 V6.5: 全频段自动路由点火" || echo "No changes"
           git push
