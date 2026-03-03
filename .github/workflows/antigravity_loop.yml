@@ -18,18 +18,18 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install AI & Physics Libs
-        run: |
-          pip install pandas numpy xgboost scikit-learn scipy google-generativeai
+      - name: Install Libs
+        run: pip install pandas numpy google-generativeai
 
-      - name: Execute V4.1 Engine
+      - name: Execute V6 Agent
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python genesis_evolution.py
+        run: python genesis_crawler.py
 
-      - name: Commit & Push Report
+      - name: Commit & Push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add Latest_Prediction.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🌌 准头强化版推演完成" && git push)
+          git commit -m "🌌 V6.1: 元演化正式点火" || echo "No changes"
+          git push
