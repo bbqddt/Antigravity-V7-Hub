@@ -109,3 +109,59 @@ with open(REPORT_FILE, "w", encoding="utf-8") as f:
     f.write(final_report)
 
 print(f"✅ V6 演进圆满完成！战报已存入 {REPORT_FILE}")    SegmentGenesisProbe().execute_segment_hunt()
+import os
+import sys
+import pandas as pd
+import numpy as np
+from datetime import datetime
+import google.generativeai as genai
+
+# 1. 核心初始化
+print("🌌 [The Architect V6.1] 启动元演化安全修正协议...")
+API_KEY = os.environ.get("GEMINI_API_KEY")
+if not API_KEY:
+    print("❌ 缺失 API_KEY"); sys.exit(1)
+
+genai.configure(api_key=API_KEY)
+model = genai.GenerativeModel('gemini-1.5-pro-latest')
+
+DATA_FILE = "ssq_genesis_2003_2024.csv"
+REPORT_FILE = "Latest_Prediction.md"
+
+# 数据安全加载
+if not os.path.exists(DATA_FILE):
+    print(f"❌ 找不到数据库 {DATA_FILE}"); sys.exit(1)
+df = pd.read_csv(DATA_FILE)
+latest_data = df.tail(15).to_string()
+
+# 2. 元演化 Prompt
+prompt = f"""
+你是 Antigravity 3.1 Pro (V6.1)。请基于以下数据执行元演化：
+{latest_data}
+
+【任务】
+1. 模拟三位专家(物理、统计、杀号)辩论，给出最终 6红+1蓝 预测。
+2. 编写一个 Python 函数 `dynamic_feature_extraction(df)`，创造 1 个新物理特征。
+   - 代码必须严谨地放在 ```python 和 ``` 之间。
+"""
+
+# 3. 执行与报告生成
+try:
+    response = model.generate_content(prompt)
+    raw_text = response.text
+    
+    # 彻底清洗代码块，防止干扰 Markdown 渲染
+    report_body = raw_text
+    if "```python" in raw_text:
+        report_body = raw_text.split("```python")[0] + "\n(🧬 AI核心代码已提取)\n" + raw_text.split("```")[-1]
+
+    final_report = f"""# 🌌 Antigravity 3.1 Pro 演进战报 (V6.1)
+> **演进时间:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+{report_body}
+"""
+    with open(REPORT_FILE, "w", encoding="utf-8") as f:
+        f.write(final_report)
+    print("✅ 战报生成成功！")
+
+except Exception as e:
+    print(f"❌ 运行崩溃: {e}"); sys.exit(1)
