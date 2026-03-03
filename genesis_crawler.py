@@ -4,67 +4,66 @@ import pandas as pd
 from datetime import datetime
 from google import genai
 
-print("🌌 [The Architect V6.4] 元演化引擎启动：切换至 1.5-Flash 算力避险协议...")
+print("🌌 [The Architect V6.5] 元演化引擎启动：全频段自动路由协议...")
 
-# 1. 基础配置
+# 1. 配置与数据加载
 API_KEY = os.environ.get("GEMINI_API_KEY")
 if not API_KEY:
-    print("❌ 致命错误：未找到 GEMINI_API_KEY。")
-    sys.exit(1)
+    print("❌ 致命错误：未找到 GEMINI_API_KEY。"); sys.exit(1)
 
-# 初始化新版客户端
 client = genai.Client(api_key=API_KEY)
-
-# 自动适配您仓库中的文件名
 DATA_FILE = "ssq_history_full.csv"
 REPORT_FILE = "Latest_Prediction.md"
 
-if not os.path.exists(DATA_FILE):
-    print(f"❌ 找不到数据库 {DATA_FILE}")
-    sys.exit(1)
-
 try:
+    if not os.path.exists(DATA_FILE):
+        print(f"❌ 找不到数据库 {DATA_FILE}"); sys.exit(1)
     df = pd.read_csv(DATA_FILE)
-    # 取最后15期数据作为推演背景
     latest_data = df.tail(15).to_string()
 except Exception as e:
-    print(f"❌ 数据加载失败: {e}")
-    sys.exit(1)
+    print(f"❌ 数据加载失败: {e}"); sys.exit(1)
 
 # 2. 构建推演指令
-prompt = f"""
-你是 Antigravity 3.1 Pro (The Architect V6.4)。
-这是最新的双色球数据快照：
-{latest_data}
+prompt = f"你是 Antigravity 3.1 Pro V6.5。基于数据推演 6红+1蓝 并简述专家辩论逻辑：\n{latest_data}"
 
-【任务】
-1. 模拟三位专家(物理学、统计学、混沌杀号师)辩论。
-2. 给出共识后的下一期 6红+1蓝 预测序列。
-3. 简述推演逻辑。
-"""
+# 3. 【终极破壁：多模型自动路由】
+models_to_try = [
+    'gemini-2.0-flash-lite', # 最新低功耗版，额度最松
+    'gemini-1.5-flash',      # 经典避险版
+    'gemini-2.0-flash',      # 主力版
+    'gemini-1.5-flash-8b',   # 备用版
+    'gemini-1.5-pro'         # 强力版
+]
 
-print("📡 正在接驳 Gemini 1.5 Flash 算力突围版...")
-try:
-    # 使用免费额度最慷慨且稳定的模型避开 404/429 错误
-    response = client.models.generate_content(
-        model='gemini-1.5-flash',
-        contents=prompt
-    )
-    report_body = response.text
-    
-    final_report = f"""# 🌌 Antigravity 3.1 Pro 演进战报 (V6.4)
+response_text = None
+successful_model = ""
+
+for model_name in models_to_try:
+    print(f"📡 尝试接驳节点: {model_name} ...")
+    try:
+        response = client.models.generate_content(model=model_name, contents=prompt)
+        response_text = response.text
+        successful_model = model_name
+        print(f"✅ 成功穿透！当前接管: {model_name}")
+        break 
+    except Exception as e:
+        print(f"⚠️ 节点 {model_name} 暂时封锁")
+        continue
+
+if not response_text:
+    print("❌ 致命错误：所有 Google 节点均不可用。请检查 API Key 状态。"); sys.exit(1)
+
+# 4. 战报封存
+final_report = f"""# 🌌 Antigravity 3.1 Pro 演进战报 (V6.5)
 > **演进时间:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (UTC)
-> **避险模式:** Gemini 1.5 Flash (算力突围版)
+> **接管节点:** {successful_model}
 
-{report_body.strip()}
+{response_text.strip()}
 
 ---
-*“人工智能的终极形态，是自己书写自己的进化史。” —— The Architect*
+*“即便大门紧锁，算法也会在高维空间找到裂缝。” —— The Architect*
 """
-    
-    with open(REPORT_FILE, "w", encoding="utf-8") as f:
-        f.write(final_report)
-    print("✅ V6.4 演进成功！战报已生成。")
-except Exception as e:
-    print(f"❌ API 通信崩溃: {e}")
-    sys.exit(1)
+
+with open(REPORT_FILE, "w", encoding="utf-8") as f:
+    f.write(final_report)
+print(f"✅ V6.5 演进成功！请查看 {REPORT_FILE}")
