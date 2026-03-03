@@ -1,35 +1,60 @@
-name: Antigravity-Loop
+print("📡 正在向云端大脑发送元演化请求...")
+try:
+    # 【终极修复点：使用 Google 最新一代 2.0 核心模型】
+    response = client.models.generate_content(
+        model='gemini-2.0-flash',
+        contents=prompt
+    )
+    response_text = response.text
+except Exception as e:
+    print(f"❌ API 调用失败: {e}")
+    sys.exit(1)
 
-on:
-  workflow_dispatch:
+# 3. 自我纠正与代码动态提取 (Self-Correction)
+print("🧬 正在解析 AI 自创基因代码...")
+new_code = ""
+if "```python" in response_text:
+    try:
+        new_code = response_text.split("```python")[1].split("```")[0].strip()
+    except IndexError:
+        pass
 
-jobs:
-  evolve:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
+if new_code:
+    with open(EVOLVED_CODE_FILE, "w", encoding="utf-8") as f:
+        f.write("import pandas as pd\nimport numpy as np\n\n")
+        f.write(new_code)
+    print("✅ AI 自创物理公式已成功写入本地基因库！")
+    
+    # 稳定性装甲：尝试动态执行 AI 写的代码
+    try:
+        import evolved_formulas
+        import importlib
+        importlib.reload(evolved_formulas)
+        test_df = evolved_formulas.dynamic_feature_extraction(df.copy())
+        print("🛡️ 稳定性校验通过：AI 自创代码运行成功，未引发拓扑崩溃。")
+    except Exception as e:
+        print(f"⚠️ 【自我纠正触发】AI 生成的代码存在缺陷，已拦截崩溃。错误信息: {e}")
+        print("🔄 系统将回滚至基础物理引擎继续运行。")
+else:
+    print("⚠️ 未检测到有效的 Python 代码块，跳过自我开创阶段。")
 
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
+# 4. 结果封存
+report_content = response_text
+if "```python" in report_content:
+    parts = report_content.split("```python")
+    report_content = parts[0] + (parts[1].split("```")[1] if "```" in parts[1] else "")
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
+final_report = f"""# 🌌 Antigravity 3.1 Pro 演进战报 (V6.3 元演化版)
+> **演进时间:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (UTC)
+> **系统状态:** 多智能体辩论已完成 | 代码自生成引擎已激活
 
-      - name: Install Libs
-        run: pip install pandas numpy google-genai
+{report_content.strip()}
 
-      - name: Execute V6.3 Agent
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python genesis_crawler.py
+---
+*“人工智能的终极形态，是自己书写自己的进化史。” —— The Architect V6.3*
+"""
 
-      - name: Commit & Push
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add Latest_Prediction.md
-          git commit -m "🌌 V6.3: 2.0 Flash 协议觉醒" || echo "No changes"
-          git push
+with open(REPORT_FILE, "w", encoding="utf-8") as f:
+    f.write(final_report)
+
+print(f"✅ V6.3 演进圆满完成！战报已存入 {REPORT_FILE}")
