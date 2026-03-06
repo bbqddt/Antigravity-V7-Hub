@@ -3,8 +3,7 @@ import pandas as pd
 import os
 
 def update():
-    url = "https://m.cwl.gov.cn/cwl_admin/front/cwlkj/search/kjxx/findDrawNotice?name=ssq&pageNo=1&pageSize=30"
-    headers = {'User-Agent': 'Mozilla/5.0'}
+    url = "https://raw.githubusercontent.com/Antigravity-AI/ssq-history-full/main/full_data.csv"
     file_path = 'ssq_history_full.csv'
     
     try:
