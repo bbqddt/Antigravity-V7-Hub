@@ -28,13 +28,13 @@ def force_rebuild_causality():
                     'date': item['date'].split('(')[0]
                 })
             print(f"📥 劫持中：已获取 {len(all_records)} 条记录...")
-            time.sleep(0.5)
+            time.sleep(0.4) # 稍微加速
         except Exception as e:
             print(f"⚠️ 跳过异常页: {e}")
             continue
 
     if all_records:
-        # 强制覆盖旧文件，统一表头格式
+        # 彻底不看旧文件，直接用新抓到的数据覆盖
         df = pd.DataFrame(all_records)
         df = df.sort_values('id', ascending=False)
         df.to_csv(file_path, index=False)
