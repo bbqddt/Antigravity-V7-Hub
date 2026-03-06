@@ -1,39 +1,48 @@
 import requests
 import pandas as pd
 import time
+import os
 
-def force_rebuild():
-    url_template = "https://m.cwl.gov.cn/cwl_admin/front/cwlkj/search/kjxx/findDrawNotice?name=ssq&pageNo={}&pageSize=100"
+def update_causality():
+    file_path = 'ssq_history_full.csv'
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-    all_data = []
-
-    print("开始穿越回 2003 年...")
-    for page in range(1, 41): # 抓 40 页 = 4000 条
-        try:
-            r = requests.get(url_template.format(page), headers=headers, timeout=15)
-            res = r.json().get('result', [])
-            if not res: break
+    
+    # 1. 尝试抓取最新数据 (单页即可，因为你已经有地基了)
+    url = "https://m.cwl.gov.cn/cwl_admin/front/cwlkj/search/kjxx/findDrawNotice?name=ssq&pageNo=1&pageSize=30"
+    
+    try:
+        r = requests.get(url, headers=headers, timeout=15)
+        data = r.json().get('result', [])
+        if not data:
+            raise ValueError("官网接口返回为空，可能被拦截了")
             
-            for item in res:
-                reds = item['red'].split(',')
-                all_data.append({
-                    'id': int(item['code']),
-                    'r1': int(reds[0]), 'r2': int(reds[1]), 'r3': int(reds[2]),
-                    'r4': int(reds[3]), 'r5': int(reds[4]), 'r6': int(reds[5]),
-                    'b': int(item['blue']),
-                    'date': item['date'].split('(')[0]
-                })
-            print(f"进度：已抓取 {len(all_data)} 条...")
-            time.sleep(0.3)
-        except: break
+        new_records = []
+        for item in data:
+            reds = item['red'].split(',')
+            new_records.append({
+                'id': int(item['code']),
+                'r1': int(reds[0]), 'r2': int(reds[1]), 'r3': int(reds[2]),
+                'r4': int(reds[3]), 'r5': int(reds[4]), 'r6': int(reds[5]),
+                'b': int(item['blue']),
+                'date': item['date'].split('(')[0]
+            })
+        
+        new_df = pd.DataFrame(new_records)
 
-    if len(all_data) > 3000:
-        df = pd.DataFrame(all_data).sort_values('id', ascending=False)
-        # 暴力覆盖，不讲道理
-        df.to_csv('ssq_history_full.csv', index=False)
-        print(f"✅ 成功！最终写入文件总数：{len(df)}")
-    else:
-        print(f"❌ 抓取数量异常 ({len(all_data)})，取消写入以保护原始数据。")
+        # 2. 读取现有地基
+        if os.path.exists(file_path):
+            old_df = pd.read_csv(file_path)
+            # 合并并去重
+            final_df = pd.concat([new_df, old_df]).drop_duplicates(subset=['id']).sort_values('id', ascending=False)
+        else:
+            final_df = new_df
+
+        # 3. 写入文件
+        final_df.to_csv(file_path, index=False)
+        print(f"✅ 成功！当前因果链总深度：{len(final_df)}")
+
+    except Exception as e:
+        print(f"❌ 更新失败: {e}。保持原数据不变。")
 
 if __name__ == "__main__":
-    force_rebuild()
+    update_causality()
