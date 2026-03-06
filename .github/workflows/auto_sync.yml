@@ -1,27 +1,30 @@
 name: Auto-Update-Causality
 
 on:
-  schedule:
-    - cron: '0 16 * * 2,4,7' # 每周二、四、日自动运行
-  workflow_dispatch:        # 这行保证你会看到那个手动运行的按钮
+  workflow_dispatch: # 允许手动点击
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
+      - name: 检出代码
+        uses: actions/checkout@v3
+
+      - name: 安装 Python 环境
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-      - name: Install deps
-        run: pip install requests pandas
-      - name: Run Miner
+
+      - name: 强制安装搬运工具
+        run: pip install requests pandas  # 之前可能就死在这里了
+
+      - name: 启动全量收割脚本
         run: python update_data.py
-      - name: Push Back
+
+      - name: 将数据推回仓库
         run: |
           git config --global user.name "causality-bot"
           git config --global user.email "bot@antigravity.os"
           git add ssq_history_full.csv
-          git commit -m "Auto-fix causality chain" || exit 0
+          git commit -m "Auto-fix causality chain to 3500+" || exit 0
           git push
