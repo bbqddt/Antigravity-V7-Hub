@@ -1,13 +1,13 @@
 import streamlit as st
 
 # 1. 实验室顶级架构
-st.set_page_config(page_title="Antigravity V57.0 君王指挥部", layout="wide")
+st.set_page_config(page_title="Antigravity V58.0 指挥部", layout="wide")
 
 # 2. 核心因果指纹 (2026025 真实数据)
 REAL_25 = {"id": "2026025", "red": [2, 3, 15, 20, 23, 24], "blue": 10}
 NEXT_ID = "2026026"
 
-st.title(f"🛡️ Antigravity V57.0 | {NEXT_ID} 期实战指挥部")
+st.title(f"🛡️ Antigravity V58.0 | {NEXT_ID} 期实战指挥部")
 
 # --- 第一层：系统神经元监控 (全量组件脉搏) ---
 with st.container():
@@ -48,4 +48,10 @@ def render_collider(name, pred_red, pred_blue, real_red, real_blue, engine_tag):
         # 蓝球对撞
         b_color = "lime" if pred_blue == real_blue else "#1C83E1"
         html += f'<span style="margin: 0 25px; color:#444; font-size:24px;">|</span>'
-        html += f'<span style="background:{b_color}; color
+        html += f'<span style="background:{b_color}; color:white; padding:8px 14px; border-radius:50%; font-weight:bold; box-shadow: 0 0 10px {b_color}; font-size:18px;">{pred_blue:02d}</span>'
+        st.markdown(html, unsafe_allow_html=True)
+        st.progress(len(hits)/6)
+
+# 渲染真实开奖
+r_html = " ".join([f'<span style="color:lime; font-size:22px; font-weight:bold; margin-right:15px;">{n:02d}</span>' for n in REAL_25['red']])
+st.markdown(f"**[ {REAL_25['id']} 真实指纹 ]** &nbsp;&nbsp; {r_html} &nbsp;&nbsp; <span style='color:#1C83E1; font-size:22px; font-weight:bold;'>{REAL_25['blue']:02d}</span>
