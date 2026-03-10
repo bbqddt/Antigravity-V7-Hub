@@ -1,12 +1,22 @@
 import os
+import subprocess
 
 def quick_sync():
-    print("🚀 启动中枢同步协议 V12.7...")
-    os.system('git add .')
-    msg = input("请输入本次逻辑变更说明 (直接回车则默认为‘自动进化’): ") or "自动进化同步"
-    os.system(f'git commit -m "{msg}"')
-    os.system('git push origin main')
-    print("✅ 云端‘肉身’已完成逻辑对齐！")
+    print("\n" + "="*30)
+    print("🚀 启动中枢同步协议 V12.8")
+    print("="*30)
+    
+    try:
+        # 执行同步
+        os.system('git add .')
+        msg = input("请输入本次逻辑变更说明 (默认: 2026026演化更新): ") or "2026026演化更新"
+        os.system(f'git commit -m "{msg}"')
+        os.system('git push origin main')
+        
+        print("\n✅ 指挥官，云端‘肉身’已完成逻辑对齐！")
+        print("🔗 请刷新 Hugging Face 页面查看最终战况。")
+    except Exception as e:
+        print(f"❌ 同步失败: {e}")
 
 if __name__ == "__main__":
     quick_sync()
