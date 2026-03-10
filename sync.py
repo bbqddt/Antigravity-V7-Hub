@@ -9,7 +9,7 @@ def quick_sync():
     try:
         # 执行同步
         os.system('git add .')
-        msg = input("请输入本次逻辑变更说明 (默认: 2026026演化更新): ") or "2026026演化更新"
+        msg = "2026026演化更新" # 移除 input() 以防止无交互终端挂死
         os.system(f'git commit -m "{msg}"')
         os.system('git push origin main')
         
