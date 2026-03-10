@@ -1,0 +1,14 @@
+Score: 45.9286 | Result: {'red': '8,13,17,18,24,25', 'blue': '3'}
+Score: 45.8319 | Result: {'red': '5,16,17,29,30,33', 'blue': '14'}
+Score: 45.8996 | Result: {'red': '2,5,16,17,21,25', 'blue': '15'}
+Score: 45.8759 | Result: {'red': '3,9,19,20,22,30', 'blue': '10'}
+Score: 45.8422 | Result: {'red': '2,8,22,29,32,33', 'blue': '6'}
+Score: 45.9532 | Result: {'red': '8,15,17,18,19,27', 'blue': '16'}
+Score: 45.8325 | Result: {'red': '10,11,12,20,23,27', 'blue': '9'}
+Score: 45.8912 | Result: {'red': '4,7,16,19,26,31', 'blue': '2'}
+Score: 45.855 | Result: {'red': '4,11,15,22,29,31', 'blue': '14'}
+Score: 45.8471 | Result: {'red': '1,2,8,13,18,24', 'blue': '5'}
+Score: 45.9342 | Result: {'red': '5,11,13,16,19,22', 'blue': '5'}
+Score: 45.8752 | Result: {'red': '4,11,14,15,18,22', 'blue': '1'}
+Score: 45.8119 | Result: {'red': '5,8,10,21,26,32', 'blue': '1'}
+Score: 45.8725 | Result: {'red': '4,8,13,25,27,28', 'blue': '4'}

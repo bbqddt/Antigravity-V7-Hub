@@ -1,0 +1,57 @@
+2026-03-01 08:34:42,070 - [INFO] - ### 守护进程已启动，间隔: 1.0 小时 ###
+2026-03-01 08:34:42,071 - [INFO] - === 开始新的自主循环周期 ===
+2026-03-01 08:34:42,071 - [ERROR] - 自主循环发生致命异常: 'SSQCrawler' object has no attribute 'run_open_claw'
+2026-03-01 08:34:42,071 - [INFO] - 系统将在 5 分钟后重试...
+2026-03-01 08:36:12,534 - [INFO] - ### 守护进程已启动，间隔: 1.0 小时 ###
+2026-03-01 08:36:12,534 - [INFO] - === 开始新的自主循环周期 ===
+2026-03-01 08:36:12,534 - [ERROR] - 自主循环发生致命异常: SSQCrawler.run_open_claw() got an unexpected keyword argument 'max_pages'
+2026-03-01 08:36:12,535 - [INFO] - 系统将在 5 分钟后重试...
+2026-03-01 08:37:38,205 - [INFO] - ### 守护进程已启动，间隔: 1.0 小时 ###
+2026-03-01 08:37:38,205 - [INFO] - === 开始新的自主循环周期 ===
+2026-03-01 08:37:38,443 - [ERROR] - 自主循环发生致命异常: object bool can't be used in 'await' expression
+2026-03-01 08:37:38,444 - [INFO] - 系统将在 5 分钟后重试...
+2026-03-01 08:39:32,177 - [INFO] - ### 守护进程已启动，间隔: 1.0 小时 ###
+2026-03-01 08:39:32,178 - [INFO] - === 开始新的自主循环周期 ===
+2026-03-01 08:39:32,413 - [INFO] - Preparing feature tensors from historical data...
+2026-03-01 08:39:32,418 - [INFO] - Gemini 3.1 Relay: Attempting sync with Antigravity Key (...SaUU)
+2026-03-01 08:39:33,231 - [INFO] - Cloud Authentication: SUCCESS. Secure tunnel established.
+2026-03-01 08:39:33,247 - [INFO] - Adversarial training step completed. D-Loss: 1.8184
+2026-03-01 08:39:33,249 - [INFO] - Adversarial training step completed. D-Loss: 1.4166
+2026-03-01 08:39:33,250 - [INFO] - Adversarial training step completed. D-Loss: 1.1370
+2026-03-01 08:39:33,252 - [INFO] - Adversarial training step completed. D-Loss: 0.9569
+2026-03-01 08:39:33,253 - [INFO] - Adversarial training step completed. D-Loss: 0.8383
+2026-03-01 08:39:33,253 - [INFO] - Gemini 3.1: Fetching optimized non-linear weights...
+2026-03-01 08:39:34,467 - [INFO] - Starting Vectorized Monte Carlo filter with 1000000 iterations on cpu...
+2026-03-01 08:39:35,208 - [INFO] - Tensorized Monte Carlo Finished in 0.7406s. Performance: 1350191 iters/sec.
+2026-03-01 08:39:35,209 - [INFO] - Max score achieved: 45.5138
+2026-03-01 08:39:35,217 - [INFO] - Starting Vectorized Monte Carlo filter with 1000000 iterations on cpu...
+2026-03-01 08:39:35,888 - [INFO] - Tensorized Monte Carlo Finished in 0.6706s. Performance: 1491169 iters/sec.
+2026-03-01 08:39:35,888 - [INFO] - Max score achieved: 45.8557
+2026-03-01 08:39:35,894 - [INFO] - Starting Vectorized Monte Carlo filter with 1000000 iterations on cpu...
+2026-03-01 08:39:36,576 - [INFO] - Tensorized Monte Carlo Finished in 0.6817s. Performance: 1466971 iters/sec.
+2026-03-01 08:39:36,576 - [INFO] - Max score achieved: 45.8557
+2026-03-01 08:39:36,582 - [INFO] - Starting Vectorized Monte Carlo filter with 1000000 iterations on cpu...
+2026-03-01 08:39:37,210 - [INFO] - Tensorized Monte Carlo Finished in 0.6279s. Performance: 1592556 iters/sec.
+2026-03-01 08:39:37,210 - [INFO] - Max score achieved: 45.3723
+2026-03-01 08:39:37,211 - [INFO] - Starting Vectorized Monte Carlo filter with 1000000 iterations on cpu...
+2026-03-01 08:39:37,812 - [INFO] - Tensorized Monte Carlo Finished in 0.6005s. Performance: 1665318 iters/sec.
+2026-03-01 08:39:37,812 - [INFO] - Max score achieved: 45.7702
+2026-03-01 08:39:37,812 - [INFO] - Starting Vectorized Monte Carlo filter with 1000000 iterations on cpu...
+2026-03-01 08:39:38,379 - [INFO] - Tensorized Monte Carlo Finished in 0.5662s. Performance: 1766066 iters/sec.
+2026-03-01 08:39:38,379 - [INFO] - Max score achieved: 45.6847
+2026-03-01 08:39:38,380 - [INFO] - Starting Vectorized Monte Carlo filter with 1000000 iterations on cpu...
+2026-03-01 08:39:38,951 - [INFO] - Tensorized Monte Carlo Finished in 0.5707s. Performance: 1752084 iters/sec.
+2026-03-01 08:39:38,951 - [INFO] - Max score achieved: 45.2014
+2026-03-01 08:39:38,951 - [INFO] - Starting Vectorized Monte Carlo filter with 1000000 iterations on cpu...
+2026-03-01 08:39:39,581 - [INFO] - Tensorized Monte Carlo Finished in 0.6298s. Performance: 1587751 iters/sec.
+2026-03-01 08:39:39,582 - [INFO] - Max score achieved: 45.5949
+2026-03-01 08:39:39,582 - [INFO] - Starting Vectorized Monte Carlo filter with 1000000 iterations on cpu...
+2026-03-01 08:39:40,164 - [INFO] - Tensorized Monte Carlo Finished in 0.5814s. Performance: 1719839 iters/sec.
+2026-03-01 08:39:40,164 - [INFO] - Max score achieved: 45.1719
+2026-03-01 08:39:40,164 - [INFO] - Starting Vectorized Monte Carlo filter with 1000000 iterations on cpu...
+2026-03-01 08:39:40,752 - [INFO] - Tensorized Monte Carlo Finished in 0.5872s. Performance: 1702941 iters/sec.
+2026-03-01 08:39:40,752 - [INFO] - Max score achieved: 45.4105
+2026-03-01 08:39:40,753 - [INFO] - 当前周期推演组合: R:[1, 26, 27, 29, 32, 33] B:2 | Confidence Score: 0.6877
+2026-03-01 08:39:40,753 - [INFO] - 指标未达到 0.92 警报线，保持静默。
+2026-03-01 08:39:40,753 - [INFO] - === 周期完成，进入休眠，下次唤醒时间: 2026-03-01 09:39:32 ===
+

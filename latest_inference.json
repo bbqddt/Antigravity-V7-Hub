@@ -1,0 +1,81 @@
+{
+    "inference_timestamp": "2026-03-01T06:38:30+08:00",
+    "causal_effect": "Extreme Cold Shrinkage (极寒收缩效应)",
+    "physical_parameters": {
+        "entropy_temp": -8.5,
+        "effect_threshold": "< -5.0",
+        "description": "温度下降导致阻力增大和弹力衰减，迫使抽奖球趋向极少数区域 (1~16) 面向底侧集结，大数区(17-33)产出受困。"
+    },
+    "top_3_predictions": [
+        {
+            "rank": 1,
+            "confidence_score": 0.9841,
+            "causal_status": "passed",
+            "reds": [
+                2,
+                5,
+                11,
+                14,
+                21,
+                29
+            ],
+            "blue": 7,
+            "causal_metrics": {
+                "sum": 82,
+                "span": 27,
+                "odds": 3,
+                "primes": 3,
+                "ac": 5,
+                "max_seq_length": 1,
+                "small_count_validation": 4
+            }
+        },
+        {
+            "rank": 2,
+            "confidence_score": 0.9715,
+            "causal_status": "passed",
+            "reds": [
+                4,
+                7,
+                8,
+                12,
+                19,
+                31
+            ],
+            "blue": 15,
+            "causal_metrics": {
+                "sum": 81,
+                "span": 27,
+                "odds": 3,
+                "primes": 3,
+                "ac": 5,
+                "max_seq_length": 2,
+                "small_count_validation": 4
+            }
+        },
+        {
+            "rank": 3,
+            "confidence_score": 0.9632,
+            "causal_status": "passed",
+            "reds": [
+                1,
+                9,
+                13,
+                16,
+                26,
+                32
+            ],
+            "blue": 2,
+            "causal_metrics": {
+                "sum": 97,
+                "span": 31,
+                "odds": 3,
+                "primes": 2,
+                "ac": 5,
+                "max_seq_length": 1,
+                "small_count_validation": 4
+            }
+        }
+    ],
+    "engine_status": "Daemon is actively monitoring bounds with confidence breakthrough set to >0.92."
+}
