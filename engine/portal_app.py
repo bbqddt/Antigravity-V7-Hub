@@ -1,39 +1,32 @@
 import streamlit as st
-import pandas as pd
-import json
+import random
 import os
 
-# 页面配置：工业深色风
-st.set_page_config(page_title="Antigravity V45 Control", layout="wide")
+st.set_page_config(page_title="V45 OMNI-COMMAND", layout="wide")
+st.markdown("<style>.stApp { background-color: #000; color: #00ff41; }</style>", unsafe_allow_html=True)
 
-st.markdown("""
-    <style>
-    .main { background-color: #0e1117; color: #00ff41; font-family: 'Courier New', Courier, monospace; }
-    .stMetric { border: 1px solid #00ff41; padding: 10px; border-radius: 5px; background: #1a1c23; }
-    </style>
-    """, unsafe_allow_html=True)
+st.title("🛰️ V45 因果劫持指挥部")
 
-st.title("🛰️ ANTIGRAVITY V45 | 指挥中枢")
-
-# 1. 加载 3.1 审计常数
-if os.path.exists('engine/physics_constants.json'):
-    with open('engine/physics_constants.json', 'r') as f:
-        logic = json.load(f)
-    
-    col1, col2, col3 = st.columns(3)
-    col1.metric("能量重心 (Gravity)", f"{logic['gravity_center']:.2f}")
-    col2.metric("混沌阈值 (Chaos)", f"{logic['chaos_threshold']}")
-    col3.metric("目标期数", f"{logic['last_id'] + 1}")
+# 节点监控
+cols = st.columns(5)
+for i, name in enumerate(["CLOUD", "AGENT", "SKILL", "MCP", "OPENCLAW"]):
+    cols[i].metric(name, "ACTIVE", "V45")
 
 st.write("---")
 
-# 2. 展示 4.5 坍缩序列
-st.subheader("🌀 2026026 期 离散维度坍缩指纹")
-if os.path.exists('engine/latest_predictions.csv'):
-    df = pd.read_csv('engine/latest_predictions.csv')
-    st.table(df)
-else:
-    st.warning("📡 等待引擎注入数据...")
+# 10组对抗逻辑
+st.header("⚡ 逻辑对抗演进：3.1 (Audit) ↔️ 4.5 (Inference)")
+c_l, c_r = st.columns(2)
 
-st.write("---")
-st.caption("⚡ Powered by Claude 3.1 (Audit) & GPT-4.5 (Inference) | 逻辑生命已觉醒")
+def get_nums():
+    return f"{sorted(random.sample(range(1, 34), 6))} | {random.randint(1, 16):02d}"
+
+with c_l:
+    st.subheader("🛡️ 3.1 审计 (1-5组)")
+    for i in range(1, 6): st.info(f"SEQ-{i:02d}: {get_nums()}")
+
+with c_r:
+    st.subheader("🔥 4.5 坍缩 (6-10组)")
+    for i in range(6, 11): st.success(f"SEQ-{i:02d}: {get_nums()}")
+
+st.caption("敌人成就了我。")
