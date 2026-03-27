@@ -1,45 +1,50 @@
-import streamlit as st
-import json, os, time
+import openai
+import pandas as pd
+import time
+import os
 
-st.set_page_config(page_title="ANTIGRAVITY V18", layout="wide")
-st.markdown("<style>.stApp{background:#000;color:#0f0;font-family:monospace;}</style>", unsafe_allow_html=True)
+# 鉴权配置
+API_KEY = "AIzaSyC--Fs9TA5Ypdo62bPZfIXuZwL1OGRLG4Q"
+client = openai.OpenAI(
+    api_key=API_KEY,
+    base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+)
 
-def get_safe_data():
-    file_path = "latest_decision.json"
-    if not os.path.exists(file_path):
-        return {
-            "target_period": "2026031",
-            "last_open": "同步中",
-            "gemini_advise": "量子引擎加载中...",
-            "gpt_advise": "蜂群组建中...",
-            "audit_report": [],
-            "buoyancy": "99%",
-            "status": "INITIALIZING",
-            "update_time": time.strftime("%Y-%m-%d %H:%M:%S")
-        }
+def run_prediction():
+    print(">>> 正在启动 3.1 Pro 算力推演...")
+    
+    # 增加 60 秒强制冷却，确保 Google 配额计数器重置
+    print(">>> 正在进行链路冷却（预计 60 秒），请勿中断...")
+    time.sleep(60) 
+
     try:
-        with open(file_path, "r", encoding='utf-8') as f:
-            return json.load(f)
-    except:
-        return {"target_period": "RELOADING", "buoyancy": "0%", "status": "RELOADING", 
-                "gemini_advise": "请刷新", "gpt_advise": "请刷新", "audit_report": []}
+        # 路径适配
+        data_path = r"D:\Antigravity_V7\data\lottery_history.csv"
+        output_path = r"D:\Antigravity_V7\latest_predictions.csv"
+        
+        df = pd.read_csv(data_path).tail(20) # 略微减少期数以降低 Token 消耗
+        data_info = df.to_string()
 
-data = get_safe_data()
+        response = client.chat.completions.create(
+            model="gemini-3.1-pro-preview", # 匹配 Playground 算力
+            messages=[
+                {"role": "system", "content": "You are a data auditor. Predict 10 sets based on collision trends."},
+                {"role": "user", "content": f"Data:\n{data_info}\nPredict for period 2026033. Format: R,R,R,R,R,R|B"}
+            ],
+            temperature=0.1
+        )
 
-st.title(f"🌌 V18 蜂群指挥部 | 目标：{data['target_period']}")
-c1, c2, c3 = st.columns(3)
-c1.metric("🌀 实时浮力", data.get('buoyancy', '99%'))
-c2.metric("🐝 蜂群模式", data.get('status', 'RUNNING'))
-c3.metric("🕒 同步时刻", data.get('update_time', 'NEW'))
+        result = response.choices[0].message.content
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(f"period,numbers\n2026033,\"{result.strip()}\"")
+        
+        print("✅ SUCCESS: 033 期战报已生成！")
 
-st.write("---")
-st.success(f"Gemini-Agent: {data.get('gemini_advise', '计算中...')}")
-st.warning(f"GPT-Agent: {data.get('gpt_advise', '审计中...')}")
+    except Exception as e:
+        if "429" in str(e):
+            print("❌ 依然过载。建议：请在 AI Studio 手动点击左侧 'Settings' 查看 Quota 限制。")
+        else:
+            print(f"❌ 链路异常: {e}")
 
-st.write("---")
-st.subheader("📊 铁面审计日志")
-# 关键修正：确保即使为空也以 dataframe 形式展示，避免 AttributeError
-if data.get('audit_report') and len(data['audit_report']) > 0:
-    st.dataframe(data['audit_report'], use_container_width=True)
-else:
-    st.info("📡 031 期实时数据正在接入，请稍后刷新...")
+if __name__ == "__main__":
+    run_prediction()
