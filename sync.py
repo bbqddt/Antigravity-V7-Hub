@@ -1,9 +1,14 @@
-# sync.py 修改如下
 import os
 
-def execute_push(): # 函数名改掉，不再叫 sync
-    print("🚀 启动中枢同步协议...")
+def execute_push():
+    print("\n" + "="*30)
+    print("🚀 ANTIGRAVITY 核心同步引擎 V12.9")
+    print("="*30)
     os.system('git add .')
-    msg = input("说明: ") or "Update"
+    msg = input("请输入本次变更说明: ") or "自动化同步"
     os.system(f'git commit -m "{msg}"')
     os.system('git push origin main')
+    print("\n✅ 云端对齐成功！")
+
+if __name__ == "__main__":
+    execute_push()

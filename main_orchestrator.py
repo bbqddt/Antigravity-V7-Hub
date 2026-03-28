@@ -9,6 +9,10 @@ from core.cloud_sync import CloudRelay
 from core.inference import StrategyEngine
 from core.causal_reasoning import CausalAnalyzer
 from models.gan_adversary import GANAdversary
+from auto_cloud_sync import activate_kyma_nodes, auto_sync_to_cloud
+
+# 激活环境变量配置
+activate_kyma_nodes()
 
 # 配置日志输出
 logging.basicConfig(
@@ -68,6 +72,12 @@ async def main():
     print(f"\n[因果预测报告] 状态: {causal_report['status']}")
     for w in causal_report['warnings']:
          print(f" -> {w}")
+         
+    # 8. 全自动重生：利用云端隧道上传
+    if recommendations:
+        with open("latest_predictions.csv", "w", encoding="utf-8") as f:
+            f.write(f"period,numbers\nlatest,\"{recommendations}\"")
+        auto_sync_to_cloud()
 
 if __name__ == "__main__":
     asyncio.run(main())

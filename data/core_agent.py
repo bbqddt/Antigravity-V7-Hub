@@ -23,3 +23,4 @@ if __name__ == "__main__":
     agent = CoreAgent()
     # 执行同步
     agent.fast_sync()
+    

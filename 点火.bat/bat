@@ -1,0 +1,6 @@
+@echo off
+git add .
+git commit -m "V7指挥部自动点火"
+git push
+echo 报告统帅：代码已升空，请前往云端查收！
+pause
