@@ -16,11 +16,11 @@ class SegmentGenesisProbe:
         self.save_path = "e:/享中/data/ssq_history_full.csv"
 
     def execute_segment_hunt(self):
-        print("🌌 [Antigravity 3.1 Pro] 启动分段回溯协议 (2003-2026)...")
+        print("[Antigravity 3.1 Pro] Starting Segment Genesis Probe (2003-2026)...")
         all_draws = []
         
         # 3.1 核心逻辑：每页 100 期，抓取 36 页，覆盖 3600 期
-        for page in tqdm(range(1, 37), desc="🧬 正在缝合因果链条"):
+        for page in tqdm(range(1, 37), desc="Processing Causal Chains"):
             params = {
                 'name': 'ssq',
                 'dayStart': '2003-01-01',
@@ -50,7 +50,7 @@ class SegmentGenesisProbe:
             df = pd.DataFrame(all_draws).sort_values(by='id').drop_duplicates(subset=['id']).reset_index(drop=True)
             os.makedirs(os.path.dirname(self.save_path), exist_ok=True)
             df.to_csv(self.save_path, index=False, encoding='utf-8-sig')
-            print(f"\n✅ [全量注入成功] 当前本地库记录数: {len(df)} 期 (覆盖 2003-2026)")
+            print(f"\n[OK] Injection Success. Current Local Records: {len(df)} (Coverage 2003-2026)")
 
 if __name__ == "__main__":
     SegmentGenesisProbe().execute_segment_hunt()
