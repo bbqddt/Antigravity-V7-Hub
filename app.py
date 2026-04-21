@@ -71,24 +71,4 @@ if st.button("🚀 执行 043 期全矩阵多模型审计"):
         # 点火执行
         results = fire_matrix()
     
-    # 渲染审计表格
-    audit_rows = []
-    r_reds_set = set(REAL_BASE['reds'])
-    
-    for name, p in results.items():
-        p_reds = set(p['reds'])
-        hits = sorted(list(p_reds.intersection(r_reds_set)))
-        
-        audit_rows.append({
-            "作战单元": name,
-            "建议序列": " ".join(p['reds']),
-            "蓝球建议": p['blue'],
-            "参考命中": len(hits)
-        })
-        
-        with st.expander(f"📜 查看 {name} 原始审计文字报告"):
-            st.write(p['raw'])
-
-    st.markdown("### 🏁 043 期多模型对冲审计结果")
-    st.table(pd.DataFrame(audit_rows))
-    st.success("✅ 数据穿透锁定完成！")
+    #
