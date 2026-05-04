@@ -1,110 +1,14 @@
 {
-  "target_period": "2026043",
-  "engine_version": "V8.0-OmniStrike",
-  "status": "ALL_WEAPONS_ARMED",
-  "weapons_active": [
-    "PID",
-    "Singularity",
-    "GravityField",
-    "OmniProxy",
-    "Hermes",
-    "MCP",
-    "GitHubAction"
-  ],
-  "update_time": "2026-04-17 21:56:11",
-  "evolution_chain": "031→041→042→2026043",
-  "backtest_042": {
-    "actual_reds": [
-      2,
-      7,
-      12,
-      19,
-      24,
-      31
-    ],
-    "actual_blue": 10,
-    "avg_red_hits": 0.6,
-    "best_group": 1
-  },
-  "pid_signal": 2.203,
-  "singularity_coords": [
-    6.81,
-    8.58,
-    10.44,
-    12.6,
-    14.0,
-    16.36
-  ],
-  "blue_gravity_core": 10,
-  "predictions": [
-    {
-      "组别": "第1组",
-      "策略": "PID热号骨架",
-      "红球": [
-        1,
-        3,
-        13,
-        23,
-        24,
-        31
-      ],
-      "蓝球": 1
-    },
-    {
-      "组别": "第2组",
-      "策略": "奇点引擎主导",
-      "红球": [
-        3,
-        7,
-        9,
-        13,
+    "period": "26049",
+    "red": [
+        4,
+        10,
         14,
-        28
-      ],
-      "蓝球": 10
-    },
-    {
-      "组别": "第3组",
-      "策略": "热冷均衡+遗漏回补",
-      "红球": [
-        3,
-        18,
         19,
-        22,
-        23,
+        25,
         29
-      ],
-      "蓝球": 10
-    },
-    {
-      "组别": "第4组",
-      "策略": "冷号反击+引力场",
-      "红球": [
-        3,
-        5,
-        13,
-        16,
-        21,
-        27
-      ],
-      "蓝球": 15
-    },
-    {
-      "组别": "第5组",
-      "策略": "自由覆盖最大离散",
-      "红球": [
-        1,
-        5,
-        12,
-        16,
-        18,
-        24
-      ],
-      "蓝球": 3
-    }
-  ],
-  "hermes_audit": {
-    "status": "offline",
-    "note": "HERMES_BTP_ENDPOINT 未配置，审计数据本地归档"
-  }
+    ],
+    "blue": 6,
+    "engine": "Evolution Life V1.0 (RandomForest + Spectral)",
+    "status": "Awaiting Verification"
 }

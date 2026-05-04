@@ -1,0 +1,15 @@
+{
+  "id": "bbqddt2/antigravity-omega-v1000",
+  "title": "Antigravity Omega V1000",
+  "code_file": "kaggle_strike.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'ProductSans-Light';
+  src: local('fonts/ProductSans-Light'),
+    url('fonts/ProductSans-Light.ttf') format('opentype');
+}
+
+body {
+  margin: 0;
+  background-color: #edf0ed;
+}
+
+body * {
+  font-family: 'ProductSans-Light';
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  height: 184px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #232329;
+  width: 60%;
+  text-align: center;
+  margin: 0;
+}
+
+.rateUs-img {
+  margin-top: 20px;
+  width: 304px;
+  height: 72px;
+  background: url(./icons/rateUs.svg) no-repeat center;
+}
+
+.rateUs-img:hover {
+  background: url(./icons/rateUs-active.svg) no-repeat center;
+  cursor: pointer;
+}

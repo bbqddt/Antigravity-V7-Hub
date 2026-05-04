@@ -1,0 +1,6 @@
+2026/04/28-19:42:13.315 2e40 Creating DB E:\享中\ChromeAutomation\Default\WebStorage\8\IndexedDB\indexeddb.leveldb since it was missing.
+2026/04/28-19:42:13.318 2e40 Reusing MANIFEST E:\享中\ChromeAutomation\Default\WebStorage\8\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2026/04/28-19:43:29.312 2e40 Level-0 table #5: started
+2026/04/28-19:43:29.317 2e40 Level-0 table #5: 67316 bytes OK
+2026/04/28-19:43:29.319 2e40 Delete type=0 #3
+2026/04/28-19:43:29.320 2e40 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
