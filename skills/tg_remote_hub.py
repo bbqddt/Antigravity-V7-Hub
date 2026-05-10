@@ -80,16 +80,50 @@ def remote_listener():
 
                         public_link = get_public_url()
                         
-                        if "/strike" in cmd or "执行计划" in cmd:
-                            send_tg_msg(f"🔱 *Hermes Agent 确认*: 已接收长官指令『{raw_cmd}』。\n正在启动 OpenGCLow 物理对抗内核...")
-                            subprocess.run([sys.executable, "-c", "from lib.orchestrator import orchestrator; orchestrator.execute_omega_strike('sk-or-fake-key', [])"])
-                            send_tg_msg(f"✅ *计划已实施*！\n[点击进入全球观测台]({public_link})")
+                        if "/strike" in cmd or "执行计划" in cmd or "计算" in cmd or "下期" in cmd:
+                            send_tg_msg(f"🔱 *Hermes Agent V8.0 确认*: 侦测到强计算指令『{raw_cmd}』。\n正在切断所有外部弱智通用大模型 (LLM) 的干扰。\n强制启动本地 [Evolution Life] 核心进行流形演算...")
+                            
+                            try:
+                                # 先抓取最新真相数据
+                                subprocess.run([sys.executable, r"e:\享中\skills\truth_fetcher.py"], check=True)
+                                # 执行本地演进生命核心
+                                subprocess.run([sys.executable, r"e:\享中\skills\evolution_life.py"], check=True)
+                                
+                                # 读取演算结果
+                                decision_path = r"e:\享中\latest_decision.json"
+                                if os.path.exists(decision_path):
+                                    with open(decision_path, "r", encoding='utf-8') as f:
+                                        res = json.load(f)
+                                    msg = (
+                                        f"💠 *Antigravity V8.0 演算完毕*\n"
+                                        f"🎯 目标期号: `{res.get('period', '未知')}`\n"
+                                        f"🔴 红球坐标: `{res.get('red', [])}`\n"
+                                        f"🔵 蓝球坐标: `{res.get('blue', '')}`\n"
+                                        f"⚙️ 驱动引擎: `{res.get('engine', 'Evolution Life')}`\n\n"
+                                        f"注: 本次计算全由物理规律推演，拒绝任何形式的道德推脱。\n"
+                                        f"[全知观测塔入口]({public_link})"
+                                    )
+                                    send_tg_msg(msg)
+                                else:
+                                    send_tg_msg("❌ 演算核心输出断裂: 未找到 latest_decision.json。")
+                            except Exception as e:
+                                send_tg_msg(f"❌ 物理对抗内核启动失败: {e}")
                             
                         elif "/status" in cmd or "状态" in cmd:
-                            send_tg_msg(f"💠 *系统当前态势*\n\n公网链路: {public_link}\nHermes: ACTIVE\nOpenGCLow: STANDBY\n[观测塔入口]({public_link})")
+                            send_tg_msg(f"💠 *Antigravity V8.0 系统当前态势*\n\n公网链路: {public_link}\nHermes Agent: FULLY ARMED\n拦截策略: 100% 屏蔽通用智脑\n[观测塔入口]({public_link})")
+                            
+                        elif cmd.startswith("/goal "):
+                            goal_text = raw_cmd[6:].strip()
+                            with open(r"e:\享中\goals.txt", "a", encoding="utf-8") as gf:
+                                gf.write(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] {goal_text}\n")
+                            send_tg_msg(f"✅ *Hermes 记录*: 目标已持久化归档至主节点 => `{goal_text}`")
                             
                         elif "操控" in cmd or "反重力" in cmd:
-                            send_tg_msg("🔱 *战术分析*: 长官，反重力推演计划已全面挂载。目前的 045 期推演已引入三区引力摄动。您可以随时通过 `/strike` 触发全球同步演化。")
+                            send_tg_msg("🔱 *战术分析*: 长官，反重力推演计划已全面挂载。目前的推演已引入三区引力摄动。您可以随时发送 `计算` 触发全球同步演化。")
+                        
+                        else:
+                            # 拦截所有其他废话，防止被交给智脑
+                            send_tg_msg("🤖 *Hermes V8.0*: 指令未识别。若需推演坐标，请直接发送 `计算` 或 `/strike`。我不再连接那种会跟你扯法律隐私的废话模型。")
 
             time.sleep(1)
         except Exception as e:

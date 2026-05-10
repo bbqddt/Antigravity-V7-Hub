@@ -1,0 +1,15 @@
+{
+    "version": "Antigravity Omega 9.0",
+    "last_sync": "2026-05-10 18:54:00",
+    "active_proxy_port": 8089,
+    "active_tunnel_port": 8090,
+    "primary_api": "Together AI (tgp_v1_...)",
+    "backup_api": "DeepSeek (sk-d5...)",
+    "cloud_nodes": [
+        "https://antigravity-bbqddt.zocomputer.io",
+        "https://github.com/bbqddt2/Antigravity/actions"
+    ],
+    "truth_database": "d:\\Antigravity_V7\\data\\lottery_history.csv",
+    "current_mission": "26053 Period Chaos Deduction",
+    "commander": "bbqddt"
+}

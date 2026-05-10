@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "自动启动解封隧道",
+            "type": "shell",
+            "command": "uv run python server.py",
+            "windows": {
+                "command": "uv run python server.py"
+            },
+            "options": {
+                "cwd": "C:/Users/Administrator/free-claude-code"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared",
+                "group": "setup"
+            },
+            "isBackground": true
+        }
+    ]
+}

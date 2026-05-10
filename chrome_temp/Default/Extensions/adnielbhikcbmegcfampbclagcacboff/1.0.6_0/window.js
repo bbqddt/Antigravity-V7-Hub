@@ -1,1 +1,0 @@
-document.getElementsByClassName("rateUs-img")[0].addEventListener("click",(()=>{chrome.tabs.create({url:"https://chrome.google.com/webstore/detail/"+chrome.runtime.id+"/reviews"},(()=>{chrome.windows.getAll({windowTypes:["popup"]},(e=>{chrome.windows.remove(e[0].id)}))}))}));

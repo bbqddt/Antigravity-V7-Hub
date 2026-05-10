@@ -23,6 +23,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas numpy scikit-learn requests
 
+      - name: Fetch Latest Truth
+        run: |
+          python skills/truth_fetcher.py
+
+      - name: Commit and Push Data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add ssq_history_full.csv
+          git commit -m "Automated Truth Sync: $(date)" || echo "No changes to commit"
+          git push
+
       - name: Start Cloud Hermes Agent
         run: |
           python skills/cloud_hermes.py
+
