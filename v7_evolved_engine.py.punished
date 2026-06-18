@@ -1,0 +1,244 @@
+# -*- coding: utf-8 -*-
+"""
+Antigravity V7.0 进化版推演引擎 (完整重构版)
+修复了当历史数据不足30期时，冷热号判定算法发生死锁、将所有号码均归类为冷号的逻辑冲突。
+"""
+import os
+import sys
+import json
+import random
+import pandas as pd
+from datetime import datetime
+from collections import Counter
+
+# ==========================================
+# 1. 物理路径对齐
+# ==========================================
+BASE_DIR = r"E:\享中"
+DATA_FILE = os.path.join(BASE_DIR, "ssq_history_full.csv")
+
+print(f">>> [V7.0 核心引擎] 正在对齐物理盘符路径...")
+print(f"    强制目标路径: {DATA_FILE}")
+
+# 防御性初始化
+if not os.path.exists(DATA_FILE):
+    print(f"[警告] 未在指定物理路径找到数据集，启动强制初始化程序...")
+    init_headers = ["id", "r1", "r2", "r3", "r4", "r5", "r6", "b"]
+    init_df = pd.DataFrame(columns=init_headers)
+    try:
+        init_df.to_csv(DATA_FILE, index=False, encoding="utf-8-sig")
+        print(f"[成功] 核心数据集已在硬编码路径创建。")
+    except Exception as e:
+        print(f"[错误] 写入失败: {e}")
+        sys.exit(1)
+
+# ==========================================
+# 2. 加载并预处理数据
+# ==========================================
+try:
+    df = pd.read_csv(DATA_FILE, encoding="utf-8-sig")
+except Exception as e:
+    print(f"[严重错误] 读取核心数据集失败: {e}")
+    sys.exit(1)
+
+if df.empty:
+    print("[防御机制] 数据集内容为空，注入 031 期基准线握手...")
+    df = pd.DataFrame([{
+        "id": 2026031, 
+        "r1": 3, "r2": 10, "r3": 12, "r4": 13, "r5": 18, "r6": 33, 
+        "b": 8
+    }])
+
+latest_30 = df.tail(30)
+latest_10 = df.tail(10)
+
+last_id = int(df.iloc[-1]["id"])
+next_period = last_id + 1
+print(f">>> 数据就绪: 基石 {len(df)} 期 | 最新期号: {last_id} | 目标期号: {next_period}")
+
+# ==========================================
+# 3. 统计特征提取算法 (增强鲁棒性)
+# ==========================================
+def extract_features(data):
+    all_reds = []
+    all_blues = []
+    for _, row in data.iterrows():
+        reds = [int(row[f"r{i}"]) for i in range(1, 7)]
+        all_reds.extend(reds)
+        all_blues.append(int(row["b"]))
+    
+    red_freq = Counter(all_reds)
+    blue_freq = Counter(all_blues)
+    
+    # 动态阈值判定：避免在样本极少时出现全集皆冷号的逻辑死锁
+    if len(data) <= 5:
+        # 当样本过少时，出现过的即为热号，未出现的为冷号
+        hot_reds = [k for k, v in red_freq.most_common(10)]
+        cold_reds = [i for i in range(1, 34) if i not in hot_reds]
+        hot_blues = [k for k, v in blue_freq.most_common(5)]
+        cold_blues = [i for i in range(1, 17) if i not in hot_blues]
+    else:
+        # 标准样本量下的统计逻辑
+        hot_reds = [k for k, v in red_freq.most_common(10)]
+        cold_reds = [i for i in range(1, 34) if red_freq.get(i, 0) <= 1]
+        hot_blues = [k for k, v in blue_freq.most_common(5)]
+        cold_blues = [i for i in range(1, 17) if blue_freq.get(i, 0) <= 1]
+    
+    last_row = data.iloc[-1]
+    last_reds = sorted([int(last_row[f"r{i}"]) for i in range(1, 7)])
+    last_blue = int(last_row["b"])
+    
+    # 连号率统计
+    consec_count = 0
+    for _, row in data.tail(5).iterrows():
+        nums = sorted([int(row[f"r{i}"]) for i in range(1, 7)])
+        for i in range(len(nums) - 1):
+            if nums[i+1] - nums[i] == 1:
+                consec_count += 1
+    
+    # 三区比例计算
+    zone1 = sum(1 for x in all_reds if 1 <= x <= 11)
+    zone2 = sum(1 for x in all_reds if 12 <= x <= 22)
+    zone3 = sum(1 for x in all_reds if 23 <= x <= 33)
+    total = zone1 + zone2 + zone3 if zone1 + zone2 + zone3 > 0 else 1
+    
+    return {
+        "hot_reds": sorted(hot_reds),
+        "cold_reds": sorted(cold_reds),
+        "hot_blues": sorted(hot_blues),
+        "cold_blues": sorted(cold_blues),
+        "last_reds": last_reds,
+        "last_blue": last_blue,
+        "consec_rate": consec_count,
+        "zone_ratio": f"{zone1/total*100:.0f}% / {zone2/total*100:.0f}% / {zone3/total*100:.0f}%",
+    }
+
+features_30 = extract_features(latest_30)
+features_10 = extract_features(latest_10)
+
+# ==========================================
+# 4. 构建高质量进化版 Prompt 文本
+# ==========================================
+raw_data_str = latest_10[["id","r1","r2","r3","r4","r5","r6","b"]].to_string(index=False)
+
+prompt_lines = [
+    f"你是 Antigravity V7.0 高维推演核心。你的任务是基于中国双色球的统计特征，为第 {next_period} 期生成科学的预测序列。",
+    "",
+    "## 绝对约束:",
+    "1. 红球 6 个，范围 1-33，不重复，升序排列",
+    "2. 蓝球 1 个，范围 1-16",
+    "3. 奇偶比维持在 2:4 到 4:2 之间",
+    "4. 大小比 (以17为界) 维持在 2:4 到 4:2 之间",
+    "5. 三区 (1-11/12-22/23-33) 每区至少出现 1 个号码",
+    "6. 至少包含 1 组连号 (相邻数字)",
+    "",
+    "## 统计基石 (最近 30 期分析):",
+    f"- 红球热号: {features_30['hot_reds']}",
+    f"- 红球冷号: {features_30['cold_reds']}",
+    f"- 蓝球热号: {features_30['hot_blues']}",
+    f"- 蓝球冷号: {features_30['cold_blues']}",
+    f"- 最近一期开奖: 红 {features_30['last_reds']} 蓝 {features_30['last_blue']}",
+    f"- 近5期连号出现次数: {features_30['consec_rate']}",
+    f"- 三区分布比: {features_30['zone_ratio']}",
+    "",
+    "## 近10期详细数据:",
+    raw_data_str,
+    "",
+    "## 031 期复盘教训:",
+    "- 真实开奖: [3, 10, 12, 13, 18, 33] + 8",
+    "- 10组预测平均仅命中 1.3 个红球，蓝球全灭",
+    "- 教训: 不要过度集中在热号，必须给冷号留空间；蓝球需独立深度分析",
+    "",
+    "## 输出要求:",
+    "生成 5 组预测，每组格式严格为:",
+    "组N: [r1, r2, r3, r4, r5, r6] + 蓝球"
+]
+evolved_prompt = "\n".join(prompt_lines)
+
+# ==========================================
+# 5. 序列化物料写入 v7_evolved_prompt.json
+# ==========================================
+payload = {
+    "target_period": str(next_period),
+    "prompt": evolved_prompt,
+    "features_30": features_30,
+    "features_10": features_10,
+    "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    "engine_version": "V7.0-Evolved"
+}
+
+try:
+    with open(os.path.join(BASE_DIR, "v7_evolved_prompt.json"), "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    print(f">>> [同步完成] 重新校准的 Prompt 物料已顺利生成并写入 v7_evolved_prompt.json")
+except Exception as e:
+    print(f"[严重错误] 写入 v7_evolved_prompt.json 失败: {e}")
+
+# ==========================================
+# 6. 本地模拟 Agent 独立推演
+# ==========================================
+print(f"\n{'='*60}")
+print(f"   🧠 Agent 核心推演模式就绪")
+print(f"   目标: {next_period} 期 | 引擎: Antigravity V7.0")
+print(f"{'='*60}")
+
+random.seed(int(datetime.now().timestamp()))
+
+def generate_prediction(hot_reds, cold_reds, hot_blues, cold_blues, strategy="balanced"):
+    pool = list(range(1, 34))
+    
+    if strategy == "hot_core" and hot_reds:
+        base = random.sample(hot_reds, min(len(hot_reds), 3))
+        available_cold = [x for x in cold_reds if x not in base]
+        supplement = random.sample(available_cold, min(len(available_cold), 3)) if available_cold else []
+        reds = sorted(set(base + supplement))
+    elif strategy == "cold_strike" and cold_reds:
+        base = random.sample(cold_reds, min(len(cold_reds), 4))
+        available_hot = [x for x in hot_reds if x not in base]
+        supplement = random.sample(available_hot, min(len(available_hot), 2)) if available_hot else []
+        reds = sorted(set(base + supplement))
+    else:
+        # 均衡或兜底策略
+        sample_hot = random.sample(hot_reds, min(len(hot_reds), 3)) if hot_reds else []
+        sample_cold = random.sample(cold_reds, min(len(cold_reds), 3)) if cold_reds else []
+        reds = sorted(set(sample_hot + sample_cold))
+
+    # 动态填补直至满足 6 个不重复红球
+    while len(reds) < 6:
+        extra = random.choice([x for x in pool if x not in reds])
+        reds.append(extra)
+        reds = sorted(reds)
+        
+    blue = random.choice(cold_blues) if cold_blues else random.randint(1, 16)
+    return reds[:6], blue
+
+strategies = [
+    ("hot_core", "热号骨架+冷号回补"),
+    ("hot_core", "热号骨架+冷号回补(变体)"),
+    ("balanced", "热冷均衡策略"),
+    ("cold_strike", "冷号反击策略"),
+    ("balanced", "自由覆盖组合"),
+]
+
+agent_predictions = []
+for i, (strat, desc) in enumerate(strategies, 1):
+    reds, blue = generate_prediction(
+        features_30["hot_reds"], features_30["cold_reds"],
+        features_30["hot_blues"], features_30["cold_blues"],
+        strategy=strat
+    )
+    agent_predictions.append({"组别": f"第{i}组", "策略": desc, "红球": reds, "蓝球": blue})
+    print(f"   组{i} [{desc}]: {reds} + {blue}")
+
+decision_output = {
+    "target_period": str(next_period),
+    "engine_version": "V7.0-Evolved",
+    "predictions": agent_predictions,
+}
+
+try:
+    with open(os.path.join(BASE_DIR, "latest_decision.json"), "w", encoding="utf-8") as f:
+        json.dump(decision_output, f, ensure_ascii=False, indent=2)
+    print(f"\n>>> 决策完毕。预测数据已同步存入 E:\\享中\\latest_decision.json")
+except Exception as e:
+    print(f"[严重错误] 写入 latest_decision.json 失败: {e}")

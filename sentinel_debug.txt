@@ -1,0 +1,3 @@
+Sentinel starting...
+My count is 2
+Exiting because my_count > 1

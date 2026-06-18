@@ -2,54 +2,99 @@ import os
 import subprocess
 import time
 import socket
+import sys
 
-# [Antigravity Omega - 天基自愈哨兵 V3.0]
-# 职责：监控核心组件，执行防多开清剿，维护唯一生命通道。
+# 重定向 stdout 和 stderr 到文件，防止在无控制台（SW_HIDE）下崩溃，同时保留日志
+log_file = open(r"E:\享中\sentinel_runtime.log", "a", encoding="utf-8")
+sys.stdout = log_file
+sys.stderr = log_file
+
+BASE_DIR = r"e:\享中"
+VENV_PYTHON = os.path.join(BASE_DIR, ".venv", "Scripts", "pythonw.exe")
 
 def check_port(port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.settimeout(1)
     result = sock.connect_ex(('127.0.0.1', port))
     sock.close()
     return result == 0
 
-def clean_and_respawn(process_name, script_path):
-    print(f"[Sentinel] 侦测到 {process_name} 异常或断联，执行天基扫荡...")
-    # 暴力清理所有重名进程，防止精神分裂
-    subprocess.run(["powershell", "-Command", f"Get-Process python -ErrorAction SilentlyContinue | Where-Object {{ $_.CommandLine -match '{process_name}' }} | Stop-Process -Force"], shell=True)
-    time.sleep(1)
-    print(f"[Sentinel] 正在拉起纯净唯一的生命线: {process_name}")
-    subprocess.Popen(["python", script_path], creationflags=subprocess.CREATE_NO_WINDOW)
+def count_process(script_name):
+    """用 wmic 检查某个脚本的运行实例数"""
+    try:
+        output = subprocess.check_output(
+            ["wmic", "process", "where", "name='python.exe' or name='pythonw.exe'", "get", "CommandLine"],
+            stderr=subprocess.DEVNULL, timeout=5
+        ).decode('utf-8', errors='ignore')
+        return sum(1 for line in output.splitlines() if script_name in line)
+    except Exception:
+        return -1
+
+def kill_process(script_name):
+    """精准杀掉匹配的进程，绝不误伤"""
+    try:
+        output = subprocess.check_output(
+            ["wmic", "process", "where", "name='python.exe' or name='pythonw.exe'", "get", "CommandLine,ProcessId"],
+            stderr=subprocess.DEVNULL, timeout=5
+        ).decode('utf-8', errors='ignore')
+        for line in output.splitlines():
+            if script_name in line:
+                parts = line.strip().split()
+                pid = parts[-1]
+                if pid.isdigit():
+                    subprocess.run(["taskkill", "/f", "/pid", pid], capture_output=True)
+    except Exception:
+        pass
+
+def spawn(script_path):
+    """拉起一个干净的隐藏进程"""
+    subprocess.Popen(
+        [VENV_PYTHON, script_path],
+        creationflags=subprocess.CREATE_NO_WINDOW,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL
+    )
 
 def heal_system():
-    base_dir = r"e:\享中"
-    
-    # 1. 监控 127.0.0.1:8501 (观测塔)
+    # 1. 监控 TG Remote Hub (进程检测)
+    tg_count = count_process("tg_remote_hub.py")
+    if tg_count == 0:
+        spawn(os.path.join(BASE_DIR, "skills", "tg_remote_hub.py"))
+    elif tg_count > 1:
+        kill_process("tg_remote_hub.py")
+        time.sleep(2)
+        spawn(os.path.join(BASE_DIR, "skills", "tg_remote_hub.py"))
+
+    # 2. 监控 127.0.0.1:12654 (无限算力代理)
+    if not check_port(12654):
+        api_count = count_process("local_api_proxy.py")
+        if api_count == 0:
+            spawn(os.path.join(BASE_DIR, "local_api_proxy.py"))
+        elif api_count > 1:
+            kill_process("local_api_proxy.py")
+            time.sleep(2)
+            spawn(os.path.join(BASE_DIR, "local_api_proxy.py"))
+
+    # 3. 监控观测塔 (端口 8501)
     if not check_port(8501):
-        clean_and_respawn("app.py", os.path.join(base_dir, "app.py"))
-        
-    # 2. 监控 127.0.0.1:8083 (无限算力代理)
-    if not check_port(8083):
-        clean_and_respawn("local_api_proxy.py", os.path.join(base_dir, "local_api_proxy.py"))
-    
-    # 3. 监控 Cloud Hermes 主脑 (通过进程检测)
-    # 获取 cloud_hermes 的进程数量
-    try:
-        output = subprocess.check_output(["powershell", "-Command", "(Get-Process python -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -match 'cloud_hermes.py' }).Count"]).decode().strip()
-        count = int(output) if output else 0
-    except:
-        count = 0
-        
-    if count == 0:
-        clean_and_respawn("cloud_hermes.py", os.path.join(base_dir, "skills", "cloud_hermes.py"))
-    elif count > 1:
-        print("[Sentinel] 警报！Cloud Hermes 发生多开精神分裂！执行肃清...")
-        clean_and_respawn("cloud_hermes.py", os.path.join(base_dir, "skills", "cloud_hermes.py"))
+        streamlit_exe = os.path.join(BASE_DIR, ".venv", "Scripts", "streamlit.exe")
+        app_py = os.path.join(BASE_DIR, "app.py")
+        if os.path.exists(streamlit_exe):
+            app_count = count_process("app.py")
+            if app_count > 0:
+                kill_process("app.py")
+                time.sleep(1)
+            subprocess.Popen(
+                [streamlit_exe, "run", app_py, "--server.port", "8501", "--server.headless", "true"],
+                creationflags=subprocess.CREATE_NO_WINDOW,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL
+            )
 
 if __name__ == "__main__":
-    print("[Antigravity] Sentinel V3.0 (自愈装甲) - 永恒守望中...")
     while True:
         try:
             heal_system()
-        except Exception as e:
-            print("[Sentinel] 哨兵核心受损:", e)
-        time.sleep(30) # 每30秒执行一次全维体检
+        except Exception:
+            pass
+        time.sleep(30)

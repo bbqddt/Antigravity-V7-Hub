@@ -1,0 +1,8 @@
+{
+  "strategies": {
+    "hot_core": {"weight": 1.0, "total_hits": 0, "usage_count": 0},
+    "cold_strike": {"weight": 1.0, "total_hits": 0, "usage_count": 0},
+    "balanced": {"weight": 1.0, "total_hits": 0, "usage_count": 0}
+  },
+  "last_period_evaluated": 26066
+}

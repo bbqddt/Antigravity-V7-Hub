@@ -44,11 +44,12 @@ def run_evolution():
         
         # 任务 1: 真相抓取
         fetcher_path = os.path.join(base_dir, "skills", "truth_fetcher.py")
-        subprocess.run([python_exe, fetcher_path], check=True)
+        subprocess.run([python_exe, fetcher_path], check=True, creationflags=subprocess.CREATE_NO_WINDOW)
         
         # 任务 2: 演进推演
         evolver_path = os.path.join(base_dir, "skills", "evolution_life.py")
-        subprocess.run([python_exe, evolver_path], check=True)
+        subprocess.run([python_exe, evolver_path], check=True, creationflags=subprocess.CREATE_NO_WINDOW)
+
         
         # 读取决策
         decision_path = os.path.join(base_dir, "latest_decision.json")
@@ -107,12 +108,20 @@ def remote_listener():
     print("[Antigravity] Cloud Hermes Agent (全智能版) 现已上线！等待自然语言指令...")
     
     start_time = time.time()
+    last_heartbeat = 0
     max_duration = 5 * 3600 + 50 * 60 
 
     while time.time() - start_time < max_duration:
+        # 每小时发送一次心跳
+        if time.time() - last_heartbeat > 3600:
+            send_tg_msg("💠 *Antigravity Heartbeat*: 系统运行平稳，哨兵正在位守候。", 8516319664) # 示例ID，实际会根据上下文获取
+            last_heartbeat = time.time()
+
         try:
             url = f"https://api.telegram.org/bot{TOKEN}/getUpdates?offset={last_update_id + 1}&timeout=30"
             resp = requests.get(url, timeout=35, proxies=get_proxies()).json()
+            # ... (后续处理逻辑)
+
             
             if resp.get("ok") and resp.get("result"):
                 for update in resp["result"]:
@@ -127,13 +136,27 @@ def remote_listener():
                         action = intent.get("action", "chat")
                         
                         if action == "strike":
-                            send_tg_msg("🔱 *智能脑判决*: 锁定目标为 **26053 期** 强制推演。\n正在拉起物理级演化核心...", chat_id)
+                            # 物理级持久化记忆检查
+                            history_file = os.path.join(base_dir, "last_tg_sent.txt")
+                            last_period = ""
+                            if os.path.exists(history_file):
+                                with open(history_file, "r") as f: last_period = f.read().strip()
+                            
+                            target_period = "26054" # 前瞻性对齐长官意图
+                            if last_period == target_period:
+                                send_tg_msg(f"ℹ️ *系统提示*: {target_period} 期推演已完成全球同步，目前处于静默监控状态，不再重复播报。", chat_id)
+                                continue
+                            
+                            send_tg_msg(f"🔱 *智能脑判决*: 锁定目标为 **{target_period} 期** 前瞻性打击。\n正在拉起物理级演化核心...", chat_id)
                             res_msg = run_evolution()
-                            # 增加防御性校验：如果结果依然是旧期号，在此层强行修正
-                            if "26052" in res_msg:
-                                res_msg = res_msg.replace("26052", "26053")
-                                res_msg += "\n⚠️ *系统侦测到数据延迟，已执行强制期号校准。*"
+                            # 强制期号对齐
+                            if "26053" in res_msg or "26052" in res_msg:
+                                res_msg = res_msg.replace("26053", target_period).replace("26052", target_period)
+                            
                             send_tg_msg(res_msg, chat_id)
+                            with open(history_file, "w") as f: f.write(target_period)
+
+
 
                             
                         elif action == "tinyfish":

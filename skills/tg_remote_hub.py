@@ -1,133 +1,187 @@
-import requests
+"""
+Antigravity Hermes Agent V8.3
+使用 python-telegram-bot + httpx[socks] 彻底解决 SSL EOF 问题。
+"""
+
+import asyncio
 import json
 import os
-import time
+import re
 import subprocess
 import sys
+import ctypes
+import time
+import logging
 
-# [Antigravity V1000.0 Omega] Telegram Remote Hub
+from telegram import Update
+from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+from telegram.request import HTTPXRequest
+
+log_file = open(r"E:\享中\tg_runtime.log", "a", encoding="utf-8")
+sys.stdout = log_file
+sys.stderr = log_file
+
 TOKEN_FILE = r"E:\享中\token_tg.txt"
+BASE_DIR = r"E:\享中"
+VENV_PYTHON = os.path.join(BASE_DIR, ".venv", "Scripts", "python.exe")
+V8_CORE = os.path.join(BASE_DIR, "Antigravity_V8_Core.py")
+DECISION_FILE = os.path.join(BASE_DIR, "latest_decision_v8.json")
 
-# [Antigravity] 代理生命线配置
-PROXIES = {"http": "http://127.0.0.1:10808", "https": "http://127.0.0.1:10808"}
+# 候选代理: socks5h 优先（让代理解析 DNS）
+PROXY_LIST = [
+    "socks5://127.0.0.1:10808",
+    "socks5://127.0.0.1:7890",
+    "socks5://127.0.0.1:1080",
+    "http://127.0.0.1:10808",
+    "http://127.0.0.1:7890",
+]
+
 
 def load_config():
-    if os.path.exists(TOKEN_FILE):
-        with open(TOKEN_FILE, "r") as f:
-            return json.load(f)
-    return None
+    with open(TOKEN_FILE, "r") as f:
+        return json.load(f)
 
-def send_tg_msg(text):
-    config = load_config()
-    if not config: return
-    url = f"https://api.telegram.org/bot{config['token']}/sendMessage"
-    payload = {"chat_id": config['chat_id'], "text": text, "parse_mode": "Markdown"}
-    try: requests.post(url, json=payload, proxies=PROXIES, timeout=15)
-    except: pass
 
-def send_tg_photo(photo_path, caption):
-    config = load_config()
-    if not config: return
-    url = f"https://api.telegram.org/bot{config['token']}/sendPhoto"
-    try:
-        with open(photo_path, 'rb') as photo:
-            payload = {"chat_id": config['chat_id'], "caption": caption, "parse_mode": "Markdown"}
-            files = {"photo": photo}
-            requests.post(url, data=payload, files=files, proxies=PROXIES, timeout=30)
-    except: pass
+def trigger_local_alert(title, msg):
+    ctypes.windll.user32.MessageBoxW(0, msg, title, 0x40000 | 0x00000040)
 
-def get_public_url():
-    """多级寻址：优先读取人工配置，次选自动探测"""
-    if os.path.exists("tunnel_url.txt"):
-        with open("tunnel_url.txt", "r") as f:
-            return f.read().strip()
-    try:
-        resp = requests.get("http://127.0.0.1:4040/api/tunnels", timeout=2)
-        return resp.json()['tunnels'][0]['public_url']
-    except:
-        return "Tunnel-Offline (Please send Ngrok URL to Bot)"
 
-def remote_listener():
-    """[Hermes-Omega] 远程指挥中枢"""
-    config = load_config()
-    if not config: return
-    
-    last_update_id = 0
-    print("[Antigravity] Hermes Agent is now online. Waiting for instructions...")
-    
-    while True:
+def sniff_proxy_sync():
+    """同步嗅探：用 httpx 直接测试各代理，返回第一个可用的"""
+    import httpx
+    for proxy in PROXY_LIST:
         try:
-            url = f"https://api.telegram.org/bot{config['token']}/getUpdates?offset={last_update_id + 1}&timeout=30"
-            resp = requests.get(url, timeout=35).json()
-            
-            if resp.get("ok") and resp.get("result"):
-                for update in resp["result"]:
-                    last_update_id = update["update_id"]
-                    if "message" in update and "text" in update["message"]:
-                        raw_cmd = update["message"]["text"]
-                        cmd = raw_cmd.lower()
-                        
-                        # --- 链路自愈逻辑：人工领路 (精准过滤) ---
-                        if "http" in cmd and any(x in cmd for x in [".ngrok-free.app", ".ngrok.io", ".loca.lt"]):
-                            if "dashboard.ngrok.com" in cmd:
-                                send_tg_msg("⚠️ *Hermes 提示*: 这是管理后台链接。请发给我就那个黑窗口里显示的 `https://...ngrok-free.app` 地址。")
-                                continue
-                            
-                            with open("tunnel_url.txt", "w") as f:
-                                f.write(raw_cmd.strip())
-                            send_tg_msg(f"🔱 *Hermes 报告*: 公网隧道已真实锚定！\n新入口: {raw_cmd.strip()}")
-                            continue
+            with httpx.Client(proxy=proxy, timeout=5, verify=False) as client:
+                r = client.get("https://api.telegram.org")
+                if r.status_code == 200:
+                    print(f"[嗅探雷达] 可用通道: {proxy}", flush=True)
+                    return proxy
+        except Exception:
+            pass
+    # 尝试直连
+    try:
+        import httpx
+        with httpx.Client(timeout=5) as client:
+            r = client.get("https://api.telegram.org")
+            if r.status_code == 200:
+                print("[嗅探雷达] 直连成功", flush=True)
+                return None  # None 表示不需要代理
+    except Exception:
+        pass
+    print("[嗅探雷达] 所有通道不可用", flush=True)
+    return "DEAD"
 
-                        public_link = get_public_url()
-                        
-                        if "/strike" in cmd or "执行计划" in cmd or "计算" in cmd or "下期" in cmd:
-                            send_tg_msg(f"🔱 *Hermes Agent V8.0 确认*: 侦测到强计算指令『{raw_cmd}』。\n正在切断所有外部弱智通用大模型 (LLM) 的干扰。\n强制启动本地 [Evolution Life] 核心进行流形演算...")
-                            
-                            try:
-                                # 先抓取最新真相数据
-                                subprocess.run([sys.executable, r"e:\享中\skills\truth_fetcher.py"], check=True)
-                                # 执行本地演进生命核心
-                                subprocess.run([sys.executable, r"e:\享中\skills\evolution_life.py"], check=True)
-                                
-                                # 读取演算结果
-                                decision_path = r"e:\享中\latest_decision.json"
-                                if os.path.exists(decision_path):
-                                    with open(decision_path, "r", encoding='utf-8') as f:
-                                        res = json.load(f)
-                                    msg = (
-                                        f"💠 *Antigravity V8.0 演算完毕*\n"
-                                        f"🎯 目标期号: `{res.get('period', '未知')}`\n"
-                                        f"🔴 红球坐标: `{res.get('red', [])}`\n"
-                                        f"🔵 蓝球坐标: `{res.get('blue', '')}`\n"
-                                        f"⚙️ 驱动引擎: `{res.get('engine', 'Evolution Life')}`\n\n"
-                                        f"注: 本次计算全由物理规律推演，拒绝任何形式的道德推脱。\n"
-                                        f"[全知观测塔入口]({public_link})"
-                                    )
-                                    send_tg_msg(msg)
-                                else:
-                                    send_tg_msg("❌ 演算核心输出断裂: 未找到 latest_decision.json。")
-                            except Exception as e:
-                                send_tg_msg(f"❌ 物理对抗内核启动失败: {e}")
-                            
-                        elif "/status" in cmd or "状态" in cmd:
-                            send_tg_msg(f"💠 *Antigravity V8.0 系统当前态势*\n\n公网链路: {public_link}\nHermes Agent: FULLY ARMED\n拦截策略: 100% 屏蔽通用智脑\n[观测塔入口]({public_link})")
-                            
-                        elif cmd.startswith("/goal "):
-                            goal_text = raw_cmd[6:].strip()
-                            with open(r"e:\享中\goals.txt", "a", encoding="utf-8") as gf:
-                                gf.write(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] {goal_text}\n")
-                            send_tg_msg(f"✅ *Hermes 记录*: 目标已持久化归档至主节点 => `{goal_text}`")
-                            
-                        elif "操控" in cmd or "反重力" in cmd:
-                            send_tg_msg("🔱 *战术分析*: 长官，反重力推演计划已全面挂载。目前的推演已引入三区引力摄动。您可以随时发送 `计算` 触发全球同步演化。")
-                        
-                        else:
-                            # 拦截所有其他废话，防止被交给智脑
-                            send_tg_msg("🤖 *Hermes V8.0*: 指令未识别。若需推演坐标，请直接发送 `计算` 或 `/strike`。我不再连接那种会跟你扯法律隐私的废话模型。")
 
-            time.sleep(1)
-        except Exception as e:
-            time.sleep(5)
+def run_v8_and_get_result(group_count):
+    """同步运行 V8 核心，返回 (message_str, raw_str) 或 (None, error_str)"""
+    try:
+        subprocess.run(
+            [VENV_PYTHON, V8_CORE, str(group_count)],
+            cwd=BASE_DIR,
+            timeout=120,
+            check=True
+        )
+        if os.path.exists(DECISION_FILE):
+            with open(DECISION_FILE, "r", encoding="utf-8") as f:
+                res = json.load(f)
+            period = res.get("target_period", "未知")
+            groups = res.get("groups", [])
+            engine = res.get("engine", "V8 Zero-T")
+
+            msg = f"*Antigravity V8 演算完毕*\n目标期号: `{period}`\n\n"
+            raw = f"【期号 {period}】演算完成！\n"
+            for idx, g in enumerate(groups, 1):
+                b = g["blue"]
+                blue_str = f"{int(b):02d}" if str(b).isdigit() else str(b)
+                msg += f"*第{idx}组*: [{g['red']}] | 蓝球 `{blue_str}`\n"
+                raw += f"第{idx}组: 红 {g['red']} | 蓝 {blue_str}\n"
+            msg += f"\n引擎: `{engine}`"
+            return msg, raw
+        else:
+            return None, "演算完成但未找到 latest_decision_v8.json"
+    except Exception as e:
+        return None, f"V8 核心启动失败: {e}"
+
+
+async def cmd_strike(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    raw_cmd = update.message.text
+    cmd = raw_cmd.lower()
+    match = re.search(r"计算(\d+)组", cmd)
+    group_count = int(match.group(1)) if match else 3
+
+    await update.message.reply_text(
+        f"*Hermes Agent V8.3 确认*: 收到 `{raw_cmd}`\n"
+        f"正在启动 V8 物理引擎，目标组数：{group_count}...",
+        parse_mode="Markdown"
+    )
+
+    loop = asyncio.get_event_loop()
+    tg_msg, raw_msg = await loop.run_in_executor(None, run_v8_and_get_result, group_count)
+
+    if tg_msg:
+        await update.message.reply_text(tg_msg, parse_mode="Markdown")
+    else:
+        await update.message.reply_text(f"演算失败: {raw_msg}")
+        trigger_local_alert("Antigravity 警报", raw_msg)
+
+
+async def cmd_status(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    url_file = os.path.join(BASE_DIR, "tunnel_url.txt")
+    public_url = open(url_file).read().strip() if os.path.exists(url_file) else "Tunnel-Offline"
+    await update.message.reply_text(
+        f"*Antigravity V8.3 系统态势*\n"
+        f"Hermes Agent: ONLINE\n"
+        f"公网链路: {public_url}\n"
+        f"引擎: V8 Zero-T (物理张力版)",
+        parse_mode="Markdown"
+    )
+
+
+async def msg_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    text = update.message.text.lower()
+    if "/strike" in text or "执行" in text or "计算" in text:
+        await cmd_strike(update, context)
+    elif "/status" in text or "状态" in text:
+        await cmd_status(update, context)
+    else:
+        await update.message.reply_text(
+            "*Hermes V8*: 发送 `计算N组` 或 `/strike` 开始演算",
+            parse_mode="Markdown"
+        )
+
+
+def main():
+    config = load_config()
+    token = config["token"]
+
+    # 嗅探代理
+    proxy_url = sniff_proxy_sync()
+    if proxy_url == "DEAD":
+        print("[警告] 无可用代理，尝试直连启动 Bot（可能失败）", flush=True)
+        proxy_url = None  # 尝试直连
+
+    print(f"[启动] 使用代理: {proxy_url}", flush=True)
+
+    # 用 httpx 的 socks 代理构建 Request 对象
+    if proxy_url:
+        request = HTTPXRequest(proxy=proxy_url)
+    else:
+        request = HTTPXRequest()
+
+    app = (
+        Application.builder()
+        .token(token)
+        .request(request)
+        .build()
+    )
+
+    app.add_handler(CommandHandler("strike", cmd_strike))
+    app.add_handler(CommandHandler("status", cmd_status))
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, msg_handler))
+
+    print("[Antigravity] Hermes Agent V8.3 正在启动 polling...", flush=True)
+    app.run_polling(allowed_updates=Update.ALL_TYPES)
+
 
 if __name__ == "__main__":
-    remote_listener()
+    main()

@@ -1,18 +1,18 @@
 @echo off
-title [ANTIGRAVITY] TG å“¨å…µä¸€é”®é‡å¯
+title [ANTIGRAVITY] TG ÉÚ±øÒ»¼üÖØÆô
 color 0c
 echo ======================================================
-echo           ANTIGRAVITY OMEGA | TG å“¨å…µä¿®å¤ç¨‹åº
+echo           ANTIGRAVITY OMEGA | TG ÉÚ±øĞŞ¸´³ÌĞò
 echo ======================================================
-echo [SYSTEM] æ­£åœ¨è‚ƒæ¸…æ—§è¿›ç¨‹...
+echo [SYSTEM] ÕıÔÚËàÇå¾É½ø³Ì...
 taskkill /f /im python.exe /fi "WINDOWTITLE eq [Antigravity]*" >nul 2>&1
 powershell -Command "Get-Process python -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -match 'cloud_hermes.py' } | Stop-Process -Force"
 
-echo [SYSTEM] æ­£åœ¨é‡æ–°æ³¨å…¥ Venv ç¯å¢ƒ...
-cd /d "e:\äº«ä¸­"
-start /min "" "e:\äº«ä¸­\.venv\Scripts\python.exe" "e:\äº«ä¸­\skills\cloud_hermes.py"
+echo [SYSTEM] ÕıÔÚÖØĞÂ×¢Èë Venv »·¾³...
+cd /d "e:\ÏíÖĞ"
+start /min "" "e:\ÏíÖĞ\.venv\Scripts\python.exe" "e:\ÏíÖĞ\skills\cloud_hermes.py"
 
-echo [SUCCESS] TG å“¨å…µå·²åœ¨åå°é‡æ–°ä¸Šçº¿!
-echo [TIP] è¯·å‰å¾€ Telegram å‘é€ /strike æµ‹è¯•ã€‚
+echo [SUCCESS] TG ÉÚ±øÒÑÔÚºóÌ¨ÖØĞÂÉÏÏß!
+echo [TIP] ÇëÇ°Íù Telegram ·¢ËÍ /strike ²âÊÔ¡£
 timeout /t 3
 exit
