@@ -1,0 +1,14 @@
+{
+    "period": "26049",
+    "red": [
+        4,
+        10,
+        14,
+        19,
+        25,
+        29
+    ],
+    "blue": 7,
+    "engine": "Evolution Life V1.0 (RandomForest + Spectral)",
+    "status": "Awaiting Verification"
+}

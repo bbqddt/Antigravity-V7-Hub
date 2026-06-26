@@ -1,0 +1,70 @@
+{
+  "target_period": 26067,
+  "predictions": [
+    {
+      "group": 1,
+      "strategy": "cold_strike",
+      "reds": [
+        2,
+        12,
+        17,
+        27,
+        28,
+        33
+      ],
+      "blue": 14
+    },
+    {
+      "group": 2,
+      "strategy": "hot_core",
+      "reds": [
+        2,
+        9,
+        12,
+        18,
+        28,
+        33
+      ],
+      "blue": 12
+    },
+    {
+      "group": 3,
+      "strategy": "cold_strike",
+      "reds": [
+        12,
+        17,
+        22,
+        29,
+        30,
+        33
+      ],
+      "blue": 8
+    },
+    {
+      "group": 4,
+      "strategy": "cold_strike",
+      "reds": [
+        4,
+        12,
+        15,
+        28,
+        30,
+        32
+      ],
+      "blue": 14
+    },
+    {
+      "group": 5,
+      "strategy": "hot_core",
+      "reds": [
+        2,
+        7,
+        12,
+        19,
+        24,
+        33
+      ],
+      "blue": 6
+    }
+  ]
+}

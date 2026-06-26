@@ -1,0 +1,54 @@
+0:05:45 Widget Closed: TranslateBubbleView
+0:05:55 Tab1 StartNav47 #renderer-script #auto_subframe
+0:05:56 Tab1 FinishNav47
+0:05:56 Tab1 PageLoad
+0:05:56 Tab1 StartNav48 #renderer-script #auto_subframe
+0:05:56 Tab1 FinishNav48
+0:05:56 Tab1 PageLoad
+0:06:10 Widget Closed: TranslateBubbleView
+0:06:10 TextSelectionChanged
+0:06:11 TextSelectionChanged
+0:06:13 Widget Closed: MenuHost
+0:06:16 Widget Closed: TranslateBubbleView
+0:06:17 TextSelectionChanged
+0:06:18 TextSelectionChanged
+0:06:19 TextSelectionChanged
+0:06:23 Tab2 StartNav49 #renderer-user #link
+0:06:23 Tab2 FinishNav49
+0:06:23 Tab2 StartNav50 #renderer-script #auto_subframe
+0:06:23 Tab2 FinishNav50
+0:06:23 Tab2 PageLoad
+0:06:23 UserEducation.MessageNotShown
+0:06:23 UserEducation.MessageNotShown.IPH_PasswordsSavePrimingPromo
+0:06:23 UserEducation.MessageNotShown.FeatureDisabled
+0:06:25 Tab2 StartNav51 #renderer-user #link
+0:06:25 Tab2 FinishNav51
+0:06:36 Widget Closed: StatusBubble
+0:06:45 Tab2 StartNav52 #renderer-script #link
+0:06:45 Tab2 FinishNav52
+0:06:45 Browser1 Switch from Tab2 to Tab1 at 0
+0:06:45 SwitchTab_Click
+0:06:47 CloseTab_Active
+0:06:47 CloseTab_NoAlertIndicator
+0:06:47 Browser1 Close Tab1 at 0
+0:06:49 Widget Closed: TooltipAura
+0:06:49 NewTab_Button
+0:06:49 NewTab
+0:06:49 Tab3 StartNav53 #ntp #typed
+0:06:49 Browser1 Insert active Tab3 at 1
+0:06:49 Tab3 FinishNav53
+0:06:49 Tab3 StartNav54 #renderer-script #auto_subframe
+0:06:49 Tab3 FinishNav54
+0:06:49 Tab3 PageLoad
+0:06:50 Tab3 PageLoad #ntp
+0:06:50 Tab3 StartNav55 #renderer-script #auto_subframe
+0:06:50 Tab3 FinishNav55
+0:06:51 Tab3 PageLoad
+0:06:54 Tab3 StartNav56 #renderer-script #auto_subframe
+0:06:55 CloseTab_Active
+0:06:55 CloseTab_NoAlertIndicator
+0:06:55 Browser1 Close Tab3 at 1
+0:06:55 Tab3 FinishNav56 ERR_ABORTED
+0:06:55 Widget Closed: TabHoverCardBubbleView
+0:08:20 Widget Closed: StatusBubble
+0:11:25 Browser1 Close Tab2 at 0

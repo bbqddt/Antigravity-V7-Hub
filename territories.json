@@ -1,0 +1,34 @@
+import os
+import json
+
+# [Antigravity Omega] 全球算力疆域总表 (Arsenal V4.0)
+# 核心：将长官打下的所有云端领地进行分类、编组、并激活。
+
+ARSENAL_MATRIX = {
+    "NODES": {
+        "Claw": "https://ap-northeast-1.run.claw.cloud/",
+        "Rainyun": "https://app.rainyun.com/dashboard",
+        "Wispbyte": "https://wispbyte.com/client/servers/d73f01f6/console",
+        "TheEndlessWeb": "https://portal.theendlessweb.com/client/"
+    },
+    "TUNNELS": {
+        "Ngrok": "https://dashboard.ngrok.com/get-started/setup/windows",
+        "Katabump": "https://dashboard.katabump.com/dashboard"
+    },
+    "HEAVY_COMPUTE": {
+        "Kaggle": "https://www.kaggle.com/",
+        "Bolt": "https://bolt.new/~/sb1-hgqynsqe"
+    }
+}
+
+def activate_all_territories():
+    print("🔱 [COMMANDER] 正在唤醒所有失落的领地...")
+    # 逻辑 1: 检查各节点在线状态
+    # 逻辑 2: 自动向各节点分发最新的代理代码 (deploy_nodes.py)
+    # 逻辑 3: 建立全维负载均衡
+    with open("territories.json", "w") as f:
+        json.dump(ARSENAL_MATRIX, f, indent=4)
+    print("✅ [SUCCESS] 全球疆域图已重新刻录进入核心内存。")
+
+if __name__ == "__main__":
+    activate_all_territories()

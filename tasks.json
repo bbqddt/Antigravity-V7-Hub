@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "swarm_name": "Antigravity_Hive",
+  "agents": [
+    {
+      "id": "Scout_01",
+      "role": "侦察兵",
+      "task": "每 6 小时监控一次 CWL 官网数据更新",
+      "action": "python engine.py --mode scout"
+    },
+    {
+      "id": "Quantum_01",
+      "role": "计算核心",
+      "task": "接收侦察数据，进行反重力碰撞计算",
+      "action": "python engine.py --mode compute"
+    },
+    {
+      "id": "Commander_01",
+      "role": "总指挥",
+      "task": "汇总决策并执行点火脚本",
+      "action": "call 点火.bat"
+    }
+  ],
+  "trigger": "on_data_change"
+}

@@ -1,0 +1,16 @@
+=== Antigravity 网络诊断 ===
+
+[1] 测试直连 Telegram API...
+    结果: FAILED - HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=8)
+[2] 代理端口 10808: OK (200)
+
+[3] 读取 TG Token...
+    Token: 8516319664:AAGHq93N4...
+    Chat ID: 784753298
+
+[4] 测试 Bot API 连通性...
+    Bot API: OK - {'ok': True, 'result': {'id': 8516319664, 'is_bot': True, 'first_name': 'bbqddt1', 'username': 'bbqddt1_bot', 'can_join_groups': True, 'can_read_all_group_messages': False, 'supports_inline_queries': False, 'supports_guest_queries': False, 'can_connect_to_business': False, 'has_main_web_app': False, 'has_topics_enabled': False, 'allows_users_to_create_topics': False, 'can_manage_bots': False}}
+
+=== 诊断完成 ===
+直连可用: False
+可用代理端口: 10808
