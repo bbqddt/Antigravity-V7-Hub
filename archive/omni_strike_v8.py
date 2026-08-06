@@ -29,7 +29,7 @@ import time
 from datetime import datetime
 from collections import Counter
 
-DATA_FILE = "ssq_history_full.csv"
+DATA_FILE = "data/ssq_history_full.csv"
 
 # ==================== 武器模块定义 ====================
 
@@ -119,12 +119,24 @@ class HermesBridge:
 class StatisticsCore:
     """统计特征提取核心"""
     @staticmethod
+    def _get_reds(row, cols):
+        """兼容 r1-r6 和 red 两种格式"""
+        if "red" in row:
+            return [int(x.strip()) for x in str(row["red"]).split(",")]
+        return [int(row[f"r{i}"]) for i in range(1, 7)]
+
+    @staticmethod
+    def _get_blue(row):
+        """兼容 b 和 blue 两种格式"""
+        return int(row.get("b", row.get("blue", 0)))
+
+    @staticmethod
     def extract(df, window=30):
         data = df.tail(window)
         all_r, all_b = [], []
         for _, row in data.iterrows():
-            all_r.extend([int(row[f"r{i}"]) for i in range(1,7)])
-            all_b.append(int(row["b"]))
+            all_r.extend(StatisticsCore._get_reds(row, None))
+            all_b.append(StatisticsCore._get_blue(row))
         rf, bf = Counter(all_r), Counter(all_b)
         hot_r = [k for k,_ in rf.most_common(12)]
         warm_r = [k for k,_ in rf.most_common(20) if k not in hot_r]
@@ -134,21 +146,21 @@ class StatisticsCore:
         # 遗漏号
         recent5 = set()
         for _, row in df.tail(5).iterrows():
-            for i in range(1,7): recent5.add(int(row[f"r{i}"]))
+            recent5.update(StatisticsCore._get_reds(row, None))
         missing = [i for i in range(1,34) if i not in recent5]
         # 近期蓝球
-        recent_b = [int(df.iloc[i]["b"]) for i in range(-5,0)]
+        recent_b = [int(StatisticsCore._get_blue(df.iloc[i])) for i in range(-5,0)]
         # 连号率
         consec = 0
         for _, row in data.tail(5).iterrows():
-            nums = sorted([int(row[f"r{i}"]) for i in range(1,7)])
+            nums = sorted(StatisticsCore._get_reds(row, None))
             consec += sum(1 for i in range(len(nums)-1) if nums[i+1]-nums[i]==1)
         return {
             "hot_r": hot_r, "warm_r": warm_r, "cold_r": cold_r,
             "hot_b": hot_b, "cold_b": cold_b,
             "missing": missing, "recent_b": recent_b, "consec": consec,
-            "last_r": sorted([int(df.iloc[-1][f"r{i}"]) for i in range(1,7)]),
-            "last_b": int(df.iloc[-1]["b"])
+            "last_r": sorted(StatisticsCore._get_reds(df.iloc[-1], None)),
+            "last_b": StatisticsCore._get_blue(df.iloc[-1])
         }
 
 def gen_group(hot, warm, cold, missing, sing_nums, strategy, n_hot):

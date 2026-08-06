@@ -1,0 +1,30 @@
+[project]
+name = "antigravity-v8"
+version = "0.1.0"
+description = "Antigravity - 双色球(SSQ)预测系统 V16"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "httpx>=0.28.1",
+    "pandas>=3.0.3",
+    "python-telegram-bot>=22.7",
+    "requests>=2.34.2",
+    # 核心计算
+    "numpy>=1.26",
+    "scipy>=1.14",
+    # 机器学习
+    "scikit-learn>=1.6",
+    # 深度学习 (可选，GPU Inference)
+    "torch>=2.5; sys_platform == 'win32'",
+    # 可视化
+    "matplotlib>=3.10",
+    "seaborn>=0.13",
+    # 前端 (可选，Streamlit Dashboard)
+    "streamlit>=1.44",
+]
+
+[project.optional-dependencies]
+gpu = ["torch>=2.5"]
+llm = ["google-genai", "flask>=3.1"]
+dev = ["pytest>=8.3"]

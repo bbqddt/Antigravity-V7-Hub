@@ -1,6 +1,0 @@
-streamlit
-pandas
-openai
-huggingface_hub
-python-dotenv
-kagglehub

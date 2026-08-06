@@ -1,0 +1,619 @@
+{
+  "alive": {
+    "prim_000037": {
+      "uuid": "prim_000037",
+      "name": "periodic_echo",
+      "category": "temporal",
+      "description": "检测号码出现间隔的周期性 — 有周期性的号码得分高",
+      "parameters": {
+        "window": 28,
+        "decay": 0.95,
+        "min_periods": 3
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000038": {
+      "uuid": "prim_000038",
+      "name": "recency_gradient",
+      "category": "temporal",
+      "description": "计算号码近期vs远期的频率梯度 — 趋势明显的号码得分高",
+      "parameters": {
+        "recent_window": 50,
+        "far_window": 200,
+        "decay": 0.97
+      },
+      "origin": "evolved",
+      "birth_time": "2026-07-25T03:28:27.947405",
+      "performance_history": [],
+      "children": [],
+      "parents": [
+        "prim_000038"
+      ]
+    },
+    "prim_000039": {
+      "uuid": "prim_000039",
+      "name": "seasonal_resonance",
+      "category": "temporal",
+      "description": "检测号码的季节性共振模式 — 跨季节表现一致的号码得分高",
+      "parameters": {
+        "season_size": 50,
+        "n_seasons": 10
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000040": {
+      "uuid": "prim_000040",
+      "name": "cooccurrence_affinity",
+      "category": "relational",
+      "description": "计算号码与共现强关联号码的亲和度 — 与近期号码共现强的得分高",
+      "parameters": {
+        "lookback": 145.28513503738472,
+        "threshold": 0.7106101141531733
+      },
+      "origin": "evolved",
+      "birth_time": "2026-07-25T03:28:26.534216",
+      "performance_history": [],
+      "children": [],
+      "parents": [
+        "prim_000040"
+      ]
+    },
+    "prim_000041": {
+      "uuid": "prim_000041",
+      "name": "mutual_exclusion",
+      "category": "relational",
+      "description": "计算号码的互斥回补潜力 — 与近期号码互斥的号码得分高",
+      "parameters": {
+        "lookback": 100
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000042": {
+      "uuid": "prim_000042",
+      "name": "pair_orbit",
+      "category": "relational",
+      "description": "检测号码对的轨道相位 — 久未配对的号码对即将回归",
+      "parameters": {
+        "lookback": 200
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000043": {
+      "uuid": "prim_000043",
+      "name": "binary_topology",
+      "category": "structural",
+      "description": "分析号码二进制表示的拓扑特征 — 与历史模式匹配的得分高",
+      "parameters": {
+        "lookback": 121
+      },
+      "origin": "evolved",
+      "birth_time": "2026-07-25T03:28:30.635986",
+      "performance_history": [],
+      "children": [],
+      "parents": [
+        "prim_000043"
+      ]
+    },
+    "prim_000044": {
+      "uuid": "prim_000044",
+      "name": "digit_manifold",
+      "category": "structural",
+      "description": "分析号码数位特征的流形结构 — 与历史数位模式匹配的得分高",
+      "parameters": {
+        "lookback": 100
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000045": {
+      "uuid": "prim_000045",
+      "name": "position_signature",
+      "category": "structural",
+      "description": "分析号码在6个位置上的历史分布签名 — 与近期位置模式匹配的得分高",
+      "parameters": {
+        "lookback": 100
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000046": {
+      "uuid": "prim_000046",
+      "name": "spectral_power",
+      "category": "spectral",
+      "description": "分析号码出现序列的频谱功率 — 有显著频率峰值的得分高",
+      "parameters": {
+        "lookback": 200,
+        "min_peaks": 1
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000047": {
+      "uuid": "prim_000047",
+      "name": "wavelet_coherence",
+      "category": "spectral",
+      "description": "分析号码在多尺度上的出现相干性 — 多尺度一致的得分高",
+      "parameters": {
+        "scales": [
+          10,
+          30,
+          60,
+          120
+        ]
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000048": {
+      "uuid": "prim_000048",
+      "name": "sphere_projection",
+      "category": "geometric",
+      "description": "将球面投影分析 — 靠近近期开奖质心的号码得分高",
+      "parameters": {
+        "lookback": 50
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000049": {
+      "uuid": "prim_000049",
+      "name": "distance_cluster",
+      "category": "geometric",
+      "description": "分析号码的距离聚类模式 — 与历史聚类结构一致的得分高",
+      "parameters": {
+        "lookback": 109.86419043781757
+      },
+      "origin": "evolved",
+      "birth_time": "2026-07-25T03:28:30.266912",
+      "performance_history": [],
+      "children": [],
+      "parents": [
+        "prim_000049"
+      ]
+    },
+    "prim_000050": {
+      "uuid": "prim_000050",
+      "name": "attractor_distance",
+      "category": "chaotic",
+      "description": "分析混沌吸引子距离 — 靠近吸引子的号码得分高",
+      "parameters": {
+        "dim": 3,
+        "tau": 5,
+        "lookback": 500
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000051": {
+      "uuid": "prim_000051",
+      "name": "lyapunov_signal",
+      "category": "chaotic",
+      "description": "分析李雅普诺夫信号 — 在收敛窗口内的号码得分高",
+      "parameters": {
+        "lookback": 200,
+        "window": 30
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000052": {
+      "uuid": "prim_000052",
+      "name": "sum_range_tracker",
+      "category": "sequence_pattern",
+      "description": "分析和值区间变化中的号码频率 — 和值即将进入高频率区的号码得分高",
+      "parameters": {
+        "lookback": 200,
+        "n_bins": 6
+      },
+      "origin": "evolved",
+      "birth_time": "2026-07-25T03:28:26.534216",
+      "performance_history": [],
+      "children": [],
+      "parents": [
+        "prim_000052"
+      ]
+    },
+    "prim_000053": {
+      "uuid": "prim_000053",
+      "name": "gap_pattern",
+      "category": "sequence_pattern",
+      "description": "分析号码间隔模式 — 与历史常见间隔模式匹配的号码得分高",
+      "parameters": {
+        "lookback": 200
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000054": {
+      "uuid": "prim_000054",
+      "name": "trend_reversal",
+      "category": "sequence_pattern",
+      "description": "检测号码频率趋势反转点 — 即将反转的号码得分高",
+      "parameters": {
+        "lookback": 100,
+        "reversal_window": 20
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000055": {
+      "uuid": "prim_000055",
+      "name": "modulo_distribution",
+      "category": "combinatorial",
+      "description": "分析号码模类分布 — 在近期表现好的模类号码得分高",
+      "parameters": {
+        "moduli": [
+          3,
+          5,
+          7,
+          11,
+          13
+        ],
+        "lookback": 200
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000056": {
+      "uuid": "prim_000056",
+      "name": "digit_pair_freq",
+      "category": "combinatorial",
+      "description": "分析号码数位对的共现频率 — 数位对高频共现的号码得分高",
+      "parameters": {
+        "lookback": 200
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000057": {
+      "uuid": "prim_000057",
+      "name": "adjacent_bias",
+      "category": "combinatorial",
+      "description": "分析邻号偏置 — 与近期开奖号码相邻的号码得分高",
+      "parameters": {
+        "lookback": 100
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000058": {
+      "uuid": "prim_000058",
+      "name": "skewness_signal",
+      "category": "higher_order",
+      "description": "分析号码频率分布的偏度 — 位于偏度极端的号码得分高",
+      "parameters": {
+        "lookback": 200
+      },
+      "origin": "evolved",
+      "birth_time": "2026-07-25T03:28:26.534216",
+      "performance_history": [],
+      "children": [],
+      "parents": [
+        "prim_000058"
+      ]
+    },
+    "prim_000059": {
+      "uuid": "prim_000059",
+      "name": "kurtosis_signal",
+      "category": "higher_order",
+      "description": "分析号码频率分布的峰度 — 根据峰度自适应选择主导或冷门号码",
+      "parameters": {
+        "lookback": 200
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000060": {
+      "uuid": "prim_000060",
+      "name": "tail_risk",
+      "category": "higher_order",
+      "description": "分析号码频率的尾部风险 — 极端频率号码得分高",
+      "parameters": {
+        "lookback": 200,
+        "tail_threshold": 0.9
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000061": {
+      "uuid": "prim_000061",
+      "name": "lag_correlation",
+      "category": "cross_period_memory",
+      "description": "分析号码的滞后相关性 — 最优滞后阶数条件概率高的号码得分高",
+      "parameters": {
+        "max_lag": 5,
+        "lookback": 200
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000062": {
+      "uuid": "prim_000062",
+      "name": "periodic_gap",
+      "category": "cross_period_memory",
+      "description": "分析号码出现间隔的周期性 — 间隔周期稳定的号码得分高",
+      "parameters": {
+        "lookback": 300
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000063": {
+      "uuid": "prim_000063",
+      "name": "recurrence_window",
+      "category": "cross_period_memory",
+      "description": "分析号码的重现窗口 — 当前遗漏接近历史重现峰值的号码得分高",
+      "parameters": {
+        "lookback": 500
+      },
+      "origin": "evolved",
+      "birth_time": "2026-07-25T03:28:30.635986",
+      "performance_history": [],
+      "children": [],
+      "parents": [
+        "prim_000063"
+      ]
+    },
+    "prim_000064": {
+      "uuid": "prim_000064",
+      "name": "multi_scale_frequency",
+      "category": "multi_scale",
+      "description": "分析号码的多尺度频率 — 尺度间频率差异大的号码得分高",
+      "parameters": {
+        "scales": [
+          10,
+          50,
+          200
+        ]
+      },
+      "origin": "evolved",
+      "birth_time": "2026-07-25T03:28:26.534216",
+      "performance_history": [],
+      "children": [],
+      "parents": [
+        "prim_000064"
+      ]
+    },
+    "prim_000065": {
+      "uuid": "prim_000065",
+      "name": "scale_transition",
+      "category": "multi_scale",
+      "description": "分析号码的频率尺度转换 — 频率趋势一致的号码得分高",
+      "parameters": {
+        "scales": [
+          10,
+          30,
+          100,
+          300
+        ]
+      },
+      "origin": "evolved",
+      "birth_time": "2026-07-25T03:28:30.635986",
+      "performance_history": [],
+      "children": [],
+      "parents": [
+        "prim_000065"
+      ]
+    },
+    "prim_000066": {
+      "uuid": "prim_000066",
+      "name": "environment_aware",
+      "category": "environment_aware",
+      "description": "分析号码的环境适应性 — 在当前环境下表现最好的号码得分高",
+      "parameters": {
+        "lookback": 100
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000067": {
+      "uuid": "prim_000067",
+      "name": "phase_detector",
+      "category": "environment_aware",
+      "description": "检测开奖系统的相位 — 在当前相位表现好的号码得分高",
+      "parameters": {
+        "lookback": 200
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000068": {
+      "uuid": "prim_000068",
+      "name": "regime_switch",
+      "category": "environment_aware",
+      "description": "检测开奖制度转换 — 在当前制度下最优的号码得分高",
+      "parameters": {
+        "lookback": 300,
+        "window": 30
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000069": {
+      "uuid": "prim_000069",
+      "name": "physical_bias",
+      "category": "statistical",
+      "description": "贝叶斯估计号码频率偏差 — 给出每个号码的概率估计",
+      "parameters": {
+        "lookback": null
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000070": {
+      "uuid": "prim_000070",
+      "name": "mutual_information_pair",
+      "category": "information_theory",
+      "description": "计算号码对的互信息 — 条件意外性高的配对得分高",
+      "parameters": {
+        "lookback": 200,
+        "min_samples": 5
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    },
+    "prim_000071": {
+      "uuid": "prim_000071",
+      "name": "residual_signal",
+      "category": "information_theory",
+      "description": "分析频率残差的时间结构 — 从冷变热的加速度号码得分高",
+      "parameters": {
+        "lookback": 266,
+        "short_window": 26
+      },
+      "origin": "evolved",
+      "birth_time": "2026-07-25T03:28:27.947405",
+      "performance_history": [],
+      "children": [],
+      "parents": [
+        "prim_000071"
+      ]
+    },
+    "prim_000072": {
+      "uuid": "prim_000072",
+      "name": "conditional_probability_matrix",
+      "category": "information_theory",
+      "description": "基于条件概率矩阵 — P(n|完整历史向量) 直接建模",
+      "parameters": {
+        "lookback": 200,
+        "history_depth": 5
+      },
+      "origin": "manual",
+      "birth_time": "2026-07-25T03:28:25.745542",
+      "performance_history": [],
+      "children": [],
+      "parents": []
+    }
+  },
+  "archived": {},
+  "eliminated": {},
+  "formula_archive": [
+    {
+      "generation": 1,
+      "best_formula": "gen0_formula3",
+      "best_combined_score": 0.448515,
+      "best_avg_hits": 1.1875,
+      "best_avg_brier": 0.154909,
+      "stable": -0.002664
+    },
+    {
+      "generation": 2,
+      "best_formula": "gen1_formula7",
+      "best_combined_score": 0.433029,
+      "best_avg_hits": 1.1375,
+      "best_avg_brier": 0.159319,
+      "stable": -0.003219
+    },
+    {
+      "generation": 3,
+      "best_formula": "gen2_formula2_cascade",
+      "best_combined_score": 0.44408,
+      "best_avg_hits": 1.1875,
+      "best_avg_brier": 0.157126,
+      "stable": -0.005861
+    },
+    {
+      "generation": 4,
+      "best_formula": "gen3_formula1_cascade",
+      "best_combined_score": 0.44408,
+      "best_avg_hits": 1.1875,
+      "best_avg_brier": 0.157126,
+      "stable": -0.005861
+    },
+    {
+      "generation": 5,
+      "best_formula": "gen4_formula3",
+      "best_combined_score": 0.447061,
+      "best_avg_hits": 1.1625,
+      "best_avg_brier": 0.153969,
+      "stable": -0.003938
+    }
+  ],
+  "stats": {
+    "total_created": 61,
+    "total_eliminated": 0,
+    "best_formula": "gen0_formula3",
+    "best_fitness": 0.448515,
+    "last_updated": "2026-07-25T03:28:30.635986"
+  },
+  "updated_at": "2026-07-25T03:28:30.635986"
+}
