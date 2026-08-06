@@ -131,3 +131,6 @@ Thumbs.db
 
 # Distribution
 antigravity_src.tar.gz
+
+# Nested repos
+hf_space_repo/
