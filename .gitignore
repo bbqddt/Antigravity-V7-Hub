@@ -1,1 +1,29 @@
+# Secrets & API Keys
+keys.json
+.env
+arsenal.json
 token.txt
+token_tg.txt
+physics_constants.json
+
+# Virtual environment
+.venv/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary
+*.tmp
+*.bak
+*.punished
+.aider*
+.env

@@ -1,0 +1,78 @@
+name: Evolution 7x24 (Actions-chain)
+
+# 免费 + 无卡方案：利用 GitHub Actions（Public 仓库无限免费分钟）做"接力式 7x24 持续计算"。
+# 机制：
+#   1) 单次 job 上限 6 小时，本 workflow 跑满 5.5h（--max-runtime 19800）后退出；
+#   2) 末尾把演化状态文件 commit 回仓库（接力续跑的关键），并链式触发下一轮 run；
+#   3) concurrency 保证同一时刻只有一个 run 在跑（新 run 排队等旧 run 结束 → 无缝接力）；
+#   4) schedule 每 6 小时兜底，万一链式中断也能自动重启。
+# 注：本 workflow 只监听 schedule / workflow_dispatch，不监听 push，且 commit 带 [skip ci]，
+#     因此提交状态文件不会触发自身无限递归。
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # 每 6 小时（UTC）兜底触发
+  workflow_dispatch:        # 手动运行 / 链式触发
+
+permissions:
+  contents: write           # 需要写权限以将状态文件 push 回仓库
+
+concurrency:
+  group: evolve-chain
+  cancel-in-progress: false  # 排队而非取消：旧 run 结束后新 run 才起跑，形成无缝接力
+
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360      # 硬上限 6 小时，留出余量给收尾
+    steps:
+      - name: Checkout (含写回权限)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e . || pip install -r requirements_posit.txt
+
+      - name: Run evolution (run-once, 5.5h)
+        # 跑满 5.5 小时后退出交棒；失败则由 schedule 兜底重启
+        run: python cloud_daemon_24x7.py --run-once --max-runtime 19800
+
+      - name: Persist evolution state
+        if: always()           # 即使演化出错也尽量保留已产生的状态
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          FILES="formula_evolution_history.json evolution_performance_log.json learning_state.json latest_prediction.json latest_decision_enhanced.json best_formula.json daemon_state.json cloud_daemon_config.json"
+          for f in $FILES; do [ -f "$f" ] && git add "$f"; done
+          if git diff --cached --quiet; then
+            echo "无状态文件变更，跳过提交"
+          else
+            git commit -m "chore: persist evolution state [skip ci]"
+            git push
+          fi
+
+      - name: Trigger next run (chain)
+        if: success()          # 仅成功时接棒，避免失败也无限链
+        uses: actions/github-script@v7
+        with:
+          script: |
+            try {
+              await github.rest.actions.createWorkflowDispatch({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                workflow_id: 'evolve.yml',
+                ref: context.ref
+              });
+              console.log('已触发下一轮接力 run');
+            } catch (e) {
+              console.log('触发下一轮失败（可能已有 pending run）：' + e.message);
+            }

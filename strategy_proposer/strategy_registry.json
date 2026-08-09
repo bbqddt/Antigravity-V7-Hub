@@ -1,0 +1,571 @@
+{
+  "hypotheses": {
+    "363d5cb6": {
+      "id": "363d5cb6",
+      "template_name": "spectral_cycle",
+      "statement": "Hurst指数在位置1显示0.24的偏离 → 可能存在24期周期",
+      "params": {
+        "n": "1",
+        "period": "24",
+        "hurst": "0.24"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.051258",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "4bfc9348": {
+      "id": "4bfc9348",
+      "template_name": "spectral_cycle",
+      "statement": "Hurst指数在位置2显示0.26的偏离 → 可能存在26期周期",
+      "params": {
+        "n": "2",
+        "period": "26",
+        "hurst": "0.26"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.054782",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "9e83fda3": {
+      "id": "9e83fda3",
+      "template_name": "spectral_cycle",
+      "statement": "Hurst指数在位置3显示0.27的偏离 → 可能存在27期周期",
+      "params": {
+        "n": "3",
+        "period": "27",
+        "hurst": "0.27"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.056784",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "9dacfe5e": {
+      "id": "9dacfe5e",
+      "template_name": "spectral_cycle",
+      "statement": "Hurst指数在位置4显示0.26的偏离 → 可能存在26期周期",
+      "params": {
+        "n": "4",
+        "period": "26",
+        "hurst": "0.26"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.058784",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "caa89cb1": {
+      "id": "caa89cb1",
+      "template_name": "spectral_cycle",
+      "statement": "Hurst指数在位置5显示0.26的偏离 → 可能存在26期周期",
+      "params": {
+        "n": "5",
+        "period": "26",
+        "hurst": "0.26"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.060784",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "6ccf6926": {
+      "id": "6ccf6926",
+      "template_name": "spectral_cycle",
+      "statement": "Hurst指数在位置6显示0.25的偏离 → 可能存在24期周期",
+      "params": {
+        "n": "6",
+        "period": "24",
+        "hurst": "0.25"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.061784",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "ae5b34e4": {
+      "id": "ae5b34e4",
+      "template_name": "spectral_cycle",
+      "statement": "Hurst指数在位置blue显示0.32的偏离 → 可能存在31期周期",
+      "params": {
+        "n": "blue",
+        "period": "31",
+        "hurst": "0.32"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.064289",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "6192be64": {
+      "id": "6192be64",
+      "template_name": "spectral_cycle",
+      "statement": "频谱分析在位置1检测到周期信号 → 偏离=37473.134",
+      "params": {
+        "n": "1",
+        "period": "1873656",
+        "freq": "37473.134"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.066291",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "47697940": {
+      "id": "47697940",
+      "template_name": "spectral_cycle",
+      "statement": "频谱分析在位置2检测到周期信号 → 偏离=58745.565",
+      "params": {
+        "n": "2",
+        "period": "2937278",
+        "freq": "58745.565"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.068291",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "8d1246ee": {
+      "id": "8d1246ee",
+      "template_name": "spectral_cycle",
+      "statement": "频谱分析在位置3检测到周期信号 → 偏离=57685.227",
+      "params": {
+        "n": "3",
+        "period": "2884261",
+        "freq": "57685.227"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.073293",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "a8b7ea23": {
+      "id": "a8b7ea23",
+      "template_name": "spectral_cycle",
+      "statement": "频谱分析在位置4检测到周期信号 → 偏离=79043.748",
+      "params": {
+        "n": "4",
+        "period": "3952187",
+        "freq": "79043.748"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.074798",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "cd0e40ea": {
+      "id": "cd0e40ea",
+      "template_name": "spectral_cycle",
+      "statement": "频谱分析在位置5检测到周期信号 → 偏离=64508.921",
+      "params": {
+        "n": "5",
+        "period": "3225446",
+        "freq": "64508.921"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.076801",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "bbd4d709": {
+      "id": "bbd4d709",
+      "template_name": "spectral_cycle",
+      "statement": "频谱分析在位置6检测到周期信号 → 偏离=39167.744",
+      "params": {
+        "n": "6",
+        "period": "1958387",
+        "freq": "39167.744"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.078801",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "903ad27e": {
+      "id": "903ad27e",
+      "template_name": "spectral_cycle",
+      "statement": "Hurst指数在位置1显示0.25的偏离 → 可能存在25期周期",
+      "params": {
+        "n": "1",
+        "period": "25",
+        "hurst": "0.25"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.080800",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "58f51a86": {
+      "id": "58f51a86",
+      "template_name": "spectral_cycle",
+      "statement": "Hurst指数在位置2显示0.29的偏离 → 可能存在28期周期",
+      "params": {
+        "n": "2",
+        "period": "28",
+        "hurst": "0.29"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.081800",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "181eec47": {
+      "id": "181eec47",
+      "template_name": "spectral_cycle",
+      "statement": "Hurst指数在位置3显示0.29的偏离 → 可能存在29期周期",
+      "params": {
+        "n": "3",
+        "period": "29",
+        "hurst": "0.29"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.084305",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "d4c414bf": {
+      "id": "d4c414bf",
+      "template_name": "spectral_cycle",
+      "statement": "Hurst指数在位置4显示0.29的偏离 → 可能存在29期周期",
+      "params": {
+        "n": "4",
+        "period": "29",
+        "hurst": "0.29"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.088324",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "ccd97006": {
+      "id": "ccd97006",
+      "template_name": "spectral_cycle",
+      "statement": "Hurst指数在位置5显示0.29的偏离 → 可能存在28期周期",
+      "params": {
+        "n": "5",
+        "period": "28",
+        "hurst": "0.29"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.090351",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "3d524b40": {
+      "id": "3d524b40",
+      "template_name": "spectral_cycle",
+      "statement": "Hurst指数在位置6显示0.26的偏离 → 可能存在26期周期",
+      "params": {
+        "n": "6",
+        "period": "26",
+        "hurst": "0.26"
+      },
+      "signals": {
+        "spectral": "nonrandomness_results"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.092349",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    },
+    "7303dc91": {
+      "id": "7303dc91",
+      "template_name": "cooccurrence_pair",
+      "statement": "互信息在位置1-2显示0.352 → 号码间存在非线性依赖",
+      "params": {
+        "n_a": "1-2",
+        "cooccur_freq": "0.352",
+        "expected": "0.09"
+      },
+      "signals": {
+        "cooccurrence": "historical"
+      },
+      "validation_method": "walk_forward",
+      "status": "eliminated",
+      "proposed_at": "2026-07-18T20:08:59.045261",
+      "tested_at": "2026-07-18T20:08:59.109415",
+      "result": {
+        "avg_hits": 0.8542,
+        "std": 0.1391,
+        "p_value": 0.0,
+        "rounds": 8,
+        "beats_random": false,
+        "stable": 0.7151
+      },
+      "elimination_reason": "below_random_baseline",
+      "children": [],
+      "parent_ids": []
+    }
+  },
+  "stats": {
+    "total_proposed": 20,
+    "total_survived": 0,
+    "total_eliminated": 0,
+    "last_updated": "2026-07-18T20:08:59.048262"
+  },
+  "updated_at": "2026-07-18T20:08:59.110415"
+}
