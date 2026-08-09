@@ -83,6 +83,7 @@ class CloudDaemon:
     def __init__(self):
         self.running = True
         self.cycle_count = 0
+        self.consecutive_failures = 0
         self.start_time = datetime.now()
         self.config = self.load_config()
         self.evolution_interval = self.config.get("evolution_interval_hours", 6)
@@ -248,7 +249,17 @@ class CloudDaemon:
                     "output_tail": output[-500:]
                 }
             else:
-                logger.error(f"[FAIL] 第 {self.cycle_count} 轮演化失败: {result.stderr[-500:]}")
+                # 写入完整错误日志供排查
+                error_log = LOG_DIR / f"evolution_error_{self.cycle_count}.log"
+                with open(error_log, 'w', encoding='utf-8') as f:
+                    f.write(f"=== Cycle {self.cycle_count} FAILED ===\n")
+                    f.write(f"Timestamp: {datetime.now().isoformat()}\n")
+                    f.write(f"Return code: {result.returncode}\n")
+                    f.write(f"Elapsed: {elapsed:.1f}s\n")
+                    f.write(f"=== STDOUT ===\n{result.stdout}\n")
+                    f.write(f"=== STDERR ===\n{result.stderr}\n")
+                
+                logger.error(f"[FAIL] 第 {self.cycle_count} 轮演化失败 (详见 {error_log}): {result.stderr[-500:]}")
                 return {
                     "cycle": self.cycle_count,
                     "success": False,
@@ -415,11 +426,11 @@ class CloudDaemon:
         logger.info(f"   种群大小: {self.population_size}")
         logger.info("=" * 60)
         
-        consecutive_failures = 0
+        self.consecutive_failures = 0
         next_evolution = time.time()
         next_backup = time.time() + self.backup_interval * 3600
         next_health = time.time() + self.health_check_interval * 60
-        
+
         # 启动时立即运行一次健康检查
         self.health_check()
         
@@ -430,13 +441,13 @@ class CloudDaemon:
             if now >= next_evolution:
                 result = self.run_evolution_cycle()
                 if result.get("success"):
-                    consecutive_failures = 0
+                    self.consecutive_failures = 0
                     self.push_results()
                 else:
-                    consecutive_failures += 1
-                    logger.warning(f"[WARN] 连续失败: {consecutive_failures}")
-                    
-                    if consecutive_failures >= 3:
+                    self.consecutive_failures += 1
+                    logger.warning(f"[WARN] 连续失败: {self.consecutive_failures}")
+
+                    if self.consecutive_failures >= 3:
                         logger.error("[CRASH] 连续失败 3 次，尝试自动恢复...")
                         self.attempt_recovery()
                 
@@ -475,17 +486,17 @@ class CloudDaemon:
 
         self.health_check()
         deadline = time.time() + max_runtime
-        consecutive_failures = 0
+        self.consecutive_failures = 0
 
         while time.time() < deadline:
             result = self.run_evolution_cycle()
             if result.get("success"):
-                consecutive_failures = 0
+                self.consecutive_failures = 0
                 self.push_results()
             else:
-                consecutive_failures += 1
-                logger.warning(f"[WARN] 连续失败: {consecutive_failures}")
-                if consecutive_failures >= self.config.get("max_consecutive_failures", 3):
+                self.consecutive_failures += 1
+                logger.warning(f"[WARN] 连续失败: {self.consecutive_failures}")
+                if self.consecutive_failures >= self.config.get("max_consecutive_failures", 3):
                     logger.error("[CRASH] 连续失败 3 次，尝试自动恢复...")
                     self.attempt_recovery()
             # 接近截止时不再开新轮，避免被 job 硬杀导致状态不完整
@@ -499,8 +510,9 @@ class CloudDaemon:
         """自动恢复"""
         logger.info("[FIX] 尝试自动恢复...")
         try:
-            # 1. 重启 Python 环境
-            subprocess.run([sys.executable, "-c", "import sys; print('OK')"], check=True)
+            # 1. 重启 Python 环境（显式 UTF-8 解码，规避中文 Windows GBK 输出崩溃）
+            subprocess.run([sys.executable, "-c", "import sys; print('OK')"],
+                           check=True, encoding='utf-8', errors='replace')
             
             # 2. 重新加载数据
             from data_layer import load_history
@@ -519,14 +531,16 @@ class CloudDaemon:
             logger.error(f"[CRASH] 自动恢复失败: {e}")
     
     def report_status(self):
-        """状态报告"""
-        uptime = datetime.now() - self.start_time
-        logger.info("=" * 50)
-        logger.info(f"[REPORT] 状态报告")
-        logger.info(f"   运行时长: {uptime}")
-        logger.info(f"   完成轮数: {self.cycle_count}")
-        logger.info(f"   运行状态: {'运行中' if self.running else '已停止'}")
-        logger.info("=" * 50)
+        """状态报告（每轮演化后调用，含磁盘/连续失败监控）"""
+        try:
+            free_gb = shutil.disk_usage(".").free / (1024**3)
+            uptime_h = (datetime.now() - self.start_time).total_seconds() / 3600
+            logger.info("=" * 50)
+            logger.info(f"[REPORT] 状态报告")
+            logger.info(f"   第 {self.cycle_count} 轮结束 | 运行时长: {uptime_h:.1f}h | 磁盘剩余: {free_gb:.1f}GB | 连续失败: {self.consecutive_failures}")
+            logger.info("=" * 50)
+        except Exception as e:
+            logger.warning(f"[WARN] 状态报告失败: {e}")
     
     def stop(self):
         self.running = False
