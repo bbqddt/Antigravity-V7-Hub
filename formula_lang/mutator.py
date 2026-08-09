@@ -14,7 +14,7 @@ Antigravity 公式语言 — 原语变异器 V2.0 (修复双重变异)
 """
 import random
 import copy
-from typing import Optional, Any
+from typing import Optional, Any, Dict
 from formula_lang.primitive import Primitive
 
 
@@ -34,57 +34,70 @@ class PrimitiveMutator:
         self.annealing_factor = annealing_factor
         self.current_generation = 0
 
-    def mutate(self, primitive: Primitive, draws: Any,
+    def mutate(self, target: Any, draws: Any,
                rng: Optional[random.Random] = None,
-               generation: int = 0) -> Primitive:
+               generation: int = 0) -> Any:
         """
-        变异一个原语 — 单一变异源。
+        变异一个公式或原语 — 单一变异源。
 
-        不再调用 primitive.mutate()，在这里统一做变异。
-
-        Args:
-            primitive: 要变异的原语
-            draws: 历史数据（用于指导变异方向）
-            rng: 随机数生成器
-            generation: 当前代数（用于退火控制变异幅度）
-
-        Returns:
-            变异后的新原语
+        接收 Primitive 时按原语级变异；接收 Formula 时变异其公式级参数，
+        并逐一对组成原语做参数微调（保持组合结构不变）。
         """
+        from formula_lang.grammar import Formula
+
         rng = rng or random.Random()
-        mutated = copy.deepcopy(primitive)
-
         # 退火控制: 变异幅度随代数递减
         annealing = self.annealing_factor ** generation
         param_sigma = 0.2 * annealing  # 从0.2逐渐降到0
         logical_factor_choices = [0.5, 0.7, 1.3, 1.5]  # 去掉2.0，更温和
 
+        mutated = copy.deepcopy(target)
+
         # 参数级变异
         if rng.random() < self.param_rate:
-            for key in mutated.parameters:
-                if isinstance(mutated.parameters[key], (int, float)):
-                    if rng.random() < 0.5:
-                        # 高斯扰动
-                        mutated.parameters[key] *= (1 + rng.gauss(0, param_sigma))
-                    else:
-                        # 边界内随机重置
-                        val = mutated.parameters[key]
-                        if 0 < val < 1:
-                            mutated.parameters[key] = rng.uniform(0, 1)
-                        elif val < 10:
-                            mutated.parameters[key] = rng.uniform(val * 0.5, val * 1.5)
-                        else:
-                            mutated.parameters[key] = max(10, int(rng.gauss(val, val * 0.1)))
+            self._mutate_param_dict(mutated.parameters, rng, param_sigma)
 
         # 逻辑级变异
         if rng.random() < self.logical_rate:
-            self._logical_mutate(mutated, rng, logical_factor_choices)
+            if isinstance(target, Formula):
+                for prim in mutated.primitives:
+                    self._mutate_primitive(prim, rng, param_sigma, logical_factor_choices)
+            else:
+                self._logical_mutate(mutated, rng, logical_factor_choices)
 
-        mutated.parents = [primitive.uuid]
+        # 血缘标记
+        if isinstance(target, Formula):
+            mutated.parents = [target.name]
+        else:
+            mutated.parents = [target.uuid]
         mutated.birth_time = __import__('datetime').datetime.now().isoformat()
         mutated.origin = "evolved"
 
         return mutated
+
+    def _mutate_param_dict(self, params: Dict, rng: random.Random, param_sigma: float):
+        """对参数字典做高斯扰动 / 边界内随机重置（仅数值型）。"""
+        for key in params:
+            val = params[key]
+            if isinstance(val, bool):
+                continue
+            if isinstance(val, (int, float)):
+                if rng.random() < 0.5:
+                    params[key] = val * (1 + rng.gauss(0, param_sigma))
+                else:
+                    if 0 < val < 1:
+                        params[key] = rng.uniform(0, 1)
+                    elif val < 10:
+                        params[key] = rng.uniform(val * 0.5, val * 1.5)
+                    else:
+                        params[key] = max(10, int(rng.gauss(val, val * 0.1)))
+
+    def _mutate_primitive(self, prim: Any, rng: random.Random,
+                          param_sigma: float, logical_factor_choices: list):
+        """对单个原语做参数微调 + 逻辑级变异。"""
+        self._mutate_param_dict(prim.parameters, rng, param_sigma)
+        if rng.random() < self.logical_rate:
+            self._logical_mutate(prim, rng, logical_factor_choices)
 
     def _logical_mutate(self, primitive: Primitive, rng: random.Random,
                         factor_choices: list):

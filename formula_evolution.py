@@ -110,8 +110,8 @@ class FormulaMatchChecker:
                 total_periods += 1
                 total_hits += hits
                 per_period_hits.append(hits)
-            except:
-                pass
+            except Exception:
+                logger.exception("check_formula 第 %d 期评估异常（已跳过该期）", i)
 
         if total_periods == 0:
             return {"error": "no_data"}
@@ -191,7 +191,8 @@ class FormulaMatchChecker:
                     "hits": period_hits,
                     "total_hits_in_test": sum(period_hits),
                 })
-            except:
+            except Exception:
+                logger.exception("walk_forward_check 第 %d 轮异常（记为 error）", w + 1)
                 results.append({
                     "round": w + 1,
                     "error": True,
@@ -310,7 +311,8 @@ class FormulaEvolutionEngine:
                     'parent': None,
                     'eval_result': quick_eval,
                 })
-            except Exception as e:
+            except Exception:
+                logger.exception("初始化种群 公式 %d 失败，跳过", i)
                 continue
 
         # 按分数排序
@@ -431,8 +433,8 @@ class FormulaEvolutionEngine:
                         'avg_brier': quick_eval.get('avg_brier', 0),
                         'beats_random': quick_eval.get('beats_random', False),
                     })
-                except Exception as e:
-                    logger.debug(f"    变异失败: {e}")
+                except Exception:
+                    logger.exception("    变异失败 (formula=%s)", elite['formula'].name)
 
             # 随机新生成 (补充种群)
             while len(new_population) < population_size:
@@ -453,7 +455,8 @@ class FormulaEvolutionEngine:
                         'avg_brier': quick_eval.get('avg_brier', 0),
                         'beats_random': quick_eval.get('beats_random', False),
                     })
-                except:
+                except Exception:
+                    logger.exception("随机生成公式失败，停止补充种群")
                     break
 
             self.population = new_population

@@ -32,6 +32,9 @@ from collections import defaultdict
 
 _PROJECT_ROOT = Path(__file__).resolve().parent
 
+import logging
+logger = logging.getLogger("FormulaEvaluatorV3")
+
 
 class FormulaEvaluatorV3:
     """
@@ -129,7 +132,11 @@ class FormulaEvaluatorV3:
                 per_round_hits.append(round_hits / (test_end - test_start))
                 per_round_blue_hit.append(round_blue_hits / (test_end - test_start))
 
-            except Exception as e:
+            except Exception:
+                logger.exception(
+                    "evaluate 第 %d 轮(window_size=%d, step=%d) 评估异常，已用基线值兜底",
+                    w, window_size, step,
+                )
                 per_round_red_brier.append(self.COMBINED_BASELINE)
                 per_round_hits.append(0)
                 per_round_blue_hit.append(0.0)
@@ -373,15 +380,16 @@ class CacheManager:
                 from datetime import timedelta
                 cutoff = (datetime.now() - timedelta(hours=24)).isoformat()
                 return {k: v for k, v in data.items() if v.get('cached_at', '') > cutoff}
-        except:
+        except Exception:
+            logger.exception("评估缓存加载失败，返回空缓存")
             return {}
 
     def _save(self):
         try:
             with open(self.cache_file, 'w', encoding='utf-8') as f:
                 json.dump(self._cache, f, ensure_ascii=False)
-        except:
-            pass  # 缓存写入失败不影响主流程
+        except Exception:
+            logger.debug("评估缓存写入失败（不影响主流程）", exc_info=True)
 
     def _make_key(self, formula_name, draws_len, n_windows, window_size, step):
         """生成缓存key"""
