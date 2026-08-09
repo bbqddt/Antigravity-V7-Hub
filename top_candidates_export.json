@@ -1,0 +1,132 @@
+{
+  "exported_at": "2026-08-09T12:52:38.052815",
+  "top_candidates": [
+    {
+      "id": "pc_809570",
+      "source_ai": "primitive_combiner",
+      "name": "temporal_combo_2",
+      "primitives": [
+        "periodic_echo",
+        "seasonal_resonance"
+      ],
+      "composition": "cascade",
+      "description": "同类别temporal原语组合",
+      "params": {
+        "strategy": "same_category",
+        "category": "temporal"
+      },
+      "fitness_score": 0.1769,
+      "avg_hits": 0,
+      "p_value": 1,
+      "calibration_error": 1.0,
+      "brier_score": 1.0,
+      "status": "survived",
+      "generation": 0,
+      "parent_ids": [],
+      "birth_time": "2026-08-09T12:52:34.035892"
+    },
+    {
+      "id": "pc_198246",
+      "source_ai": "primitive_combiner",
+      "name": "relational_combo_3",
+      "primitives": [
+        "mutual_exclusion",
+        "cooccurrence_affinity",
+        "pair_orbit"
+      ],
+      "composition": "cascade",
+      "description": "同类别relational原语组合",
+      "params": {
+        "strategy": "same_category",
+        "category": "relational"
+      },
+      "fitness_score": 0.1629,
+      "avg_hits": 0,
+      "p_value": 1,
+      "calibration_error": 1.0,
+      "brier_score": 1.0,
+      "status": "survived",
+      "generation": 0,
+      "parent_ids": [],
+      "birth_time": "2026-08-09T12:52:34.035919"
+    },
+    {
+      "id": "pc_660086",
+      "source_ai": "primitive_combiner",
+      "name": "relational_combo_3",
+      "primitives": [
+        "mutual_exclusion",
+        "cooccurrence_affinity",
+        "pair_orbit"
+      ],
+      "composition": "cascade",
+      "description": "同类别relational原语组合",
+      "params": {
+        "strategy": "same_category",
+        "category": "relational"
+      },
+      "fitness_score": 0.1629,
+      "avg_hits": 0,
+      "p_value": 1,
+      "calibration_error": 1.0,
+      "brier_score": 1.0,
+      "status": "survived",
+      "generation": 0,
+      "parent_ids": [],
+      "birth_time": "2026-08-09T12:52:36.795733"
+    },
+    {
+      "id": "pc_571029",
+      "source_ai": "primitive_combiner",
+      "name": "spectral_combo_5",
+      "primitives": [
+        "wavelet_coherence",
+        "spectral_power"
+      ],
+      "composition": "resonance",
+      "description": "同类别spectral原语组合",
+      "params": {
+        "strategy": "same_category",
+        "category": "spectral"
+      },
+      "fitness_score": 0.1349,
+      "avg_hits": 0,
+      "p_value": 1,
+      "calibration_error": 1.0,
+      "brier_score": 1.0,
+      "status": "eliminated",
+      "generation": 0,
+      "parent_ids": [],
+      "birth_time": "2026-08-09T12:52:34.035958"
+    },
+    {
+      "id": "pc_183667",
+      "source_ai": "primitive_combiner",
+      "name": "spectral_combo_5",
+      "primitives": [
+        "spectral_power",
+        "wavelet_coherence"
+      ],
+      "composition": "cascade",
+      "description": "同类别spectral原语组合",
+      "params": {
+        "strategy": "same_category",
+        "category": "spectral"
+      },
+      "fitness_score": 0.1294,
+      "avg_hits": 0,
+      "p_value": 1,
+      "calibration_error": 1.0,
+      "brier_score": 1.0,
+      "status": "eliminated",
+      "generation": 0,
+      "parent_ids": [],
+      "birth_time": "2026-08-09T12:52:35.439781"
+    }
+  ],
+  "final_recommendation": {
+    "red": [],
+    "blue": [],
+    "vote_counts": {}
+  }
+}
