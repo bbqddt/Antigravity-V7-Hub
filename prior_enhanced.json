@@ -1,0 +1,12 @@
+{
+  "strategy_weights": {
+    "hot_core": 0.16666666666666666,
+    "cold_strike": 0.16666666666666666,
+    "balanced": 0.16666666666666666,
+    "zone_control": 0.16666666666666666,
+    "consecutive": 0.16666666666666666,
+    "omission": 0.16666666666666666
+  },
+  "signal_strength": 0.0,
+  "recommend_exploration": false
+}

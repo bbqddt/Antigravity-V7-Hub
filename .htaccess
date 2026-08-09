@@ -1,0 +1,51 @@
+# Antigravity .htaccess
+# 适用于 Apache 共享主机 (cPanel/DirectAdmin)
+
+# 启用重写引擎
+RewriteEngine On
+
+# 设置 Python 路径 (根据实际情况修改)
+# SetEnv PYTHONPATH /home/yourusername/antigravity
+
+# 如果使用 Passenger (推荐)
+# PassengerEnabled On
+# PassengerAppRoot /home/yourusername/antigravity
+# PassengerAppType wsgi
+# PassengerStartupFile wsgi.py
+
+# 如果使用 CGI
+# AddHandler cgi-script .py
+# Options +ExecCGI
+
+# 静态文件缓存
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+</IfModule>
+
+# Gzip 压缩
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/json
+    AddOutputFilterByType DEFLATE application/javascript text/xml
+</IfModule>
+
+# 安全头
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# 隐藏敏感文件
+<FilesMatch "^(\.env|\.git|\.htaccess|requirements\.txt|Dockerfile|\.yml|\.yaml|\.json|\.md)$">
+    Require all denied
+</FilesMatch>
+
+# Python WSGI 应用重写 (如果不使用 Passenger)
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ /wsgi.py/$1 [QSA,L]

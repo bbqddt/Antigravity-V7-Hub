@@ -1,0 +1,73 @@
+{
+  "target_period": 26091,
+  "timestamp": "2026-08-09T03:48:20.246943",
+  "total_engines": 1,
+  "total_candidates": 5,
+  "groups": [
+    {
+      "red": [
+        2,
+        6,
+        7,
+        24,
+        28,
+        29
+      ],
+      "blue": 4,
+      "engine": "Luckcast V15",
+      "score": 2.2449
+    },
+    {
+      "red": [
+        1,
+        2,
+        5,
+        24,
+        28,
+        33
+      ],
+      "blue": 1,
+      "engine": "Luckcast V15",
+      "score": 2.1372
+    },
+    {
+      "red": [
+        3,
+        6,
+        8,
+        15,
+        25,
+        33
+      ],
+      "blue": 7,
+      "engine": "Luckcast V15",
+      "score": 2.1258
+    },
+    {
+      "red": [
+        2,
+        6,
+        9,
+        14,
+        22,
+        31
+      ],
+      "blue": 5,
+      "engine": "Luckcast V15",
+      "score": 2.1156
+    },
+    {
+      "red": [
+        1,
+        6,
+        9,
+        17,
+        24,
+        26
+      ],
+      "blue": 13,
+      "engine": "Luckcast V15",
+      "score": 2.1042
+    }
+  ]
+}

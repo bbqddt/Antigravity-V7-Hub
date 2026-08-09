@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  antigravity:
+    build: .
+    container_name: antigravity
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TZ=Asia/Shanghai
+    volumes:
+      - antigravity_data:/app/data
+      - antigravity_logs:/app/logs
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+volumes:
+  antigravity_data:
+  antigravity_logs:

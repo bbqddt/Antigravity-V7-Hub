@@ -1,0 +1,32 @@
+{
+  "name": "Antigravity Evolution",
+  "description": "多AI协同进化引擎 - 双色球预测系统",
+  "language": "python",
+  "runtime": "python-3.11",
+  "files": [
+    "formula_evolution.py",
+    "data_layer.py",
+    "consistency_checker.py",
+    "smart_evolution.py",
+    "cloud_daemon.py",
+    "unified_llm_client.py",
+    "llm_formula_loop.py",
+    "requirements.txt",
+    "data/",
+    "formula_lang/",
+    "core/"
+  ],
+  "env_vars": {
+    "HF_TOKEN": "",
+    "OPENROUTER_API_KEY": "",
+    "SILICONFLOW_API_KEY": "",
+    "CC_SWITCH_API_KEY": "",
+    "E2B_API_KEY": ""
+  },
+  "startup_command": "pip install -r requirements.txt && python formula_evolution.py --run --generations 20",
+  "schedule": {
+    "enabled": true,
+    "cron": "0 2 * * *",
+    "timezone": "Asia/Shanghai"
+  }
+}

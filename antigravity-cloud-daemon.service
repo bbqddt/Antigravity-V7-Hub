@@ -1,0 +1,18 @@
+[Unit]
+Description=Antigravity Cloud Evolution Daemon 7x24
+After=network.target antigravity-monitor.service
+Wants=antigravity-monitor.service
+
+[Service]
+Type=simple
+User=admin
+WorkingDirectory=/home/admin/antigravity
+ExecStart=/home/admin/antigravity/.venv/bin/python cloud_daemon_24x7.py
+Restart=always
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

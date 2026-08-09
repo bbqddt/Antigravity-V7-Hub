@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  antigravity:
+    image: antigravity:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.vocon
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+        reservations:
+          cpus: '1'
+          memory: 2G
+      restart_policy:
+        condition: on-failure
+        delay: 10s
+        max_attempts: 3
+      placement:
+        constraints:
+          - node.role == worker
+    environment:
+      - HF_TOKEN=${HF_TOKEN}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - SILICONFLOW_API_KEY=${SILICONFLOW_API_KEY}
+      - CC_SWITCH_API_KEY=${CC_SWITCH_API_KEY}
+      - E2B_API_KEY=${E2B_API_KEY}
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - antigravity_data:/app/data
+      - antigravity_logs:/app/logs
+    networks:
+      - antigravity_net
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # 可选: 监控
+  # prometheus:
+  #   image: prom/prometheus:latest
+  #   volumes:
+  #     - ./prometheus.yml:/etc/prometheus/prometheus.yml
+  #   ports:
+  #     - "9090:9090"
+
+volumes:
+  antigravity_data:
+    driver: local
+  antigravity_logs:
+    driver: local
+
+networks:
+  antigravity_net:
+    driver: overlay
+    attachable: true

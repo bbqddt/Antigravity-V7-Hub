@@ -1,0 +1,18 @@
+[Unit]
+Description=Antigravity Research Daemon 7x24
+After=network.target antigravity-cloud-daemon.service
+Wants=antigravity-cloud-daemon.service
+
+[Service]
+Type=simple
+User=admin
+WorkingDirectory=/home/admin/antigravity
+ExecStart=/home/admin/antigravity/.venv/bin/python research_daemon_24x7.py
+Restart=always
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

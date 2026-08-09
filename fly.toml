@@ -1,0 +1,23 @@
+# fly.toml
+app = "antigravity"
+primary_region = "hkg"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PYTHONUNBUFFERED = "1"
+  TZ = "Asia/Shanghai"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+[health_check]
+  path = "/api/health"
+  interval = "30s"
+  timeout = "10s"
+  grace_period = "30s"
