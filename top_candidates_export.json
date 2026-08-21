@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-08-21T06:49:15.675821",
+  "exported_at": "2026-08-21T12:49:45.670168",
   "top_candidates": [
     {
       "id": "pc_809570",
@@ -23,7 +23,7 @@
       "status": "survived",
       "generation": 0,
       "parent_ids": [],
-      "birth_time": "2026-08-21T06:49:13.074264"
+      "birth_time": "2026-08-21T12:49:42.280158"
     },
     {
       "id": "pc_198246",
@@ -48,7 +48,7 @@
       "status": "survived",
       "generation": 0,
       "parent_ids": [],
-      "birth_time": "2026-08-21T06:49:13.074286"
+      "birth_time": "2026-08-21T12:49:42.280177"
     },
     {
       "id": "pc_660086",
@@ -73,7 +73,7 @@
       "status": "survived",
       "generation": 0,
       "parent_ids": [],
-      "birth_time": "2026-08-21T06:49:14.884971"
+      "birth_time": "2026-08-21T12:49:44.640698"
     },
     {
       "id": "pc_571029",
@@ -97,7 +97,7 @@
       "status": "eliminated",
       "generation": 0,
       "parent_ids": [],
-      "birth_time": "2026-08-21T06:49:13.074313"
+      "birth_time": "2026-08-21T12:49:42.280202"
     },
     {
       "id": "pc_183667",
@@ -121,7 +121,7 @@
       "status": "eliminated",
       "generation": 0,
       "parent_ids": [],
-      "birth_time": "2026-08-21T06:49:14.018727"
+      "birth_time": "2026-08-21T12:49:43.533347"
     }
   ],
   "final_recommendation": {
