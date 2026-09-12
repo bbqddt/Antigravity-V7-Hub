@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-12T15:10:16.530914",
+  "timestamp": "2026-09-12T20:24:31.406058",
   "total_generations": 3,
   "total_candidates": 18,
   "survival_pool": [
@@ -26,7 +26,7 @@
       "status": "survived",
       "generation": 0,
       "parent_ids": [],
-      "birth_time": "2026-09-12T15:10:15.749207"
+      "birth_time": "2026-09-12T20:24:30.852039"
     }
   ],
   "math_engine_predictions": {
@@ -34,10 +34,10 @@
       "red": [
         3,
         5,
-        7,
-        12,
-        15,
-        17
+        11,
+        14,
+        17,
+        18
       ],
       "blue": [
         16
@@ -60,7 +60,7 @@
   "evolution_history": [
     {
       "round_num": 1,
-      "timestamp": "2026-09-12T15:10:14.874031",
+      "timestamp": "2026-09-12T20:24:30.229007",
       "candidates_generated": 5,
       "candidates_tested": 5,
       "survived_count": 0,
@@ -77,7 +77,7 @@
     },
     {
       "round_num": 2,
-      "timestamp": "2026-09-12T15:10:15.748939",
+      "timestamp": "2026-09-12T20:24:30.851752",
       "candidates_generated": 5,
       "candidates_tested": 5,
       "survived_count": 0,
@@ -94,7 +94,7 @@
     },
     {
       "round_num": 3,
-      "timestamp": "2026-09-12T15:10:16.530890",
+      "timestamp": "2026-09-12T20:24:31.406032",
       "candidates_generated": 5,
       "candidates_tested": 5,
       "survived_count": 0,
@@ -133,6 +133,6 @@
     "status": "survived",
     "generation": 0,
     "parent_ids": [],
-    "birth_time": "2026-09-12T15:10:15.749207"
+    "birth_time": "2026-09-12T20:24:30.852039"
   }
 }
