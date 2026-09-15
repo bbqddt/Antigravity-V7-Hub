@@ -1,0 +1,61 @@
+{
+  "dim_names": [
+    "statistics",
+    "geometry",
+    "number_theory",
+    "modular",
+    "chaos",
+    "information",
+    "physical_noise",
+    "cooccurrence",
+    "positional"
+  ],
+  "weights": [
+    0.1111111111111111,
+    0.1111111111111111,
+    0.1111111111111111,
+    0.1111111111111111,
+    0.1111111111111111,
+    0.1111111111111111,
+    0.1111111111111111,
+    0.11111111111111108,
+    0.11111111111111108
+  ],
+  "recent_perf": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "cumulative_contribution": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "streak": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "total_rounds": 0,
+  "exploration_mode": false,
+  "exploration_rate": 0.0,
+  "history": []
+}

@@ -1,0 +1,556 @@
+{
+  "top_formulas": [
+    [
+      "wsum_kurtosis_signal_x_recurrence_window",
+      {
+        "red_brier": 0.171695,
+        "beats_random": true,
+        "stability_std": 0.000476,
+        "generalization_gap": 0.000143,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_skewness_signal_x_recurrence_window",
+      {
+        "red_brier": 0.171696,
+        "beats_random": true,
+        "stability_std": 0.000468,
+        "generalization_gap": 0.000141,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_cooccurrence_affinity_x_skewness_signal",
+      {
+        "red_brier": 0.171721,
+        "beats_random": true,
+        "stability_std": 0.000405,
+        "generalization_gap": 3.3e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_gap_pattern_x_recurrence_window",
+      {
+        "red_brier": 0.171728,
+        "beats_random": true,
+        "stability_std": 0.000521,
+        "generalization_gap": 0.000249,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_kurtosis_signal_x_scale_transition",
+      {
+        "red_brier": 0.171732,
+        "beats_random": true,
+        "stability_std": 0.000427,
+        "generalization_gap": 8.8e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_recurrence_window_x_scale_transition",
+      {
+        "red_brier": 0.171737,
+        "beats_random": true,
+        "stability_std": 0.000531,
+        "generalization_gap": 0.000153,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_gap_pattern_x_skewness_signal",
+      {
+        "red_brier": 0.171752,
+        "beats_random": true,
+        "stability_std": 0.000492,
+        "generalization_gap": 0.000192,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_lag_correlation_x_recurrence_window",
+      {
+        "red_brier": 0.171756,
+        "beats_random": true,
+        "stability_std": 0.000533,
+        "generalization_gap": 0.000185,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_position_signature_x_recurrence_window",
+      {
+        "red_brier": 0.171768,
+        "beats_random": true,
+        "stability_std": 0.000426,
+        "generalization_gap": 7e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_seasonal_resonance_x_cooccurrence_affinity",
+      {
+        "red_brier": 0.171774,
+        "beats_random": true,
+        "stability_std": 0.000358,
+        "generalization_gap": 5.9e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_cooccurrence_affinity_x_wavelet_coherence",
+      {
+        "red_brier": 0.171778,
+        "beats_random": true,
+        "stability_std": 0.000348,
+        "generalization_gap": 5.1e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_trend_reversal_x_kurtosis_signal",
+      {
+        "red_brier": 0.171783,
+        "beats_random": true,
+        "stability_std": 0.000518,
+        "generalization_gap": 0.000125,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_cooccurrence_affinity_x_binary_topology",
+      {
+        "red_brier": 0.171783,
+        "beats_random": true,
+        "stability_std": 0.000349,
+        "generalization_gap": 4.1e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_binary_topology_x_skewness_signal",
+      {
+        "red_brier": 0.171784,
+        "beats_random": true,
+        "stability_std": 0.000504,
+        "generalization_gap": 0.000131,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_cooccurrence_affinity_x_periodic_gap",
+      {
+        "red_brier": 0.171785,
+        "beats_random": true,
+        "stability_std": 0.000358,
+        "generalization_gap": 5e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_cooccurrence_affinity_x_sphere_projection",
+      {
+        "red_brier": 0.171788,
+        "beats_random": true,
+        "stability_std": 0.000353,
+        "generalization_gap": 5e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_skewness_signal_x_physical_bias",
+      {
+        "red_brier": 0.171788,
+        "beats_random": true,
+        "stability_std": 0.000497,
+        "generalization_gap": 0.000125,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_spectral_power_x_recurrence_window",
+      {
+        "red_brier": 0.171793,
+        "beats_random": true,
+        "stability_std": 0.000624,
+        "generalization_gap": 0.000296,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_cooccurrence_affinity_x_modulo_distribution",
+      {
+        "red_brier": 0.171793,
+        "beats_random": true,
+        "stability_std": 0.000392,
+        "generalization_gap": 6e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_cooccurrence_affinity_x_trend_reversal",
+      {
+        "red_brier": 0.171793,
+        "beats_random": true,
+        "stability_std": 0.000363,
+        "generalization_gap": 1.9e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_periodic_echo_x_cooccurrence_affinity",
+      {
+        "red_brier": 0.171794,
+        "beats_random": true,
+        "stability_std": 0.000431,
+        "generalization_gap": 4.8e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_attractor_distance_x_skewness_signal",
+      {
+        "red_brier": 0.171796,
+        "beats_random": true,
+        "stability_std": 0.00051,
+        "generalization_gap": 0.000122,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_skewness_signal_x_periodic_gap",
+      {
+        "red_brier": 0.171796,
+        "beats_random": true,
+        "stability_std": 0.00051,
+        "generalization_gap": 0.000122,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_cooccurrence_affinity_x_pair_orbit",
+      {
+        "red_brier": 0.171808,
+        "beats_random": true,
+        "stability_std": 0.000276,
+        "generalization_gap": 4.2e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_cooccurrence_affinity_x_spectral_power",
+      {
+        "red_brier": 0.171813,
+        "beats_random": true,
+        "stability_std": 0.000372,
+        "generalization_gap": 3.4e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_cooccurrence_affinity_x_digit_pair_freq",
+      {
+        "red_brier": 0.171815,
+        "beats_random": true,
+        "stability_std": 0.000475,
+        "generalization_gap": 0.000109,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_digit_pair_freq_x_scale_transition",
+      {
+        "red_brier": 0.171847,
+        "beats_random": true,
+        "stability_std": 0.0006,
+        "generalization_gap": 4.4e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_cooccurrence_affinity_x_adjacent_bias",
+      {
+        "red_brier": 0.171847,
+        "beats_random": true,
+        "stability_std": 0.000359,
+        "generalization_gap": 0.000133,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_seasonal_resonance_x_recurrence_window",
+      {
+        "red_brier": 0.17185,
+        "beats_random": true,
+        "stability_std": 0.000752,
+        "generalization_gap": 0.000272,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_gap_pattern_x_scale_transition",
+      {
+        "red_brier": 0.171854,
+        "beats_random": true,
+        "stability_std": 0.000665,
+        "generalization_gap": 0.000239,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_modulo_distribution_x_scale_transition",
+      {
+        "red_brier": 0.171855,
+        "beats_random": true,
+        "stability_std": 0.000589,
+        "generalization_gap": 3.8e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_lyapunov_signal_x_scale_transition",
+      {
+        "red_brier": 0.17186,
+        "beats_random": true,
+        "stability_std": 0.000567,
+        "generalization_gap": 0.000109,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_wavelet_coherence_x_scale_transition",
+      {
+        "red_brier": 0.171894,
+        "beats_random": true,
+        "stability_std": 0.000696,
+        "generalization_gap": 0.000142,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_mutual_exclusion_x_kurtosis_signal",
+      {
+        "red_brier": 0.171901,
+        "beats_random": true,
+        "stability_std": 0.000527,
+        "generalization_gap": 2.3e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_mutual_exclusion_x_skewness_signal",
+      {
+        "red_brier": 0.171903,
+        "beats_random": true,
+        "stability_std": 0.000542,
+        "generalization_gap": 1e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_periodic_gap_x_recurrence_window",
+      {
+        "red_brier": 0.171916,
+        "beats_random": true,
+        "stability_std": 0.000827,
+        "generalization_gap": 0.000294,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_periodic_echo_x_environment_aware",
+      {
+        "red_brier": 0.171919,
+        "beats_random": true,
+        "stability_std": 0.000767,
+        "generalization_gap": 0.000228,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_multi_scale_frequency_x_scale_transition",
+      {
+        "red_brier": 0.171936,
+        "beats_random": true,
+        "stability_std": 0.000664,
+        "generalization_gap": 7e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_binary_topology_x_gap_pattern",
+      {
+        "red_brier": 0.171947,
+        "beats_random": true,
+        "stability_std": 0.000838,
+        "generalization_gap": 0.000621,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_distance_cluster_x_digit_pair_freq",
+      {
+        "red_brier": 0.171952,
+        "beats_random": true,
+        "stability_std": 0.000938,
+        "generalization_gap": 9.1e-05,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_trend_reversal_x_recurrence_window",
+      {
+        "red_brier": 0.171952,
+        "beats_random": true,
+        "stability_std": 0.000905,
+        "generalization_gap": 0.000299,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_seasonal_resonance_x_gap_pattern",
+      {
+        "red_brier": 0.171973,
+        "beats_random": true,
+        "stability_std": 0.000935,
+        "generalization_gap": 0.000461,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_periodic_echo_x_gap_pattern",
+      {
+        "red_brier": 0.17198,
+        "beats_random": true,
+        "stability_std": 0.000822,
+        "generalization_gap": 0.000412,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_digit_manifold_x_environment_aware",
+      {
+        "red_brier": 0.171998,
+        "beats_random": true,
+        "stability_std": 0.000802,
+        "generalization_gap": 0.000574,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_attractor_distance_x_environment_aware",
+      {
+        "red_brier": 0.171999,
+        "beats_random": true,
+        "stability_std": 0.000801,
+        "generalization_gap": 0.000588,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_periodic_gap_x_environment_aware",
+      {
+        "red_brier": 0.171999,
+        "beats_random": true,
+        "stability_std": 0.000801,
+        "generalization_gap": 0.000588,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_digit_manifold_x_gap_pattern",
+      {
+        "red_brier": 0.172003,
+        "beats_random": true,
+        "stability_std": 0.000859,
+        "generalization_gap": 0.000621,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_attractor_distance_x_gap_pattern",
+      {
+        "red_brier": 0.172005,
+        "beats_random": true,
+        "stability_std": 0.000853,
+        "generalization_gap": 0.000624,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_trend_reversal_x_phase_detector",
+      {
+        "red_brier": 0.172009,
+        "beats_random": true,
+        "stability_std": 0.000681,
+        "generalization_gap": 0.000434,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ],
+    [
+      "wsum_spectral_power_x_scale_transition",
+      {
+        "red_brier": 0.17201,
+        "beats_random": true,
+        "stability_std": 0.000813,
+        "generalization_gap": 0.000223,
+        "overfitting_risk": "LOW",
+        "rounds": 30
+      }
+    ]
+  ],
+  "survivor_count": 200,
+  "total_evaluated": 200
+}

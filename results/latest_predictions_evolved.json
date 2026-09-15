@@ -1,0 +1,77 @@
+{
+  "target_period": 26088,
+  "predictions": [
+    {
+      "group": 1,
+      "strategy": "zone",
+      "reds": [
+        3,
+        9,
+        12,
+        21,
+        27,
+        30
+      ],
+      "blue": 5,
+      "score": 1.0
+    },
+    {
+      "group": 2,
+      "strategy": "consecutive",
+      "reds": [
+        4,
+        11,
+        12,
+        13,
+        21,
+        32
+      ],
+      "blue": 16,
+      "score": 1.0
+    },
+    {
+      "group": 3,
+      "strategy": "consecutive",
+      "reds": [
+        3,
+        4,
+        11,
+        30,
+        32,
+        33
+      ],
+      "blue": 1,
+      "score": 1.0
+    },
+    {
+      "group": 4,
+      "strategy": "balanced",
+      "reds": [
+        1,
+        4,
+        10,
+        17,
+        22,
+        33
+      ],
+      "blue": 11,
+      "score": 1.0
+    },
+    {
+      "group": 5,
+      "strategy": "consecutive",
+      "reds": [
+        13,
+        14,
+        15,
+        23,
+        26,
+        27
+      ],
+      "blue": 16,
+      "score": 1.0
+    }
+  ],
+  "engine": "Evolved Predictor V1.0",
+  "timestamp": "2026-08-01T03:41:17.246993"
+}

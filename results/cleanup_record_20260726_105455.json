@@ -1,0 +1,144 @@
+{
+  "timestamp": "2026-07-26T10:54:55.010743",
+  "method": "empirical_thirds",
+  "total": 32,
+  "top_active": 10,
+  "mid_bench": 10,
+  "bot_eliminated": 12,
+  "actions": {
+    "active": [
+      {
+        "name": "hybrid_resonance_multi_scal_wavelet_co_resonance",
+        "avg": 1.1221
+      },
+      {
+        "name": "resonance_spectral_c_multi_scal_resonance_00",
+        "avg": 1.1221
+      },
+      {
+        "name": "tri_res_dynamic__multi_sc_resonance",
+        "avg": 1.1221
+      },
+      {
+        "name": "cascade_multi_scal_dynamic_co_cascade",
+        "avg": 1.1074
+      },
+      {
+        "name": "v4tri_modular__binary_t_multi_sc_resonance",
+        "avg": 1.104
+      },
+      {
+        "name": "v4tri_modular__multi_sc_self_sim_resonance",
+        "avg": 1.104
+      },
+      {
+        "name": "tri_res_multi_sc_spectral_resonance",
+        "avg": 1.1007
+      },
+      {
+        "name": "v4tri_modular__pair_orb_multi_sc_resonance",
+        "avg": 1.1007
+      },
+      {
+        "name": "hybrid_resonance_dynamic_co_mutual_exc_resonance",
+        "avg": 1.0973
+      },
+      {
+        "name": "resonance_dynamic_co_multi_scal_resonance_00",
+        "avg": 1.0966
+      }
+    ],
+    "bench": [
+      {
+        "name": "resonance_trend_mome_multi_scal_resonance",
+        "avg": 1.0966
+      },
+      {
+        "name": "v4tri_modular__dynamic__binary_t_resonance",
+        "avg": 1.0933
+      },
+      {
+        "name": "v4tri_modular__dynamic__multi_sc_resonance",
+        "avg": 1.0933
+      },
+      {
+        "name": "v4tri_modular__mutual_e_multi_sc_resonance",
+        "avg": 1.0933
+      },
+      {
+        "name": "v4tri_modular__spectral_dynamic__resonance",
+        "avg": 1.0933
+      },
+      {
+        "name": "v4tri_modular__wavelet__multi_sc_resonance",
+        "avg": 1.0933
+      },
+      {
+        "name": "tri_res_dynamic__spectral_resonance",
+        "avg": 1.0906
+      },
+      {
+        "name": "resonance_trend_mome_spectral_c_resonance",
+        "avg": 1.0886
+      },
+      {
+        "name": "extreme_trend_weighted",
+        "avg": 1.0846
+      },
+      {
+        "name": "resonance_dynamic_co_trend_mome_resonance",
+        "avg": 1.0805
+      }
+    ],
+    "eliminated": [
+      {
+        "name": "resonance_dynamic_co_trend_mome_resonance_00",
+        "avg": 1.0805
+      },
+      {
+        "name": "tri_res_dynamic__cooccurr_resonance",
+        "avg": 1.0805
+      },
+      {
+        "name": "hybrid_resonance_multi_scal_mutual_exc_resonance",
+        "avg": 1.0752
+      },
+      {
+        "name": "tri_res_spectral_mutual_e_resonance",
+        "avg": 1.0745
+      },
+      {
+        "name": "resonance_dynamic_co_spectral_c_resonance",
+        "avg": 1.0698
+      },
+      {
+        "name": "v4tri_modular__spectral_multi_sc_resonance",
+        "avg": 1.0651
+      },
+      {
+        "name": "hybrid_resonance_dynamic_co_pair_orbit_resonance",
+        "avg": 1.045
+      },
+      {
+        "name": "tri_res_dynamic__pair_orb_resonance",
+        "avg": 1.045
+      },
+      {
+        "name": "tri_res_dynamic__dynamic__resonance",
+        "avg": 1.043
+      },
+      {
+        "name": "v4tri_permutat_spectral_multi_sc_resonance",
+        "avg": 1.0423
+      },
+      {
+        "name": "hybrid_resonance_spectral_c_pair_orbit_resonance",
+        "avg": 1.0356
+      },
+      {
+        "name": "tri_res_dynamic__mutual_e_resonance",
+        "avg": 1.0302
+      }
+    ]
+  }
+}

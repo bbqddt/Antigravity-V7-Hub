@@ -1,0 +1,236 @@
+{
+  "target_period": 26079,
+  "timestamp": "2026-07-11 18:39:20",
+  "data_periods": 3475,
+  "elapsed_seconds": 348.81,
+  "models": {
+    "Gemma4": {
+      "engine": "Gemma4",
+      "predictions": [
+        {
+          "reds": [
+            1,
+            5,
+            6,
+            33
+          ],
+          "blue": 1
+        }
+      ],
+      "status": "ok"
+    },
+    "Gemma2": {
+      "engine": "Gemma2",
+      "predictions": [
+        {
+          "reds": [
+            1,
+            32,
+            1,
+            4,
+            6,
+            7
+          ],
+          "blue": 0
+        }
+      ],
+      "status": "ok"
+    },
+    "Luckcast V15": {
+      "engine": "Luckcast V15",
+      "predictions": [
+        {
+          "reds": [
+            2,
+            6,
+            7,
+            24,
+            28,
+            29
+          ],
+          "blue": 4,
+          "scores": {
+            "total_score": 2.2487,
+            "frequency": 1.3881,
+            "resonance": 2.0822,
+            "causal_valid": true,
+            "causal_multiplier": 1.0
+          }
+        },
+        {
+          "reds": [
+            1,
+            2,
+            5,
+            24,
+            28,
+            33
+          ],
+          "blue": 1,
+          "scores": {
+            "total_score": 2.1308,
+            "frequency": 1.3153,
+            "resonance": 1.973,
+            "causal_valid": true,
+            "causal_multiplier": 1.0
+          }
+        },
+        {
+          "reds": [
+            3,
+            6,
+            8,
+            15,
+            25,
+            33
+          ],
+          "blue": 7,
+          "scores": {
+            "total_score": 2.1042,
+            "frequency": 1.2989,
+            "resonance": 1.9484,
+            "causal_valid": true,
+            "causal_multiplier": 1.0
+          }
+        }
+      ],
+      "status": "ok"
+    },
+    "Enhanced V2.0": {
+      "engine": "Enhanced V2.0",
+      "predictions": [
+        {
+          "reds": [
+            15,
+            16,
+            18,
+            19,
+            22,
+            29
+          ],
+          "blue": 11,
+          "strategy": "trend"
+        },
+        {
+          "reds": [
+            9,
+            11,
+            17,
+            21,
+            32,
+            33
+          ],
+          "blue": 2,
+          "strategy": "zone_control"
+        },
+        {
+          "reds": [
+            5,
+            7,
+            10,
+            11,
+            17,
+            33
+          ],
+          "blue": 3,
+          "strategy": "omission"
+        }
+      ],
+      "status": "ok"
+    },
+    "Evolution Life": {
+      "engine": "Evolution Life",
+      "predictions": [],
+      "status": "ok"
+    },
+    "DeepSeek": {
+      "engine": "DeepSeek(OR)",
+      "predictions": [
+        {
+          "reds": [
+            3,
+            9,
+            14,
+            18,
+            24,
+            27
+          ],
+          "blue": 11,
+          "reasoning": "1. 红球分析：\n   - 热号追踪：14和24在最近5期各出现3次，18出现2次，属于高频热号\n   - 连号规律：上期出现14-16和27-28连号，本期关注3-9区间和24-27区间\n   - 奇偶平衡：最近5期奇偶比波动较大，本期选择3奇3偶(3,9,27为奇；14,18,24为偶)\n   - 区间分布：一区(1-11)选3、9；二区(12-22)选14、18；三区(23-33)选24、27\n\n2. 蓝球分析：\n   - 近期蓝球走势：4→1→7→4→6，中小号活跃\n   - 冷热搭配：11在近20期仅出现1次，属于温冷号\n   - 质数规律：选择质数11(符合近期质数蓝球占比60%的趋势)\n   - 跨度分析：上期蓝球6，跳5点选择11形成对称走势"
+        }
+      ],
+      "status": "ok"
+    },
+    "HuggingFace": {
+      "engine": "Llama3.3(OR)",
+      "predictions": [
+        {
+          "reds": [
+            3,
+            9,
+            15,
+            22,
+            29,
+            31
+          ],
+          "blue": 8,
+          "reasoning": "最近5期开奖数据显示，红球号码分布相对均匀，但有一些冷门号码开始出现。蓝球方面，4和7已经出现过，考虑到蓝球的随机性，选择一个中位数较高但最近几期未出现的号码。红球方面，选择了相对冷门但历史上中奖率较高的号码，以及最近几期未出现的号码。同时，考虑到双色球的开奖规律，避免选择连续或过于集中在某一区域的号码。"
+        }
+      ],
+      "status": "ok"
+    }
+  },
+  "consensus": {
+    "red_consensus": [
+      1,
+      3,
+      6,
+      7,
+      9,
+      15
+    ],
+    "blue_consensus": [
+      11
+    ],
+    "red_high_confidence": [],
+    "red_vote_distribution": {
+      "33": 4,
+      "1": 3,
+      "6": 3,
+      "7": 3,
+      "24": 3,
+      "29": 3,
+      "3": 3,
+      "15": 3,
+      "9": 3,
+      "32": 2
+    },
+    "blue_vote_distribution": {
+      "11": 2,
+      "4": 1,
+      "1": 1,
+      "7": 1,
+      "2": 1
+    }
+  },
+  "model_summary": {
+    "total_models": 7,
+    "successful": 7,
+    "failed": 0,
+    "skipped": 0,
+    "details": {
+      "Gemma4": "OK (1组)",
+      "Gemma2": "OK (1组)",
+      "Luckcast V15": "OK (3组)",
+      "Enhanced V2.0": "OK (3组)",
+      "Evolution Life": "OK (0组)",
+      "DeepSeek": "OK (1组)",
+      "HuggingFace": "OK (1组)"
+    },
+    "api_status": {
+      "deepseek": "INSUFFICIENT_BALANCE (needs recharge)",
+      "huggingface": "SSL/PERMISSION_ISSUE (router endpoint blocked)",
+      "ollama": "requires local Ollama server running on port 11434"
+    }
+  }
+}

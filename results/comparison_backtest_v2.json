@@ -1,0 +1,53 @@
+{
+  "LuckcastV15": {
+    "engine": {
+      "avg_red_hits": 2.06,
+      "blue_hit_rate": 0.06,
+      "max_red_hits": 4,
+      "median_red_hits": 2.0,
+      "std_red_hits": 0.7592101158440923,
+      "rounds": 50,
+      "calibration_error": 0.2952217590509491
+    },
+    "config": {
+      "initial_window": 500,
+      "n_rounds": 50,
+      "top_k": 5,
+      "n_random_rounds": 100
+    }
+  },
+  "EnhancedV2": {
+    "engine": {
+      "avg_red_hits": 1.92,
+      "blue_hit_rate": 0.06,
+      "max_red_hits": 4,
+      "median_red_hits": 2.0,
+      "std_red_hits": 0.7704544113703289,
+      "rounds": 50,
+      "calibration_error": 0.9156952125652126
+    },
+    "config": {
+      "initial_window": 500,
+      "n_rounds": 50,
+      "top_k": 5,
+      "n_random_rounds": 100
+    }
+  },
+  "Fusion": {
+    "engine": {
+      "avg_red_hits": 2.06,
+      "blue_hit_rate": 0.02,
+      "max_red_hits": 4,
+      "median_red_hits": 2.0,
+      "std_red_hits": 0.7045565981523415,
+      "rounds": 50,
+      "calibration_error": 0.0
+    },
+    "config": {
+      "initial_window": 500,
+      "n_rounds": 50,
+      "top_k": 5,
+      "n_random_rounds": 0
+    }
+  }
+}

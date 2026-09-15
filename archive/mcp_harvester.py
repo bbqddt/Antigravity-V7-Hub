@@ -2,11 +2,14 @@ import requests
 import json
 import time
 import os
+from pathlib import Path
+
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 # [Antigravity Omega] 算力矿山收割机 V1.0
 # 目标：从 TinyFish 公开节点和共享池中实时嗅探可用的 API Token，实现无限弹药供应。
 
-ARSENAL_FILE = r"e:\享中\arsenal.json"
+ARSENAL_FILE = str(_PROJECT_ROOT / 'arsenal.json')
 MCP_POOL_URLS = [
     "https://agent.tinyfish.ai/mcp/get_key", # TinyFish 主节点
     "https://api.github.com/repos/search/tokens" # 示例：甚至可以去 GitHub 嗅探泄漏的 Key

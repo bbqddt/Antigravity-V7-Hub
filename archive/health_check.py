@@ -12,12 +12,14 @@ import time
 import shutil
 from pathlib import Path
 
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
 # Fix Windows GBK encoding for emoji output
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8")
 
-BASE_DIR = Path(r"E:\享中")
-WORK_DIR = Path(r"E:\享中")  # unified to same dir
+BASE_DIR = _PROJECT_ROOT
+WORK_DIR = _PROJECT_ROOT  # unified to same dir
 SKILLS_DIR = WORK_DIR / "skills"
 
 # 结果收集

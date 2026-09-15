@@ -1,0 +1,99 @@
+{
+  "timestamp": "2026-07-18T07:40:49.678Z",
+  "total_draws": 3475,
+  "latest_period": "26078",
+  "top_10_freq": [
+    {
+      "num": 33,
+      "count": 573,
+      "pct": "16.49"
+    },
+    {
+      "num": 32,
+      "count": 547,
+      "pct": "15.74"
+    },
+    {
+      "num": 31,
+      "count": 427,
+      "pct": "12.29"
+    },
+    {
+      "num": 30,
+      "count": 375,
+      "pct": "10.79"
+    },
+    {
+      "num": 29,
+      "count": 322,
+      "pct": "9.27"
+    },
+    {
+      "num": 28,
+      "count": 232,
+      "pct": "6.68"
+    },
+    {
+      "num": 27,
+      "count": 214,
+      "pct": "6.16"
+    },
+    {
+      "num": 26,
+      "count": 188,
+      "pct": "5.41"
+    },
+    {
+      "num": 25,
+      "count": 134,
+      "pct": "3.86"
+    },
+    {
+      "num": 24,
+      "count": 117,
+      "pct": "3.37"
+    }
+  ],
+  "top_10_omission": [
+    {
+      "num": 1,
+      "omission": 101
+    },
+    {
+      "num": 2,
+      "omission": 101
+    },
+    {
+      "num": 3,
+      "omission": 101
+    },
+    {
+      "num": 4,
+      "omission": 101
+    },
+    {
+      "num": 5,
+      "omission": 101
+    },
+    {
+      "num": 6,
+      "omission": 101
+    },
+    {
+      "num": 7,
+      "omission": 101
+    },
+    {
+      "num": 8,
+      "omission": 101
+    },
+    {
+      "num": 9,
+      "omission": 101
+    },
+    {
+      "num": 10,
+      "omission": 101
+    }
+  ]
+}

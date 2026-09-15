@@ -2,6 +2,6 @@
   "project": "Antigravity Omega Web Mirror",
   "stack": "Next.js + TailwindCSS",
   "description": "首席顾问：为 Bolt.new 准备的 Web 镜像架构。实现全球秒开的观测塔。",
-  "core_logic": "e:\\享中\\app.py (抽象版)",
+  "core_logic": "app.py (抽象版)",
   "status": "READY_TO_DEPLOY"
 }

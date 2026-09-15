@@ -1,0 +1,17 @@
+[Unit]
+Description=Antigravity 7x24 Monitor Dashboard
+After=network.target
+
+[Service]
+Type=simple
+User=admin
+WorkingDirectory=/home/admin/antigravity
+ExecStart=/home/admin/antigravity/.venv/bin/python monitor_dashboard.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

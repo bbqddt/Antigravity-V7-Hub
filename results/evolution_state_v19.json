@@ -1,0 +1,258 @@
+{
+  "generation": 50,
+  "best_formula": {
+    "name": "xover_xover_evo_8_res",
+    "source": "evolved",
+    "avg_hits": 12.0,
+    "std_hits": 2.5547,
+    "max_hits": 17,
+    "min_hits": 6,
+    "p_value": 0.0,
+    "rounds": 20,
+    "stability": 9.4453,
+    "fitness": 10.9781,
+    "operators": [
+      "sum",
+      "sum",
+      "sum"
+    ],
+    "primitive_names": [
+      "lyapunov_signal",
+      "wavelet_coherence",
+      "wavelet_coherence",
+      "physical_bias"
+    ]
+  },
+  "top_10": [
+    {
+      "name": "xover_xover_evo_8_res",
+      "source": "evolved",
+      "avg_hits": 12.0,
+      "std_hits": 2.5547,
+      "max_hits": 17,
+      "min_hits": 6,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.4453,
+      "fitness": 10.9781,
+      "operators": [
+        "sum",
+        "sum",
+        "sum"
+      ],
+      "primitive_names": [
+        "lyapunov_signal",
+        "wavelet_coherence",
+        "wavelet_coherence",
+        "physical_bias"
+      ]
+    },
+    {
+      "name": "xover_xover_evo_8_res",
+      "source": "evolved",
+      "avg_hits": 12.0,
+      "std_hits": 2.5547,
+      "max_hits": 17,
+      "min_hits": 6,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.4453,
+      "fitness": 10.9781,
+      "operators": [
+        "sum",
+        "sum",
+        "sum"
+      ],
+      "primitive_names": [
+        "physical_bias",
+        "wavelet_coherence",
+        "lyapunov_signal",
+        "wavelet_coherence"
+      ]
+    },
+    {
+      "name": "xover_xover_evo_8_res_m",
+      "source": "evolved",
+      "avg_hits": 12.0,
+      "std_hits": 2.5547,
+      "max_hits": 17,
+      "min_hits": 6,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.4453,
+      "fitness": 10.9781,
+      "operators": [
+        "sum",
+        "sum",
+        "sum"
+      ],
+      "primitive_names": [
+        "lyapunov_signal",
+        "wavelet_coherence",
+        "wavelet_coherence",
+        "physical_bias"
+      ]
+    },
+    {
+      "name": "xover_xover_evo_8_res_m",
+      "source": "evolved",
+      "avg_hits": 12.0,
+      "std_hits": 2.5547,
+      "max_hits": 17,
+      "min_hits": 6,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.4453,
+      "fitness": 10.9781,
+      "operators": [
+        "sum",
+        "sum",
+        "sum"
+      ],
+      "primitive_names": [
+        "lyapunov_signal",
+        "wavelet_coherence",
+        "wavelet_coherence",
+        "physical_bias"
+      ]
+    },
+    {
+      "name": "xover_xover_evo_8_res_m_m",
+      "source": "evolved",
+      "avg_hits": 12.0,
+      "std_hits": 2.5547,
+      "max_hits": 17,
+      "min_hits": 6,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.4453,
+      "fitness": 10.9781,
+      "operators": [
+        "sum",
+        "sum",
+        "sum"
+      ],
+      "primitive_names": [
+        "lyapunov_signal",
+        "wavelet_coherence",
+        "wavelet_coherence",
+        "physical_bias"
+      ]
+    },
+    {
+      "name": "xover_xover_xover_evo",
+      "source": "evolved",
+      "avg_hits": 12.0,
+      "std_hits": 2.5547,
+      "max_hits": 17,
+      "min_hits": 6,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.4453,
+      "fitness": 10.9781,
+      "operators": [
+        "sum",
+        "sum",
+        "sum"
+      ],
+      "primitive_names": [
+        "wavelet_coherence",
+        "wavelet_coherence",
+        "lyapunov_signal",
+        "physical_bias"
+      ]
+    },
+    {
+      "name": "xover_xover_xover_xov",
+      "source": "evolved",
+      "avg_hits": 12.0,
+      "std_hits": 2.5547,
+      "max_hits": 17,
+      "min_hits": 6,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.4453,
+      "fitness": 10.9781,
+      "operators": [
+        "sum",
+        "sum",
+        "sum"
+      ],
+      "primitive_names": [
+        "physical_bias",
+        "wavelet_coherence",
+        "lyapunov_signal",
+        "wavelet_coherence"
+      ]
+    },
+    {
+      "name": "xover_xover_evo_8_res_m_m",
+      "source": "evolved",
+      "avg_hits": 12.0,
+      "std_hits": 2.5547,
+      "max_hits": 17,
+      "min_hits": 6,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.4453,
+      "fitness": 10.9781,
+      "operators": [
+        "sum",
+        "sum",
+        "sum"
+      ],
+      "primitive_names": [
+        "lyapunov_signal",
+        "wavelet_coherence",
+        "wavelet_coherence",
+        "physical_bias"
+      ]
+    },
+    {
+      "name": "xover_xover_evo_8_res_m",
+      "source": "evolved",
+      "avg_hits": 12.0,
+      "std_hits": 2.5547,
+      "max_hits": 17,
+      "min_hits": 6,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.4453,
+      "fitness": 10.9781,
+      "operators": [
+        "sum",
+        "sum",
+        "sum"
+      ],
+      "primitive_names": [
+        "physical_bias",
+        "wavelet_coherence",
+        "lyapunov_signal",
+        "wavelet_coherence"
+      ]
+    },
+    {
+      "name": "xover_evo_8_resonance_resonance_m_m_m_m_m",
+      "source": "evolved",
+      "avg_hits": 12.0,
+      "std_hits": 2.5547,
+      "max_hits": 17,
+      "min_hits": 6,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.4453,
+      "fitness": 10.9781,
+      "operators": [
+        "resonance",
+        "resonance"
+      ],
+      "primitive_names": [
+        "distance_cluster",
+        "physical_bias",
+        "wavelet_coherence"
+      ]
+    }
+  ],
+  "population_size": 100,
+  "timestamp": "2026-07-19T14:16:17.902999"
+}

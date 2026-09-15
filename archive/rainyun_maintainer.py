@@ -2,6 +2,9 @@ from playwright.sync_api import sync_playwright
 import time
 import json
 import os
+from pathlib import Path
+
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 # [Rainyun Auto-Maintainer] 雨云自动维护哨兵
 # 目标：每天自动登录雨云，确保服务器不被停机，实现云端指挥部永存。
@@ -9,7 +12,7 @@ import os
 def maintain_rainyun():
     # 注意：长官需要提供雨云的登录凭证
     # (此处建议通过 key_manager 保护)
-    config_path = r"e:\享中\keys.json"
+    config_path = _PROJECT_ROOT / 'keys.json'
     try:
         with open(config_path, 'r') as f:
             keys = json.load(f)

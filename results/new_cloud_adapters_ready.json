@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-02T02:16:25.947952",
+  "status": "testing",
+  "message": "第三方云服务适配器准备就绪",
+  "available_adapters": [
+    "fly_deploy.py",
+    "aws_ec2_deploy.py",
+    "e2b_deploy.py"
+  ]
+}

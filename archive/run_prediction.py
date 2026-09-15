@@ -2,8 +2,10 @@ import pandas as pd
 import random
 from collections import Counter
 import os
+from pathlib import Path
 
-DATA_FILE = r"E:\享中\data/lottery_history.csv"
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DATA_FILE = str(_PROJECT_ROOT / 'data' / 'lottery_history.csv')
 
 def generate_prediction(hot_reds, cold_reds, hot_blues, cold_blues, strategy="balanced"):
     pool = list(range(1, 34))

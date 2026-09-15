@@ -1,4 +1,7 @@
 import pandas as pd
+from pathlib import Path
+
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 new_data = [
     {"period": 26066, "red": "05,11,21,23,24,29", "blue": 16, "date": "2026-06-11"},
@@ -13,7 +16,7 @@ new_data = [
     {"period": 26057, "red": "01,10,22,24,28,30", "blue": 7, "date": "2026-05-21"}
 ]
 
-csv_file = r"E:\享中\data/lottery_history.csv"
+csv_file = str(_PROJECT_ROOT / 'data' / 'lottery_history.csv')
 
 # Load existing data
 try:

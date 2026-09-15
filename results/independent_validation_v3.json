@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-07-13T19:25:21.319995",
+  "train_split": 2780,
+  "test_periods": 695,
+  "all_passed": false,
+  "formulas": [
+    {
+      "name": "hybrid_resonance_spectral_c_spectral_p_resonance",
+      "train_avg": 1.2267,
+      "test_avg": 1.075,
+      "test_std": 0.30310889132455354,
+      "test_rounds": 12
+    },
+    {
+      "name": "hybrid_resonance_dynamic_co_mutual_exc_resonance",
+      "train_avg": 1.2,
+      "test_avg": 1.2750000000000001,
+      "test_std": 0.30584582172504277,
+      "test_rounds": 12
+    },
+    {
+      "name": "hybrid_resonance_trend_mome_spectral_p_resonance",
+      "train_avg": 1.2,
+      "test_avg": 1.1916666666666667,
+      "test_std": 0.28999521068842193,
+      "test_rounds": 12
+    },
+    {
+      "name": "cascade_dynamic_co_spectral_c_cascade",
+      "train_avg": 1.1867,
+      "test_avg": 1.1500000000000001,
+      "test_std": 0.2692582403567252,
+      "test_rounds": 12
+    },
+    {
+      "name": "cascade_dynamic_co_multi_scal_cascade",
+      "train_avg": 1.1867,
+      "test_avg": 1.1500000000000001,
+      "test_std": 0.2692582403567252,
+      "test_rounds": 12
+    }
+  ]
+}

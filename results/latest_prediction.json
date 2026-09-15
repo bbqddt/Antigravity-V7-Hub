@@ -1,0 +1,73 @@
+{
+  "target_period": 26088,
+  "timestamp": "2026-08-01T03:41:15.662546",
+  "total_engines": 1,
+  "total_candidates": 5,
+  "groups": [
+    {
+      "red": [
+        2,
+        9,
+        13,
+        20,
+        26,
+        31
+      ],
+      "blue": 2,
+      "engine": "Enhanced V2.0",
+      "score": 0.0
+    },
+    {
+      "red": [
+        2,
+        6,
+        10,
+        12,
+        13,
+        17
+      ],
+      "blue": 1,
+      "engine": "Enhanced V2.0",
+      "score": 0.0
+    },
+    {
+      "red": [
+        2,
+        6,
+        8,
+        9,
+        10,
+        25
+      ],
+      "blue": 2,
+      "engine": "Enhanced V2.0",
+      "score": 0.0
+    },
+    {
+      "red": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        14
+      ],
+      "blue": 13,
+      "engine": "Enhanced V2.0",
+      "score": 0.0
+    },
+    {
+      "red": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        9
+      ],
+      "blue": 12,
+      "engine": "Enhanced V2.0",
+      "score": 0.0
+    }
+  ]
+}

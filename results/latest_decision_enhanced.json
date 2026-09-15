@@ -1,0 +1,82 @@
+{
+  "period": "26089",
+  "predictions": [
+    {
+      "group": 2,
+      "strategy": "autocorrelation",
+      "reds": [
+        2,
+        6,
+        7,
+        20,
+        26,
+        31
+      ],
+      "blue": 10,
+      "causal_valid": true,
+      "causal_multiplier": 1.0
+    },
+    {
+      "group": 4,
+      "strategy": "hot_core",
+      "reds": [
+        1,
+        10,
+        12,
+        13,
+        26,
+        30
+      ],
+      "blue": 15,
+      "causal_valid": true,
+      "causal_multiplier": 1.0
+    },
+    {
+      "group": 5,
+      "strategy": "autocorrelation",
+      "reds": [
+        2,
+        6,
+        7,
+        20,
+        26,
+        31
+      ],
+      "blue": 1,
+      "causal_valid": true,
+      "causal_multiplier": 1.0
+    },
+    {
+      "group": 3,
+      "strategy": "omission",
+      "reds": [
+        4,
+        6,
+        8,
+        10,
+        29,
+        30
+      ],
+      "blue": 1,
+      "causal_valid": false,
+      "causal_multiplier": 0.5
+    },
+    {
+      "group": 1,
+      "strategy": "cooccurrence",
+      "reds": [
+        4,
+        14,
+        1,
+        2,
+        3,
+        6
+      ],
+      "blue": 15,
+      "causal_valid": false,
+      "causal_multiplier": 0.15
+    }
+  ],
+  "engine": "Enhanced Predictor V2.0 (Multi-Strategy Ensemble)",
+  "timestamp": "2026-08-05T01:37:24.736977"
+}

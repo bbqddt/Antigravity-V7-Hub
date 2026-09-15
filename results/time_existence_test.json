@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-07-05T15:30:26.116781",
+  "n_draws": 3472,
+  "tests": {
+    "1. 前后对称性检验": {
+      "avg_ks": 0.0,
+      "verdict": "REJECT",
+      "summary": "正向/反向KS均值=0.0000 (相同→时间不存在)"
+    },
+    "2. 马尔可夫性检验": {
+      "avg_slow": 9.33,
+      "verdict": "REJECT",
+      "summary": "长尾ACF位置数=9.3 (越多→时间不存在)"
+    },
+    "3. 统计漂移检验": {
+      "avg_drift": 0.000501,
+      "verdict": "REJECT",
+      "summary": "平均漂移率=0.000501 (无漂移→时间不存在)"
+    },
+    "4. 信息复杂度检验": {
+      "slope": 0.00605,
+      "verdict": "REJECT",
+      "summary": "熵变化率=0.006050 (恒定→时间不存在)"
+    },
+    "5. 因果方向检验": {
+      "avg_asym": 0.0,
+      "verdict": "REJECT",
+      "summary": "平均非对称性=0.0000 (无方向→时间不存在)"
+    },
+    "6. 预测增益检验": {
+      "gain": -0.02,
+      "verdict": "REJECT",
+      "summary": "预测增益=-0.0200 (无增益→时间不存在)"
+    },
+    "7. 结构稳定性检验": {
+      "kl_var": 0.00165807,
+      "verdict": "PASS",
+      "summary": "KL方差=0.00165807 (变化→时间存在)"
+    },
+    "8. Hurst 指数检验": {
+      "avg_hurst": 0.2427,
+      "verdict": "REJECT",
+      "summary": "平均Hurst=0.2427 (≠0.5→时间不存在)"
+    }
+  },
+  "summary": {
+    "passed": 1,
+    "failed": 7,
+    "total": 8,
+    "interpretation": "数据强烈非随机。存在静态场结构。公式有效。"
+  }
+}

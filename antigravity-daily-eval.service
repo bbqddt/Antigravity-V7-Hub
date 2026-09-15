@@ -1,0 +1,11 @@
+[Unit]
+Description=Antigravity Daily Evaluation
+After=network.target
+
+[Service]
+Type=oneshot
+User=admin
+WorkingDirectory=/home/admin/antigravity
+ExecStart=/home/admin/antigravity/scripts/daily_eval.sh
+StandardOutput=journal
+StandardError=journal

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-07-06T07:34:17.907179",
+  "elapsed_seconds": 18.0,
+  "data_periods": 3472,
+  "phases": {
+    "formula_development": {
+      "status": "completed",
+      "report_keys": [
+        "phase",
+        "timestamp",
+        "n_primitives",
+        "n_formulas",
+        "top_formulas",
+        "evolution",
+        "registry_summary"
+      ]
+    },
+    "strategy_generation": {
+      "status": "completed",
+      "report_keys": [
+        "phase",
+        "timestamp",
+        "n_hypotheses",
+        "survived",
+        "eliminated",
+        "registry_summary"
+      ]
+    },
+    "llm_innovation": {
+      "status": "completed",
+      "report_keys": [
+        "phase",
+        "timestamp",
+        "gemini_available",
+        "specs_received",
+        "specs"
+      ]
+    }
+  }
+}

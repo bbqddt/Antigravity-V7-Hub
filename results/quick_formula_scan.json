@@ -1,0 +1,405 @@
+{
+  "top_formulas": [
+    {
+      "name": "rand_40_resonance",
+      "performance": {
+        "avg_hits": 0.22,
+        "std": 0.0837,
+        "max_hits": 0.3167,
+        "min_hits": 0.1167,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1363,
+        "per_round": [
+          0.15,
+          0.3167,
+          0.1167,
+          0.25,
+          0.2667
+        ]
+      }
+    },
+    {
+      "name": "rand_46_phasealign",
+      "performance": {
+        "avg_hits": 0.21,
+        "std": 0.0641,
+        "max_hits": 0.2667,
+        "min_hits": 0.1333,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1459,
+        "per_round": [
+          0.15,
+          0.2667,
+          0.1333,
+          0.2333,
+          0.2667
+        ]
+      }
+    },
+    {
+      "name": "rand_48_resonance",
+      "performance": {
+        "avg_hits": 0.21,
+        "std": 0.0673,
+        "max_hits": 0.2833,
+        "min_hits": 0.1333,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1427,
+        "per_round": [
+          0.1333,
+          0.2667,
+          0.15,
+          0.2167,
+          0.2833
+        ]
+      }
+    },
+    {
+      "name": "rand_98_phasealign",
+      "performance": {
+        "avg_hits": 0.21,
+        "std": 0.0279,
+        "max_hits": 0.2333,
+        "min_hits": 0.1667,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1821,
+        "per_round": [
+          0.2333,
+          0.2167,
+          0.2,
+          0.1667,
+          0.2333
+        ]
+      }
+    },
+    {
+      "name": "rand_60_resonance",
+      "performance": {
+        "avg_hits": 0.2067,
+        "std": 0.0608,
+        "max_hits": 0.2833,
+        "min_hits": 0.1333,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1459,
+        "per_round": [
+          0.1333,
+          0.2833,
+          0.1667,
+          0.2,
+          0.25
+        ]
+      }
+    },
+    {
+      "name": "rand_8_resonance",
+      "performance": {
+        "avg_hits": 0.2033,
+        "std": 0.0492,
+        "max_hits": 0.2833,
+        "min_hits": 0.15,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1542,
+        "per_round": [
+          0.15,
+          0.2,
+          0.2833,
+          0.2,
+          0.1833
+        ]
+      }
+    },
+    {
+      "name": "rand_92_resonance",
+      "performance": {
+        "avg_hits": 0.2033,
+        "std": 0.0767,
+        "max_hits": 0.3,
+        "min_hits": 0.1333,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1266,
+        "per_round": [
+          0.1333,
+          0.1833,
+          0.1333,
+          0.3,
+          0.2667
+        ]
+      }
+    },
+    {
+      "name": "rand_1_cascade",
+      "performance": {
+        "avg_hits": 0.2,
+        "std": 0.0553,
+        "max_hits": 0.2667,
+        "min_hits": 0.1167,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1447,
+        "per_round": [
+          0.2167,
+          0.2167,
+          0.1833,
+          0.1167,
+          0.2667
+        ]
+      }
+    },
+    {
+      "name": "rand_3",
+      "performance": {
+        "avg_hits": 0.2,
+        "std": 0.0553,
+        "max_hits": 0.2667,
+        "min_hits": 0.1167,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1447,
+        "per_round": [
+          0.2167,
+          0.2167,
+          0.1833,
+          0.1167,
+          0.2667
+        ]
+      }
+    },
+    {
+      "name": "rand_25_cascade",
+      "performance": {
+        "avg_hits": 0.2,
+        "std": 0.0312,
+        "max_hits": 0.2333,
+        "min_hits": 0.15,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1688,
+        "per_round": [
+          0.2333,
+          0.15,
+          0.2167,
+          0.2,
+          0.2
+        ]
+      }
+    },
+    {
+      "name": "rand_35",
+      "performance": {
+        "avg_hits": 0.2,
+        "std": 0.0553,
+        "max_hits": 0.2667,
+        "min_hits": 0.1167,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1447,
+        "per_round": [
+          0.2167,
+          0.2167,
+          0.1833,
+          0.1167,
+          0.2667
+        ]
+      }
+    },
+    {
+      "name": "rand_39",
+      "performance": {
+        "avg_hits": 0.2,
+        "std": 0.0553,
+        "max_hits": 0.2667,
+        "min_hits": 0.1167,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1447,
+        "per_round": [
+          0.2167,
+          0.2167,
+          0.1833,
+          0.1167,
+          0.2667
+        ]
+      }
+    },
+    {
+      "name": "rand_43",
+      "performance": {
+        "avg_hits": 0.2,
+        "std": 0.0553,
+        "max_hits": 0.2667,
+        "min_hits": 0.1167,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1447,
+        "per_round": [
+          0.2167,
+          0.2167,
+          0.1833,
+          0.1167,
+          0.2667
+        ]
+      }
+    },
+    {
+      "name": "rand_47",
+      "performance": {
+        "avg_hits": 0.2,
+        "std": 0.0553,
+        "max_hits": 0.2667,
+        "min_hits": 0.1167,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1447,
+        "per_round": [
+          0.2167,
+          0.2167,
+          0.1833,
+          0.1167,
+          0.2667
+        ]
+      }
+    },
+    {
+      "name": "rand_55",
+      "performance": {
+        "avg_hits": 0.2,
+        "std": 0.0553,
+        "max_hits": 0.2667,
+        "min_hits": 0.1167,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1447,
+        "per_round": [
+          0.2167,
+          0.2167,
+          0.1833,
+          0.1167,
+          0.2667
+        ]
+      }
+    },
+    {
+      "name": "rand_61_cascade",
+      "performance": {
+        "avg_hits": 0.2,
+        "std": 0.0553,
+        "max_hits": 0.2667,
+        "min_hits": 0.1167,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1447,
+        "per_round": [
+          0.2167,
+          0.2167,
+          0.1833,
+          0.1167,
+          0.2667
+        ]
+      }
+    },
+    {
+      "name": "rand_65_cascade",
+      "performance": {
+        "avg_hits": 0.2,
+        "std": 0.0553,
+        "max_hits": 0.2667,
+        "min_hits": 0.1167,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1447,
+        "per_round": [
+          0.2167,
+          0.2167,
+          0.1833,
+          0.1167,
+          0.2667
+        ]
+      }
+    },
+    {
+      "name": "rand_71",
+      "performance": {
+        "avg_hits": 0.2,
+        "std": 0.0553,
+        "max_hits": 0.2667,
+        "min_hits": 0.1167,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1447,
+        "per_round": [
+          0.2167,
+          0.2167,
+          0.1833,
+          0.1167,
+          0.2667
+        ]
+      }
+    },
+    {
+      "name": "rand_72_resonance",
+      "performance": {
+        "avg_hits": 0.2,
+        "std": 0.0471,
+        "max_hits": 0.25,
+        "min_hits": 0.15,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1529,
+        "per_round": [
+          0.15,
+          0.1833,
+          0.25,
+          0.1667,
+          0.25
+        ]
+      }
+    },
+    {
+      "name": "rand_75",
+      "performance": {
+        "avg_hits": 0.2,
+        "std": 0.0553,
+        "max_hits": 0.2667,
+        "min_hits": 0.1167,
+        "p_value": 0.0,
+        "rounds": 5,
+        "beats_random": false,
+        "stable": 0.1447,
+        "per_round": [
+          0.2167,
+          0.2167,
+          0.1833,
+          0.1167,
+          0.2667
+        ]
+      }
+    }
+  ],
+  "total_evaluated": 100
+}

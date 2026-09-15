@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-07-21T19:00:00",
+  "session_id": "2026-07-21-calibration-and-daemon-fix",
+  "status": "completed",
+
+  "vault_changes": {
+    "removed_duplicates": [
+      "tri_res_multi_sc_dynamic__resonance"
+    ],
+    "reason": "Duplicate primitive set: ('dynamic_cooccurrence', 'multi_scale_resonance', 'scale_transition')",
+    "kept_formula": "tri_res_dynamic__multi_sc_resonance"
+  },
+
+  "calibration_results": {
+    "method": "walk-forward re-evaluation with n_windows=20, window_size=400, step=40",
+    "formulas_needing_calibration": [
+      {
+        "name": "cascade_multi_scal_dynamic_co_cascade",
+        "stored_avg": 1.2267,
+        "verified_avg": 1.0700,
+        "deviation": 0.1567,
+        "status": "active"
+      },
+      {
+        "name": "resonance_trend_mome_spectral_c_resonance",
+        "stored_avg": 1.2000,
+        "verified_avg": 1.0500,
+        "deviation": 0.1500,
+        "status": "active"
+      },
+      {
+        "name": "hybrid_resonance_dynamic_co_pair_orbit_resonance",
+        "stored_avg": 1.2267,
+        "verified_avg": 1.0900,
+        "deviation": 0.1367,
+        "status": "active"
+      }
+    ],
+    "v4tri_modular_issue": {
+      "formula": "v4tri_modular__dynamic__binary_t_resonance",
+      "problem": "test_avg == avg_hits (1.1740), never cross-validated",
+      "verified_avg": 1.0500,
+      "actual_deviation": 0.1240,
+      "already_eliminated": true,
+      "note": "Data shows overfitting/data leakage in generation 7"
+    }
+  },
+
+  "daemon_status": {
+    "previous_cycles": 9,
+    "last_cycle_timestamp": "2026-07-14T21:20:10",
+    "days_since_last_cycle": 6,
+    "issue": "Daemon processes running but not producing new cycles",
+    "action_taken": "Killed all zombie daemons, started fresh with error logging"
+  },
+
+  "next_actions": [
+    "Monitor fresh daemon for first new evolution cycle",
+    "Verify vault changes persisted correctly",
+    "Consider reducing stored_avg for active formulas that failed calibration"
+  ]
+}

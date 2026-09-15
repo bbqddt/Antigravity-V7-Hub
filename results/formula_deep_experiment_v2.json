@@ -1,0 +1,385 @@
+{
+  "timestamp": "2026-07-09T18:06:32.228384",
+  "data_periods": 3474,
+  "backtest_config": {
+    "warmup": 100,
+    "rounds": 500
+  },
+  "results": {
+    "PairOrbit(lookback=100)": {
+      "avg": 3.818,
+      "std": 2.1571,
+      "median": 5.0,
+      "max": 6,
+      "rounds": 500,
+      "histogram": {
+        "0": 45,
+        "1": 83,
+        "2": 33,
+        "3": 26,
+        "4+": 313
+      }
+    },
+    "PairOrbit(lookback=200)": {
+      "avg": 3.722,
+      "std": 2.1337,
+      "median": 5.0,
+      "max": 6,
+      "rounds": 500,
+      "histogram": {
+        "0": 50,
+        "1": 79,
+        "2": 39,
+        "3": 23,
+        "4+": 309
+      }
+    },
+    "PairOrbit(lookback=50)": {
+      "avg": 4.066,
+      "std": 2.0527,
+      "median": 5.0,
+      "max": 6,
+      "rounds": 500,
+      "histogram": {
+        "0": 44,
+        "1": 54,
+        "2": 30,
+        "3": 31,
+        "4+": 341
+      }
+    },
+    "CooccurrenceAffinity(lookback=100)": {
+      "avg": 1.406,
+      "std": 0.9472,
+      "median": 1.0,
+      "max": 5,
+      "rounds": 500,
+      "histogram": {
+        "0": 84,
+        "1": 195,
+        "2": 166,
+        "3": 47,
+        "4+": 8
+      }
+    },
+    "CooccurrenceAffinity(lookback=200)": {
+      "avg": 1.33,
+      "std": 0.9514,
+      "median": 1.0,
+      "max": 4,
+      "rounds": 500,
+      "histogram": {
+        "0": 96,
+        "1": 210,
+        "2": 135,
+        "3": 51,
+        "4+": 8
+      }
+    },
+    "DistanceCluster(lookback=100)": {
+      "avg": 1.42,
+      "std": 0.9506,
+      "median": 1.0,
+      "max": 5,
+      "rounds": 500,
+      "histogram": {
+        "0": 83,
+        "1": 196,
+        "2": 158,
+        "3": 55,
+        "4+": 8
+      }
+    },
+    "MultiScaleFrequency": {
+      "avg": 1.418,
+      "std": 0.9183,
+      "median": 1.0,
+      "max": 4,
+      "rounds": 500,
+      "histogram": {
+        "0": 79,
+        "1": 195,
+        "2": 173,
+        "3": 44,
+        "4+": 9
+      }
+    },
+    "ModuloClassDistribution": {
+      "avg": 1.37,
+      "std": 0.895,
+      "median": 1.0,
+      "max": 4,
+      "rounds": 500,
+      "histogram": {
+        "0": 79,
+        "1": 215,
+        "2": 153,
+        "3": 48,
+        "4+": 5
+      }
+    },
+    "DigitPairFrequency": {
+      "avg": 1.22,
+      "std": 0.8897,
+      "median": 1.0,
+      "max": 4,
+      "rounds": 500,
+      "histogram": {
+        "0": 108,
+        "1": 216,
+        "2": 139,
+        "3": 32,
+        "4+": 5
+      }
+    },
+    "TailRiskSignal": {
+      "avg": 1.222,
+      "std": 0.8676,
+      "median": 1.0,
+      "max": 5,
+      "rounds": 500,
+      "histogram": {
+        "0": 101,
+        "1": 224,
+        "2": 144,
+        "3": 26,
+        "4+": 5
+      }
+    },
+    "SumRangeTracker": {
+      "avg": 1.252,
+      "std": 0.8969,
+      "median": 1.0,
+      "max": 5,
+      "rounds": 500,
+      "histogram": {
+        "0": 101,
+        "1": 218,
+        "2": 141,
+        "3": 35,
+        "4+": 5
+      }
+    },
+    "DigitManifold": {
+      "avg": 1.216,
+      "std": 0.9107,
+      "median": 1.0,
+      "max": 4,
+      "rounds": 500,
+      "histogram": {
+        "0": 108,
+        "1": 225,
+        "2": 126,
+        "3": 33,
+        "4+": 8
+      }
+    },
+    "LyapunovSignal": {
+      "avg": 1.648,
+      "std": 0.9592,
+      "median": 2.0,
+      "max": 4,
+      "rounds": 500,
+      "histogram": {
+        "0": 58,
+        "1": 162,
+        "2": 191,
+        "3": 76,
+        "4+": 13
+      }
+    },
+    "Formula: resonance(PairOrbit, Cooccurrence)": {
+      "avg": 1.062,
+      "std": 0.8753,
+      "median": 1.0,
+      "max": 5,
+      "rounds": 500
+    },
+    "Formula: cascade(PairOrbit, Cooccurrence)": {
+      "avg": 1.062,
+      "std": 0.8753,
+      "median": 1.0,
+      "max": 5,
+      "rounds": 500
+    },
+    "Formula: weighted_sum(PairOrbit, Cooccurrence)": {
+      "avg": 1.134,
+      "std": 0.8787,
+      "median": 1.0,
+      "max": 4,
+      "rounds": 500
+    },
+    "MultiPrim(equal_weight)": {
+      "avg": 2.54,
+      "std": 1.5259,
+      "median": 3.0,
+      "max": 6,
+      "rounds": 500
+    },
+    "MultiPrim(performance_weighted)": {
+      "avg": 1.898,
+      "std": 1.2015,
+      "median": 2.0,
+      "max": 6,
+      "rounds": 500
+    },
+    "MultiPrim(pair_orbit_heavy)": {
+      "avg": 1.726,
+      "std": 1.1167,
+      "median": 2.0,
+      "max": 5,
+      "rounds": 500
+    },
+    "MultiPrim(top2_only)": {
+      "avg": 3.722,
+      "std": 2.1337,
+      "median": 5.0,
+      "max": 6,
+      "rounds": 500
+    },
+    "MultiPrim(top2_equal)": {
+      "avg": 3.766,
+      "std": 2.0424,
+      "median": 5.0,
+      "max": 6,
+      "rounds": 500
+    }
+  },
+  "top_10": [
+    [
+      "PairOrbit(lookback=50)",
+      {
+        "avg": 4.066,
+        "std": 2.0527,
+        "median": 5.0,
+        "max": 6,
+        "rounds": 500,
+        "histogram": {
+          "0": 44,
+          "1": 54,
+          "2": 30,
+          "3": 31,
+          "4+": 341
+        }
+      }
+    ],
+    [
+      "PairOrbit(lookback=100)",
+      {
+        "avg": 3.818,
+        "std": 2.1571,
+        "median": 5.0,
+        "max": 6,
+        "rounds": 500,
+        "histogram": {
+          "0": 45,
+          "1": 83,
+          "2": 33,
+          "3": 26,
+          "4+": 313
+        }
+      }
+    ],
+    [
+      "MultiPrim(top2_equal)",
+      {
+        "avg": 3.766,
+        "std": 2.0424,
+        "median": 5.0,
+        "max": 6,
+        "rounds": 500
+      }
+    ],
+    [
+      "PairOrbit(lookback=200)",
+      {
+        "avg": 3.722,
+        "std": 2.1337,
+        "median": 5.0,
+        "max": 6,
+        "rounds": 500,
+        "histogram": {
+          "0": 50,
+          "1": 79,
+          "2": 39,
+          "3": 23,
+          "4+": 309
+        }
+      }
+    ],
+    [
+      "MultiPrim(top2_only)",
+      {
+        "avg": 3.722,
+        "std": 2.1337,
+        "median": 5.0,
+        "max": 6,
+        "rounds": 500
+      }
+    ],
+    [
+      "MultiPrim(equal_weight)",
+      {
+        "avg": 2.54,
+        "std": 1.5259,
+        "median": 3.0,
+        "max": 6,
+        "rounds": 500
+      }
+    ],
+    [
+      "MultiPrim(performance_weighted)",
+      {
+        "avg": 1.898,
+        "std": 1.2015,
+        "median": 2.0,
+        "max": 6,
+        "rounds": 500
+      }
+    ],
+    [
+      "MultiPrim(pair_orbit_heavy)",
+      {
+        "avg": 1.726,
+        "std": 1.1167,
+        "median": 2.0,
+        "max": 5,
+        "rounds": 500
+      }
+    ],
+    [
+      "LyapunovSignal",
+      {
+        "avg": 1.648,
+        "std": 0.9592,
+        "median": 2.0,
+        "max": 4,
+        "rounds": 500,
+        "histogram": {
+          "0": 58,
+          "1": 162,
+          "2": 191,
+          "3": 76,
+          "4+": 13
+        }
+      }
+    ],
+    [
+      "DistanceCluster(lookback=100)",
+      {
+        "avg": 1.42,
+        "std": 0.9506,
+        "median": 1.0,
+        "max": 5,
+        "rounds": 500,
+        "histogram": {
+          "0": 83,
+          "1": 196,
+          "2": 158,
+          "3": 55,
+          "4+": 8
+        }
+      }
+    ]
+  ]
+}

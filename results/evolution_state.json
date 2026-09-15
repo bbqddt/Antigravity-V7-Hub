@@ -1,0 +1,17 @@
+{
+  "cycle": 6,
+  "total_signals": 90,
+  "persistent_signals": [
+    "通过",
+    "偏离",
+    "Hurst",
+    "KS",
+    "ACF",
+    "MI",
+    "证伪",
+    "Top-",
+    "最佳公式",
+    "命中"
+  ],
+  "last_run": "2026-07-05T15:29:47.177512"
+}

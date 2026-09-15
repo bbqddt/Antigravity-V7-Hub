@@ -1,0 +1,255 @@
+{
+  "total_periods": 3475,
+  "first_period": 3001,
+  "last_period": 26078,
+  "formulas_evaluated": 20,
+  "consistency_ranking": [
+    {
+      "name": "hybrid_resonance_dynamic_co_pair_orbit_resonance",
+      "avg_hits": 1.120313862249346,
+      "consistency_ge2": 0.3083405986631793,
+      "phase_variance": 0.003501720788719731,
+      "gap_cv": 0.7708088290877245,
+      "structure_score": 0.49209359073895437
+    },
+    {
+      "name": "tri_res_dynamic__pair_orb_resonance",
+      "avg_hits": 1.1208950886370241,
+      "consistency_ge2": 0.3095030514385353,
+      "phase_variance": 0.0015925460717539045,
+      "gap_cv": 0.7979879375734399,
+      "structure_score": 0.4844048393033822
+    },
+    {
+      "name": "cascade_multi_scal_dynamic_co_cascade",
+      "avg_hits": 1.089218250508573,
+      "consistency_ge2": 0.2952630049404243,
+      "phase_variance": 0.0023566907089375123,
+      "gap_cv": 0.7878650224427945,
+      "structure_score": 0.4817456952433314
+    },
+    {
+      "name": "tri_res_spectral_mutual_e_resonance",
+      "avg_hits": 1.1089799476896252,
+      "consistency_ge2": 0.2990409764603313,
+      "phase_variance": 0.0022058164902399612,
+      "gap_cv": 0.7946336713948401,
+      "structure_score": 0.4812262891656805
+    },
+    {
+      "name": "hybrid_resonance_multi_scal_mutual_exc_resonance",
+      "avg_hits": 1.1005521650682941,
+      "consistency_ge2": 0.2984597500726533,
+      "phase_variance": 0.0024203167667906133,
+      "gap_cv": 0.7975735461974837,
+      "structure_score": 0.48011183616981623
+    },
+    {
+      "name": "resonance_trend_mome_multi_scal_resonance",
+      "avg_hits": 1.083405986631793,
+      "consistency_ge2": 0.2978785236849753,
+      "phase_variance": 0.001403614242682314,
+      "gap_cv": 0.8146654816972592,
+      "structure_score": 0.47475176496481236
+    },
+    {
+      "name": "tri_res_dynamic__dynamic__resonance",
+      "avg_hits": 1.102877070619006,
+      "consistency_ge2": 0.3036907875617553,
+      "phase_variance": 0.0018153405185384376,
+      "gap_cv": 0.8409934699765658,
+      "structure_score": 0.4691782740317324
+    },
+    {
+      "name": "tri_res_dynamic__multi_sc_resonance",
+      "avg_hits": 1.0874745713455392,
+      "consistency_ge2": 0.2914850334205173,
+      "phase_variance": 0.0018220940371044749,
+      "gap_cv": 0.825670906157895,
+      "structure_score": 0.46889274152083843
+    },
+    {
+      "name": "tri_res_multi_sc_dynamic__resonance",
+      "avg_hits": 1.0874745713455392,
+      "consistency_ge2": 0.2914850334205173,
+      "phase_variance": 0.0018220940371044749,
+      "gap_cv": 0.825670906157895,
+      "structure_score": 0.46889274152083843
+    },
+    {
+      "name": "hybrid_resonance_spectral_c_pair_orbit_resonance",
+      "avg_hits": 1.1185701830863122,
+      "consistency_ge2": 0.3022377215925603,
+      "phase_variance": 0.001943420017819881,
+      "gap_cv": 0.8419949622743619,
+      "structure_score": 0.46829659995471556
+    },
+    {
+      "name": "tri_res_dynamic__mutual_e_resonance",
+      "avg_hits": 1.083696599825632,
+      "consistency_ge2": 0.3016564952048823,
+      "phase_variance": 0.0010319868038650968,
+      "gap_cv": 0.8466193473104474,
+      "structure_score": 0.4666767938888187
+    },
+    {
+      "name": "hybrid_resonance_multi_scal_wavelet_co_resonance",
+      "avg_hits": 1.0895088637024122,
+      "consistency_ge2": 0.2943911653589073,
+      "phase_variance": 0.0015978697932055453,
+      "gap_cv": 0.8396611895388356,
+      "structure_score": 0.46585810928191224
+    },
+    {
+      "name": "resonance_dynamic_co_trend_mome_resonance",
+      "avg_hits": 1.1037489102005231,
+      "consistency_ge2": 0.2993315896541703,
+      "phase_variance": 0.0017176723534204894,
+      "gap_cv": 0.8486954115990292,
+      "structure_score": 0.46512401238195933
+    },
+    {
+      "name": "tri_res_dynamic__spectral_resonance",
+      "avg_hits": 1.080499854693403,
+      "consistency_ge2": 0.2941005521650683,
+      "phase_variance": 0.0021082600529484597,
+      "gap_cv": 0.8468676991453327,
+      "structure_score": 0.4635799111224275
+    },
+    {
+      "name": "resonance_dynamic_co_spectral_c_resonance",
+      "avg_hits": 1.080499854693403,
+      "consistency_ge2": 0.2941005521650683,
+      "phase_variance": 0.0021082600529484597,
+      "gap_cv": 0.8468676991453327,
+      "structure_score": 0.4635799111224275
+    },
+    {
+      "name": "tri_res_multi_sc_spectral_resonance",
+      "avg_hits": 1.089218250508573,
+      "consistency_ge2": 0.3007846556233653,
+      "phase_variance": 0.002381439291508926,
+      "gap_cv": 0.857401282404985,
+      "structure_score": 0.4630934775278506
+    },
+    {
+      "name": "hybrid_resonance_dynamic_co_mutual_exc_resonance",
+      "avg_hits": 1.089218250508573,
+      "consistency_ge2": 0.2909038070328393,
+      "phase_variance": 0.0027197067302170827,
+      "gap_cv": 0.8610488372229402,
+      "structure_score": 0.45804687164625363
+    },
+    {
+      "name": "tri_res_dynamic__cooccurr_resonance",
+      "avg_hits": 1.09880848590526,
+      "consistency_ge2": 0.29642545771578027,
+      "phase_variance": 0.002110485325094404,
+      "gap_cv": 0.8894939281807364,
+      "structure_score": 0.4517220046320912
+    },
+    {
+      "name": "extreme_trend_weighted",
+      "avg_hits": 1.06684103458297,
+      "consistency_ge2": 0.2775356001162453,
+      "phase_variance": 0.002010981333512588,
+      "gap_cv": 0.8751336158373099,
+      "structure_score": 0.44847415529530515
+    },
+    {
+      "name": "resonance_trend_mome_spectral_c_resonance",
+      "avg_hits": 1.048241790177274,
+      "consistency_ge2": 0.2778262133100843,
+      "phase_variance": 0.002942662410887811,
+      "gap_cv": 0.8868806093324111,
+      "structure_score": 0.4450663025243104
+    }
+  ],
+  "cross_formula_agreement": {
+    "avg_agreement": 0.303401961207261,
+    "max_agreement": 1.0,
+    "min_agreement": -0.2453762583072271,
+    "high_agreement_pairs": 95,
+    "total_pairs": 190,
+    "top_pairs": [
+      [
+        "tri_res_dynamic__spectral_resonancexresonance_dynamic_co_spectral_c_resonance",
+        1.0
+      ],
+      [
+        "tri_res_dynamic__multi_sc_resonancextri_res_multi_sc_dynamic__resonance",
+        1.0
+      ],
+      [
+        "hybrid_resonance_dynamic_co_mutual_exc_resonancextri_res_dynamic__cooccurr_resonance",
+        0.8028275877222031
+      ],
+      [
+        "hybrid_resonance_spectral_c_pair_orbit_resonancextri_res_spectral_mutual_e_resonance",
+        0.7997310454548303
+      ],
+      [
+        "tri_res_dynamic__multi_sc_resonancexhybrid_resonance_multi_scal_wavelet_co_resonance",
+        0.7937652208441843
+      ],
+      [
+        "tri_res_multi_sc_dynamic__resonancexhybrid_resonance_multi_scal_wavelet_co_resonance",
+        0.7937652208441843
+      ],
+      [
+        "resonance_trend_mome_multi_scal_resonancexhybrid_resonance_multi_scal_wavelet_co_resonance",
+        0.7916507944540028
+      ],
+      [
+        "tri_res_dynamic__multi_sc_resonancexresonance_trend_mome_multi_scal_resonance",
+        0.7915325360929362
+      ],
+      [
+        "tri_res_multi_sc_dynamic__resonancexresonance_trend_mome_multi_scal_resonance",
+        0.7915325360929362
+      ],
+      [
+        "tri_res_multi_sc_spectral_resonancexresonance_trend_mome_multi_scal_resonance",
+        0.7905341292917205
+      ]
+    ]
+  },
+  "feature_comparison": {
+    "top5_names": [
+      "tri_res_dynamic__pair_orb_resonance",
+      "hybrid_resonance_dynamic_co_pair_orbit_resonance",
+      "hybrid_resonance_spectral_c_pair_orbit_resonance",
+      "tri_res_spectral_mutual_e_resonance",
+      "resonance_dynamic_co_trend_mome_resonance"
+    ],
+    "bottom5_names": [
+      "resonance_trend_mome_multi_scal_resonance",
+      "tri_res_dynamic__spectral_resonance",
+      "resonance_dynamic_co_spectral_c_resonance",
+      "extreme_trend_weighted",
+      "resonance_trend_mome_spectral_c_resonance"
+    ],
+    "top_primitives": {
+      "dynamic_cooccurrence": 4,
+      "pair_orbit": 4,
+      "spectral_cooccurrence_fusion": 2,
+      "mutual_exclusion": 1,
+      "trend_momentum": 1
+    },
+    "bottom_primitives": {
+      "trend_momentum": 3,
+      "spectral_cooccurrence_fusion": 3,
+      "dynamic_cooccurrence": 2,
+      "multi_scale_resonance": 1,
+      "scale_transition": 1,
+      "extreme_number_detector": 1
+    },
+    "top_operators": {
+      "resonance": 5
+    },
+    "bottom_operators": {
+      "resonance": 4,
+      "sum": 1
+    }
+  }
+}

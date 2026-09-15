@@ -1,0 +1,302 @@
+{
+  "results": {
+    "attractor_distance": {
+      "category": "chaotic",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "periodic_gap": {
+      "category": "cross_period_memory",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "cooccurrence_affinity": {
+      "category": "relational",
+      "red_brier": 0.171811,
+      "beats_random": true,
+      "stability_std": 0.000535,
+      "generalization_gap": 4.4e-05,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "scale_transition": {
+      "category": "multi_scale",
+      "red_brier": 0.171856,
+      "beats_random": true,
+      "stability_std": 0.000842,
+      "generalization_gap": 0.000603,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "gap_pattern": {
+      "category": "sequence_pattern",
+      "red_brier": 0.171995,
+      "beats_random": true,
+      "stability_std": 0.000852,
+      "generalization_gap": 0.000597,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "periodic_echo": {
+      "category": "temporal",
+      "red_brier": 0.172114,
+      "beats_random": true,
+      "stability_std": 0.001159,
+      "generalization_gap": 8e-06,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "recurrence_window": {
+      "category": "cross_period_memory",
+      "red_brier": 0.172145,
+      "beats_random": true,
+      "stability_std": 0.001115,
+      "generalization_gap": 0.000778,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "skewness_signal": {
+      "category": "higher_order",
+      "red_brier": 0.17219,
+      "beats_random": true,
+      "stability_std": 0.000911,
+      "generalization_gap": 1.1e-05,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "digit_pair_freq": {
+      "category": "combinatorial",
+      "red_brier": 0.172255,
+      "beats_random": true,
+      "stability_std": 0.001102,
+      "generalization_gap": 0.000193,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "modulo_distribution": {
+      "category": "combinatorial",
+      "red_brier": 0.172274,
+      "beats_random": true,
+      "stability_std": 0.001285,
+      "generalization_gap": 0.000809,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "kurtosis_signal": {
+      "category": "higher_order",
+      "red_brier": 0.172322,
+      "beats_random": true,
+      "stability_std": 0.001047,
+      "generalization_gap": 0.00057,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "distance_cluster": {
+      "category": "geometric",
+      "red_brier": 0.17234,
+      "beats_random": true,
+      "stability_std": 0.001263,
+      "generalization_gap": 0.000169,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "adjacent_bias": {
+      "category": "combinatorial",
+      "red_brier": 0.17242,
+      "beats_random": true,
+      "stability_std": 0.001304,
+      "generalization_gap": 0.000133,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "environment_aware": {
+      "category": "environment_aware",
+      "red_brier": 0.172566,
+      "beats_random": true,
+      "stability_std": 0.001262,
+      "generalization_gap": 0.000579,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "binary_topology": {
+      "category": "structural",
+      "red_brier": 0.172679,
+      "beats_random": true,
+      "stability_std": 0.001405,
+      "generalization_gap": 0.000727,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "spectral_power": {
+      "category": "spectral",
+      "red_brier": 0.172766,
+      "beats_random": true,
+      "stability_std": 0.001416,
+      "generalization_gap": 0.000436,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "mutual_exclusion": {
+      "category": "relational",
+      "red_brier": 0.172929,
+      "beats_random": true,
+      "stability_std": 0.001902,
+      "generalization_gap": 0.000133,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "lag_correlation": {
+      "category": "cross_period_memory",
+      "red_brier": 0.172964,
+      "beats_random": true,
+      "stability_std": 0.001255,
+      "generalization_gap": 0.000221,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "phase_detector": {
+      "category": "environment_aware",
+      "red_brier": 0.173073,
+      "beats_random": true,
+      "stability_std": 0.001366,
+      "generalization_gap": 0.001178,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "physical_bias": {
+      "category": "statistical",
+      "red_brier": 0.173198,
+      "beats_random": true,
+      "stability_std": 0.001983,
+      "generalization_gap": 3e-06,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "sphere_projection": {
+      "category": "geometric",
+      "red_brier": 0.173664,
+      "beats_random": true,
+      "stability_std": 0.001377,
+      "generalization_gap": 0.000111,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "multi_scale_frequency": {
+      "category": "multi_scale",
+      "red_brier": 0.173809,
+      "beats_random": true,
+      "stability_std": 0.0024,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "sum_range_tracker": {
+      "category": "sequence_pattern",
+      "red_brier": 0.173877,
+      "beats_random": true,
+      "stability_std": 0.001915,
+      "generalization_gap": 5.6e-05,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "position_signature": {
+      "category": "structural",
+      "red_brier": 0.174029,
+      "beats_random": true,
+      "stability_std": 0.001971,
+      "generalization_gap": 0.000787,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "pair_orbit": {
+      "category": "relational",
+      "red_brier": 0.17413,
+      "beats_random": true,
+      "stability_std": 0.002301,
+      "generalization_gap": 0.000882,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "regime_switch": {
+      "category": "environment_aware",
+      "red_brier": 0.174263,
+      "beats_random": true,
+      "stability_std": 0.003409,
+      "generalization_gap": 0.001446,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "trend_reversal": {
+      "category": "sequence_pattern",
+      "red_brier": 0.174889,
+      "beats_random": true,
+      "stability_std": 0.002576,
+      "generalization_gap": 0.000467,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "wavelet_coherence": {
+      "category": "spectral",
+      "red_brier": 0.174899,
+      "beats_random": true,
+      "stability_std": 0.002678,
+      "generalization_gap": 0.001427,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "tail_risk": {
+      "category": "higher_order",
+      "red_brier": 0.174946,
+      "beats_random": true,
+      "stability_std": 0.003143,
+      "generalization_gap": 0.000154,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "lyapunov_signal": {
+      "category": "chaotic",
+      "red_brier": 0.176455,
+      "beats_random": true,
+      "stability_std": 0.006779,
+      "generalization_gap": 0.002472,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "digit_manifold": {
+      "category": "structural",
+      "red_brier": 0.179969,
+      "beats_random": true,
+      "stability_std": 0.006211,
+      "generalization_gap": 0.004793,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "recency_gradient": {
+      "category": "temporal",
+      "red_brier": 0.181811,
+      "beats_random": true,
+      "stability_std": 0.005123,
+      "generalization_gap": 0.00111,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    "seasonal_resonance": {
+      "category": "temporal",
+      "red_brier": 0.194285,
+      "beats_random": true,
+      "stability_std": 0.006698,
+      "generalization_gap": 0.00051,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    }
+  },
+  "total": 33
+}

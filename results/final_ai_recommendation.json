@@ -1,0 +1,53 @@
+{
+  "target_period": 26078,
+  "gemma4_recommendation": [
+    7,
+    12,
+    18,
+    22,
+    25,
+    30
+  ],
+  "gemma2_recommendation": [
+    1,
+    4,
+    5,
+    18,
+    24,
+    25
+  ],
+  "ai_collab_recommendation": [
+    2,
+    3,
+    6,
+    13,
+    18,
+    24
+  ],
+  "final_recommendation": {
+    "red": [
+      7,
+      12,
+      18,
+      22,
+      24,
+      25
+    ],
+    "blue": [
+      4,
+      1,
+      8,
+      2,
+      7
+    ]
+  },
+  "consensus": {
+    "gemma4_and_gemma2": [
+      25,
+      18
+    ],
+    "all_three": [
+      18
+    ]
+  }
+}

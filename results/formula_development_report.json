@@ -1,0 +1,115 @@
+{
+  "phase": "formula_development",
+  "timestamp": "2026-07-06T07:34:17.669818",
+  "n_primitives": 15,
+  "n_formulas": 20,
+  "top_formulas": [
+    {
+      "name": "dev_formula_17_cascade",
+      "avg_hits": 0.2062,
+      "p_value": 0.0,
+      "stable": 0.1865
+    },
+    {
+      "name": "dev_formula_19",
+      "avg_hits": 0.2021,
+      "p_value": 0.0,
+      "stable": 0.1469
+    },
+    {
+      "name": "dev_formula_5_cascade",
+      "avg_hits": 0.2,
+      "p_value": 0.0,
+      "stable": 0.1679
+    },
+    {
+      "name": "dev_formula_9_cascade",
+      "avg_hits": 0.2,
+      "p_value": 0.0,
+      "stable": 0.1555
+    },
+    {
+      "name": "dev_formula_0_resonance",
+      "avg_hits": 0.1979,
+      "p_value": 0.0,
+      "stable": 0.1385
+    },
+    {
+      "name": "dev_formula_13_cascade",
+      "avg_hits": 0.1979,
+      "p_value": 0.0,
+      "stable": 0.1385
+    },
+    {
+      "name": "dev_formula_1_cascade",
+      "avg_hits": 0.1917,
+      "p_value": 0.0,
+      "stable": 0.136
+    },
+    {
+      "name": "dev_formula_15",
+      "avg_hits": 0.1917,
+      "p_value": 0.0,
+      "stable": 0.136
+    },
+    {
+      "name": "dev_formula_16_resonance",
+      "avg_hits": 0.1917,
+      "p_value": 0.0,
+      "stable": 0.136
+    },
+    {
+      "name": "dev_formula_14_phasealign",
+      "avg_hits": 0.1896,
+      "p_value": 0.0,
+      "stable": 0.1661
+    }
+  ],
+  "evolution": [
+    {
+      "generation": 1,
+      "best_formula": "gen0_formula18_resonance",
+      "best_avg_hits": 0.2146,
+      "best_p_value": 0.0,
+      "stable": 0.1753
+    },
+    {
+      "generation": 2,
+      "best_formula": "gen1_formula9_resonance",
+      "best_avg_hits": 0.2146,
+      "best_p_value": 0.0,
+      "stable": 0.1705
+    },
+    {
+      "generation": 3,
+      "best_formula": "gen2_formula14_phasealign",
+      "best_avg_hits": 0.2146,
+      "best_p_value": 0.0,
+      "stable": 0.1763
+    },
+    {
+      "generation": 4,
+      "best_formula": "gen3_formula0_cascade",
+      "best_avg_hits": 0.2062,
+      "best_p_value": 0.0,
+      "stable": 0.1865
+    },
+    {
+      "generation": 5,
+      "best_formula": "gen4_formula10",
+      "best_avg_hits": 0.2146,
+      "best_p_value": 0.0,
+      "stable": 0.1601
+    }
+  ],
+  "registry_summary": {
+    "alive_count": 15,
+    "archived_count": 0,
+    "eliminated_count": 0,
+    "total_created": 45,
+    "total_eliminated": 0,
+    "best_formula": "gen0_formula18_resonance",
+    "best_fitness": 0.2146,
+    "last_updated": "2026-07-06T07:34:17.665567"
+  }
+}

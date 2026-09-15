@@ -1,0 +1,17 @@
+{
+  "latest_period": 26077,
+  "top5_primitives": [
+    "adjacent_bias",
+    "position_signature",
+    "sphere_projection",
+    "distance_cluster",
+    "phase_detector"
+  ],
+  "failure_modes": {
+    "discrimination": "Top6/Bottom6分数比<2x",
+    "correlation": "Top5两两相关>0.7",
+    "zero_hit_rate": "25-28%窗口零命中",
+    "lifecycle": "无生命周期信号",
+    "structural_change": "无突变检测"
+  }
+}

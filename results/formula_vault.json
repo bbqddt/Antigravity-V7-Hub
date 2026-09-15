@@ -1,0 +1,664 @@
+{
+  "version": "4.0",
+  "updated_at": "2026-08-02T04:50:42.846511",
+  "total_formulas": 33,
+  "active": 6,
+  "bench": 16,
+  "eliminated": 11,
+  "formulas": {
+    "hybrid_resonance_dynamic_co_pair_orbit_resonance": {
+      "name": "hybrid_resonance_dynamic_co_pair_orbit_resonance",
+      "primitives": [
+        "dynamic_cooccurrence",
+        "pair_orbit"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.09,
+      "stable": 0.8478,
+      "p_value": 0.1624,
+      "beats_random": true,
+      "test_avg": 1.15,
+      "test_stable": 0.345,
+      "generation": 6,
+      "born_at": "2026-07-14T13:14:14.191537",
+      "last_tested": "2026-07-14T21:19:09.780712",
+      "win_rate": 0.0,
+      "status": "eliminated"
+    },
+    "tri_res_dynamic__spectral_resonance": {
+      "name": "tri_res_dynamic__spectral_resonance",
+      "primitives": [
+        "dynamic_cooccurrence",
+        "spectral_cooccurrence_fusion",
+        "scale_transition"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.09,
+      "stable": 0.9048,
+      "p_value": 0.2294,
+      "beats_random": true,
+      "test_avg": 1.1,
+      "test_stable": 0.1095,
+      "generation": 6,
+      "born_at": "2026-07-14T13:14:14.191537",
+      "last_tested": "2026-07-14T21:20:03.723960",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "extreme_trend_weighted": {
+      "name": "extreme_trend_weighted",
+      "primitives": [
+        "extreme_number_detector",
+        "trend_momentum"
+      ],
+      "operator": "sum",
+      "avg_hits": 1.15,
+      "stable": 0.9079,
+      "p_value": 0.1304,
+      "beats_random": true,
+      "test_avg": 1.1833,
+      "test_stable": 0.2137,
+      "generation": 6,
+      "born_at": "2026-07-14T13:14:14.191537",
+      "last_tested": "2026-07-22T16:31:55.568165",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "resonance_trend_mome_spectral_c_resonance": {
+      "name": "resonance_trend_mome_spectral_c_resonance",
+      "primitives": [
+        "trend_momentum",
+        "spectral_cooccurrence_fusion"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.05,
+      "stable": 0.8577,
+      "p_value": 0.2132,
+      "beats_random": true,
+      "test_avg": 1.15,
+      "test_stable": 0.2345,
+      "generation": 6,
+      "born_at": "2026-07-14T13:14:14.191537",
+      "last_tested": "2026-07-14T21:19:38.455133",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "tri_res_dynamic__multi_sc_resonance": {
+      "name": "tri_res_dynamic__multi_sc_resonance",
+      "primitives": [
+        "dynamic_cooccurrence",
+        "multi_scale_resonance",
+        "scale_transition"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.09,
+      "stable": 0.8823,
+      "p_value": 0.2187,
+      "beats_random": true,
+      "test_avg": 1.0917,
+      "test_stable": 0.2392,
+      "generation": 2,
+      "born_at": "2026-07-14T08:59:04.946222",
+      "last_tested": "2026-07-14T21:19:48.483327",
+      "win_rate": 0.0,
+      "status": "active"
+    },
+    "tri_res_dynamic__mutual_e_resonance": {
+      "name": "tri_res_dynamic__mutual_e_resonance",
+      "primitives": [
+        "dynamic_cooccurrence",
+        "mutual_exclusion",
+        "spectral_power"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.13,
+      "stable": 0.9145,
+      "p_value": 0.169,
+      "beats_random": true,
+      "test_avg": 1.3667,
+      "test_stable": 0.2944,
+      "generation": 6,
+      "born_at": "2026-07-14T13:14:14.191537",
+      "last_tested": "2026-07-14T21:19:49.835067",
+      "win_rate": 0.6666666666666666,
+      "status": "eliminated"
+    },
+    "resonance_dynamic_co_spectral_c_resonance": {
+      "name": "resonance_dynamic_co_spectral_c_resonance",
+      "primitives": [
+        "dynamic_cooccurrence",
+        "spectral_cooccurrence_fusion"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.045,
+      "stable": 0.8898,
+      "p_value": 0.2835,
+      "beats_random": true,
+      "test_avg": 1.2167,
+      "test_stable": 0.1941,
+      "generation": 6,
+      "born_at": "2026-07-14T13:14:14.191537",
+      "last_tested": "2026-07-14T21:20:10.945929",
+      "win_rate": 0.0,
+      "status": "eliminated"
+    },
+    "hybrid_resonance_spectral_c_pair_orbit_resonance": {
+      "name": "hybrid_resonance_spectral_c_pair_orbit_resonance",
+      "primitives": [
+        "spectral_cooccurrence_fusion",
+        "pair_orbit"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.09,
+      "stable": 0.8529,
+      "p_value": 0.604,
+      "beats_random": true,
+      "test_avg": 1.1333,
+      "test_stable": 0.2934,
+      "generation": 2,
+      "born_at": "2026-07-14T08:59:04.946222",
+      "last_tested": "2026-07-14T09:03:27.332934",
+      "win_rate": 0.0,
+      "status": "eliminated"
+    },
+    "tri_res_multi_sc_spectral_resonance": {
+      "name": "tri_res_multi_sc_spectral_resonance",
+      "primitives": [
+        "multi_scale_resonance",
+        "spectral_cooccurrence_fusion",
+        "multi_scale_frequency"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.07,
+      "stable": 1.0076,
+      "p_value": 0.0923,
+      "beats_random": true,
+      "test_avg": 1.1333,
+      "test_stable": 0.206,
+      "generation": 2,
+      "born_at": "2026-07-14T08:59:04.946222",
+      "last_tested": "2026-07-14T09:01:55.959731",
+      "win_rate": 0.0,
+      "status": "active"
+    },
+    "tri_res_spectral_mutual_e_resonance": {
+      "name": "tri_res_spectral_mutual_e_resonance",
+      "primitives": [
+        "spectral_cooccurrence_fusion",
+        "mutual_exclusion",
+        "pair_orbit"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.085,
+      "stable": 0.9107,
+      "p_value": 0.3983,
+      "beats_random": true,
+      "test_avg": 1.1333,
+      "test_stable": 0.2934,
+      "generation": 2,
+      "born_at": "2026-07-14T08:59:04.946222",
+      "last_tested": "2026-07-14T09:02:29.957091",
+      "win_rate": 0.0,
+      "status": "eliminated"
+    },
+    "resonance_dynamic_co_trend_mome_resonance": {
+      "name": "resonance_dynamic_co_trend_mome_resonance",
+      "primitives": [
+        "dynamic_cooccurrence",
+        "trend_momentum"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.07,
+      "stable": 0.8452,
+      "p_value": 0.6139,
+      "beats_random": true,
+      "test_avg": 1.15,
+      "test_stable": 0.2812,
+      "generation": 2,
+      "born_at": "2026-07-14T08:59:04.946222",
+      "last_tested": "2026-07-14T09:03:03.285880",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "resonance_trend_mome_multi_scal_resonance": {
+      "name": "resonance_trend_mome_multi_scal_resonance",
+      "primitives": [
+        "trend_momentum",
+        "multi_scale_resonance"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.1,
+      "stable": 0.8582,
+      "p_value": 0.5969,
+      "beats_random": true,
+      "test_avg": 1.125,
+      "test_stable": 0.2137,
+      "generation": 2,
+      "born_at": "2026-07-14T08:59:04.946222",
+      "last_tested": "2026-07-14T09:03:13.171225",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "hybrid_resonance_dynamic_co_mutual_exc_resonance": {
+      "name": "hybrid_resonance_dynamic_co_mutual_exc_resonance",
+      "primitives": [
+        "dynamic_cooccurrence",
+        "mutual_exclusion"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.2,
+      "stable": 0.8582,
+      "p_value": 0.5969,
+      "beats_random": true,
+      "test_avg": 1.275,
+      "test_stable": 0.3194,
+      "generation": 2,
+      "born_at": "2026-07-14T08:59:04.946222",
+      "last_tested": "2026-07-14T09:03:18.116840",
+      "win_rate": 0.6,
+      "status": "active"
+    },
+    "hybrid_resonance_multi_scal_mutual_exc_resonance": {
+      "name": "hybrid_resonance_multi_scal_mutual_exc_resonance",
+      "primitives": [
+        "multi_scale_resonance",
+        "mutual_exclusion"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.12,
+      "stable": 0.8582,
+      "p_value": 0.5969,
+      "beats_random": true,
+      "test_avg": 1.1417,
+      "test_stable": 0.2678,
+      "generation": 2,
+      "born_at": "2026-07-14T08:59:04.946222",
+      "last_tested": "2026-07-14T09:03:32.070198",
+      "win_rate": 0.0,
+      "status": "eliminated"
+    },
+    "tri_res_dynamic__cooccurr_resonance": {
+      "name": "tri_res_dynamic__cooccurr_resonance",
+      "primitives": [
+        "dynamic_cooccurrence",
+        "cooccurrence_affinity",
+        "mutual_exclusion"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.12,
+      "stable": 0.8582,
+      "p_value": 0.5969,
+      "beats_random": true,
+      "test_avg": 1.1,
+      "test_stable": 0.273,
+      "generation": 2,
+      "born_at": "2026-07-14T08:59:04.946222",
+      "last_tested": "2026-07-14T21:19:48.985405",
+      "win_rate": 0.0,
+      "status": "eliminated"
+    },
+    "tri_res_dynamic__pair_orb_resonance": {
+      "name": "tri_res_dynamic__pair_orb_resonance",
+      "primitives": [
+        "dynamic_cooccurrence",
+        "pair_orbit",
+        "dynamic_cooccurrence"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.09,
+      "stable": 0.8162,
+      "p_value": 0.6474,
+      "beats_random": true,
+      "test_avg": 1.1583,
+      "test_stable": 0.2712,
+      "generation": 2,
+      "born_at": "2026-07-14T08:59:04.946222",
+      "last_tested": "2026-07-14T09:04:11.926499",
+      "win_rate": 0.2,
+      "status": "eliminated"
+    },
+    "tri_res_dynamic__dynamic__resonance": {
+      "name": "tri_res_dynamic__dynamic__resonance",
+      "primitives": [
+        "dynamic_cooccurrence",
+        "dynamic_cooccurrence",
+        "multi_scale_frequency"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.105,
+      "stable": 0.8582,
+      "p_value": 0.5969,
+      "beats_random": true,
+      "test_avg": 1.15,
+      "test_stable": 0.2812,
+      "generation": 2,
+      "born_at": "2026-07-14T08:59:04.946222",
+      "last_tested": "2026-07-14T09:04:16.752133",
+      "win_rate": 0.0,
+      "status": "eliminated"
+    },
+    "cascade_multi_scal_dynamic_co_cascade": {
+      "name": "cascade_multi_scal_dynamic_co_cascade",
+      "primitives": [
+        "multi_scale_resonance",
+        "dynamic_cooccurrence"
+      ],
+      "operator": "cascade",
+      "avg_hits": 1.07,
+      "stable": 0.9279,
+      "p_value": 0.0764,
+      "beats_random": true,
+      "test_avg": 1.1167,
+      "test_stable": 0.1835,
+      "generation": 6,
+      "born_at": "2026-07-14T13:14:14.191537",
+      "last_tested": "2026-07-14T21:19:10.173192",
+      "win_rate": 0.0,
+      "status": "active"
+    },
+    "hybrid_resonance_multi_scal_wavelet_co_resonance": {
+      "name": "hybrid_resonance_multi_scal_wavelet_co_resonance",
+      "primitives": [
+        "multi_scale_resonance",
+        "wavelet_coherence"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.07,
+      "stable": 0.9145,
+      "p_value": 0.169,
+      "beats_random": true,
+      "test_avg": 1.1167,
+      "test_stable": 0.1835,
+      "generation": 6,
+      "born_at": "2026-07-14T13:14:14.191537",
+      "last_tested": "2026-07-14T21:19:47.765485",
+      "win_rate": 0.0,
+      "status": "active"
+    },
+    "v4tri_modular__dynamic__binary_t_resonance": {
+      "name": "v4tri_modular__dynamic__binary_t_resonance",
+      "primitives": [
+        "modular_ring_spectrum",
+        "dynamic_cooccurrence",
+        "binary_topology"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.05,
+      "stable": 0.8847,
+      "p_value": 0.3585,
+      "beats_random": true,
+      "test_avg": 1.174,
+      "test_stable": 0.8847,
+      "generation": 7,
+      "born_at": "2026-07-16T19:46:04.616895",
+      "last_tested": "",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "v4tri_modular__multi_sc_self_sim_resonance": {
+      "name": "v4tri_modular__multi_sc_self_sim_resonance",
+      "primitives": [
+        "modular_ring_spectrum",
+        "multi_scale_resonance",
+        "self_similar_gap_series"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.04,
+      "stable": 0.9342,
+      "p_value": 0.327,
+      "beats_random": true,
+      "test_avg": 1.16,
+      "test_stable": 0.9342,
+      "generation": 7,
+      "born_at": "2026-07-16T19:46:04.616895",
+      "last_tested": "",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "v4tri_modular__wavelet__multi_sc_resonance": {
+      "name": "v4tri_modular__wavelet__multi_sc_resonance",
+      "primitives": [
+        "modular_ring_spectrum",
+        "wavelet_coherence",
+        "multi_scale_resonance"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.05,
+      "stable": 0.9342,
+      "p_value": 0.327,
+      "beats_random": true,
+      "test_avg": 1.16,
+      "test_stable": 0.9342,
+      "generation": 7,
+      "born_at": "2026-07-16T19:46:04.616895",
+      "last_tested": "",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "v4tri_modular__spectral_multi_sc_resonance": {
+      "name": "v4tri_modular__spectral_multi_sc_resonance",
+      "primitives": [
+        "modular_ring_spectrum",
+        "spectral_power",
+        "multi_scale_resonance"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.085,
+      "stable": 0.9342,
+      "p_value": 0.327,
+      "beats_random": true,
+      "test_avg": 1.16,
+      "test_stable": 0.9342,
+      "generation": 7,
+      "born_at": "2026-07-16T19:46:04.616895",
+      "last_tested": "",
+      "win_rate": 0.0,
+      "status": "eliminated"
+    },
+    "v4tri_modular__binary_t_multi_sc_resonance": {
+      "name": "v4tri_modular__binary_t_multi_sc_resonance",
+      "primitives": [
+        "modular_ring_spectrum",
+        "binary_topology",
+        "multi_scale_resonance"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.045,
+      "stable": 0.9342,
+      "p_value": 0.327,
+      "beats_random": true,
+      "test_avg": 1.16,
+      "test_stable": 0.9342,
+      "generation": 7,
+      "born_at": "2026-07-16T19:46:04.616895",
+      "last_tested": "",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "v4tri_modular__mutual_e_multi_sc_resonance": {
+      "name": "v4tri_modular__mutual_e_multi_sc_resonance",
+      "primitives": [
+        "modular_ring_spectrum",
+        "mutual_exclusion",
+        "multi_scale_resonance"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.02,
+      "stable": 0.9342,
+      "p_value": 0.327,
+      "beats_random": true,
+      "test_avg": 1.16,
+      "test_stable": 0.9342,
+      "generation": 7,
+      "born_at": "2026-07-16T19:46:04.616895",
+      "last_tested": "",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "v4tri_modular__pair_orb_multi_sc_resonance": {
+      "name": "v4tri_modular__pair_orb_multi_sc_resonance",
+      "primitives": [
+        "modular_ring_spectrum",
+        "pair_orbit",
+        "multi_scale_resonance"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.045,
+      "stable": 0.8894,
+      "p_value": 0.3849,
+      "beats_random": true,
+      "test_avg": 1.166,
+      "test_stable": 0.8894,
+      "generation": 7,
+      "born_at": "2026-07-16T19:46:04.616895",
+      "last_tested": "",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "v4tri_modular__dynamic__multi_sc_resonance": {
+      "name": "v4tri_modular__dynamic__multi_sc_resonance",
+      "primitives": [
+        "modular_ring_spectrum",
+        "dynamic_cooccurrence",
+        "multi_scale_resonance"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.05,
+      "stable": 0.9342,
+      "p_value": 0.327,
+      "beats_random": true,
+      "test_avg": 1.16,
+      "test_stable": 0.9342,
+      "generation": 7,
+      "born_at": "2026-07-16T19:46:04.616895",
+      "last_tested": "",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "v4tri_permutat_spectral_multi_sc_resonance": {
+      "name": "v4tri_permutat_spectral_multi_sc_resonance",
+      "primitives": [
+        "permutation_invariant_triplet",
+        "spectral_power",
+        "multi_scale_frequency"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.08,
+      "stable": 0.8836,
+      "p_value": 0.3858,
+      "beats_random": true,
+      "test_avg": 1.168,
+      "test_stable": 0.8836,
+      "generation": 7,
+      "born_at": "2026-07-16T19:46:04.616895",
+      "last_tested": "",
+      "win_rate": 0.0,
+      "status": "eliminated"
+    },
+    "v4tri_modular__spectral_dynamic__resonance": {
+      "name": "v4tri_modular__spectral_dynamic__resonance",
+      "primitives": [
+        "modular_ring_spectrum",
+        "spectral_power",
+        "dynamic_cooccurrence"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.05,
+      "stable": 0.8658,
+      "p_value": 0.4233,
+      "beats_random": true,
+      "test_avg": 1.166,
+      "test_stable": 0.8658,
+      "generation": 7,
+      "born_at": "2026-07-16T19:46:04.616895",
+      "last_tested": "",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "resonance_dynamic_co_multi_scal_resonance_00": {
+      "name": "resonance_dynamic_co_multi_scal_resonance_00",
+      "primitives": [
+        "dynamic_cooccurrence",
+        "multi_scale_resonance"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.0,
+      "stable": 0,
+      "p_value": 1,
+      "beats_random": false,
+      "test_avg": 1.05,
+      "test_stable": 0.3146,
+      "generation": 25,
+      "born_at": "2026-07-23T18:52:05.073076",
+      "last_tested": "2026-08-01T21:04:58.928580",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "resonance_spectral_c_multi_scal_resonance_00": {
+      "name": "resonance_spectral_c_multi_scal_resonance_00",
+      "primitives": [
+        "spectral_cooccurrence_fusion",
+        "multi_scale_resonance"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.06,
+      "stable": 0.7222,
+      "p_value": 0.6912,
+      "beats_random": true,
+      "test_avg": 1.2,
+      "test_stable": 0.3406,
+      "generation": 25,
+      "born_at": "2026-07-23T18:52:05.073076",
+      "last_tested": "2026-08-01T21:05:05.970765",
+      "win_rate": 0.0,
+      "status": "bench"
+    },
+    "resonance_dynamic_co_trend_mome_resonance_00": {
+      "name": "resonance_dynamic_co_trend_mome_resonance_00",
+      "primitives": [
+        "dynamic_cooccurrence",
+        "trend_momentum"
+      ],
+      "operator": "resonance",
+      "avg_hits": 1.0,
+      "stable": 0,
+      "p_value": 1,
+      "beats_random": false,
+      "test_avg": 1.0833,
+      "test_stable": 0.1329,
+      "generation": 39,
+      "born_at": "2026-07-26T10:55:53.107189",
+      "last_tested": "2026-08-01T21:04:44.112788",
+      "win_rate": 0.6666666666666666,
+      "status": "bench"
+    },
+    "elite_vote_11prims": {
+      "name": "elite_vote_11prims",
+      "primitives": [
+        "scale_transition",
+        "periodic_gap",
+        "sum_range_tracker",
+        "bayesian_bias_estimator",
+        "hierarchical_bayesian_estimator",
+        "empirical_bayes_shrinkage",
+        "gap_pattern",
+        "digit_pair_freq",
+        "lag_correlation",
+        "harmonic_phase_lock",
+        "lattice_convex_hull"
+      ],
+      "operator": "vote",
+      "avg_hits": 1.1422,
+      "stable": 0.95,
+      "p_value": 0.01,
+      "beats_random": true,
+      "test_avg": 1.1422,
+      "test_stable": 0.15,
+      "generation": 8,
+      "born_at": "2026-08-02T04:49:47.069933",
+      "last_tested": "2026-08-02T04:49:47.069933",
+      "win_rate": 0.0,
+      "status": "active"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "crossed_gen0_formula_49_resonance_mutated_mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance_resonance_resonance",
+  "primitives": [
+    "prim_000012",
+    "prim_000013",
+    "prim_000015"
+  ],
+  "operators": [
+    "resonance",
+    "resonance"
+  ],
+  "parameters": {
+    "weight_0": 0.3333333333333333,
+    "weight_1": 0.3333333333333333
+  }
+}

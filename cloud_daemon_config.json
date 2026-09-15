@@ -1,0 +1,11 @@
+{
+  "evolution_interval_hours": 6,
+  "backup_interval_hours": 12,
+  "health_check_minutes": 30,
+  "max_generations": 20,
+  "population_size": 30,
+  "auto_restart_on_failure": true,
+  "max_consecutive_failures": 3,
+  "push_results_to_remote": true,
+  "notify_on_best_update": true
+}

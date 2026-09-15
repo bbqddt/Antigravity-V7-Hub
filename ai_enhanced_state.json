@@ -1,0 +1,12 @@
+{
+  "iterations": [
+    {
+      "timestamp": "2026-09-15T19:16:01.390224",
+      "generation": 0,
+      "best_formula": "gen1_new_2",
+      "best_score": 0.43602,
+      "ai_analyzed": false,
+      "model_used": null
+    }
+  ]
+}

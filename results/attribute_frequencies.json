@@ -1,0 +1,98 @@
+{
+  "binary_weight_5": {
+    "hit_rate": 0.1717,
+    "expected": 0.1818,
+    "deviation": -0.0102,
+    "sample_size": 3472
+  },
+  "digit_sum_bucket_10": {
+    "hit_rate": 0.1735,
+    "expected": 0.1818,
+    "deviation": -0.0083,
+    "sample_size": 10416
+  },
+  "binary_weight_4": {
+    "hit_rate": 0.177,
+    "expected": 0.1818,
+    "deviation": -0.0049,
+    "sample_size": 17360
+  },
+  "season_spring": {
+    "hit_rate": 0.1858,
+    "expected": 0.1818,
+    "deviation": 0.004,
+    "sample_size": 27776
+  },
+  "season_winter": {
+    "hit_rate": 0.1779,
+    "expected": 0.1818,
+    "deviation": -0.004,
+    "sample_size": 31248
+  },
+  "binary_weight_1": {
+    "hit_rate": 0.1852,
+    "expected": 0.1818,
+    "deviation": 0.0034,
+    "sample_size": 20832
+  },
+  "yinyang_yin": {
+    "hit_rate": 0.1846,
+    "expected": 0.1818,
+    "deviation": 0.0027,
+    "sample_size": 55552
+  },
+  "yinyang_yang": {
+    "hit_rate": 0.1792,
+    "expected": 0.1818,
+    "deviation": -0.0026,
+    "sample_size": 59024
+  },
+  "is_prime_True": {
+    "hit_rate": 0.1804,
+    "expected": 0.1818,
+    "deviation": -0.0015,
+    "sample_size": 38192
+  },
+  "digit_sum_bucket_5": {
+    "hit_rate": 0.1831,
+    "expected": 0.1818,
+    "deviation": 0.0013,
+    "sample_size": 59024
+  },
+  "binary_weight_2": {
+    "hit_rate": 0.1826,
+    "expected": 0.1818,
+    "deviation": 0.0008,
+    "sample_size": 38192
+  },
+  "is_prime_False": {
+    "hit_rate": 0.1826,
+    "expected": 0.1818,
+    "deviation": 0.0007,
+    "sample_size": 76384
+  },
+  "season_autumn": {
+    "hit_rate": 0.1826,
+    "expected": 0.1818,
+    "deviation": 0.0007,
+    "sample_size": 27776
+  },
+  "binary_weight_3": {
+    "hit_rate": 0.1823,
+    "expected": 0.1818,
+    "deviation": 0.0005,
+    "sample_size": 34720
+  },
+  "season_summer": {
+    "hit_rate": 0.1816,
+    "expected": 0.1818,
+    "deviation": -0.0003,
+    "sample_size": 27776
+  },
+  "digit_sum_bucket_0": {
+    "hit_rate": 0.182,
+    "expected": 0.1818,
+    "deviation": 0.0002,
+    "sample_size": 45136
+  }
+}

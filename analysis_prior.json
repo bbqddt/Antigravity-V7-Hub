@@ -1,0 +1,18 @@
+{
+  "signals_found": 63,
+  "deviation_types": [
+    "runs",
+    "hurst_diff",
+    "sum_hurst",
+    "hurst",
+    "oe_runs",
+    "kurtosis",
+    "cross_mi",
+    "skewness",
+    "jb",
+    "chi_square",
+    "rolling_drift",
+    "spectral"
+  ],
+  "has_structure": true
+}

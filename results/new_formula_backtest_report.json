@@ -1,0 +1,450 @@
+{
+  "timestamp": "2026-07-06T21:01:32.045561",
+  "data_periods": 3472,
+  "backtest_rounds": 200,
+  "traditional_avg": 1.0817,
+  "new_formula_avg": 1.1055,
+  "difference": 0.0238,
+  "random_baseline": 1.09,
+  "all_results": {
+    "[传统] HotCore": {
+      "avg_hits": 1.1,
+      "std": 0.8307,
+      "rounds": 200,
+      "max_hits": 3
+    },
+    "[传统] ColdStrike": {
+      "avg_hits": 1.01,
+      "std": 0.8306,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[传统] Balanced": {
+      "avg_hits": 1.145,
+      "std": 0.9295,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[传统] ZoneControl": {
+      "avg_hits": 1.025,
+      "std": 0.8393,
+      "rounds": 200,
+      "max_hits": 3
+    },
+    "[传统] Consecutive": {
+      "avg_hits": 1.02,
+      "std": 0.8483,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[传统] Omission": {
+      "avg_hits": 1.12,
+      "std": 0.9464,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[传统] Trend": {
+      "avg_hits": 1.12,
+      "std": 0.84,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[传统] AutoCorr": {
+      "avg_hits": 1.12,
+      "std": 0.8459,
+      "rounds": 200,
+      "max_hits": 3
+    },
+    "[传统] Cooccur": {
+      "avg_hits": 1.075,
+      "std": 0.8771,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[新公式] 新公式_0": {
+      "avg_hits": 1.03,
+      "std": 0.9742,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[新公式] 新公式_1": {
+      "avg_hits": 1.185,
+      "std": 0.8949,
+      "rounds": 200,
+      "max_hits": 3
+    },
+    "[新公式] 新公式_2": {
+      "avg_hits": 1.11,
+      "std": 0.9528,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[新公式] 新公式_3": {
+      "avg_hits": 1.09,
+      "std": 0.8955,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[新公式] 新公式_4": {
+      "avg_hits": 1.045,
+      "std": 0.8384,
+      "rounds": 200,
+      "max_hits": 3
+    },
+    "[新公式] 新公式_5": {
+      "avg_hits": 1.16,
+      "std": 0.9404,
+      "rounds": 200,
+      "max_hits": 3
+    },
+    "[新公式] 新公式_6": {
+      "avg_hits": 1.12,
+      "std": 0.8035,
+      "rounds": 200,
+      "max_hits": 3
+    },
+    "[新公式] 新公式_7": {
+      "avg_hits": 1.12,
+      "std": 0.9569,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[新公式] 新公式_8": {
+      "avg_hits": 1.03,
+      "std": 0.9742,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[新公式] 新公式_9": {
+      "avg_hits": 1.07,
+      "std": 0.9301,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[新公式] 新公式_10": {
+      "avg_hits": 1.025,
+      "std": 0.9562,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[新公式] 新公式_11": {
+      "avg_hits": 1.185,
+      "std": 0.8949,
+      "rounds": 200,
+      "max_hits": 3
+    },
+    "[新公式] 新公式_12": {
+      "avg_hits": 1.085,
+      "std": 0.8531,
+      "rounds": 200,
+      "max_hits": 3
+    },
+    "[新公式] 新公式_13": {
+      "avg_hits": 1.16,
+      "std": 0.9404,
+      "rounds": 200,
+      "max_hits": 3
+    },
+    "[新公式] 新公式_14": {
+      "avg_hits": 1.16,
+      "std": 0.8743,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[新公式] 新公式_15": {
+      "avg_hits": 1.045,
+      "std": 0.8142,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[新公式] 新公式_16": {
+      "avg_hits": 1.12,
+      "std": 0.84,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[新公式] 新公式_17": {
+      "avg_hits": 1.16,
+      "std": 0.8686,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[新公式] 新公式_18": {
+      "avg_hits": 1.09,
+      "std": 0.8613,
+      "rounds": 200,
+      "max_hits": 4
+    },
+    "[新公式] 新公式_19": {
+      "avg_hits": 1.12,
+      "std": 0.828,
+      "rounds": 200,
+      "max_hits": 4
+    }
+  },
+  "traditional_ranking": [
+    [
+      "[传统] Balanced",
+      {
+        "avg_hits": 1.145,
+        "std": 0.9295,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[传统] Omission",
+      {
+        "avg_hits": 1.12,
+        "std": 0.9464,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[传统] Trend",
+      {
+        "avg_hits": 1.12,
+        "std": 0.84,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[传统] AutoCorr",
+      {
+        "avg_hits": 1.12,
+        "std": 0.8459,
+        "rounds": 200,
+        "max_hits": 3
+      }
+    ],
+    [
+      "[传统] HotCore",
+      {
+        "avg_hits": 1.1,
+        "std": 0.8307,
+        "rounds": 200,
+        "max_hits": 3
+      }
+    ],
+    [
+      "[传统] Cooccur",
+      {
+        "avg_hits": 1.075,
+        "std": 0.8771,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[传统] ZoneControl",
+      {
+        "avg_hits": 1.025,
+        "std": 0.8393,
+        "rounds": 200,
+        "max_hits": 3
+      }
+    ],
+    [
+      "[传统] Consecutive",
+      {
+        "avg_hits": 1.02,
+        "std": 0.8483,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[传统] ColdStrike",
+      {
+        "avg_hits": 1.01,
+        "std": 0.8306,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ]
+  ],
+  "new_formula_ranking": [
+    [
+      "[新公式] 新公式_1",
+      {
+        "avg_hits": 1.185,
+        "std": 0.8949,
+        "rounds": 200,
+        "max_hits": 3
+      }
+    ],
+    [
+      "[新公式] 新公式_11",
+      {
+        "avg_hits": 1.185,
+        "std": 0.8949,
+        "rounds": 200,
+        "max_hits": 3
+      }
+    ],
+    [
+      "[新公式] 新公式_5",
+      {
+        "avg_hits": 1.16,
+        "std": 0.9404,
+        "rounds": 200,
+        "max_hits": 3
+      }
+    ],
+    [
+      "[新公式] 新公式_13",
+      {
+        "avg_hits": 1.16,
+        "std": 0.9404,
+        "rounds": 200,
+        "max_hits": 3
+      }
+    ],
+    [
+      "[新公式] 新公式_14",
+      {
+        "avg_hits": 1.16,
+        "std": 0.8743,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[新公式] 新公式_17",
+      {
+        "avg_hits": 1.16,
+        "std": 0.8686,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[新公式] 新公式_6",
+      {
+        "avg_hits": 1.12,
+        "std": 0.8035,
+        "rounds": 200,
+        "max_hits": 3
+      }
+    ],
+    [
+      "[新公式] 新公式_7",
+      {
+        "avg_hits": 1.12,
+        "std": 0.9569,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[新公式] 新公式_16",
+      {
+        "avg_hits": 1.12,
+        "std": 0.84,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[新公式] 新公式_19",
+      {
+        "avg_hits": 1.12,
+        "std": 0.828,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[新公式] 新公式_2",
+      {
+        "avg_hits": 1.11,
+        "std": 0.9528,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[新公式] 新公式_3",
+      {
+        "avg_hits": 1.09,
+        "std": 0.8955,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[新公式] 新公式_18",
+      {
+        "avg_hits": 1.09,
+        "std": 0.8613,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[新公式] 新公式_12",
+      {
+        "avg_hits": 1.085,
+        "std": 0.8531,
+        "rounds": 200,
+        "max_hits": 3
+      }
+    ],
+    [
+      "[新公式] 新公式_9",
+      {
+        "avg_hits": 1.07,
+        "std": 0.9301,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[新公式] 新公式_4",
+      {
+        "avg_hits": 1.045,
+        "std": 0.8384,
+        "rounds": 200,
+        "max_hits": 3
+      }
+    ],
+    [
+      "[新公式] 新公式_15",
+      {
+        "avg_hits": 1.045,
+        "std": 0.8142,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[新公式] 新公式_0",
+      {
+        "avg_hits": 1.03,
+        "std": 0.9742,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[新公式] 新公式_8",
+      {
+        "avg_hits": 1.03,
+        "std": 0.9742,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ],
+    [
+      "[新公式] 新公式_10",
+      {
+        "avg_hits": 1.025,
+        "std": 0.9562,
+        "rounds": 200,
+        "max_hits": 4
+      }
+    ]
+  ]
+}

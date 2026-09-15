@@ -1,0 +1,249 @@
+{
+  "generation": 41,
+  "best_formula": {
+    "name": "evo_55_cascade",
+    "avg_hits": 11.9,
+    "std_hits": 2.0749,
+    "max_hits": 18,
+    "min_hits": 9,
+    "p_value": 0.0,
+    "rounds": 20,
+    "stability": 9.8251,
+    "fitness": 11.07,
+    "operators": [
+      "cascade",
+      "cascade",
+      "cascade"
+    ],
+    "primitive_names": [
+      "gap_pattern",
+      "trend_reversal",
+      "adjacent_bias",
+      "multi_scale_frequency"
+    ]
+  },
+  "top_10": [
+    {
+      "name": "evo_55_cascade",
+      "avg_hits": 11.9,
+      "std_hits": 2.0749,
+      "max_hits": 18,
+      "min_hits": 9,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.8251,
+      "fitness": 11.07,
+      "operators": [
+        "cascade",
+        "cascade",
+        "cascade"
+      ],
+      "primitive_names": [
+        "gap_pattern",
+        "trend_reversal",
+        "adjacent_bias",
+        "multi_scale_frequency"
+      ]
+    },
+    {
+      "name": "evo_55_cascade_m",
+      "avg_hits": 11.9,
+      "std_hits": 2.0749,
+      "max_hits": 18,
+      "min_hits": 9,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.8251,
+      "fitness": 11.07,
+      "operators": [
+        "cascade",
+        "cascade",
+        "cascade"
+      ],
+      "primitive_names": [
+        "gap_pattern",
+        "trend_reversal",
+        "adjacent_bias",
+        "multi_scale_frequency"
+      ]
+    },
+    {
+      "name": "evo_55_cascade_m_m",
+      "avg_hits": 11.9,
+      "std_hits": 2.0749,
+      "max_hits": 18,
+      "min_hits": 9,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.8251,
+      "fitness": 11.07,
+      "operators": [
+        "cascade",
+        "cascade",
+        "cascade"
+      ],
+      "primitive_names": [
+        "gap_pattern",
+        "trend_reversal",
+        "adjacent_bias",
+        "multi_scale_frequency"
+      ]
+    },
+    {
+      "name": "evo_55_cascade_m",
+      "avg_hits": 11.9,
+      "std_hits": 2.0749,
+      "max_hits": 18,
+      "min_hits": 9,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.8251,
+      "fitness": 11.07,
+      "operators": [
+        "cascade",
+        "cascade",
+        "cascade"
+      ],
+      "primitive_names": [
+        "gap_pattern",
+        "trend_reversal",
+        "adjacent_bias",
+        "multi_scale_frequency"
+      ]
+    },
+    {
+      "name": "evo_55_cascade_m_m",
+      "avg_hits": 11.9,
+      "std_hits": 2.0749,
+      "max_hits": 18,
+      "min_hits": 9,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.8251,
+      "fitness": 11.07,
+      "operators": [
+        "cascade",
+        "cascade",
+        "cascade"
+      ],
+      "primitive_names": [
+        "gap_pattern",
+        "trend_reversal",
+        "adjacent_bias",
+        "multi_scale_frequency"
+      ]
+    },
+    {
+      "name": "evo_55_cascade_m_m_m",
+      "avg_hits": 11.9,
+      "std_hits": 2.0749,
+      "max_hits": 18,
+      "min_hits": 9,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.8251,
+      "fitness": 11.07,
+      "operators": [
+        "cascade",
+        "cascade",
+        "cascade"
+      ],
+      "primitive_names": [
+        "gap_pattern",
+        "trend_reversal",
+        "adjacent_bias",
+        "multi_scale_frequency"
+      ]
+    },
+    {
+      "name": "evo_55_cascade_m",
+      "avg_hits": 11.9,
+      "std_hits": 2.0749,
+      "max_hits": 18,
+      "min_hits": 9,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.8251,
+      "fitness": 11.07,
+      "operators": [
+        "cascade",
+        "cascade",
+        "cascade"
+      ],
+      "primitive_names": [
+        "gap_pattern",
+        "trend_reversal",
+        "adjacent_bias",
+        "multi_scale_frequency"
+      ]
+    },
+    {
+      "name": "evo_55_cascade_m_m_m",
+      "avg_hits": 11.9,
+      "std_hits": 2.0749,
+      "max_hits": 18,
+      "min_hits": 9,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.8251,
+      "fitness": 11.07,
+      "operators": [
+        "cascade",
+        "cascade",
+        "cascade"
+      ],
+      "primitive_names": [
+        "gap_pattern",
+        "trend_reversal",
+        "adjacent_bias",
+        "multi_scale_frequency"
+      ]
+    },
+    {
+      "name": "evo_55_cascade_m",
+      "avg_hits": 11.9,
+      "std_hits": 2.0749,
+      "max_hits": 18,
+      "min_hits": 9,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.8251,
+      "fitness": 11.07,
+      "operators": [
+        "cascade",
+        "cascade",
+        "cascade"
+      ],
+      "primitive_names": [
+        "gap_pattern",
+        "trend_reversal",
+        "adjacent_bias",
+        "multi_scale_frequency"
+      ]
+    },
+    {
+      "name": "evo_55_cascade_m_m_m",
+      "avg_hits": 11.9,
+      "std_hits": 2.0749,
+      "max_hits": 18,
+      "min_hits": 9,
+      "p_value": 0.0,
+      "rounds": 20,
+      "stability": 9.8251,
+      "fitness": 11.07,
+      "operators": [
+        "cascade",
+        "cascade",
+        "cascade"
+      ],
+      "primitive_names": [
+        "gap_pattern",
+        "trend_reversal",
+        "adjacent_bias",
+        "multi_scale_frequency"
+      ]
+    }
+  ],
+  "population_size": 200,
+  "timestamp": "2026-07-19T14:07:02.223517"
+}

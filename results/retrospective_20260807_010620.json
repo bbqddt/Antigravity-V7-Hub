@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-08-07T01:06:20.829473",
+  "data_periods": 3485,
+  "random_baseline": {
+    "avg_red_hits": 1.09,
+    "blue_hit_rate": 0.0625,
+    "brier_red": 0.1488
+  },
+  "formula": {
+    "n_rounds": 0,
+    "avg_red_hits": 0,
+    "blue_hit_rate": 0,
+    "avg_brier": 0,
+    "beats_random_pct": 0
+  },
+  "luckcast": {
+    "n_rounds": 0,
+    "avg_red_hits": 0,
+    "blue_hit_rate": 0,
+    "avg_brier": 0,
+    "beats_random_pct": 0
+  },
+  "hot_cold": {
+    "hot_cold": {
+      "n_rounds": 617,
+      "avg_red_hits": 1.1247974068071314
+    },
+    "cold_strike": {
+      "n_rounds": 617,
+      "avg_red_hits": 1.0858995137763372
+    },
+    "random": {
+      "n_rounds": 617,
+      "avg_red_hits": 1.0453808752025933
+    }
+  }
+}

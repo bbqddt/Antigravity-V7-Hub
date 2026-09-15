@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-07-25T04:57:14.687913",
+  "total_generations": 3,
+  "best_formula": "gen3_new_5_resonance",
+  "best_score": 0.451615,
+  "history": [
+    {
+      "generation": 1,
+      "population_size": 10,
+      "best_formula": "gen1_new_4_phasealign",
+      "best_score": 0.444203,
+      "top5": [
+        {
+          "name": "gen0_9_phasealign",
+          "score": 0.425034
+        },
+        {
+          "name": "gen0_4_phasealign",
+          "score": 0.419236
+        },
+        {
+          "name": "gen1_new_2_resonance",
+          "score": 0.321391
+        },
+        {
+          "name": "gen1_new_3",
+          "score": 0.308248
+        },
+        {
+          "name": "gen1_new_4_phasealign",
+          "score": 0.444203
+        }
+      ]
+    },
+    {
+      "generation": 2,
+      "population_size": 10,
+      "best_formula": "gen2_new_2_cascade",
+      "best_score": 0.448058,
+      "top5": [
+        {
+          "name": "gen1_new_4_phasealign",
+          "score": 0.43856
+        },
+        {
+          "name": "gen0_9_phasealign",
+          "score": 0.425034
+        },
+        {
+          "name": "gen2_new_2_cascade",
+          "score": 0.448058
+        },
+        {
+          "name": "gen2_new_3_phasealign",
+          "score": 0.369215
+        },
+        {
+          "name": "gen2_new_4_resonance",
+          "score": -0.082524
+        }
+      ]
+    },
+    {
+      "generation": 3,
+      "population_size": 10,
+      "best_formula": "gen3_new_5_resonance",
+      "best_score": 0.451615,
+      "top5": [
+        {
+          "name": "gen1_new_4_phasealign",
+          "score": 0.43856
+        },
+        {
+          "name": "gen2_new_7",
+          "score": 0.435844
+        },
+        {
+          "name": "gen3_new_2_resonance",
+          "score": 0.329629
+        },
+        {
+          "name": "gen3_new_3_cascade",
+          "score": 0.287181
+        },
+        {
+          "name": "gen3_new_4",
+          "score": -0.139658
+        }
+      ]
+    }
+  ]
+}

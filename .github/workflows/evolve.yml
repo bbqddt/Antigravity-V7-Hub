@@ -1,0 +1,146 @@
+name: Evolution 7x24 (Actions-chain)
+
+# 免费 + 无卡方案：利用 GitHub Actions（Public 仓库无限免费分钟）做"接力式 7x24 持续计算"。
+# 机制：
+#   1) 单次 job 上限 6 小时，本 workflow 跑满 5.5h（--max-runtime 19800）后退出；
+#   2) 末尾把演化状态文件 commit 回仓库（接力续跑的关键），并链式触发下一轮 run；
+#   3) concurrency 保证同一时刻只有一个 run 在跑（新 run 排队等旧 run 结束 → 无缝接力）；
+#   4) schedule 每 6 小时兜底，万一链式中断也能自动重启。
+# 注：本 workflow 只监听 schedule / workflow_dispatch，不监听 push，且 commit 带 [skip ci]，
+#     因此提交状态文件不会触发自身无限递归。
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # 每 6 小时（UTC）兜底触发
+  workflow_dispatch:        # 手动运行 / 链式触发
+  repository_dispatch:
+    types: [contribs-ready]
+
+permissions:
+  contents: write           # 需要写权限以将状态文件 push 回仓库
+
+concurrency:
+  group: evolve-chain
+  cancel-in-progress: false  # 排队而非取消：旧 run 结束后新 run 才起跑，形成无缝接力
+
+env:
+  CYCLE_COUNT: ${{ github.run_number }}
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    outputs:
+      status: ${{ steps.check.outputs.status }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate critical files
+        id: check
+        run: |
+          echo "status=ok" >> $GITHUB_OUTPUT
+          # Check if critical files exist in the repo
+          for f in "cloud_daemon_24x7.py" "formula_evolution.py" "data/lottery_history.csv"; do
+            if [ ! -f "$f" ]; then
+              echo "status=missing_$f" >> $GITHUB_OUTPUT
+              echo "WARNING: Missing $f"
+            fi
+          done
+
+  evolve:
+    needs: health-check
+    if: needs.health-check.outputs.status == 'ok'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360      # 硬上限 6 小时，留出余量给收尾
+    steps:
+      - name: Checkout (含写回权限)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: 'pip'
+
+      - name: Install dependencies (with cache)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements_posit.txt || pip install pandas numpy scipy scikit-learn
+
+      - name: Pre-flight checks
+        run: |
+          echo "=== Preflight Checks ==="
+          python -c "import sys; print('Python:', sys.version)"
+          python -c "from data_layer import load_history; data=load_history(); print('History records:', len(data))"
+          echo "Disk space:" && df -h /
+          echo "=== Starting evolution ==="
+
+      - name: Run evolution (run-once, 5.5h)
+        # 跑满 5.5 小时后退出交棒；失败则由 schedule 兜底重启
+        # LLM密钥为可选：配置后启用AI影子评审（仅审计建议，不干预演化），未配置则静默降级
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          START_TIME=$(date +%s)
+          timeout 19740 python cloud_daemon_24x7.py --run-once --max-runtime 19800 || {
+            ELAPSED=$(($(date +%s) - START_TIME))
+            echo "Evolution failed after ${ELAPSED}s"
+            exit 1
+          }
+
+      - name: Persist evolution state
+        if: always()           # 即使演化出错也尽量保留已产生的状态
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          FILES="formula_evolution_history.json evolution_performance_log.json learning_state.json latest_prediction.json latest_decision_enhanced.json best_formula.json daemon_state.json cloud_daemon_config.json ai_enhanced_state.json ai_shadow_review.jsonl"
+          for f in $FILES; do [ -f "$f" ] && git add "$f"; done
+          find logs -maxdepth 1 -name 'metrics_*.jsonl' -print0 2>/dev/null | xargs -0 -r git add -f 2>/dev/null
+          if git diff --cached --quiet; then
+            echo "No state file changes to commit"
+          else
+            git commit -m "chore: persist evolution state [skip ci] (run #${{ github.run_number }})"
+            git push
+          fi
+
+      - name: Trigger next run (chain)
+        if: success()          # 仅成功时接棒，避免失败也无限链
+        uses: actions/github-script@v7
+        with:
+          script: |
+            try {
+              await github.rest.actions.createWorkflowDispatch({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                workflow_id: 'evolve.yml',
+                ref: 'main'
+              });
+              console.log('Chained next evolution run');
+            } catch (e) {
+              console.log('Chain trigger failed (may have pending run): ' + e.message);
+            }
+
+      - name: Notify on completion
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const status = '${{ job.status }}';
+            const cycle = process.env.CYCLE_COUNT || 'unknown';
+            const runId = context.runId;
+            console.log(`Evolution cycle ${cycle} (${status}). Run ID: ${runId}`);
+
+            // Post a comment or create issue if failed
+            if (status === 'failure') {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `[FAIL] Evolution Run #${cycle} failed`,
+                body: `Evolution cycle \`${cycle}\` failed on run ${runId}.\n\nCheck: https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${runId}\n\ncc: @${context.actor || 'project-maintainer'}`
+              });
+            }

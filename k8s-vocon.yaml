@@ -1,0 +1,145 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: antigravity
+  namespace: antigravity
+  labels:
+    app: antigravity
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: antigravity
+  template:
+    metadata:
+      labels:
+        app: antigravity
+    spec:
+      containers:
+      - name: antigravity
+        image: antigravity:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
+        env:
+        - name: HF_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: antigravity-secrets
+              key: hf-token
+        - name: OPENROUTER_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: antigravity-secrets
+              key: openrouter-key
+        - name: SILICONFLOW_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: antigravity-secrets
+              key: siliconflow-key
+        - name: CC_SWITCH_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: antigravity-secrets
+              key: cc-switch-key
+        - name: E2B_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: antigravity-secrets
+              key: e2b-key
+        - name: PYTHONPATH
+          value: "/app"
+        - name: PYTHONUNBUFFERED
+          value: "1"
+        resources:
+          requests:
+            cpu: "1000m"
+            memory: "2Gi"
+          limits:
+            cpu: "2000m"
+            memory: "4Gi"
+        volumeMounts:
+        - name: data
+          mountPath: /app/data
+        - name: logs
+          mountPath: /app/logs
+      volumes:
+      - name: data
+        persistentVolumeClaim:
+          claimName: antigravity-data-pvc
+      - name: logs
+        persistentVolumeClaim:
+          claimName: antigravity-logs-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: antigravity-data-pvc
+  namespace: antigravity
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: antigravity-logs-pvc
+  namespace: antigravity
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: antigravity-secrets
+  namespace: antigravity
+type: Opaque
+stringData:
+  hf-token: "${HF_TOKEN}"
+  openrouter-key: "${OPENROUTER_API_KEY}"
+  siliconflow-key: "${SILICONFLOW_API_KEY}"
+  cc-switch-key: "${CC_SWITCH_API_KEY}"
+  e2b-key: "${E2B_API_KEY}"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: antigravity
+  namespace: antigravity
+spec:
+  selector:
+    app: antigravity
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: antigravity-evolution
+  namespace: antigravity
+spec:
+  schedule: "0 2 * * *"  # 每天凌晨2点
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: evolution
+            image: antigravity:latest
+            command: ["python", "formula_evolution.py", "--run", "--generations", "20"]
+            envFrom:
+            - secretRef:
+                name: antigravity-secrets
+            env:
+            - name: PYTHONPATH
+              value: "/app"
+          restartPolicy: OnFailure

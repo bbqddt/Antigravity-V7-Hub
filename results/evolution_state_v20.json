@@ -1,0 +1,119 @@
+{
+  "timestamp": "2026-08-05T01:05:52.621190",
+  "total_generations": 2,
+  "total_candidates": 9,
+  "survival_pool": [
+    {
+      "id": "pc_207175",
+      "source_ai": "primitive_combiner",
+      "name": "temporal_combo_2",
+      "primitives": [
+        "periodic_echo",
+        "recency_gradient"
+      ],
+      "composition": "cascade",
+      "description": "同类别temporal原语组合",
+      "params": {
+        "strategy": "same_category",
+        "category": "temporal"
+      },
+      "fitness_score": 0.1769,
+      "avg_hits": 0,
+      "p_value": 1,
+      "calibration_error": 1.0,
+      "brier_score": 1.0,
+      "status": "survived",
+      "generation": 0,
+      "parent_ids": [],
+      "birth_time": "2026-08-05T01:05:52.007866"
+    }
+  ],
+  "math_engine_predictions": {
+    "enhanced_v2": {
+      "red": [
+        1,
+        4,
+        7,
+        8,
+        13,
+        14
+      ],
+      "blue": [
+        16
+      ]
+    },
+    "luckcast_v15": {
+      "red": [
+        2,
+        6,
+        7,
+        24,
+        28,
+        29
+      ],
+      "blue": [
+        4
+      ]
+    }
+  },
+  "evolution_history": [
+    {
+      "round_num": 1,
+      "timestamp": "2026-08-05T01:05:52.006865",
+      "candidates_generated": 3,
+      "candidates_tested": 3,
+      "survived_count": 0,
+      "eliminated_count": 1,
+      "evolved_count": 3,
+      "top_formula": null,
+      "ai_performance": {
+        "primitive_combiner": {
+          "generated": 3,
+          "status": "success",
+          "survived": 0
+        }
+      }
+    },
+    {
+      "round_num": 2,
+      "timestamp": "2026-08-05T01:05:52.621190",
+      "candidates_generated": 3,
+      "candidates_tested": 3,
+      "survived_count": 0,
+      "eliminated_count": 2,
+      "evolved_count": 0,
+      "top_formula": null,
+      "ai_performance": {
+        "primitive_combiner": {
+          "generated": 3,
+          "status": "success",
+          "survived": 0
+        }
+      }
+    }
+  ],
+  "best_formula": {
+    "id": "pc_207175",
+    "source_ai": "primitive_combiner",
+    "name": "temporal_combo_2",
+    "primitives": [
+      "periodic_echo",
+      "recency_gradient"
+    ],
+    "composition": "cascade",
+    "description": "同类别temporal原语组合",
+    "params": {
+      "strategy": "same_category",
+      "category": "temporal"
+    },
+    "fitness_score": 0.1769,
+    "avg_hits": 0,
+    "p_value": 1,
+    "calibration_error": 1.0,
+    "brier_score": 1.0,
+    "status": "survived",
+    "generation": 0,
+    "parent_ids": [],
+    "birth_time": "2026-08-05T01:05:52.007866"
+  }
+}

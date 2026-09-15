@@ -1,0 +1,131 @@
+{
+  "exported_at": "2026-08-05T01:05:52.622196",
+  "top_candidates": [
+    {
+      "id": "pc_809570",
+      "source_ai": "primitive_combiner",
+      "name": "temporal_combo_2",
+      "primitives": [
+        "periodic_echo",
+        "seasonal_resonance"
+      ],
+      "composition": "cascade",
+      "description": "同类别temporal原语组合",
+      "params": {
+        "strategy": "same_category",
+        "category": "temporal"
+      },
+      "fitness_score": 0.1769,
+      "avg_hits": 0,
+      "p_value": 1,
+      "calibration_error": 1.0,
+      "brier_score": 1.0,
+      "status": "survived",
+      "generation": 0,
+      "parent_ids": [],
+      "birth_time": "2026-08-05T01:05:50.373520"
+    },
+    {
+      "id": "pc_207175",
+      "source_ai": "primitive_combiner",
+      "name": "temporal_combo_2",
+      "primitives": [
+        "periodic_echo",
+        "recency_gradient"
+      ],
+      "composition": "cascade",
+      "description": "同类别temporal原语组合",
+      "params": {
+        "strategy": "same_category",
+        "category": "temporal"
+      },
+      "fitness_score": 0.1769,
+      "avg_hits": 0,
+      "p_value": 1,
+      "calibration_error": 1.0,
+      "brier_score": 1.0,
+      "status": "survived",
+      "generation": 0,
+      "parent_ids": [],
+      "birth_time": "2026-08-05T01:05:52.007866"
+    },
+    {
+      "id": "pc_198246",
+      "source_ai": "primitive_combiner",
+      "name": "relational_combo_3",
+      "primitives": [
+        "mutual_exclusion",
+        "cooccurrence_affinity",
+        "pair_orbit"
+      ],
+      "composition": "cascade",
+      "description": "同类别relational原语组合",
+      "params": {
+        "strategy": "same_category",
+        "category": "relational"
+      },
+      "fitness_score": 0.1629,
+      "avg_hits": 0,
+      "p_value": 1,
+      "calibration_error": 1.0,
+      "brier_score": 1.0,
+      "status": "survived",
+      "generation": 0,
+      "parent_ids": [],
+      "birth_time": "2026-08-05T01:05:50.373520"
+    },
+    {
+      "id": "pc_391369",
+      "source_ai": "primitive_combiner",
+      "name": "wc_1",
+      "primitives": [
+        "periodic_echo",
+        "wavelet_coherence",
+        "multi_scale_frequency",
+        "skewness_signal"
+      ],
+      "composition": "weighted_sum",
+      "description": "随机组合4个原语的加权求和",
+      "params": {
+        "strategy": "random_weighted_sum"
+      },
+      "fitness_score": 0.1474,
+      "avg_hits": 0,
+      "p_value": 1,
+      "calibration_error": 1.0,
+      "brier_score": 1.0,
+      "status": "eliminated",
+      "generation": 0,
+      "parent_ids": [],
+      "birth_time": "2026-08-05T01:05:52.007866"
+    },
+    {
+      "id": "pc_356787",
+      "source_ai": "primitive_combiner",
+      "name": "wc_1",
+      "primitives": [
+        "recency_gradient",
+        "trend_reversal"
+      ],
+      "composition": "weighted_sum",
+      "description": "随机组合2个原语的加权求和",
+      "params": {
+        "strategy": "random_weighted_sum"
+      },
+      "fitness_score": 0.082,
+      "avg_hits": 0,
+      "p_value": 1,
+      "calibration_error": 1.0,
+      "brier_score": 1.0,
+      "status": "eliminated",
+      "generation": 0,
+      "parent_ids": [],
+      "birth_time": "2026-08-05T01:05:50.373520"
+    }
+  ],
+  "final_recommendation": {
+    "red": [],
+    "blue": [],
+    "vote_counts": {}
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "round": 1,
+    "timestamp": "2026-07-12T18:46:56.587106",
+    "consensus_reds": [
+      24,
+      2,
+      29,
+      16,
+      6,
+      7
+    ],
+    "consensus_blue": 13,
+    "models_used": 6,
+    "agree_count": 9
+  },
+  {
+    "round": 1,
+    "timestamp": "2026-07-12T19:31:36.961007",
+    "consensus_reds": [
+      2,
+      24,
+      7,
+      3,
+      6,
+      28
+    ],
+    "consensus_blue": 16,
+    "models_used": 6,
+    "agree_count": 8
+  },
+  {
+    "round": 1,
+    "timestamp": "2026-07-24T18:35:37.621021",
+    "consensus_reds": [
+      2,
+      7,
+      6,
+      24,
+      28,
+      33
+    ],
+    "consensus_blue": 4,
+    "models_used": 3,
+    "agree_count": 6
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-07-06T09:23:18.320337",
+  "pillars": {
+    "formula_language": {
+      "n_primitives": 15,
+      "categories": {
+        "temporal": [
+          "periodic_echo",
+          "recency_gradient",
+          "seasonal_resonance"
+        ],
+        "relational": [
+          "cooccurrence_affinity",
+          "mutual_exclusion",
+          "pair_orbit"
+        ],
+        "structural": [
+          "binary_topology",
+          "digit_manifold",
+          "position_signature"
+        ],
+        "spectral": [
+          "spectral_power",
+          "wavelet_coherence"
+        ],
+        "geometric": [
+          "sphere_projection",
+          "distance_cluster"
+        ],
+        "chaotic": [
+          "attractor_distance",
+          "lyapunov_signal"
+        ]
+      }
+    },
+    "strategy_proposer": {
+      "n_templates": 13,
+      "n_hypotheses_generated": 41
+    },
+    "llm_innovation": {
+      "gemini_available": false,
+      "failure_classifier_ready": true
+    }
+  },
+  "results": {
+    "best_formula_hits": 1.3602,
+    "traditional_avg": 1.0794,
+    "new_formula_avg": 1.1108
+  }
+}

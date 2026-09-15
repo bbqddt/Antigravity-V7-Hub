@@ -1,0 +1,514 @@
+[
+  {
+    "name": "periodic_echo",
+    "category": "temporal",
+    "top6_hits": 3,
+    "top10_hits": 3,
+    "top6_nums": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "top_score": 0,
+    "bottom_score": 0
+  },
+  {
+    "name": "recency_gradient",
+    "category": "temporal",
+    "top6_hits": 3,
+    "top10_hits": 5,
+    "top6_nums": [
+      10,
+      23,
+      14,
+      22,
+      25,
+      1
+    ],
+    "top_score": 0.20396497556798332,
+    "bottom_score": 0.0
+  },
+  {
+    "name": "attractor_distance",
+    "category": "chaotic",
+    "top6_hits": 3,
+    "top10_hits": 3,
+    "top6_nums": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "top_score": 0,
+    "bottom_score": 0
+  },
+  {
+    "name": "periodic_gap",
+    "category": "cross_period_memory",
+    "top6_hits": 3,
+    "top10_hits": 3,
+    "top6_nums": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "top_score": 0,
+    "bottom_score": 0
+  },
+  {
+    "name": "scale_transition",
+    "category": "multi_scale",
+    "top6_hits": 3,
+    "top10_hits": 3,
+    "top6_nums": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "top_score": 0.3,
+    "bottom_score": 0.02037037037037037
+  },
+  {
+    "name": "regime_switch",
+    "category": "environment_aware",
+    "top6_hits": 3,
+    "top10_hits": 3,
+    "top6_nums": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "top_score": 0.5,
+    "bottom_score": 0.5
+  },
+  {
+    "name": "pair_orbit",
+    "category": "relational",
+    "top6_hits": 2,
+    "top10_hits": 2,
+    "top6_nums": [
+      1,
+      19,
+      20,
+      25,
+      24,
+      26
+    ],
+    "top_score": 1.0,
+    "bottom_score": 0.06951871657754011
+  },
+  {
+    "name": "binary_topology",
+    "category": "structural",
+    "top6_hits": 2,
+    "top10_hits": 2,
+    "top6_nums": [
+      18,
+      20,
+      19,
+      22,
+      25,
+      26
+    ],
+    "top_score": 0.08273148148148148,
+    "bottom_score": 0.03050925925925926
+  },
+  {
+    "name": "spectral_power",
+    "category": "spectral",
+    "top6_hits": 2,
+    "top10_hits": 3,
+    "top6_nums": [
+      22,
+      24,
+      1,
+      5,
+      3,
+      27
+    ],
+    "top_score": 0.3128077168699778,
+    "bottom_score": 0.12584454743617476
+  },
+  {
+    "name": "sum_range_tracker",
+    "category": "sequence_pattern",
+    "top6_hits": 2,
+    "top10_hits": 2,
+    "top6_nums": [
+      2,
+      1,
+      4,
+      10,
+      13,
+      6
+    ],
+    "top_score": 1.5,
+    "bottom_score": 0.17391304347826086
+  },
+  {
+    "name": "gap_pattern",
+    "category": "sequence_pattern",
+    "top6_hits": 2,
+    "top10_hits": 2,
+    "top6_nums": [
+      16,
+      18,
+      17,
+      15,
+      19,
+      14
+    ],
+    "top_score": 0.7255000000000001,
+    "bottom_score": 0.5
+  },
+  {
+    "name": "trend_reversal",
+    "category": "sequence_pattern",
+    "top6_hits": 2,
+    "top10_hits": 2,
+    "top6_nums": [
+      6,
+      1,
+      15,
+      22,
+      5,
+      8
+    ],
+    "top_score": 1.0,
+    "bottom_score": 0.3
+  },
+  {
+    "name": "modulo_distribution",
+    "category": "combinatorial",
+    "top6_hits": 2,
+    "top10_hits": 3,
+    "top6_nums": [
+      3,
+      1,
+      29,
+      24,
+      30,
+      18
+    ],
+    "top_score": 0.724,
+    "bottom_score": 0.5559999999999999
+  },
+  {
+    "name": "lag_correlation",
+    "category": "cross_period_memory",
+    "top6_hits": 2,
+    "top10_hits": 2,
+    "top6_nums": [
+      22,
+      1,
+      5,
+      26,
+      27,
+      16
+    ],
+    "top_score": 0.8622222222222222,
+    "bottom_score": 0.5
+  },
+  {
+    "name": "environment_aware",
+    "category": "environment_aware",
+    "top6_hits": 2,
+    "top10_hits": 3,
+    "top6_nums": [
+      13,
+      25,
+      2,
+      24,
+      30,
+      1
+    ],
+    "top_score": 0.3055555555555556,
+    "bottom_score": 0.08333333333333333
+  },
+  {
+    "name": "cooccurrence_affinity",
+    "category": "relational",
+    "top6_hits": 1,
+    "top10_hits": 2,
+    "top6_nums": [
+      30,
+      3,
+      13,
+      2,
+      1,
+      24
+    ],
+    "top_score": 1.8663999999999992,
+    "bottom_score": 0.08159999999999996
+  },
+  {
+    "name": "digit_manifold",
+    "category": "structural",
+    "top6_hits": 1,
+    "top10_hits": 1,
+    "top6_nums": [
+      3,
+      13,
+      22,
+      31,
+      4,
+      30
+    ],
+    "top_score": 0.03212962962962963,
+    "bottom_score": 0.02180555555555556
+  },
+  {
+    "name": "position_signature",
+    "category": "structural",
+    "top6_hits": 1,
+    "top10_hits": 1,
+    "top6_nums": [
+      1,
+      33,
+      32,
+      2,
+      30,
+      21
+    ],
+    "top_score": 1.0,
+    "bottom_score": 0.3125
+  },
+  {
+    "name": "wavelet_coherence",
+    "category": "spectral",
+    "top6_hits": 1,
+    "top10_hits": 1,
+    "top6_nums": [
+      2,
+      31,
+      7,
+      27,
+      6,
+      5
+    ],
+    "top_score": 0.936053452150899,
+    "bottom_score": 0.8889896792912312
+  },
+  {
+    "name": "sphere_projection",
+    "category": "geometric",
+    "top6_hits": 1,
+    "top10_hits": 1,
+    "top6_nums": [
+      27,
+      19,
+      24,
+      32,
+      22,
+      14
+    ],
+    "top_score": 0.5243980174876122,
+    "bottom_score": 0.47544541400169005
+  },
+  {
+    "name": "distance_cluster",
+    "category": "geometric",
+    "top6_hits": 1,
+    "top10_hits": 2,
+    "top6_nums": [
+      30,
+      3,
+      24,
+      13,
+      2,
+      1
+    ],
+    "top_score": 0.23341215860489226,
+    "bottom_score": 0.0862493560734178
+  },
+  {
+    "name": "lyapunov_signal",
+    "category": "chaotic",
+    "top6_hits": 1,
+    "top10_hits": 3,
+    "top6_nums": [
+      30,
+      29,
+      1,
+      8,
+      24,
+      28
+    ],
+    "top_score": 0.01724137931034477,
+    "bottom_score": 0.011724137931034443
+  },
+  {
+    "name": "digit_pair_freq",
+    "category": "combinatorial",
+    "top6_hits": 1,
+    "top10_hits": 3,
+    "top6_nums": [
+      10,
+      24,
+      30,
+      13,
+      33,
+      1
+    ],
+    "top_score": 0.5363528009535161,
+    "bottom_score": 0.3098927294398093
+  },
+  {
+    "name": "multi_scale_frequency",
+    "category": "multi_scale",
+    "top6_hits": 1,
+    "top10_hits": 1,
+    "top6_nums": [
+      22,
+      18,
+      8,
+      3,
+      12,
+      30
+    ],
+    "top_score": 0.1594744454934147,
+    "bottom_score": 0.023895347964007295
+  },
+  {
+    "name": "phase_detector",
+    "category": "environment_aware",
+    "top6_hits": 1,
+    "top10_hits": 2,
+    "top6_nums": [
+      24,
+      13,
+      10,
+      2,
+      1,
+      3
+    ],
+    "top_score": 0.5833333333333334,
+    "bottom_score": 0.0
+  },
+  {
+    "name": "seasonal_resonance",
+    "category": "temporal",
+    "top6_hits": 0,
+    "top10_hits": 3,
+    "top6_nums": [
+      2,
+      3,
+      23,
+      31,
+      26,
+      16
+    ],
+    "top_score": 0.3217670016874732,
+    "bottom_score": 0
+  },
+  {
+    "name": "mutual_exclusion",
+    "category": "relational",
+    "top6_hits": 0,
+    "top10_hits": 0,
+    "top6_nums": [
+      20,
+      11,
+      26,
+      17,
+      21,
+      16
+    ],
+    "top_score": 0.7423999999999998,
+    "bottom_score": 0.06200000000000001
+  },
+  {
+    "name": "adjacent_bias",
+    "category": "combinatorial",
+    "top6_hits": 0,
+    "top10_hits": 2,
+    "top6_nums": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      24
+    ],
+    "top_score": 0.6,
+    "bottom_score": 0.0
+  },
+  {
+    "name": "skewness_signal",
+    "category": "higher_order",
+    "top6_hits": 0,
+    "top10_hits": 0,
+    "top6_nums": [
+      2,
+      3,
+      10,
+      24,
+      9,
+      6
+    ],
+    "top_score": 1,
+    "bottom_score": 0.012025725567275991
+  },
+  {
+    "name": "kurtosis_signal",
+    "category": "higher_order",
+    "top6_hits": 0,
+    "top10_hits": 1,
+    "top6_nums": [
+      11,
+      20,
+      26,
+      12,
+      21,
+      27
+    ],
+    "top_score": 0.9066452286939367,
+    "bottom_score": 0
+  },
+  {
+    "name": "tail_risk",
+    "category": "higher_order",
+    "top6_hits": 0,
+    "top10_hits": 3,
+    "top6_nums": [
+      2,
+      3,
+      11,
+      10,
+      24,
+      20
+    ],
+    "top_score": 1.0,
+    "bottom_score": 0.3
+  },
+  {
+    "name": "recurrence_window",
+    "category": "cross_period_memory",
+    "top6_hits": 0,
+    "top10_hits": 1,
+    "top6_nums": [
+      3,
+      12,
+      20,
+      21,
+      24,
+      13
+    ],
+    "top_score": 1.0,
+    "bottom_score": 0
+  }
+]

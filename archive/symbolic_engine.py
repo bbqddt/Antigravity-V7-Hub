@@ -1,6 +1,9 @@
 import numpy as np
 from gplearn.genetic import SymbolicRegressor
 import json
+from pathlib import Path
+
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 class SymbolicEvolutionEngine:
     """
@@ -36,5 +39,5 @@ class SymbolicEvolutionEngine:
         return str(est_gp._program)
 
 if __name__ == "__main__":
-    engine = SymbolicEvolutionEngine(r"e:\享中\history_truth.json")
+    engine = SymbolicEvolutionEngine(_PROJECT_ROOT / 'history_truth.json')
     engine.run_evolution()

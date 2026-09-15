@@ -14,8 +14,10 @@ import sys
 import time
 from pathlib import Path
 
-BASE_DIR = Path(r"E:\享中")
-WORK_DIR = Path(r"E:\Antigravity_Work")
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+BASE_DIR = _PROJECT_ROOT
+WORK_DIR = _PROJECT_ROOT / "Antigravity_Work"
 
 SERVICES = {}
 

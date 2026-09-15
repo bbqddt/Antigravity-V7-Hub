@@ -1,0 +1,258 @@
+[
+  {
+    "name": "binary_topology",
+    "category": "structural",
+    "avg_hits": 1.1248,
+    "max_hits": 4,
+    "zero_pct": 25.3,
+    "samples": 3373
+  },
+  {
+    "name": "digit_pair_freq",
+    "category": "combinatorial",
+    "avg_hits": 1.121,
+    "max_hits": 5,
+    "zero_pct": 25.4,
+    "samples": 3373
+  },
+  {
+    "name": "recency_gradient",
+    "category": "temporal",
+    "avg_hits": 1.1198,
+    "max_hits": 4,
+    "zero_pct": 25.3,
+    "samples": 3373
+  },
+  {
+    "name": "distance_cluster",
+    "category": "geometric",
+    "avg_hits": 1.1153,
+    "max_hits": 5,
+    "zero_pct": 27.3,
+    "samples": 3373
+  },
+  {
+    "name": "gap_pattern",
+    "category": "sequence_pattern",
+    "avg_hits": 1.1141,
+    "max_hits": 4,
+    "zero_pct": 26.1,
+    "samples": 3373
+  },
+  {
+    "name": "cooccurrence_affinity",
+    "category": "relational",
+    "avg_hits": 1.1138,
+    "max_hits": 5,
+    "zero_pct": 26.2,
+    "samples": 3373
+  },
+  {
+    "name": "scale_transition",
+    "category": "multi_scale",
+    "avg_hits": 1.113,
+    "max_hits": 4,
+    "zero_pct": 26.2,
+    "samples": 3373
+  },
+  {
+    "name": "periodic_echo",
+    "category": "temporal",
+    "avg_hits": 1.1115,
+    "max_hits": 4,
+    "zero_pct": 25.6,
+    "samples": 3373
+  },
+  {
+    "name": "attractor_distance",
+    "category": "chaotic",
+    "avg_hits": 1.1115,
+    "max_hits": 4,
+    "zero_pct": 25.6,
+    "samples": 3373
+  },
+  {
+    "name": "periodic_gap",
+    "category": "cross_period_memory",
+    "avg_hits": 1.1115,
+    "max_hits": 4,
+    "zero_pct": 25.6,
+    "samples": 3373
+  },
+  {
+    "name": "recurrence_window",
+    "category": "cross_period_memory",
+    "avg_hits": 1.1112,
+    "max_hits": 5,
+    "zero_pct": 25.8,
+    "samples": 3373
+  },
+  {
+    "name": "regime_switch",
+    "category": "environment_aware",
+    "avg_hits": 1.1106,
+    "max_hits": 4,
+    "zero_pct": 26.1,
+    "samples": 3373
+  },
+  {
+    "name": "tail_risk",
+    "category": "higher_order",
+    "avg_hits": 1.1079,
+    "max_hits": 5,
+    "zero_pct": 27.1,
+    "samples": 3373
+  },
+  {
+    "name": "wavelet_coherence",
+    "category": "spectral",
+    "avg_hits": 1.1052,
+    "max_hits": 4,
+    "zero_pct": 26.0,
+    "samples": 3373
+  },
+  {
+    "name": "phase_detector",
+    "category": "environment_aware",
+    "avg_hits": 1.1035,
+    "max_hits": 4,
+    "zero_pct": 26.3,
+    "samples": 3373
+  },
+  {
+    "name": "sphere_projection",
+    "category": "geometric",
+    "avg_hits": 1.102,
+    "max_hits": 4,
+    "zero_pct": 25.5,
+    "samples": 3373
+  },
+  {
+    "name": "sum_range_tracker",
+    "category": "sequence_pattern",
+    "avg_hits": 1.1011,
+    "max_hits": 5,
+    "zero_pct": 26.9,
+    "samples": 3373
+  },
+  {
+    "name": "position_signature",
+    "category": "structural",
+    "avg_hits": 1.0981,
+    "max_hits": 5,
+    "zero_pct": 26.2,
+    "samples": 3373
+  },
+  {
+    "name": "lyapunov_signal",
+    "category": "chaotic",
+    "avg_hits": 1.094,
+    "max_hits": 4,
+    "zero_pct": 26.5,
+    "samples": 3373
+  },
+  {
+    "name": "pair_orbit",
+    "category": "relational",
+    "avg_hits": 1.0904,
+    "max_hits": 4,
+    "zero_pct": 27.1,
+    "samples": 3373
+  },
+  {
+    "name": "modulo_distribution",
+    "category": "combinatorial",
+    "avg_hits": 1.0898,
+    "max_hits": 5,
+    "zero_pct": 27.8,
+    "samples": 3373
+  },
+  {
+    "name": "environment_aware",
+    "category": "environment_aware",
+    "avg_hits": 1.0898,
+    "max_hits": 4,
+    "zero_pct": 26.9,
+    "samples": 3373
+  },
+  {
+    "name": "trend_reversal",
+    "category": "sequence_pattern",
+    "avg_hits": 1.0886,
+    "max_hits": 4,
+    "zero_pct": 26.9,
+    "samples": 3373
+  },
+  {
+    "name": "adjacent_bias",
+    "category": "combinatorial",
+    "avg_hits": 1.0869,
+    "max_hits": 4,
+    "zero_pct": 26.7,
+    "samples": 3373
+  },
+  {
+    "name": "seasonal_resonance",
+    "category": "temporal",
+    "avg_hits": 1.0866,
+    "max_hits": 5,
+    "zero_pct": 27.5,
+    "samples": 3373
+  },
+  {
+    "name": "multi_scale_frequency",
+    "category": "multi_scale",
+    "avg_hits": 1.0854,
+    "max_hits": 4,
+    "zero_pct": 26.9,
+    "samples": 3373
+  },
+  {
+    "name": "lag_correlation",
+    "category": "cross_period_memory",
+    "avg_hits": 1.0851,
+    "max_hits": 4,
+    "zero_pct": 27.8,
+    "samples": 3373
+  },
+  {
+    "name": "digit_manifold",
+    "category": "structural",
+    "avg_hits": 1.0824,
+    "max_hits": 4,
+    "zero_pct": 26.9,
+    "samples": 3373
+  },
+  {
+    "name": "mutual_exclusion",
+    "category": "relational",
+    "avg_hits": 1.0792,
+    "max_hits": 4,
+    "zero_pct": 27.6,
+    "samples": 3373
+  },
+  {
+    "name": "skewness_signal",
+    "category": "higher_order",
+    "avg_hits": 1.0789,
+    "max_hits": 4,
+    "zero_pct": 27.5,
+    "samples": 3373
+  },
+  {
+    "name": "kurtosis_signal",
+    "category": "higher_order",
+    "avg_hits": 1.0729,
+    "max_hits": 4,
+    "zero_pct": 27.7,
+    "samples": 3373
+  },
+  {
+    "name": "spectral_power",
+    "category": "spectral",
+    "avg_hits": 1.0525,
+    "max_hits": 4,
+    "zero_pct": 28.2,
+    "samples": 3373
+  }
+]

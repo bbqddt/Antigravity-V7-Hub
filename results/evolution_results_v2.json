@@ -1,0 +1,302 @@
+{
+  "timestamp": "2026-07-06T20:57:44.443161",
+  "best_formula": {
+    "name": "mutated_gen0_432_resonance",
+    "primitives": [
+      "digit_manifold",
+      "binary_topology",
+      "periodic_echo",
+      "lyapunov_signal"
+    ],
+    "operators": [
+      "sum",
+      "sum",
+      "sum"
+    ],
+    "performance": {
+      "avg_hits": 0.225,
+      "std": 0.048,
+      "max_hits": 0.3,
+      "min_hits": 0.1333,
+      "p_value": 0.0,
+      "rounds": 10,
+      "beats_random": false,
+      "stable": 0.177,
+      "per_round": [
+        0.2667,
+        0.2167,
+        0.3,
+        0.1667,
+        0.2167,
+        0.1333,
+        0.25,
+        0.25,
+        0.2333,
+        0.2167
+      ]
+    }
+  },
+  "generation_log": [
+    {
+      "generation": 1,
+      "population_size": 500,
+      "best": {
+        "name": "gen0_51",
+        "avg_hits": 0.215,
+        "stable": 0.1822
+      },
+      "average": 0.1812,
+      "top5": [
+        {
+          "name": "gen0_51",
+          "avg_hits": 0.215,
+          "stable": 0.1822
+        },
+        {
+          "name": "gen0_361_cascade",
+          "avg_hits": 0.2133,
+          "stable": 0.1727
+        },
+        {
+          "name": "gen0_429_cascade",
+          "avg_hits": 0.2133,
+          "stable": 0.1663
+        },
+        {
+          "name": "gen0_432_resonance",
+          "avg_hits": 0.2117,
+          "stable": 0.1844
+        },
+        {
+          "name": "gen0_35",
+          "avg_hits": 0.21,
+          "stable": 0.1566
+        }
+      ]
+    },
+    {
+      "generation": 2,
+      "population_size": 800,
+      "best": {
+        "name": "mutated_gen0_432_resonance",
+        "avg_hits": 0.225,
+        "stable": 0.177
+      },
+      "average": 0.1867,
+      "top5": [
+        {
+          "name": "mutated_gen0_432_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "mutated_gen0_432_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "mutated_gen0_432_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "mutated_gen0_432_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "mutated_gen0_459_resonance",
+          "avg_hits": 0.2167,
+          "stable": 0.1744
+        }
+      ]
+    },
+    {
+      "generation": 3,
+      "population_size": 800,
+      "best": {
+        "name": "crossed_gen0_361_c_gen0_290_p_phasealign",
+        "avg_hits": 0.2167,
+        "stable": 0.1974
+      },
+      "average": 0.1883,
+      "top5": [
+        {
+          "name": "crossed_gen0_361_c_gen0_290_p_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1974
+        },
+        {
+          "name": "crossed_gen0_340_r_gen0_432_r_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1843
+        },
+        {
+          "name": "mutated_gen0_459_resonance",
+          "avg_hits": 0.2167,
+          "stable": 0.1744
+        },
+        {
+          "name": "mutated_crossed_gen0_340_r_gen0_432_r_ph",
+          "avg_hits": 0.2167,
+          "stable": 0.1843
+        },
+        {
+          "name": "gen0_51",
+          "avg_hits": 0.215,
+          "stable": 0.1822
+        }
+      ]
+    },
+    {
+      "generation": 4,
+      "population_size": 800,
+      "best": {
+        "name": "mutated_gen0_432_resonance",
+        "avg_hits": 0.225,
+        "stable": 0.177
+      },
+      "average": 0.1898,
+      "top5": [
+        {
+          "name": "mutated_gen0_432_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "mutated_gen0_432_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "crossed_gen0_361_c_gen0_290_p_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1974
+        },
+        {
+          "name": "mutated_gen0_459_resonance",
+          "avg_hits": 0.2167,
+          "stable": 0.1744
+        },
+        {
+          "name": "mutated_mutated_gen0_459_resonance_reson",
+          "avg_hits": 0.2167,
+          "stable": 0.1744
+        }
+      ]
+    },
+    {
+      "generation": 5,
+      "population_size": 800,
+      "best": {
+        "name": "mutated_gen0_432_resonance",
+        "avg_hits": 0.225,
+        "stable": 0.177
+      },
+      "average": 0.1888,
+      "top5": [
+        {
+          "name": "mutated_gen0_432_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "mutated_gen0_432_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "mutated_gen0_432_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "crossed_gen0_361_c_gen0_290_p_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1974
+        },
+        {
+          "name": "mutated_gen0_459_resonance",
+          "avg_hits": 0.2167,
+          "stable": 0.1744
+        }
+      ]
+    },
+    {
+      "generation": 6,
+      "population_size": 800,
+      "best": {
+        "name": "mutated_gen0_432_resonance",
+        "avg_hits": 0.225,
+        "stable": 0.177
+      },
+      "average": 0.1926,
+      "top5": [
+        {
+          "name": "mutated_gen0_432_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "mutated_gen0_432_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "mutated_crossed_crossed_ge_crossed_cr_ca",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "mutated_gen0_432_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "crossed_gen0_361_c_gen0_290_p_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1974
+        }
+      ]
+    },
+    {
+      "generation": 7,
+      "population_size": 800,
+      "best": {
+        "name": "mutated_gen0_432_resonance",
+        "avg_hits": 0.225,
+        "stable": 0.177
+      },
+      "average": 0.1914,
+      "top5": [
+        {
+          "name": "mutated_gen0_432_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "crossed_crossed_ge_gen0_432_r",
+          "avg_hits": 0.225,
+          "stable": 0.177
+        },
+        {
+          "name": "crossed_gen0_361_c_gen0_290_p_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1974
+        },
+        {
+          "name": "crossed_mutated_cr_crossed_cr_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1843
+        },
+        {
+          "name": "crossed_mutated_cr_crossed_cr_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1843
+        }
+      ]
+    }
+  ],
+  "final_population_size": 800,
+  "converged_at_generation": 3
+}

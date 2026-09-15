@@ -1,0 +1,14 @@
+{
+    "period": "3002",
+    "red": [
+        4,
+        9,
+        14,
+        20,
+        24,
+        29
+    ],
+    "blue": 9,
+    "engine": "Evolution Life V1.1 (RF+Spectral Persisted)",
+    "status": "Computed"
+}

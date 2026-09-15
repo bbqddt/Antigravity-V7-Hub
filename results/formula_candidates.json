@@ -1,0 +1,265 @@
+{
+  "best_formulas": [
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 6.1,
+        "amplitude": 2.76
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 0.13,
+        "amplitude": 3.07
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 6.07,
+        "amplitude": 6.14
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod7",
+        "frequency": 2,
+        "phase": 1.3,
+        "amplitude": 2.28
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 0.27,
+        "amplitude": 9.39
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 0.02,
+        "amplitude": 6.45
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 6.22,
+        "amplitude": 2.27
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 0.11,
+        "amplitude": 1.1
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "double",
+        "atom1": "binary_weight",
+        "atom2": "digit_root",
+        "op": "mod"
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 6.0,
+        "amplitude": 7.08
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 6.07,
+        "amplitude": 1.65
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 6.07,
+        "amplitude": 6.58
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 0.18,
+        "amplitude": 7.0
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 0.0,
+        "amplitude": 5.41
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 0.25,
+        "amplitude": 3.11
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 0.01,
+        "amplitude": 8.59
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 0.17,
+        "amplitude": 9.34
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 6.05,
+        "amplitude": 0.76
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 6.02,
+        "amplitude": 4.29
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    },
+    {
+      "formula": {
+        "type": "trig",
+        "atom": "mod13",
+        "frequency": 5,
+        "phase": 5.99,
+        "amplitude": 3.92
+      },
+      "avg": 0.2667,
+      "std": 0.0816,
+      "stable": 0.185,
+      "windows": 10
+    }
+  ],
+  "total_evaluated": 99981,
+  "timestamp": "2026-07-05T15:30:36.525888"
+}

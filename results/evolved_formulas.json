@@ -1,0 +1,8 @@
+{
+  "positional": {
+    "formula": "{'type': 'linear', 'atoms': [('digital_root', <function PositionFormula.generate_candidates.<locals>.<lambda> at 0x0000016EBF908400>), ('mod7', <function PositionFormula.generate_candidates.<locals>.<lambda> at 0x0000016EBF908040>)], 'weights': [1.3146242685925258, 1.2907265959191334], 'bias': -8.499852043838068}",
+    "fitness": 0.19647580884233143,
+    "std": 0.0007065970014572457,
+    "generation": 3
+  }
+}

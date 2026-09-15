@@ -1,0 +1,2269 @@
+{
+  "timestamp": "2026-07-09T18:00:57.642537",
+  "data_periods": 3474,
+  "n_primitives": 32,
+  "single_primitive_results": {
+    "periodic_echo": {
+      "avg_hits": 1.1,
+      "std": 0.895,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "temporal"
+    },
+    "recency_gradient": {
+      "avg_hits": 0.9333,
+      "std": 0.9165,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "temporal"
+    },
+    "seasonal_resonance": {
+      "avg_hits": 1.1111,
+      "std": 0.9826,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "temporal"
+    },
+    "cooccurrence_affinity": {
+      "avg_hits": 1.6444,
+      "std": 0.9923,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "relational"
+    },
+    "mutual_exclusion": {
+      "avg_hits": 0.7333,
+      "std": 0.7572,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "relational"
+    },
+    "pair_orbit": {
+      "avg_hits": 4.1444,
+      "std": 2.0142,
+      "max_hits": 6,
+      "rounds": 90,
+      "category": "relational"
+    },
+    "binary_topology": {
+      "avg_hits": 1.2,
+      "std": 0.8969,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "structural"
+    },
+    "digit_manifold": {
+      "avg_hits": 1.3444,
+      "std": 0.9906,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "structural"
+    },
+    "position_signature": {
+      "avg_hits": 0.9333,
+      "std": 0.8273,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "structural"
+    },
+    "spectral_power": {
+      "avg_hits": 1.1556,
+      "std": 0.9765,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "spectral"
+    },
+    "wavelet_coherence": {
+      "avg_hits": 1.0778,
+      "std": 0.833,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "spectral"
+    },
+    "sphere_projection": {
+      "avg_hits": 1.1444,
+      "std": 0.8375,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "geometric"
+    },
+    "distance_cluster": {
+      "avg_hits": 1.5778,
+      "std": 0.9307,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "geometric"
+    },
+    "attractor_distance": {
+      "avg_hits": 1.1,
+      "std": 1.0006,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "chaotic"
+    },
+    "lyapunov_signal": {
+      "avg_hits": 1.3111,
+      "std": 0.9504,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "chaotic"
+    },
+    "sum_range_tracker": {
+      "avg_hits": 1.3889,
+      "std": 1.2797,
+      "max_hits": 6,
+      "rounds": 90,
+      "category": "sequence_pattern"
+    },
+    "gap_pattern": {
+      "avg_hits": 1.1222,
+      "std": 0.8797,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "sequence_pattern"
+    },
+    "trend_reversal": {
+      "avg_hits": 1.1444,
+      "std": 0.7967,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "sequence_pattern"
+    },
+    "modulo_distribution": {
+      "avg_hits": 1.4556,
+      "std": 0.8321,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "combinatorial"
+    },
+    "digit_pair_freq": {
+      "avg_hits": 1.5556,
+      "std": 0.9901,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "combinatorial"
+    },
+    "adjacent_bias": {
+      "avg_hits": 1.0667,
+      "std": 0.9404,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "combinatorial"
+    },
+    "skewness_signal": {
+      "avg_hits": 0.8556,
+      "std": 0.9136,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "higher_order"
+    },
+    "kurtosis_signal": {
+      "avg_hits": 0.6333,
+      "std": 0.6741,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "higher_order"
+    },
+    "tail_risk": {
+      "avg_hits": 1.4444,
+      "std": 0.8833,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "higher_order"
+    },
+    "lag_correlation": {
+      "avg_hits": 1.1778,
+      "std": 0.9016,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "cross_period_memory"
+    },
+    "periodic_gap": {
+      "avg_hits": 0.9556,
+      "std": 0.9057,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "cross_period_memory"
+    },
+    "recurrence_window": {
+      "avg_hits": 0.0889,
+      "std": 0.4383,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "cross_period_memory"
+    },
+    "multi_scale_frequency": {
+      "avg_hits": 1.4667,
+      "std": 0.9333,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "multi_scale"
+    },
+    "scale_transition": {
+      "avg_hits": 1.1111,
+      "std": 0.9826,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "multi_scale"
+    },
+    "environment_aware": {
+      "avg_hits": 1.1,
+      "std": 0.8699,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "environment_aware"
+    },
+    "phase_detector": {
+      "avg_hits": 1.1778,
+      "std": 0.8638,
+      "max_hits": 3,
+      "rounds": 90,
+      "category": "environment_aware"
+    },
+    "regime_switch": {
+      "avg_hits": 1.0333,
+      "std": 0.9244,
+      "max_hits": 4,
+      "rounds": 90,
+      "category": "environment_aware"
+    }
+  },
+  "combo_results": {
+    "resonance(cooccurrence_af,pair_orbit)": {
+      "avg_hits": 1.0711,
+      "std": 0.8534,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "cooccurrence_affinity",
+        "pair_orbit"
+      ]
+    },
+    "resonance(cooccurrence_af,digit_manifold)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "cooccurrence_affinity",
+        "digit_manifold"
+      ]
+    },
+    "resonance(cooccurrence_af,distance_cluste)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "cooccurrence_affinity",
+        "distance_cluster"
+      ]
+    },
+    "resonance(cooccurrence_af,lyapunov_signal)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "cooccurrence_affinity",
+        "lyapunov_signal"
+      ]
+    },
+    "resonance(cooccurrence_af,sum_range_track)": {
+      "avg_hits": 1.0867,
+      "std": 0.8964,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "cooccurrence_affinity",
+        "sum_range_tracker"
+      ]
+    },
+    "resonance(cooccurrence_af,modulo_distribu)": {
+      "avg_hits": 1.0911,
+      "std": 0.8708,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "cooccurrence_affinity",
+        "modulo_distribution"
+      ]
+    },
+    "resonance(cooccurrence_af,digit_pair_freq)": {
+      "avg_hits": 1.1089,
+      "std": 0.8375,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "cooccurrence_affinity",
+        "digit_pair_freq"
+      ]
+    },
+    "resonance(cooccurrence_af,tail_risk)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "cooccurrence_affinity",
+        "tail_risk"
+      ]
+    },
+    "resonance(cooccurrence_af,multi_scale_fre)": {
+      "avg_hits": 1.1156,
+      "std": 0.8994,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "cooccurrence_affinity",
+        "multi_scale_frequency"
+      ]
+    },
+    "resonance(pair_orbit,digit_manifold)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "pair_orbit",
+        "digit_manifold"
+      ]
+    },
+    "resonance(pair_orbit,distance_cluste)": {
+      "avg_hits": 1.08,
+      "std": 0.8315,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "pair_orbit",
+        "distance_cluster"
+      ]
+    },
+    "resonance(pair_orbit,lyapunov_signal)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "pair_orbit",
+        "lyapunov_signal"
+      ]
+    },
+    "resonance(pair_orbit,sum_range_track)": {
+      "avg_hits": 1.0844,
+      "std": 0.8979,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "pair_orbit",
+        "sum_range_tracker"
+      ]
+    },
+    "resonance(pair_orbit,modulo_distribu)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "pair_orbit",
+        "modulo_distribution"
+      ]
+    },
+    "resonance(pair_orbit,digit_pair_freq)": {
+      "avg_hits": 1.08,
+      "std": 0.8315,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "pair_orbit",
+        "digit_pair_freq"
+      ]
+    },
+    "resonance(pair_orbit,tail_risk)": {
+      "avg_hits": 1.1,
+      "std": 0.809,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "pair_orbit",
+        "tail_risk"
+      ]
+    },
+    "resonance(pair_orbit,multi_scale_fre)": {
+      "avg_hits": 1.0422,
+      "std": 0.8822,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "pair_orbit",
+        "multi_scale_frequency"
+      ]
+    },
+    "resonance(digit_manifold,distance_cluste)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "digit_manifold",
+        "distance_cluster"
+      ]
+    },
+    "resonance(digit_manifold,lyapunov_signal)": {
+      "avg_hits": 1.1356,
+      "std": 0.812,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "digit_manifold",
+        "lyapunov_signal"
+      ]
+    },
+    "resonance(digit_manifold,sum_range_track)": {
+      "avg_hits": 1.1044,
+      "std": 0.8845,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "digit_manifold",
+        "sum_range_tracker"
+      ]
+    },
+    "resonance(digit_manifold,modulo_distribu)": {
+      "avg_hits": 1.1089,
+      "std": 0.8507,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "digit_manifold",
+        "modulo_distribution"
+      ]
+    },
+    "resonance(digit_manifold,digit_pair_freq)": {
+      "avg_hits": 1.0956,
+      "std": 0.8012,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "digit_manifold",
+        "digit_pair_freq"
+      ]
+    },
+    "resonance(digit_manifold,tail_risk)": {
+      "avg_hits": 1.1111,
+      "std": 0.8412,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "digit_manifold",
+        "tail_risk"
+      ]
+    },
+    "resonance(digit_manifold,multi_scale_fre)": {
+      "avg_hits": 1.08,
+      "std": 0.8757,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "digit_manifold",
+        "multi_scale_frequency"
+      ]
+    },
+    "resonance(distance_cluste,lyapunov_signal)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "distance_cluster",
+        "lyapunov_signal"
+      ]
+    },
+    "resonance(distance_cluste,sum_range_track)": {
+      "avg_hits": 1.1111,
+      "std": 0.8595,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "distance_cluster",
+        "sum_range_tracker"
+      ]
+    },
+    "resonance(distance_cluste,modulo_distribu)": {
+      "avg_hits": 1.1133,
+      "std": 0.7961,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "distance_cluster",
+        "modulo_distribution"
+      ]
+    },
+    "resonance(distance_cluste,digit_pair_freq)": {
+      "avg_hits": 1.1133,
+      "std": 0.7961,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "distance_cluster",
+        "digit_pair_freq"
+      ]
+    },
+    "resonance(distance_cluste,tail_risk)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "distance_cluster",
+        "tail_risk"
+      ]
+    },
+    "resonance(distance_cluste,multi_scale_fre)": {
+      "avg_hits": 1.08,
+      "std": 0.8757,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "distance_cluster",
+        "multi_scale_frequency"
+      ]
+    },
+    "resonance(lyapunov_signal,sum_range_track)": {
+      "avg_hits": 1.0867,
+      "std": 0.9014,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "lyapunov_signal",
+        "sum_range_tracker"
+      ]
+    },
+    "resonance(lyapunov_signal,modulo_distribu)": {
+      "avg_hits": 1.1,
+      "std": 0.8439,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "lyapunov_signal",
+        "modulo_distribution"
+      ]
+    },
+    "resonance(lyapunov_signal,digit_pair_freq)": {
+      "avg_hits": 1.0778,
+      "std": 0.8384,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "lyapunov_signal",
+        "digit_pair_freq"
+      ]
+    },
+    "resonance(lyapunov_signal,tail_risk)": {
+      "avg_hits": 1.1111,
+      "std": 0.8543,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "lyapunov_signal",
+        "tail_risk"
+      ]
+    },
+    "resonance(lyapunov_signal,multi_scale_fre)": {
+      "avg_hits": 1.08,
+      "std": 0.8757,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "lyapunov_signal",
+        "multi_scale_frequency"
+      ]
+    },
+    "resonance(sum_range_track,modulo_distribu)": {
+      "avg_hits": 1.0778,
+      "std": 0.8223,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "sum_range_tracker",
+        "modulo_distribution"
+      ]
+    },
+    "resonance(sum_range_track,digit_pair_freq)": {
+      "avg_hits": 1.08,
+      "std": 0.8447,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "sum_range_tracker",
+        "digit_pair_freq"
+      ]
+    },
+    "resonance(sum_range_track,tail_risk)": {
+      "avg_hits": 1.1022,
+      "std": 0.8423,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "sum_range_tracker",
+        "tail_risk"
+      ]
+    },
+    "resonance(sum_range_track,multi_scale_fre)": {
+      "avg_hits": 1.0733,
+      "std": 0.8674,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "sum_range_tracker",
+        "multi_scale_frequency"
+      ]
+    },
+    "resonance(modulo_distribu,digit_pair_freq)": {
+      "avg_hits": 1.1067,
+      "std": 0.815,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "modulo_distribution",
+        "digit_pair_freq"
+      ]
+    },
+    "resonance(modulo_distribu,tail_risk)": {
+      "avg_hits": 1.1,
+      "std": 0.8333,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "modulo_distribution",
+        "tail_risk"
+      ]
+    },
+    "resonance(modulo_distribu,multi_scale_fre)": {
+      "avg_hits": 1.08,
+      "std": 0.8757,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "modulo_distribution",
+        "multi_scale_frequency"
+      ]
+    },
+    "resonance(digit_pair_freq,tail_risk)": {
+      "avg_hits": 1.1111,
+      "std": 0.8412,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "digit_pair_freq",
+        "tail_risk"
+      ]
+    },
+    "resonance(digit_pair_freq,multi_scale_fre)": {
+      "avg_hits": 1.08,
+      "std": 0.8757,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "digit_pair_freq",
+        "multi_scale_frequency"
+      ]
+    },
+    "resonance(tail_risk,multi_scale_fre)": {
+      "avg_hits": 1.1089,
+      "std": 0.8714,
+      "rounds": 450,
+      "operator": "resonance",
+      "primitives": [
+        "tail_risk",
+        "multi_scale_frequency"
+      ]
+    },
+    "cascade(cooccurrence_af,pair_orbit)": {
+      "avg_hits": 1.0689,
+      "std": 0.8678,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "cooccurrence_affinity",
+        "pair_orbit"
+      ]
+    },
+    "cascade(cooccurrence_af,digit_manifold)": {
+      "avg_hits": 1.0911,
+      "std": 0.8708,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "cooccurrence_affinity",
+        "digit_manifold"
+      ]
+    },
+    "cascade(cooccurrence_af,distance_cluste)": {
+      "avg_hits": 1.0711,
+      "std": 0.8586,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "cooccurrence_affinity",
+        "distance_cluster"
+      ]
+    },
+    "cascade(cooccurrence_af,lyapunov_signal)": {
+      "avg_hits": 1.0711,
+      "std": 0.8586,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "cooccurrence_affinity",
+        "lyapunov_signal"
+      ]
+    },
+    "cascade(cooccurrence_af,sum_range_track)": {
+      "avg_hits": 1.0867,
+      "std": 0.8964,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "cooccurrence_affinity",
+        "sum_range_tracker"
+      ]
+    },
+    "cascade(cooccurrence_af,modulo_distribu)": {
+      "avg_hits": 1.0711,
+      "std": 0.8586,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "cooccurrence_affinity",
+        "modulo_distribution"
+      ]
+    },
+    "cascade(cooccurrence_af,digit_pair_freq)": {
+      "avg_hits": 1.0711,
+      "std": 0.8586,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "cooccurrence_affinity",
+        "digit_pair_freq"
+      ]
+    },
+    "cascade(cooccurrence_af,tail_risk)": {
+      "avg_hits": 1.0711,
+      "std": 0.8586,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "cooccurrence_affinity",
+        "tail_risk"
+      ]
+    },
+    "cascade(cooccurrence_af,multi_scale_fre)": {
+      "avg_hits": 1.0711,
+      "std": 0.8586,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "cooccurrence_affinity",
+        "multi_scale_frequency"
+      ]
+    },
+    "cascade(pair_orbit,digit_manifold)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "pair_orbit",
+        "digit_manifold"
+      ]
+    },
+    "cascade(pair_orbit,distance_cluste)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "pair_orbit",
+        "distance_cluster"
+      ]
+    },
+    "cascade(pair_orbit,lyapunov_signal)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "pair_orbit",
+        "lyapunov_signal"
+      ]
+    },
+    "cascade(pair_orbit,sum_range_track)": {
+      "avg_hits": 1.0667,
+      "std": 0.8511,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "pair_orbit",
+        "sum_range_tracker"
+      ]
+    },
+    "cascade(pair_orbit,modulo_distribu)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "pair_orbit",
+        "modulo_distribution"
+      ]
+    },
+    "cascade(pair_orbit,digit_pair_freq)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "pair_orbit",
+        "digit_pair_freq"
+      ]
+    },
+    "cascade(pair_orbit,tail_risk)": {
+      "avg_hits": 1.0533,
+      "std": 0.8283,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "pair_orbit",
+        "tail_risk"
+      ]
+    },
+    "cascade(pair_orbit,multi_scale_fre)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "pair_orbit",
+        "multi_scale_frequency"
+      ]
+    },
+    "cascade(digit_manifold,distance_cluste)": {
+      "avg_hits": 1.1356,
+      "std": 0.812,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "digit_manifold",
+        "distance_cluster"
+      ]
+    },
+    "cascade(digit_manifold,lyapunov_signal)": {
+      "avg_hits": 1.1356,
+      "std": 0.812,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "digit_manifold",
+        "lyapunov_signal"
+      ]
+    },
+    "cascade(digit_manifold,sum_range_track)": {
+      "avg_hits": 1.1356,
+      "std": 0.812,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "digit_manifold",
+        "sum_range_tracker"
+      ]
+    },
+    "cascade(digit_manifold,modulo_distribu)": {
+      "avg_hits": 1.1356,
+      "std": 0.812,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "digit_manifold",
+        "modulo_distribution"
+      ]
+    },
+    "cascade(digit_manifold,digit_pair_freq)": {
+      "avg_hits": 1.1356,
+      "std": 0.812,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "digit_manifold",
+        "digit_pair_freq"
+      ]
+    },
+    "cascade(digit_manifold,tail_risk)": {
+      "avg_hits": 1.1356,
+      "std": 0.812,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "digit_manifold",
+        "tail_risk"
+      ]
+    },
+    "cascade(digit_manifold,multi_scale_fre)": {
+      "avg_hits": 1.1356,
+      "std": 0.812,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "digit_manifold",
+        "multi_scale_frequency"
+      ]
+    },
+    "cascade(distance_cluste,lyapunov_signal)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "distance_cluster",
+        "lyapunov_signal"
+      ]
+    },
+    "cascade(distance_cluste,sum_range_track)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "distance_cluster",
+        "sum_range_tracker"
+      ]
+    },
+    "cascade(distance_cluste,modulo_distribu)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "distance_cluster",
+        "modulo_distribution"
+      ]
+    },
+    "cascade(distance_cluste,digit_pair_freq)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "distance_cluster",
+        "digit_pair_freq"
+      ]
+    },
+    "cascade(distance_cluste,tail_risk)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "distance_cluster",
+        "tail_risk"
+      ]
+    },
+    "cascade(distance_cluste,multi_scale_fre)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "distance_cluster",
+        "multi_scale_frequency"
+      ]
+    },
+    "cascade(lyapunov_signal,sum_range_track)": {
+      "avg_hits": 1.0867,
+      "std": 0.9014,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "lyapunov_signal",
+        "sum_range_tracker"
+      ]
+    },
+    "cascade(lyapunov_signal,modulo_distribu)": {
+      "avg_hits": 1.0978,
+      "std": 0.8024,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "lyapunov_signal",
+        "modulo_distribution"
+      ]
+    },
+    "cascade(lyapunov_signal,digit_pair_freq)": {
+      "avg_hits": 1.0778,
+      "std": 0.8384,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "lyapunov_signal",
+        "digit_pair_freq"
+      ]
+    },
+    "cascade(lyapunov_signal,tail_risk)": {
+      "avg_hits": 1.1111,
+      "std": 0.8543,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "lyapunov_signal",
+        "tail_risk"
+      ]
+    },
+    "cascade(lyapunov_signal,multi_scale_fre)": {
+      "avg_hits": 1.08,
+      "std": 0.8757,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "lyapunov_signal",
+        "multi_scale_frequency"
+      ]
+    },
+    "cascade(sum_range_track,modulo_distribu)": {
+      "avg_hits": 1.0622,
+      "std": 0.8357,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "sum_range_tracker",
+        "modulo_distribution"
+      ]
+    },
+    "cascade(sum_range_track,digit_pair_freq)": {
+      "avg_hits": 1.08,
+      "std": 0.8526,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "sum_range_tracker",
+        "digit_pair_freq"
+      ]
+    },
+    "cascade(sum_range_track,tail_risk)": {
+      "avg_hits": 1.1022,
+      "std": 0.8423,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "sum_range_tracker",
+        "tail_risk"
+      ]
+    },
+    "cascade(sum_range_track,multi_scale_fre)": {
+      "avg_hits": 1.0689,
+      "std": 0.8575,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "sum_range_tracker",
+        "multi_scale_frequency"
+      ]
+    },
+    "cascade(modulo_distribu,digit_pair_freq)": {
+      "avg_hits": 1.1022,
+      "std": 0.8528,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "modulo_distribution",
+        "digit_pair_freq"
+      ]
+    },
+    "cascade(modulo_distribu,tail_risk)": {
+      "avg_hits": 1.1,
+      "std": 0.8333,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "modulo_distribution",
+        "tail_risk"
+      ]
+    },
+    "cascade(modulo_distribu,multi_scale_fre)": {
+      "avg_hits": 1.0933,
+      "std": 0.877,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "modulo_distribution",
+        "multi_scale_frequency"
+      ]
+    },
+    "cascade(digit_pair_freq,tail_risk)": {
+      "avg_hits": 1.1022,
+      "std": 0.8528,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "digit_pair_freq",
+        "tail_risk"
+      ]
+    },
+    "cascade(digit_pair_freq,multi_scale_fre)": {
+      "avg_hits": 1.1111,
+      "std": 0.8225,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "digit_pair_freq",
+        "multi_scale_frequency"
+      ]
+    },
+    "cascade(tail_risk,multi_scale_fre)": {
+      "avg_hits": 1.1,
+      "std": 0.8333,
+      "rounds": 450,
+      "operator": "cascade",
+      "primitives": [
+        "tail_risk",
+        "multi_scale_frequency"
+      ]
+    },
+    "phase_align(cooccurrence_af,pair_orbit)": {
+      "avg_hits": 1.0689,
+      "std": 0.8678,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "cooccurrence_affinity",
+        "pair_orbit"
+      ]
+    },
+    "phase_align(cooccurrence_af,digit_manifold)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "cooccurrence_affinity",
+        "digit_manifold"
+      ]
+    },
+    "phase_align(cooccurrence_af,distance_cluste)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "cooccurrence_affinity",
+        "distance_cluster"
+      ]
+    },
+    "phase_align(cooccurrence_af,lyapunov_signal)": {
+      "avg_hits": 1.0911,
+      "std": 0.8708,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "cooccurrence_affinity",
+        "lyapunov_signal"
+      ]
+    },
+    "phase_align(cooccurrence_af,sum_range_track)": {
+      "avg_hits": 1.0867,
+      "std": 0.8964,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "cooccurrence_affinity",
+        "sum_range_tracker"
+      ]
+    },
+    "phase_align(cooccurrence_af,modulo_distribu)": {
+      "avg_hits": 1.0711,
+      "std": 0.8586,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "cooccurrence_affinity",
+        "modulo_distribution"
+      ]
+    },
+    "phase_align(cooccurrence_af,digit_pair_freq)": {
+      "avg_hits": 1.0911,
+      "std": 0.8708,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "cooccurrence_affinity",
+        "digit_pair_freq"
+      ]
+    },
+    "phase_align(cooccurrence_af,tail_risk)": {
+      "avg_hits": 1.0711,
+      "std": 0.8534,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "cooccurrence_affinity",
+        "tail_risk"
+      ]
+    },
+    "phase_align(cooccurrence_af,multi_scale_fre)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "cooccurrence_affinity",
+        "multi_scale_frequency"
+      ]
+    },
+    "phase_align(pair_orbit,digit_manifold)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "pair_orbit",
+        "digit_manifold"
+      ]
+    },
+    "phase_align(pair_orbit,distance_cluste)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "pair_orbit",
+        "distance_cluster"
+      ]
+    },
+    "phase_align(pair_orbit,lyapunov_signal)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "pair_orbit",
+        "lyapunov_signal"
+      ]
+    },
+    "phase_align(pair_orbit,sum_range_track)": {
+      "avg_hits": 1.0844,
+      "std": 0.8979,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "pair_orbit",
+        "sum_range_tracker"
+      ]
+    },
+    "phase_align(pair_orbit,modulo_distribu)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "pair_orbit",
+        "modulo_distribution"
+      ]
+    },
+    "phase_align(pair_orbit,digit_pair_freq)": {
+      "avg_hits": 1.08,
+      "std": 0.8315,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "pair_orbit",
+        "digit_pair_freq"
+      ]
+    },
+    "phase_align(pair_orbit,tail_risk)": {
+      "avg_hits": 1.1,
+      "std": 0.809,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "pair_orbit",
+        "tail_risk"
+      ]
+    },
+    "phase_align(pair_orbit,multi_scale_fre)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "pair_orbit",
+        "multi_scale_frequency"
+      ]
+    },
+    "phase_align(digit_manifold,distance_cluste)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "digit_manifold",
+        "distance_cluster"
+      ]
+    },
+    "phase_align(digit_manifold,lyapunov_signal)": {
+      "avg_hits": 1.1356,
+      "std": 0.812,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "digit_manifold",
+        "lyapunov_signal"
+      ]
+    },
+    "phase_align(digit_manifold,sum_range_track)": {
+      "avg_hits": 1.0867,
+      "std": 0.9014,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "digit_manifold",
+        "sum_range_tracker"
+      ]
+    },
+    "phase_align(digit_manifold,modulo_distribu)": {
+      "avg_hits": 1.1311,
+      "std": 0.8209,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "digit_manifold",
+        "modulo_distribution"
+      ]
+    },
+    "phase_align(digit_manifold,digit_pair_freq)": {
+      "avg_hits": 1.1067,
+      "std": 0.815,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "digit_manifold",
+        "digit_pair_freq"
+      ]
+    },
+    "phase_align(digit_manifold,tail_risk)": {
+      "avg_hits": 1.1111,
+      "std": 0.8543,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "digit_manifold",
+        "tail_risk"
+      ]
+    },
+    "phase_align(digit_manifold,multi_scale_fre)": {
+      "avg_hits": 1.08,
+      "std": 0.8757,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "digit_manifold",
+        "multi_scale_frequency"
+      ]
+    },
+    "phase_align(distance_cluste,lyapunov_signal)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "distance_cluster",
+        "lyapunov_signal"
+      ]
+    },
+    "phase_align(distance_cluste,sum_range_track)": {
+      "avg_hits": 1.08,
+      "std": 0.8207,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "distance_cluster",
+        "sum_range_tracker"
+      ]
+    },
+    "phase_align(distance_cluste,modulo_distribu)": {
+      "avg_hits": 1.1133,
+      "std": 0.7961,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "distance_cluster",
+        "modulo_distribution"
+      ]
+    },
+    "phase_align(distance_cluste,digit_pair_freq)": {
+      "avg_hits": 1.1133,
+      "std": 0.7961,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "distance_cluster",
+        "digit_pair_freq"
+      ]
+    },
+    "phase_align(distance_cluste,tail_risk)": {
+      "avg_hits": 1.1,
+      "std": 0.8333,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "distance_cluster",
+        "tail_risk"
+      ]
+    },
+    "phase_align(distance_cluste,multi_scale_fre)": {
+      "avg_hits": 1.1111,
+      "std": 0.885,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "distance_cluster",
+        "multi_scale_frequency"
+      ]
+    },
+    "phase_align(lyapunov_signal,sum_range_track)": {
+      "avg_hits": 1.0867,
+      "std": 0.9014,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "lyapunov_signal",
+        "sum_range_tracker"
+      ]
+    },
+    "phase_align(lyapunov_signal,modulo_distribu)": {
+      "avg_hits": 1.1,
+      "std": 0.8439,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "lyapunov_signal",
+        "modulo_distribution"
+      ]
+    },
+    "phase_align(lyapunov_signal,digit_pair_freq)": {
+      "avg_hits": 1.0778,
+      "std": 0.8384,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "lyapunov_signal",
+        "digit_pair_freq"
+      ]
+    },
+    "phase_align(lyapunov_signal,tail_risk)": {
+      "avg_hits": 1.1111,
+      "std": 0.8543,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "lyapunov_signal",
+        "tail_risk"
+      ]
+    },
+    "phase_align(lyapunov_signal,multi_scale_fre)": {
+      "avg_hits": 1.08,
+      "std": 0.8757,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "lyapunov_signal",
+        "multi_scale_frequency"
+      ]
+    },
+    "phase_align(sum_range_track,modulo_distribu)": {
+      "avg_hits": 1.0778,
+      "std": 0.8223,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "sum_range_tracker",
+        "modulo_distribution"
+      ]
+    },
+    "phase_align(sum_range_track,digit_pair_freq)": {
+      "avg_hits": 1.08,
+      "std": 0.8526,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "sum_range_tracker",
+        "digit_pair_freq"
+      ]
+    },
+    "phase_align(sum_range_track,tail_risk)": {
+      "avg_hits": 1.1022,
+      "std": 0.8423,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "sum_range_tracker",
+        "tail_risk"
+      ]
+    },
+    "phase_align(sum_range_track,multi_scale_fre)": {
+      "avg_hits": 1.0689,
+      "std": 0.8575,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "sum_range_tracker",
+        "multi_scale_frequency"
+      ]
+    },
+    "phase_align(modulo_distribu,digit_pair_freq)": {
+      "avg_hits": 1.1022,
+      "std": 0.8528,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "modulo_distribution",
+        "digit_pair_freq"
+      ]
+    },
+    "phase_align(modulo_distribu,tail_risk)": {
+      "avg_hits": 1.1,
+      "std": 0.8333,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "modulo_distribution",
+        "tail_risk"
+      ]
+    },
+    "phase_align(modulo_distribu,multi_scale_fre)": {
+      "avg_hits": 1.08,
+      "std": 0.8757,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "modulo_distribution",
+        "multi_scale_frequency"
+      ]
+    },
+    "phase_align(digit_pair_freq,tail_risk)": {
+      "avg_hits": 1.1111,
+      "std": 0.8543,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "digit_pair_freq",
+        "tail_risk"
+      ]
+    },
+    "phase_align(digit_pair_freq,multi_scale_fre)": {
+      "avg_hits": 1.1178,
+      "std": 0.839,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "digit_pair_freq",
+        "multi_scale_frequency"
+      ]
+    },
+    "phase_align(tail_risk,multi_scale_fre)": {
+      "avg_hits": 1.0911,
+      "std": 0.8632,
+      "rounds": 450,
+      "operator": "phase_align",
+      "primitives": [
+        "tail_risk",
+        "multi_scale_frequency"
+      ]
+    },
+    "weighted_sum(cooccurrence_af,pair_orbit)": {
+      "avg_hits": 1.0978,
+      "std": 0.899,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "cooccurrence_affinity",
+        "pair_orbit"
+      ]
+    },
+    "weighted_sum(cooccurrence_af,digit_manifold)": {
+      "avg_hits": 1.0978,
+      "std": 0.899,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "cooccurrence_affinity",
+        "digit_manifold"
+      ]
+    },
+    "weighted_sum(cooccurrence_af,distance_cluste)": {
+      "avg_hits": 1.0978,
+      "std": 0.899,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "cooccurrence_affinity",
+        "distance_cluster"
+      ]
+    },
+    "weighted_sum(cooccurrence_af,lyapunov_signal)": {
+      "avg_hits": 1.1067,
+      "std": 0.878,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "cooccurrence_affinity",
+        "lyapunov_signal"
+      ]
+    },
+    "weighted_sum(cooccurrence_af,sum_range_track)": {
+      "avg_hits": 1.1067,
+      "std": 0.878,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "cooccurrence_affinity",
+        "sum_range_tracker"
+      ]
+    },
+    "weighted_sum(cooccurrence_af,modulo_distribu)": {
+      "avg_hits": 1.0867,
+      "std": 0.889,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "cooccurrence_affinity",
+        "modulo_distribution"
+      ]
+    },
+    "weighted_sum(cooccurrence_af,digit_pair_freq)": {
+      "avg_hits": 1.1067,
+      "std": 0.878,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "cooccurrence_affinity",
+        "digit_pair_freq"
+      ]
+    },
+    "weighted_sum(cooccurrence_af,tail_risk)": {
+      "avg_hits": 1.1067,
+      "std": 0.878,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "cooccurrence_affinity",
+        "tail_risk"
+      ]
+    },
+    "weighted_sum(cooccurrence_af,multi_scale_fre)": {
+      "avg_hits": 1.0978,
+      "std": 0.899,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "cooccurrence_affinity",
+        "multi_scale_frequency"
+      ]
+    },
+    "weighted_sum(pair_orbit,digit_manifold)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "pair_orbit",
+        "digit_manifold"
+      ]
+    },
+    "weighted_sum(pair_orbit,distance_cluste)": {
+      "avg_hits": 1.0511,
+      "std": 0.8483,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "pair_orbit",
+        "distance_cluster"
+      ]
+    },
+    "weighted_sum(pair_orbit,lyapunov_signal)": {
+      "avg_hits": 1.0867,
+      "std": 0.9305,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "pair_orbit",
+        "lyapunov_signal"
+      ]
+    },
+    "weighted_sum(pair_orbit,sum_range_track)": {
+      "avg_hits": 1.0978,
+      "std": 0.899,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "pair_orbit",
+        "sum_range_tracker"
+      ]
+    },
+    "weighted_sum(pair_orbit,modulo_distribu)": {
+      "avg_hits": 1.0711,
+      "std": 0.9186,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "pair_orbit",
+        "modulo_distribution"
+      ]
+    },
+    "weighted_sum(pair_orbit,digit_pair_freq)": {
+      "avg_hits": 1.0867,
+      "std": 0.9305,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "pair_orbit",
+        "digit_pair_freq"
+      ]
+    },
+    "weighted_sum(pair_orbit,tail_risk)": {
+      "avg_hits": 1.0933,
+      "std": 0.882,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "pair_orbit",
+        "tail_risk"
+      ]
+    },
+    "weighted_sum(pair_orbit,multi_scale_fre)": {
+      "avg_hits": 1.0489,
+      "std": 0.878,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "pair_orbit",
+        "multi_scale_frequency"
+      ]
+    },
+    "weighted_sum(digit_manifold,distance_cluste)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "digit_manifold",
+        "distance_cluster"
+      ]
+    },
+    "weighted_sum(digit_manifold,lyapunov_signal)": {
+      "avg_hits": 1.1356,
+      "std": 0.812,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "digit_manifold",
+        "lyapunov_signal"
+      ]
+    },
+    "weighted_sum(digit_manifold,sum_range_track)": {
+      "avg_hits": 1.0778,
+      "std": 0.8645,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "digit_manifold",
+        "sum_range_tracker"
+      ]
+    },
+    "weighted_sum(digit_manifold,modulo_distribu)": {
+      "avg_hits": 1.1311,
+      "std": 0.8209,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "digit_manifold",
+        "modulo_distribution"
+      ]
+    },
+    "weighted_sum(digit_manifold,digit_pair_freq)": {
+      "avg_hits": 1.1067,
+      "std": 0.815,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "digit_manifold",
+        "digit_pair_freq"
+      ]
+    },
+    "weighted_sum(digit_manifold,tail_risk)": {
+      "avg_hits": 1.1111,
+      "std": 0.8543,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "digit_manifold",
+        "tail_risk"
+      ]
+    },
+    "weighted_sum(digit_manifold,multi_scale_fre)": {
+      "avg_hits": 1.08,
+      "std": 0.8757,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "digit_manifold",
+        "multi_scale_frequency"
+      ]
+    },
+    "weighted_sum(distance_cluste,lyapunov_signal)": {
+      "avg_hits": 1.1267,
+      "std": 0.8403,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "distance_cluster",
+        "lyapunov_signal"
+      ]
+    },
+    "weighted_sum(distance_cluste,sum_range_track)": {
+      "avg_hits": 1.0778,
+      "std": 0.8645,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "distance_cluster",
+        "sum_range_tracker"
+      ]
+    },
+    "weighted_sum(distance_cluste,modulo_distribu)": {
+      "avg_hits": 1.1133,
+      "std": 0.7961,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "distance_cluster",
+        "modulo_distribution"
+      ]
+    },
+    "weighted_sum(distance_cluste,digit_pair_freq)": {
+      "avg_hits": 1.1133,
+      "std": 0.7961,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "distance_cluster",
+        "digit_pair_freq"
+      ]
+    },
+    "weighted_sum(distance_cluste,tail_risk)": {
+      "avg_hits": 1.1,
+      "std": 0.8333,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "distance_cluster",
+        "tail_risk"
+      ]
+    },
+    "weighted_sum(distance_cluste,multi_scale_fre)": {
+      "avg_hits": 1.1111,
+      "std": 0.885,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "distance_cluster",
+        "multi_scale_frequency"
+      ]
+    },
+    "weighted_sum(lyapunov_signal,sum_range_track)": {
+      "avg_hits": 1.1022,
+      "std": 0.9132,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "lyapunov_signal",
+        "sum_range_tracker"
+      ]
+    },
+    "weighted_sum(lyapunov_signal,modulo_distribu)": {
+      "avg_hits": 1.0867,
+      "std": 0.889,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "lyapunov_signal",
+        "modulo_distribution"
+      ]
+    },
+    "weighted_sum(lyapunov_signal,digit_pair_freq)": {
+      "avg_hits": 1.0867,
+      "std": 0.889,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "lyapunov_signal",
+        "digit_pair_freq"
+      ]
+    },
+    "weighted_sum(lyapunov_signal,tail_risk)": {
+      "avg_hits": 1.1111,
+      "std": 0.8543,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "lyapunov_signal",
+        "tail_risk"
+      ]
+    },
+    "weighted_sum(lyapunov_signal,multi_scale_fre)": {
+      "avg_hits": 1.08,
+      "std": 0.8757,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "lyapunov_signal",
+        "multi_scale_frequency"
+      ]
+    },
+    "weighted_sum(sum_range_track,modulo_distribu)": {
+      "avg_hits": 1.1067,
+      "std": 0.878,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "sum_range_tracker",
+        "modulo_distribution"
+      ]
+    },
+    "weighted_sum(sum_range_track,digit_pair_freq)": {
+      "avg_hits": 1.1022,
+      "std": 0.9132,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "sum_range_tracker",
+        "digit_pair_freq"
+      ]
+    },
+    "weighted_sum(sum_range_track,tail_risk)": {
+      "avg_hits": 1.1022,
+      "std": 0.9132,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "sum_range_tracker",
+        "tail_risk"
+      ]
+    },
+    "weighted_sum(sum_range_track,multi_scale_fre)": {
+      "avg_hits": 1.0778,
+      "std": 0.8645,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "sum_range_tracker",
+        "multi_scale_frequency"
+      ]
+    },
+    "weighted_sum(modulo_distribu,digit_pair_freq)": {
+      "avg_hits": 1.0867,
+      "std": 0.889,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "modulo_distribution",
+        "digit_pair_freq"
+      ]
+    },
+    "weighted_sum(modulo_distribu,tail_risk)": {
+      "avg_hits": 1.1111,
+      "std": 0.8543,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "modulo_distribution",
+        "tail_risk"
+      ]
+    },
+    "weighted_sum(modulo_distribu,multi_scale_fre)": {
+      "avg_hits": 1.08,
+      "std": 0.8757,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "modulo_distribution",
+        "multi_scale_frequency"
+      ]
+    },
+    "weighted_sum(digit_pair_freq,tail_risk)": {
+      "avg_hits": 1.1111,
+      "std": 0.8543,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "digit_pair_freq",
+        "tail_risk"
+      ]
+    },
+    "weighted_sum(digit_pair_freq,multi_scale_fre)": {
+      "avg_hits": 1.1178,
+      "std": 0.839,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "digit_pair_freq",
+        "multi_scale_frequency"
+      ]
+    },
+    "weighted_sum(tail_risk,multi_scale_fre)": {
+      "avg_hits": 1.0911,
+      "std": 0.8632,
+      "rounds": 450,
+      "operator": "weighted_sum",
+      "primitives": [
+        "tail_risk",
+        "multi_scale_frequency"
+      ]
+    }
+  },
+  "hurst_results": {
+    "mean_rev_periodic_echo": {
+      "avg_hits": 1.1244,
+      "rounds": 450
+    },
+    "mean_rev_recency_gradient": {
+      "avg_hits": 1.1244,
+      "rounds": 450
+    },
+    "mean_rev_seasonal_resonance": {
+      "avg_hits": 1.1244,
+      "rounds": 450
+    },
+    "mean_rev_cooccurrence_affinity": {
+      "avg_hits": 1.1333,
+      "rounds": 450
+    },
+    "mean_rev_mutual_exclusion": {
+      "avg_hits": 1.1111,
+      "rounds": 450
+    }
+  },
+  "top_20": [
+    [
+      "pair_orbit",
+      {
+        "avg_hits": 4.1444,
+        "std": 2.0142,
+        "max_hits": 6,
+        "rounds": 90,
+        "category": "relational"
+      }
+    ],
+    [
+      "cooccurrence_affinity",
+      {
+        "avg_hits": 1.6444,
+        "std": 0.9923,
+        "max_hits": 4,
+        "rounds": 90,
+        "category": "relational"
+      }
+    ],
+    [
+      "distance_cluster",
+      {
+        "avg_hits": 1.5778,
+        "std": 0.9307,
+        "max_hits": 4,
+        "rounds": 90,
+        "category": "geometric"
+      }
+    ],
+    [
+      "digit_pair_freq",
+      {
+        "avg_hits": 1.5556,
+        "std": 0.9901,
+        "max_hits": 4,
+        "rounds": 90,
+        "category": "combinatorial"
+      }
+    ],
+    [
+      "multi_scale_frequency",
+      {
+        "avg_hits": 1.4667,
+        "std": 0.9333,
+        "max_hits": 3,
+        "rounds": 90,
+        "category": "multi_scale"
+      }
+    ],
+    [
+      "modulo_distribution",
+      {
+        "avg_hits": 1.4556,
+        "std": 0.8321,
+        "max_hits": 3,
+        "rounds": 90,
+        "category": "combinatorial"
+      }
+    ],
+    [
+      "tail_risk",
+      {
+        "avg_hits": 1.4444,
+        "std": 0.8833,
+        "max_hits": 3,
+        "rounds": 90,
+        "category": "higher_order"
+      }
+    ],
+    [
+      "sum_range_tracker",
+      {
+        "avg_hits": 1.3889,
+        "std": 1.2797,
+        "max_hits": 6,
+        "rounds": 90,
+        "category": "sequence_pattern"
+      }
+    ],
+    [
+      "digit_manifold",
+      {
+        "avg_hits": 1.3444,
+        "std": 0.9906,
+        "max_hits": 4,
+        "rounds": 90,
+        "category": "structural"
+      }
+    ],
+    [
+      "lyapunov_signal",
+      {
+        "avg_hits": 1.3111,
+        "std": 0.9504,
+        "max_hits": 4,
+        "rounds": 90,
+        "category": "chaotic"
+      }
+    ],
+    [
+      "binary_topology",
+      {
+        "avg_hits": 1.2,
+        "std": 0.8969,
+        "max_hits": 3,
+        "rounds": 90,
+        "category": "structural"
+      }
+    ],
+    [
+      "lag_correlation",
+      {
+        "avg_hits": 1.1778,
+        "std": 0.9016,
+        "max_hits": 3,
+        "rounds": 90,
+        "category": "cross_period_memory"
+      }
+    ],
+    [
+      "phase_detector",
+      {
+        "avg_hits": 1.1778,
+        "std": 0.8638,
+        "max_hits": 3,
+        "rounds": 90,
+        "category": "environment_aware"
+      }
+    ],
+    [
+      "spectral_power",
+      {
+        "avg_hits": 1.1556,
+        "std": 0.9765,
+        "max_hits": 3,
+        "rounds": 90,
+        "category": "spectral"
+      }
+    ],
+    [
+      "sphere_projection",
+      {
+        "avg_hits": 1.1444,
+        "std": 0.8375,
+        "max_hits": 4,
+        "rounds": 90,
+        "category": "geometric"
+      }
+    ],
+    [
+      "trend_reversal",
+      {
+        "avg_hits": 1.1444,
+        "std": 0.7967,
+        "max_hits": 3,
+        "rounds": 90,
+        "category": "sequence_pattern"
+      }
+    ],
+    [
+      "resonance(digit_manifold,lyapunov_signal)",
+      {
+        "avg_hits": 1.1356,
+        "std": 0.812,
+        "rounds": 450,
+        "operator": "resonance",
+        "primitives": [
+          "digit_manifold",
+          "lyapunov_signal"
+        ]
+      }
+    ],
+    [
+      "cascade(digit_manifold,distance_cluste)",
+      {
+        "avg_hits": 1.1356,
+        "std": 0.812,
+        "rounds": 450,
+        "operator": "cascade",
+        "primitives": [
+          "digit_manifold",
+          "distance_cluster"
+        ]
+      }
+    ],
+    [
+      "cascade(digit_manifold,lyapunov_signal)",
+      {
+        "avg_hits": 1.1356,
+        "std": 0.812,
+        "rounds": 450,
+        "operator": "cascade",
+        "primitives": [
+          "digit_manifold",
+          "lyapunov_signal"
+        ]
+      }
+    ],
+    [
+      "cascade(digit_manifold,sum_range_track)",
+      {
+        "avg_hits": 1.1356,
+        "std": 0.812,
+        "rounds": 450,
+        "operator": "cascade",
+        "primitives": [
+          "digit_manifold",
+          "sum_range_tracker"
+        ]
+      }
+    ]
+  ]
+}

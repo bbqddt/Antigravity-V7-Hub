@@ -1,0 +1,23 @@
+{
+  "phase": "strategy_generation",
+  "timestamp": "2026-07-06T07:34:17.893233",
+  "n_hypotheses": 41,
+  "survived": 0,
+  "eliminated": 41,
+  "registry_summary": {
+    "total_proposed": 41,
+    "total_survived": 0,
+    "total_eliminated": 41,
+    "categories": {
+      "periodic": 22,
+      "cooccurrence": 9,
+      "omission": 7,
+      "positional": 2,
+      "blue": 1
+    },
+    "statuses": {
+      "eliminated": 41
+    },
+    "last_updated": "2026-07-06T07:34:17.893233"
+  }
+}

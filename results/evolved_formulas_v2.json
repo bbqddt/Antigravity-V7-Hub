@@ -1,0 +1,551 @@
+{
+  "best_formula": {
+    "op": "and",
+    "left": {
+      "op": "xor",
+      "left": {
+        "atom": "sqrt3_scaled"
+      },
+      "right": {
+        "op": "mod",
+        "left": {
+          "op": "or",
+          "left": {
+            "op": "/",
+            "left": {
+              "atom": "bit_xor_33"
+            },
+            "right": {
+              "atom": "identity"
+            }
+          },
+          "right": {
+            "op": "or",
+            "left": {
+              "atom": "sqrt5_scaled"
+            },
+            "right": {
+              "atom": "identity"
+            }
+          }
+        },
+        "right": {
+          "atom": "mod11"
+        }
+      }
+    },
+    "right": {
+      "op": "pow",
+      "left": {
+        "atom": "mod17"
+      },
+      "right": {
+        "atom": "identity"
+      }
+    }
+  },
+  "best_fitness": 0.2,
+  "best_std": 0.018633899812498255,
+  "archive": [
+    {
+      "generation": 1,
+      "best_fitness": 0.2,
+      "best_std": 0.018633899812498255,
+      "best_tree": {
+        "op": "and",
+        "left": {
+          "op": "xor",
+          "left": {
+            "atom": "sqrt3_scaled"
+          },
+          "right": {
+            "op": "mod",
+            "left": {
+              "op": "or",
+              "left": {
+                "op": "/",
+                "left": {
+                  "atom": "bit_xor_33"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              },
+              "right": {
+                "op": "or",
+                "left": {
+                  "atom": "sqrt5_scaled"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              }
+            },
+            "right": {
+              "atom": "mod11"
+            }
+          }
+        },
+        "right": {
+          "op": "pow",
+          "left": {
+            "atom": "mod17"
+          },
+          "right": {
+            "atom": "identity"
+          }
+        }
+      }
+    },
+    {
+      "generation": 2,
+      "best_fitness": 0.2,
+      "best_std": 0.018633899812498255,
+      "best_tree": {
+        "op": "and",
+        "left": {
+          "op": "xor",
+          "left": {
+            "atom": "sqrt3_scaled"
+          },
+          "right": {
+            "op": "mod",
+            "left": {
+              "op": "or",
+              "left": {
+                "op": "/",
+                "left": {
+                  "atom": "bit_xor_33"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              },
+              "right": {
+                "op": "or",
+                "left": {
+                  "atom": "sqrt5_scaled"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              }
+            },
+            "right": {
+              "atom": "mod11"
+            }
+          }
+        },
+        "right": {
+          "op": "pow",
+          "left": {
+            "atom": "mod17"
+          },
+          "right": {
+            "atom": "identity"
+          }
+        }
+      }
+    },
+    {
+      "generation": 3,
+      "best_fitness": 0.2,
+      "best_std": 0.018633899812498255,
+      "best_tree": {
+        "op": "and",
+        "left": {
+          "op": "xor",
+          "left": {
+            "atom": "sqrt3_scaled"
+          },
+          "right": {
+            "op": "mod",
+            "left": {
+              "op": "or",
+              "left": {
+                "op": "/",
+                "left": {
+                  "atom": "bit_xor_33"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              },
+              "right": {
+                "op": "or",
+                "left": {
+                  "atom": "sqrt5_scaled"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              }
+            },
+            "right": {
+              "atom": "mod11"
+            }
+          }
+        },
+        "right": {
+          "op": "pow",
+          "left": {
+            "atom": "mod17"
+          },
+          "right": {
+            "atom": "identity"
+          }
+        }
+      }
+    },
+    {
+      "generation": 4,
+      "best_fitness": 0.2,
+      "best_std": 0.018633899812498255,
+      "best_tree": {
+        "op": "and",
+        "left": {
+          "op": "xor",
+          "left": {
+            "atom": "sqrt3_scaled"
+          },
+          "right": {
+            "op": "mod",
+            "left": {
+              "op": "or",
+              "left": {
+                "op": "/",
+                "left": {
+                  "atom": "bit_xor_33"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              },
+              "right": {
+                "op": "or",
+                "left": {
+                  "atom": "sqrt5_scaled"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              }
+            },
+            "right": {
+              "atom": "mod11"
+            }
+          }
+        },
+        "right": {
+          "op": "pow",
+          "left": {
+            "atom": "mod17"
+          },
+          "right": {
+            "atom": "identity"
+          }
+        }
+      }
+    },
+    {
+      "generation": 5,
+      "best_fitness": 0.2,
+      "best_std": 0.018633899812498255,
+      "best_tree": {
+        "op": "and",
+        "left": {
+          "op": "xor",
+          "left": {
+            "atom": "sqrt3_scaled"
+          },
+          "right": {
+            "op": "mod",
+            "left": {
+              "op": "or",
+              "left": {
+                "op": "/",
+                "left": {
+                  "atom": "bit_xor_33"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              },
+              "right": {
+                "op": "or",
+                "left": {
+                  "atom": "sqrt5_scaled"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              }
+            },
+            "right": {
+              "atom": "mod11"
+            }
+          }
+        },
+        "right": {
+          "op": "pow",
+          "left": {
+            "atom": "mod17"
+          },
+          "right": {
+            "atom": "identity"
+          }
+        }
+      }
+    },
+    {
+      "generation": 6,
+      "best_fitness": 0.2,
+      "best_std": 0.018633899812498255,
+      "best_tree": {
+        "op": "and",
+        "left": {
+          "op": "xor",
+          "left": {
+            "atom": "sqrt3_scaled"
+          },
+          "right": {
+            "op": "mod",
+            "left": {
+              "op": "or",
+              "left": {
+                "op": "/",
+                "left": {
+                  "atom": "bit_xor_33"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              },
+              "right": {
+                "op": "or",
+                "left": {
+                  "atom": "sqrt5_scaled"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              }
+            },
+            "right": {
+              "atom": "mod11"
+            }
+          }
+        },
+        "right": {
+          "op": "pow",
+          "left": {
+            "atom": "mod17"
+          },
+          "right": {
+            "atom": "identity"
+          }
+        }
+      }
+    },
+    {
+      "generation": 7,
+      "best_fitness": 0.2,
+      "best_std": 0.018633899812498255,
+      "best_tree": {
+        "op": "and",
+        "left": {
+          "op": "xor",
+          "left": {
+            "atom": "sqrt3_scaled"
+          },
+          "right": {
+            "op": "mod",
+            "left": {
+              "op": "or",
+              "left": {
+                "op": "/",
+                "left": {
+                  "atom": "bit_xor_33"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              },
+              "right": {
+                "op": "or",
+                "left": {
+                  "atom": "sqrt5_scaled"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              }
+            },
+            "right": {
+              "atom": "mod11"
+            }
+          }
+        },
+        "right": {
+          "op": "pow",
+          "left": {
+            "atom": "mod17"
+          },
+          "right": {
+            "atom": "identity"
+          }
+        }
+      }
+    },
+    {
+      "generation": 8,
+      "best_fitness": 0.2,
+      "best_std": 0.018633899812498255,
+      "best_tree": {
+        "op": "and",
+        "left": {
+          "op": "xor",
+          "left": {
+            "atom": "sqrt3_scaled"
+          },
+          "right": {
+            "op": "mod",
+            "left": {
+              "op": "or",
+              "left": {
+                "op": "/",
+                "left": {
+                  "atom": "bit_xor_33"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              },
+              "right": {
+                "op": "or",
+                "left": {
+                  "atom": "sqrt5_scaled"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              }
+            },
+            "right": {
+              "atom": "mod11"
+            }
+          }
+        },
+        "right": {
+          "op": "pow",
+          "left": {
+            "atom": "mod17"
+          },
+          "right": {
+            "atom": "identity"
+          }
+        }
+      }
+    },
+    {
+      "generation": 9,
+      "best_fitness": 0.2,
+      "best_std": 0.018633899812498255,
+      "best_tree": {
+        "op": "and",
+        "left": {
+          "op": "xor",
+          "left": {
+            "atom": "sqrt3_scaled"
+          },
+          "right": {
+            "op": "mod",
+            "left": {
+              "op": "or",
+              "left": {
+                "op": "/",
+                "left": {
+                  "atom": "bit_xor_33"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              },
+              "right": {
+                "op": "or",
+                "left": {
+                  "atom": "sqrt5_scaled"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              }
+            },
+            "right": {
+              "atom": "mod11"
+            }
+          }
+        },
+        "right": {
+          "op": "pow",
+          "left": {
+            "atom": "mod17"
+          },
+          "right": {
+            "atom": "identity"
+          }
+        }
+      }
+    },
+    {
+      "generation": 10,
+      "best_fitness": 0.2,
+      "best_std": 0.018633899812498255,
+      "best_tree": {
+        "op": "and",
+        "left": {
+          "op": "xor",
+          "left": {
+            "atom": "sqrt3_scaled"
+          },
+          "right": {
+            "op": "mod",
+            "left": {
+              "op": "or",
+              "left": {
+                "op": "/",
+                "left": {
+                  "atom": "bit_xor_33"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              },
+              "right": {
+                "op": "or",
+                "left": {
+                  "atom": "sqrt5_scaled"
+                },
+                "right": {
+                  "atom": "identity"
+                }
+              }
+            },
+            "right": {
+              "atom": "mod11"
+            }
+          }
+        },
+        "right": {
+          "op": "pow",
+          "left": {
+            "atom": "mod17"
+          },
+          "right": {
+            "atom": "identity"
+          }
+        }
+      }
+    }
+  ]
+}

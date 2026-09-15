@@ -1,0 +1,61 @@
+---
+title: "Antigravity 进化报告"
+format: 
+  html:
+    toc: true
+    theme: cosmo
+execute:
+  echo: false
+  warning: false
+---
+
+# Antigravity 多AI协同进化系统
+
+## 系统概述
+- **核心**: 公式语言 + 策略框架 + LLM创新
+- **数据**: 3484期双色球历史数据
+- **评估**: Walk-forward 验证, Brier Score + 命中数双指标
+
+## 最新进化结果
+
+```{python}
+#| label: load-results
+import json
+from pathlib import Path
+
+# 读取最新进化历史
+history_file = Path("formula_evolution_history.json")
+if history_file.exists():
+    with open(history_file) as f:
+        history = json.load(f)
+    latest = history[-1] if history else {}
+    print(f"最新代数: {latest.get('generation', 'N/A')}")
+    print(f"最佳分数: {latest.get('best_score', 'N/A')}")
+    print(f"最佳公式: {latest.get('best_formula', 'N/A')}")
+```
+
+## 性能指标
+
+```{python}
+#| label: metrics
+import pandas as pd
+
+perf_file = Path("evolution_performance_log.json")
+if perf_file.exists():
+    with open(perf_file) as f:
+        perf = json.load(f)
+    df = pd.DataFrame(perf.get("history", []))
+    print(df[["generation", "best_score", "best_avg_hits", "time_per_generation"]].to_markdown())
+```
+
+## 运行新一轮演化
+
+```{python}
+#| label: run-evolution
+import subprocess
+result = subprocess.run(
+    ["python", "formula_evolution.py", "--run", "--generations", "10"],
+    capture_output=True, text=True, timeout=300
+)
+print(result.stdout[-2000:])
+```

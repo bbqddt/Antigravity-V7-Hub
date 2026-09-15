@@ -1,0 +1,373 @@
+{
+  "total_periods": 3484,
+  "signals_found": 61,
+  "deviations": [
+    {
+      "type": "hurst",
+      "name": "1",
+      "value": 0.2615,
+      "deviation": 0.2385
+    },
+    {
+      "type": "hurst",
+      "name": "2",
+      "value": 0.237,
+      "deviation": 0.263
+    },
+    {
+      "type": "hurst",
+      "name": "3",
+      "value": 0.2302,
+      "deviation": 0.2698
+    },
+    {
+      "type": "hurst",
+      "name": "4",
+      "value": 0.2401,
+      "deviation": 0.2599
+    },
+    {
+      "type": "hurst",
+      "name": "5",
+      "value": 0.2377,
+      "deviation": 0.2623
+    },
+    {
+      "type": "hurst",
+      "name": "6",
+      "value": 0.2499,
+      "deviation": 0.2501
+    },
+    {
+      "type": "hurst",
+      "name": "blue",
+      "value": 0.1828,
+      "deviation": 0.3172
+    },
+    {
+      "type": "runs",
+      "name": "3",
+      "value": -0.4207,
+      "deviation": 0.4207
+    },
+    {
+      "type": "runs",
+      "name": "4",
+      "value": 1.0382,
+      "deviation": 1.0382
+    },
+    {
+      "type": "runs",
+      "name": "6",
+      "value": 1.3358,
+      "deviation": 1.3358
+    },
+    {
+      "type": "runs",
+      "name": "blue",
+      "value": -0.5242,
+      "deviation": 0.5242
+    },
+    {
+      "type": "spectral",
+      "name": "1",
+      "value": 44,
+      "deviation": 36673.9895
+    },
+    {
+      "type": "spectral",
+      "name": "2",
+      "value": 101,
+      "deviation": 49959.124
+    },
+    {
+      "type": "spectral",
+      "name": "3",
+      "value": 101,
+      "deviation": 80087.7292
+    },
+    {
+      "type": "spectral",
+      "name": "4",
+      "value": 115,
+      "deviation": 77838.2876
+    },
+    {
+      "type": "spectral",
+      "name": "5",
+      "value": 115,
+      "deviation": 63167.5789
+    },
+    {
+      "type": "spectral",
+      "name": "6",
+      "value": 16,
+      "deviation": 47006.1754
+    },
+    {
+      "type": "skewness",
+      "name": "1",
+      "value": 1.2943,
+      "deviation": 1.2943
+    },
+    {
+      "type": "skewness",
+      "name": "2",
+      "value": 0.6056,
+      "deviation": 0.6056
+    },
+    {
+      "type": "skewness",
+      "name": "3",
+      "value": 0.1981,
+      "deviation": 0.1981
+    },
+    {
+      "type": "skewness",
+      "name": "4",
+      "value": -0.1568,
+      "deviation": 0.1568
+    },
+    {
+      "type": "skewness",
+      "name": "5",
+      "value": -0.567,
+      "deviation": 0.567
+    },
+    {
+      "type": "skewness",
+      "name": "6",
+      "value": -1.2144,
+      "deviation": 1.2144
+    },
+    {
+      "type": "kurtosis",
+      "name": "1",
+      "value": 1.7018,
+      "deviation": 1.7018
+    },
+    {
+      "type": "kurtosis",
+      "name": "2",
+      "value": -0.1308,
+      "deviation": 0.1308
+    },
+    {
+      "type": "kurtosis",
+      "name": "3",
+      "value": -0.5402,
+      "deviation": 0.5402
+    },
+    {
+      "type": "kurtosis",
+      "name": "4",
+      "value": -0.5096,
+      "deviation": 0.5096
+    },
+    {
+      "type": "kurtosis",
+      "name": "5",
+      "value": -0.1588,
+      "deviation": 0.1588
+    },
+    {
+      "type": "kurtosis",
+      "name": "6",
+      "value": 1.2825,
+      "deviation": 1.2825
+    },
+    {
+      "type": "kurtosis",
+      "name": "blue",
+      "value": -1.2287,
+      "deviation": 1.2287
+    },
+    {
+      "type": "jb",
+      "name": "1",
+      "value": 1393.1953,
+      "deviation": 3.9988
+    },
+    {
+      "type": "jb",
+      "name": "2",
+      "value": 215.4669,
+      "deviation": 0.6184
+    },
+    {
+      "type": "jb",
+      "name": "3",
+      "value": 65.1487,
+      "deviation": 0.187
+    },
+    {
+      "type": "jb",
+      "name": "4",
+      "value": 51.9798,
+      "deviation": 0.1492
+    },
+    {
+      "type": "jb",
+      "name": "5",
+      "value": 190.3444,
+      "deviation": 0.5463
+    },
+    {
+      "type": "jb",
+      "name": "6",
+      "value": 1095.1301,
+      "deviation": 3.1433
+    },
+    {
+      "type": "jb",
+      "name": "blue",
+      "value": 219.2385,
+      "deviation": 0.6293
+    },
+    {
+      "type": "hurst_diff",
+      "name": "1",
+      "value": 0.2471,
+      "deviation": 0.2529
+    },
+    {
+      "type": "hurst_diff",
+      "name": "2",
+      "value": 0.2116,
+      "deviation": 0.2884
+    },
+    {
+      "type": "hurst_diff",
+      "name": "3",
+      "value": 0.204,
+      "deviation": 0.296
+    },
+    {
+      "type": "hurst_diff",
+      "name": "4",
+      "value": 0.2098,
+      "deviation": 0.2902
+    },
+    {
+      "type": "hurst_diff",
+      "name": "5",
+      "value": 0.2107,
+      "deviation": 0.2893
+    },
+    {
+      "type": "hurst_diff",
+      "name": "6",
+      "value": 0.2314,
+      "deviation": 0.2686
+    },
+    {
+      "type": "cross_mi",
+      "name": "1-2",
+      "value": 0.3518,
+      "deviation": 0.3518
+    },
+    {
+      "type": "cross_mi",
+      "name": "1-3",
+      "value": 0.155,
+      "deviation": 0.155
+    },
+    {
+      "type": "cross_mi",
+      "name": "2-3",
+      "value": 0.5016,
+      "deviation": 0.5016
+    },
+    {
+      "type": "cross_mi",
+      "name": "2-4",
+      "value": 0.2109,
+      "deviation": 0.2109
+    },
+    {
+      "type": "cross_mi",
+      "name": "3-4",
+      "value": 0.5109,
+      "deviation": 0.5109
+    },
+    {
+      "type": "cross_mi",
+      "name": "3-5",
+      "value": 0.2039,
+      "deviation": 0.2039
+    },
+    {
+      "type": "cross_mi",
+      "name": "4-5",
+      "value": 0.4664,
+      "deviation": 0.4664
+    },
+    {
+      "type": "cross_mi",
+      "name": "4-6",
+      "value": 0.148,
+      "deviation": 0.148
+    },
+    {
+      "type": "cross_mi",
+      "name": "5-6",
+      "value": 0.3601,
+      "deviation": 0.3601
+    },
+    {
+      "type": "rolling_drift",
+      "name": "1",
+      "value": 0.5227,
+      "deviation": 0.1108
+    },
+    {
+      "type": "oe_runs",
+      "name": "2",
+      "value": 2.2723,
+      "deviation": 2.2723
+    },
+    {
+      "type": "oe_runs",
+      "name": "3",
+      "value": -0.846,
+      "deviation": 0.846
+    },
+    {
+      "type": "oe_runs",
+      "name": "4",
+      "value": 1.5091,
+      "deviation": 1.5091
+    },
+    {
+      "type": "oe_runs",
+      "name": "5",
+      "value": 1.2892,
+      "deviation": 1.2892
+    },
+    {
+      "type": "sum_hurst",
+      "name": "all",
+      "value": 0.2559,
+      "deviation": 0.2441
+    },
+    {
+      "type": "chi_square",
+      "name": "1",
+      "value": 0.8442,
+      "deviation": 0.8442
+    },
+    {
+      "type": "chi_square",
+      "name": "8",
+      "value": 0.3352,
+      "deviation": 0.3352
+    },
+    {
+      "type": "chi_square",
+      "name": "16",
+      "value": 0.5686,
+      "deviation": 0.5686
+    }
+  ],
+  "timestamp": ""
+}

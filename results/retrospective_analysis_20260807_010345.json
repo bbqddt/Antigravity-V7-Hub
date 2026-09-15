@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-08-07T01:03:45.563981",
+  "data_periods": 3485,
+  "data_range": "#3001 ~ #26088",
+  "random_baseline": {
+    "avg_red_hits": 1.09,
+    "blue_hit_rate": 0.0625,
+    "brier_red": 0.139
+  },
+  "formula": {
+    "error": "no results"
+  },
+  "luckcast": {
+    "error": "no results"
+  },
+  "enhanced": {
+    "error": "no results"
+  }
+}

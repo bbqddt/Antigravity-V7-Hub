@@ -9,7 +9,7 @@ import importlib
 from pathlib import Path
 from datetime import datetime
 
-PROJECT_ROOT = Path("E:/享中")  # 或 QwenPaw 能访问的路径
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DIST_DIR = PROJECT_ROOT / "dist"
 TASKS_DIR = DIST_DIR / "tasks"
 RESULTS_DIR = DIST_DIR / "results"

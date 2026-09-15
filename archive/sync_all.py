@@ -6,9 +6,11 @@ import os
 import shutil
 import json
 from datetime import datetime
+from pathlib import Path
 
-WORK_DIR = r"E:\Antigravity_Work"
-Xiang_DIR = r"E:\享中"
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+WORK_DIR = str(_PROJECT_ROOT / 'Antigravity_Work')
+Xiang_DIR = str(_PROJECT_ROOT)
 
 # 必须同步的核心文件
 CORE_FILES = [

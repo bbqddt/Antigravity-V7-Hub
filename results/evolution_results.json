@@ -1,0 +1,372 @@
+{
+  "timestamp": "2026-07-06T08:58:51.203862",
+  "best_formula": {
+    "name": "crossed_gen0_formula_49_resonance_mutated_mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance_resonance_resonance",
+    "primitives": [
+      "prim_000012",
+      "prim_000013",
+      "prim_000015"
+    ],
+    "performance": {
+      "avg_hits": 0.225,
+      "std": 0.048,
+      "max_hits": 0.3,
+      "min_hits": 0.1333,
+      "p_value": 0.0,
+      "rounds": 10,
+      "beats_random": false,
+      "stable": 0.177,
+      "per_round": [
+        0.2667,
+        0.2167,
+        0.3,
+        0.1667,
+        0.2167,
+        0.1333,
+        0.25,
+        0.25,
+        0.2333,
+        0.2167
+      ]
+    }
+  },
+  "generation_log": [
+    {
+      "generation": 1,
+      "population_size": 80,
+      "best": {
+        "name": "gen0_formula_39_resonance",
+        "avg_hits": 0.2083,
+        "stable": 0.1591
+      },
+      "average": 0.1823,
+      "top5": [
+        {
+          "name": "gen0_formula_39_resonance",
+          "avg_hits": 0.2083,
+          "stable": 0.1591,
+          "p_value": 0.0
+        },
+        {
+          "name": "gen0_formula_43_phasealign",
+          "avg_hits": 0.2083,
+          "stable": 0.1591,
+          "p_value": 0.0
+        },
+        {
+          "name": "gen0_formula_44_cascade",
+          "avg_hits": 0.2083,
+          "stable": 0.1787,
+          "p_value": 0.0
+        },
+        {
+          "name": "gen0_formula_49_resonance",
+          "avg_hits": 0.2083,
+          "stable": 0.1787,
+          "p_value": 0.0
+        },
+        {
+          "name": "gen0_formula_2_phasealign",
+          "avg_hits": 0.2067,
+          "stable": 0.1521,
+          "p_value": 0.0
+        }
+      ]
+    },
+    {
+      "generation": 2,
+      "population_size": 112,
+      "best": {
+        "name": "crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign",
+        "avg_hits": 0.2167,
+        "stable": 0.1974
+      },
+      "average": 0.1906,
+      "top5": [
+        {
+          "name": "crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1974,
+          "p_value": 0.0
+        },
+        {
+          "name": "crossed_gen0_formula_44_cascade_gen0_formula_1_cascade",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "crossed_gen0_formula_38_resonance_gen0_formula_35_phasealign_cascade",
+          "avg_hits": 0.2133,
+          "stable": 0.159,
+          "p_value": 0.0
+        },
+        {
+          "name": "gen0_formula_44_cascade",
+          "avg_hits": 0.2083,
+          "stable": 0.1787,
+          "p_value": 0.0
+        },
+        {
+          "name": "gen0_formula_49_resonance",
+          "avg_hits": 0.2083,
+          "stable": 0.1787,
+          "p_value": 0.0
+        }
+      ]
+    },
+    {
+      "generation": 3,
+      "population_size": 112,
+      "best": {
+        "name": "crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign",
+        "avg_hits": 0.2167,
+        "stable": 0.1974
+      },
+      "average": 0.2016,
+      "top5": [
+        {
+          "name": "crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1974,
+          "p_value": 0.0
+        },
+        {
+          "name": "crossed_gen0_formula_44_cascade_gen0_formula_1_cascade",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "mutated_crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign_resonance",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        }
+      ]
+    },
+    {
+      "generation": 4,
+      "population_size": 112,
+      "best": {
+        "name": "crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign",
+        "avg_hits": 0.2167,
+        "stable": 0.1974
+      },
+      "average": 0.2036,
+      "top5": [
+        {
+          "name": "crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1974,
+          "p_value": 0.0
+        },
+        {
+          "name": "crossed_gen0_formula_44_cascade_gen0_formula_1_cascade",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "mutated_crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign_resonance",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        }
+      ]
+    },
+    {
+      "generation": 5,
+      "population_size": 112,
+      "best": {
+        "name": "crossed_gen0_formula_49_resonance_mutated_mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance_resonance_resonance",
+        "avg_hits": 0.225,
+        "stable": 0.177
+      },
+      "average": 0.209,
+      "top5": [
+        {
+          "name": "crossed_gen0_formula_49_resonance_mutated_mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance_resonance_resonance",
+          "avg_hits": 0.225,
+          "stable": 0.177,
+          "p_value": 0.0
+        },
+        {
+          "name": "crossed_mutated_mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance_resonance_gen0_formula_49_resonance_phasealign",
+          "avg_hits": 0.225,
+          "stable": 0.177,
+          "p_value": 0.0
+        },
+        {
+          "name": "crossed_mutated_mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance_resonance_gen0_formula_49_resonance_phasealign",
+          "avg_hits": 0.225,
+          "stable": 0.177,
+          "p_value": 0.0
+        },
+        {
+          "name": "crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1974,
+          "p_value": 0.0
+        },
+        {
+          "name": "crossed_gen0_formula_44_cascade_gen0_formula_1_cascade",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        }
+      ]
+    },
+    {
+      "generation": 6,
+      "population_size": 112,
+      "best": {
+        "name": "crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign",
+        "avg_hits": 0.2167,
+        "stable": 0.1974
+      },
+      "average": 0.2088,
+      "top5": [
+        {
+          "name": "crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1974,
+          "p_value": 0.0
+        },
+        {
+          "name": "crossed_gen0_formula_44_cascade_gen0_formula_1_cascade",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "mutated_crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign_resonance",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        }
+      ]
+    },
+    {
+      "generation": 7,
+      "population_size": 112,
+      "best": {
+        "name": "crossed_mutated_mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance_resonance_crossed_gen0_formula_44_cascade_gen0_formula_1_cascade_phasealign",
+        "avg_hits": 0.2233,
+        "stable": 0.1917
+      },
+      "average": 0.2107,
+      "top5": [
+        {
+          "name": "crossed_mutated_mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance_resonance_crossed_gen0_formula_44_cascade_gen0_formula_1_cascade_phasealign",
+          "avg_hits": 0.2233,
+          "stable": 0.1917,
+          "p_value": 0.0
+        },
+        {
+          "name": "crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1974,
+          "p_value": 0.0
+        },
+        {
+          "name": "crossed_gen0_formula_44_cascade_gen0_formula_1_cascade",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        }
+      ]
+    },
+    {
+      "generation": 8,
+      "population_size": 112,
+      "best": {
+        "name": "crossed_mutated_mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance_resonance_crossed_gen0_formula_44_cascade_gen0_formula_1_cascade_phasealign",
+        "avg_hits": 0.2233,
+        "stable": 0.1917
+      },
+      "average": 0.2064,
+      "top5": [
+        {
+          "name": "crossed_mutated_mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance_resonance_crossed_gen0_formula_44_cascade_gen0_formula_1_cascade_phasealign",
+          "avg_hits": 0.2233,
+          "stable": 0.1917,
+          "p_value": 0.0
+        },
+        {
+          "name": "crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign",
+          "avg_hits": 0.2167,
+          "stable": 0.1974,
+          "p_value": 0.0
+        },
+        {
+          "name": "mutated_crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign_resonance",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "mutated_crossed_gen0_formula_38_resonance_gen0_formula_56_phasealign_resonance",
+          "avg_hits": 0.215,
+          "stable": 0.1822,
+          "p_value": 0.0
+        },
+        {
+          "name": "crossed_mutated_crossed_gen0_formula_51_gen0_formula_61_resonance_phasealign_resonance_crossed_gen0_formula_71_gen0_formula_44_cascade_cascade_resonance",
+          "avg_hits": 0.2117,
+          "stable": 0.1844,
+          "p_value": 0.0
+        }
+      ]
+    }
+  ],
+  "final_population_size": 112
+}

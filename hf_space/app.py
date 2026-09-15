@@ -130,7 +130,7 @@ def run_evolution() -> str:
 
 运行命令:
 ```bash
-cd E:/享中
+cd {_PROJECT_ROOT}
 python multi_ai_evolution_engine.py --generations 10 --candidates 15
 ```
 

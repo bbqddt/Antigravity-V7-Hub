@@ -1,0 +1,66 @@
+[
+  {
+    "name": "evo_83_cascade",
+    "avg_hits": 11.7,
+    "std_hits": 2.6178,
+    "max_hits": 15,
+    "min_hits": 6,
+    "p_value": 0.0,
+    "rounds": 20,
+    "stability": 9.0822,
+    "fitness": 10.6529,
+    "operators": [
+      "cascade",
+      "cascade"
+    ],
+    "primitive_names": [
+      "environment_aware",
+      "trend_reversal",
+      "digit_pair_freq"
+    ]
+  },
+  {
+    "name": "xover_xover_evo_104_p",
+    "avg_hits": 12.0,
+    "std_hits": 2.5752,
+    "max_hits": 16,
+    "min_hits": 6,
+    "p_value": 0.0,
+    "rounds": 20,
+    "stability": 9.4248,
+    "fitness": 10.9699,
+    "operators": [
+      "sum",
+      "sum",
+      "sum"
+    ],
+    "primitive_names": [
+      "environment_aware",
+      "scale_transition",
+      "modulo_distribution",
+      "physical_bias"
+    ]
+  },
+  {
+    "name": "evo_55_cascade",
+    "avg_hits": 11.9,
+    "std_hits": 2.0749,
+    "max_hits": 18,
+    "min_hits": 9,
+    "p_value": 0.0,
+    "rounds": 20,
+    "stability": 9.8251,
+    "fitness": 11.07,
+    "operators": [
+      "cascade",
+      "cascade",
+      "cascade"
+    ],
+    "primitive_names": [
+      "gap_pattern",
+      "trend_reversal",
+      "adjacent_bias",
+      "multi_scale_frequency"
+    ]
+  }
+]

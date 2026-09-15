@@ -1,6 +1,9 @@
 import numpy as np
 import pandas as pd
 import json
+from pathlib import Path
+
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 def permutation_entropy(time_series, order=3, delay=1):
     """
@@ -53,5 +56,5 @@ class ChaosEngine:
         }
 
 if __name__ == "__main__":
-    engine = ChaosEngine(r"e:\享中\data/lottery_history.csv")
+    engine = ChaosEngine(_PROJECT_ROOT / 'data' / 'lottery_history.csv')
     engine.analyze_entropy()

@@ -1,0 +1,25 @@
+{
+  "strategies": {
+    "hot_core": {
+      "weight": 0.1857196930449842
+    },
+    "cold_strike": {
+      "weight": 0.09408875231351041
+    },
+    "balanced": {
+      "weight": 0.1857196930449842
+    },
+    "zone_control": {
+      "weight": 0.1295722331226642
+    },
+    "consecutive": {
+      "weight": 0.14609228489791282
+    },
+    "omission": {
+      "weight": 0.16471859126243382
+    },
+    "trend": {
+      "weight": 0.09408875231351041
+    }
+  }
+}

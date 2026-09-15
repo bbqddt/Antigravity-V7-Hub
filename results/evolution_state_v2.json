@@ -1,0 +1,193 @@
+{
+  "cycle": 1,
+  "total_signals": 5,
+  "persistent_signals": [],
+  "last_run": "2026-07-09T17:31:11.291998",
+  "prediction": {
+    "period": "26078",
+    "timestamp": "2026-07-09T17:31:11.290995",
+    "data_periods": 3474,
+    "latest_period": 26077,
+    "total_predictions": 10,
+    "fused": {
+      "reds": [
+        1,
+        6,
+        8,
+        22,
+        26,
+        27
+      ],
+      "blue": 2
+    },
+    "individual_predictions": [
+      {
+        "engine": "Enhanced V2.0",
+        "strategy": "autocorrelation",
+        "reds": [
+          5,
+          6,
+          11,
+          26,
+          27,
+          31
+        ],
+        "blue": 2,
+        "causal_valid": true
+      },
+      {
+        "engine": "Enhanced V2.0",
+        "strategy": "autocorrelation",
+        "reds": [
+          5,
+          6,
+          11,
+          26,
+          27,
+          31
+        ],
+        "blue": 14,
+        "causal_valid": true
+      },
+      {
+        "engine": "Enhanced V2.0",
+        "strategy": "balanced",
+        "reds": [
+          1,
+          6,
+          9,
+          12,
+          14,
+          23
+        ],
+        "blue": 8,
+        "causal_valid": false
+      },
+      {
+        "engine": "Enhanced V2.0",
+        "strategy": "cooccurrence",
+        "reds": [
+          22,
+          14,
+          1,
+          2,
+          6,
+          8
+        ],
+        "blue": 1,
+        "causal_valid": false
+      },
+      {
+        "engine": "Enhanced V2.0",
+        "strategy": "cooccurrence",
+        "reds": [
+          7,
+          29,
+          2,
+          3,
+          4,
+          8
+        ],
+        "blue": 2,
+        "causal_valid": false
+      },
+      {
+        "engine": "NewFormula",
+        "strategy": "injected_5_phasealign",
+        "reds": [
+          22,
+          30,
+          4,
+          8,
+          21,
+          20
+        ],
+        "blue": 12,
+        "causal_valid": true,
+        "backtest_avg": 0.22
+      },
+      {
+        "engine": "NewFormula",
+        "strategy": "injected_28_resonance",
+        "reds": [
+          22,
+          4,
+          30,
+          21,
+          8,
+          20
+        ],
+        "blue": 12,
+        "causal_valid": true,
+        "backtest_avg": 0.22
+      },
+      {
+        "engine": "NewFormula",
+        "strategy": "injected_3_cascade",
+        "reds": [
+          18,
+          20,
+          19,
+          22,
+          25,
+          26
+        ],
+        "blue": 16,
+        "causal_valid": true,
+        "backtest_avg": 0.2133
+      },
+      {
+        "engine": "NewFormula",
+        "strategy": "injected_6_cascade",
+        "reds": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8
+        ],
+        "blue": 8,
+        "causal_valid": true,
+        "backtest_avg": 0.21
+      },
+      {
+        "engine": "NewFormula",
+        "strategy": "injected_13_cascade",
+        "reds": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8
+        ],
+        "blue": 1,
+        "causal_valid": true,
+        "backtest_avg": 0.21
+      }
+    ],
+    "new_formula_backtest": {
+      "injected_5_phasealign": {
+        "avg_hits": 0.22,
+        "stable": 0.1681
+      },
+      "injected_28_resonance": {
+        "avg_hits": 0.22,
+        "stable": 0.1681
+      },
+      "injected_3_cascade": {
+        "avg_hits": 0.2133,
+        "stable": 0.1886
+      },
+      "injected_6_cascade": {
+        "avg_hits": 0.21,
+        "stable": 0.1492
+      },
+      "injected_13_cascade": {
+        "avg_hits": 0.21,
+        "stable": 0.1492
+      }
+    }
+  }
+}

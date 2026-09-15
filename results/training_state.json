@@ -1,0 +1,19 @@
+{
+  "iteration": 5,
+  "best_fitness": 0.19647580884233143,
+  "formula_log": [
+    {
+      "iteration": 1,
+      "formula": {
+        "family": "positional",
+        "formula": "{'type': 'nonlinear', 'atom1': ('mod7', <function PositionFormula.generate_candidates.<locals>.<lambda> at 0x0000021AB5D885E0>), 'atom2': ('digital_root', <function PositionFormula.generate_candidates.<locals>.<lambda> at 0x0000021AB5D88720>), 'op': '+'}",
+        "fitness": 0.19647580884233143,
+        "std": 0.0007065970014572457,
+        "generation": 13
+      },
+      "fitness": 0.19647580884233143,
+      "timestamp": "2026-07-05T12:57:02.743933"
+    }
+  ],
+  "timestamp": "2026-07-05T13:00:14.299518"
+}

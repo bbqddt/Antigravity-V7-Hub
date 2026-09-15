@@ -1,0 +1,489 @@
+{
+  "total_evaluated": 156,
+  "survivor_count": 330,
+  "survival_rate": 2.1154,
+  "data_periods": 3478,
+  "formulas": [
+    {
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_res_periodic_gap_lag_correlation_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_res_periodic_gap_recurrence_window_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_res_periodic_gap_recurrence_window_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_res_periodic_gap_recurrence_window_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_xcat_periodic_gap_kurtosis_signal_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_xcat_attractor_distance_wavelet_coherence_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_xcat_periodic_gap_regime_switch_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_xcat_attractor_distance_cooccurrence_affinity_resonance",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_cascade_periodic_gap_regime_switch_mutual_exclusion_cascade",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_cascade_attractor_distance_gap_pattern_pair_orbit_cascade",
+      "red_brier": 0.171717,
+      "blue_hit_rate": 0.363333,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 0,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen0",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 1,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen1",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 2,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen2",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 0,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen0",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 1,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen1",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 2,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen2",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 0,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen0",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 1,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen1",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 2,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen2",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 0,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen0",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 1,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen1",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 2,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen2",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 0,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen0",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 1,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen1",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 2,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen2",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 0,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen0",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 1,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen1",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 2,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen2",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 0,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen0",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 1,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen1",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_attractor_distance_lyapunov_signal_resonance",
+      "generation": 2,
+      "name": "vault_res_attractor_distance_lyapunov_signal_resonance_gen2",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_periodic_gap_lag_correlation_resonance",
+      "generation": 0,
+      "name": "vault_res_periodic_gap_lag_correlation_resonance_gen0",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_periodic_gap_lag_correlation_resonance",
+      "generation": 1,
+      "name": "vault_res_periodic_gap_lag_correlation_resonance_gen1",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_periodic_gap_lag_correlation_resonance",
+      "generation": 2,
+      "name": "vault_res_periodic_gap_lag_correlation_resonance_gen2",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_periodic_gap_recurrence_window_resonance",
+      "generation": 0,
+      "name": "vault_res_periodic_gap_recurrence_window_resonance_gen0",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_periodic_gap_recurrence_window_resonance",
+      "generation": 1,
+      "name": "vault_res_periodic_gap_recurrence_window_resonance_gen1",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_periodic_gap_recurrence_window_resonance",
+      "generation": 2,
+      "name": "vault_res_periodic_gap_recurrence_window_resonance_gen2",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_periodic_gap_recurrence_window_resonance",
+      "generation": 0,
+      "name": "vault_res_periodic_gap_recurrence_window_resonance_gen0",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_periodic_gap_recurrence_window_resonance",
+      "generation": 1,
+      "name": "vault_res_periodic_gap_recurrence_window_resonance_gen1",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "parent": "vault_res_periodic_gap_recurrence_window_resonance",
+      "generation": 2,
+      "name": "vault_res_periodic_gap_recurrence_window_resonance_gen2",
+      "red_brier": 0.171717,
+      "beats_random": true,
+      "stability_std": 0.0,
+      "generalization_gap": 0.0,
+      "overfitting_risk": "LOW"
+    },
+    {
+      "name": "vault_wsum_recurrence_window_lag_correlation",
+      "red_brier": 0.171756,
+      "blue_hit_rate": 0.1,
+      "stability_std": 0.000533,
+      "generalization_gap": 0.000185,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_wsum_recurrence_window_lag_correlation",
+      "red_brier": 0.171756,
+      "blue_hit_rate": 0.1,
+      "stability_std": 0.000533,
+      "generalization_gap": 0.000185,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    },
+    {
+      "name": "vault_res_skewness_signal_kurtosis_signal_resonance",
+      "red_brier": 0.171778,
+      "blue_hit_rate": 0.303333,
+      "stability_std": 0.000464,
+      "generalization_gap": 0.000113,
+      "overfitting_risk": "LOW",
+      "rounds": 30
+    }
+  ],
+  "timestamp": "2026-07-19T13:34:41.150374"
+}

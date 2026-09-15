@@ -1,0 +1,26 @@
+# DOM Cloud 部署配置
+# 参考: https://domcloud.co/docs/configuration
+
+site:
+  name: antigravity
+  type: python
+  python_version: "3.11"
+  build_command: "pip install -r requirements.txt"
+  start_command: "python formula_evolution.py --run --generations 50"
+
+environment:
+  HF_TOKEN: "${HF_TOKEN}"
+  OPENROUTER_API_KEY: "${OPENROUTER_API_KEY}"
+  SILICONFLOW_API_KEY: "${SILICONFLOW_API_KEY}"
+  CC_SWITCH_API_KEY: "${CC_SWITCH_API_KEY}"
+  E2B_API_KEY: "${E2B_API_KEY}"
+
+domains: []
+
+ssl: true
+auto_deploy: true
+
+# 可选: 定时任务
+# cron:
+#   - schedule: "0 2 * * *"
+#     command: "python formula_evolution.py --run --generations 20"

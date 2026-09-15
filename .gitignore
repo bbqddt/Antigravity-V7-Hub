@@ -1,136 +1,29 @@
 # Secrets & API Keys
-.env
-.env.local
-.env.*.local
-token_tg.txt
-token.txt
-api_keys.json
 keys.json
+.env
 arsenal.json
+token.txt
+token_tg.txt
 physics_constants.json
-*.pem
-*.key
-*.crt
 
 # Virtual environment
 .venv/
-venv/
-env/
-
-# Python cache
-__pycache__/
-*.py[cod]
-*$py.class
-.pytest_cache/
-.coverage
-htmlcov/
-.mypy_cache/
-.ruff_cache/
-
-# Package locks & builds
-uv.lock
-poetry.lock
-Pipfile.lock
-*.tar.gz
-*.whl
-dist/
-build/
-*.egg-info/
-
-# Large data/results (generated)
-results/
-walkforward_results_*.json
-evolution_results*.json
-evolution_state*.json
-evolution_cycle_*.json
-parallel_evolution_cycle_*.json
-formula_experiment_results.json
-formula_accuracy_report.json
-advanced_formula_results_v3.json
-v4_formula_results.json
-v2_evaluation_results.json
-unified_model_results.json
-empirical_validation_result.json
-backtest_all_primitives.json
-primitive_evaluation_v3.json
-primitive_test_results.json
-formula_combinations_v3.json
-formula_deep_experiment_v2.json
-formula_vault_results.json
-formula_vault.json
-evolved_formulas*.json
-best_formulas*.json
-latest_prediction*.json
-latest_decision*.json
-learning_state.json
-training_state.json
-ecosystem_state.json
-enhanced_state.json
-cloud_deploy_state.json
-cloud_evolution_state.json
-daemon_state.json
-supervisor_status.json
-session_state_*.json
-comparison_backtest_v2.json
-independent_validation_v3.json
-radical_analysis_results.json
-calibration_report_*.json
-calibration_results_*.json
-cleanup_record_*.json
-nonrandomness_results.json
-number_profiles.json
-position_prior.json
-analysis_prior.json
-attribute_frequencies.json
-gemma*_analysis.json
-multi_ai_analysis*.json
-final_ai_recommendation.json
-failure_analysis.json
-quick_formula_scan.json
-primitive_evaluation_v3.json
-walkforward_report_v*.md
-walkforward_distribution_report.md
-retrospective_analysis.py
-development_total_report.json
-development_total_report.py
-development_summary.json
-strategy_generation_report.json
-CLOUD_DEPLOY_REPORT.md
-ai_collab_result.json
-analysis_prior.json
-acceptance_criteria.yaml
 
 # Logs
 *.log
 logs/
-daemon_out.log
-daemon_err.log
-evolve_daemon.log
 
-# OS & IDE
+# OS files
 .DS_Store
 Thumbs.db
+
+# IDE
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# Temporary & cache
+# Temporary
 *.tmp
 *.bak
 *.punished
 .aider*
-.aider.tags.cache.v4/
-.continue/
-.devcontainer/
-
-# IDE specific
-*.pyc
-*.pyo
-*.pyd
-
-# Distribution
-antigravity_src.tar.gz
-
-# Nested repos
-hf_space_repo/
+.env
