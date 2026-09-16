@@ -1,0 +1,138 @@
+{
+  "timestamp": "2026-09-16T10:59:48.145530",
+  "total_generations": 3,
+  "total_candidates": 18,
+  "survival_pool": [
+    {
+      "id": "pc_660086",
+      "source_ai": "primitive_combiner",
+      "name": "relational_combo_3",
+      "primitives": [
+        "mutual_exclusion",
+        "cooccurrence_affinity",
+        "pair_orbit"
+      ],
+      "composition": "cascade",
+      "description": "同类别relational原语组合",
+      "params": {
+        "strategy": "same_category",
+        "category": "relational"
+      },
+      "fitness_score": 0.1629,
+      "avg_hits": 0,
+      "p_value": 1,
+      "calibration_error": 1.0,
+      "brier_score": 1.0,
+      "status": "survived",
+      "generation": 0,
+      "parent_ids": [],
+      "birth_time": "2026-09-16T10:59:47.004908"
+    }
+  ],
+  "math_engine_predictions": {
+    "enhanced_v2": {
+      "red": [
+        3,
+        4,
+        6,
+        11,
+        17,
+        18
+      ],
+      "blue": [
+        16
+      ]
+    },
+    "luckcast_v15": {
+      "red": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        17
+      ],
+      "blue": [
+        10
+      ]
+    }
+  },
+  "evolution_history": [
+    {
+      "round_num": 1,
+      "timestamp": "2026-09-16T10:59:45.787594",
+      "candidates_generated": 5,
+      "candidates_tested": 5,
+      "survived_count": 0,
+      "eliminated_count": 3,
+      "evolved_count": 3,
+      "top_formula": null,
+      "ai_performance": {
+        "primitive_combiner": {
+          "generated": 5,
+          "status": "success",
+          "survived": 0
+        }
+      }
+    },
+    {
+      "round_num": 2,
+      "timestamp": "2026-09-16T10:59:47.004545",
+      "candidates_generated": 5,
+      "candidates_tested": 5,
+      "survived_count": 0,
+      "eliminated_count": 5,
+      "evolved_count": 0,
+      "top_formula": null,
+      "ai_performance": {
+        "primitive_combiner": {
+          "generated": 5,
+          "status": "success",
+          "survived": 0
+        }
+      }
+    },
+    {
+      "round_num": 3,
+      "timestamp": "2026-09-16T10:59:48.145497",
+      "candidates_generated": 5,
+      "candidates_tested": 5,
+      "survived_count": 0,
+      "eliminated_count": 4,
+      "evolved_count": 0,
+      "top_formula": null,
+      "ai_performance": {
+        "primitive_combiner": {
+          "generated": 5,
+          "status": "success",
+          "survived": 0
+        }
+      }
+    }
+  ],
+  "best_formula": {
+    "id": "pc_660086",
+    "source_ai": "primitive_combiner",
+    "name": "relational_combo_3",
+    "primitives": [
+      "mutual_exclusion",
+      "cooccurrence_affinity",
+      "pair_orbit"
+    ],
+    "composition": "cascade",
+    "description": "同类别relational原语组合",
+    "params": {
+      "strategy": "same_category",
+      "category": "relational"
+    },
+    "fitness_score": 0.1629,
+    "avg_hits": 0,
+    "p_value": 1,
+    "calibration_error": 1.0,
+    "brier_score": 1.0,
+    "status": "survived",
+    "generation": 0,
+    "parent_ids": [],
+    "birth_time": "2026-09-16T10:59:47.004908"
+  }
+}
