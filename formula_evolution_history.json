@@ -1,146 +1,566 @@
 {
-  "generated_at": "2026-08-08T00:19:25.626677",
-  "total_generations": 5,
-  "best_formula": "gen4_new_7_phasealign",
-  "best_score": 0.453259,
+  "generated_at": "2026-09-16T21:28:14.245986",
+  "total_generations": 20,
+  "best_formula": "gen11_new_22_phasealign",
+  "best_score": 0.457843,
   "history": [
     {
       "generation": 1,
-      "population_size": 20,
-      "best_formula": "gen0_0_cascade",
-      "best_score": 0.425034,
+      "population_size": 30,
+      "best_formula": "gen0_23_resonance",
+      "best_score": 0.444522,
       "top5": [
         {
-          "name": "gen0_0_cascade",
+          "name": "gen0_23_resonance",
+          "score": 0.444522
+        },
+        {
+          "name": "gen0_9_phasealign",
           "score": 0.425034
         },
         {
-          "name": "gen0_1_resonance",
+          "name": "gen0_15_cascade",
+          "score": 0.420596
+        },
+        {
+          "name": "gen0_4_phasealign",
           "score": 0.419236
         },
         {
           "name": "gen0_3_cascade",
           "score": 0.417733
-        },
-        {
-          "name": "gen0_2_cascade",
-          "score": 0.4144
-        },
-        {
-          "name": "gen1_new_4_resonance",
-          "score": 0.420865
         }
       ]
     },
     {
       "generation": 2,
-      "population_size": 20,
-      "best_formula": "gen1_new_18",
-      "best_score": 0.45177,
+      "population_size": 30,
+      "best_formula": "gen1_new_19",
+      "best_score": 0.448006,
       "top5": [
         {
-          "name": "gen1_new_18",
-          "score": 0.45177
+          "name": "gen1_new_19",
+          "score": 0.448006
         },
         {
-          "name": "gen1_new_16",
-          "score": 0.43231
+          "name": "gen1_new_29_resonance",
+          "score": 0.446931
         },
         {
-          "name": "gen1_new_8_resonance",
-          "score": 0.428219
+          "name": "gen0_23_resonance",
+          "score": 0.444522
         },
         {
-          "name": "gen0_0_cascade",
-          "score": 0.425034
+          "name": "gen1_new_8_phasealign",
+          "score": 0.433971
         },
         {
-          "name": "gen2_new_4_resonance",
-          "score": 0.420865
+          "name": "gen1_new_7_cascade",
+          "score": 0.433102
         }
       ]
     },
     {
       "generation": 3,
-      "population_size": 20,
-      "best_formula": "gen1_new_18",
-      "best_score": 0.45177,
+      "population_size": 30,
+      "best_formula": "gen1_new_19",
+      "best_score": 0.448006,
       "top5": [
         {
-          "name": "gen1_new_18",
-          "score": 0.45177
+          "name": "gen1_new_19",
+          "score": 0.448006
         },
         {
-          "name": "gen2_new_5_resonance",
-          "score": 0.438555
+          "name": "gen1_new_29_resonance",
+          "score": 0.446931
         },
         {
-          "name": "gen1_new_16",
-          "score": 0.43231
+          "name": "gen0_23_resonance",
+          "score": 0.444522
         },
         {
-          "name": "gen2_new_16_resonance",
-          "score": 0.42975
+          "name": "gen2_new_6",
+          "score": 0.439076
         },
         {
-          "name": "gen3_new_4",
-          "score": 0.420865
+          "name": "gen2_new_7",
+          "score": 0.437172
         }
       ]
     },
     {
       "generation": 4,
-      "population_size": 20,
-      "best_formula": "gen1_new_18",
-      "best_score": 0.45177,
+      "population_size": 30,
+      "best_formula": "gen1_new_19",
+      "best_score": 0.448006,
       "top5": [
         {
-          "name": "gen1_new_18",
-          "score": 0.45177
+          "name": "gen1_new_19",
+          "score": 0.448006
         },
         {
-          "name": "gen2_new_5_resonance",
-          "score": 0.438555
+          "name": "gen1_new_29_resonance",
+          "score": 0.446931
         },
         {
-          "name": "gen3_new_19",
-          "score": 0.434294
+          "name": "gen3_new_14_cascade",
+          "score": 0.446786
         },
         {
-          "name": "gen3_new_5_cascade",
-          "score": 0.433217
+          "name": "gen0_23_resonance",
+          "score": 0.444522
         },
         {
-          "name": "gen4_new_4_resonance",
-          "score": 0.420865
+          "name": "gen3_new_17",
+          "score": 0.441863
         }
       ]
     },
     {
       "generation": 5,
-      "population_size": 20,
-      "best_formula": "gen4_new_7_phasealign",
-      "best_score": 0.453259,
+      "population_size": 30,
+      "best_formula": "gen1_new_19",
+      "best_score": 0.448006,
       "top5": [
         {
-          "name": "gen4_new_7_phasealign",
-          "score": 0.453259
+          "name": "gen1_new_19",
+          "score": 0.448006
         },
         {
-          "name": "gen1_new_18",
-          "score": 0.45177
+          "name": "gen1_new_29_resonance",
+          "score": 0.446931
         },
         {
-          "name": "gen4_new_15",
-          "score": 0.447272
+          "name": "gen3_new_14_cascade",
+          "score": 0.446786
         },
         {
-          "name": "gen4_new_8",
-          "score": 0.446678
+          "name": "gen4_new_6_phasealign",
+          "score": 0.446115
         },
         {
-          "name": "gen5_new_4_cascade",
-          "score": 0.420865
+          "name": "gen0_23_resonance",
+          "score": 0.444522
+        }
+      ]
+    },
+    {
+      "generation": 6,
+      "population_size": 30,
+      "best_formula": "gen5_new_23_resonance",
+      "best_score": 0.45087,
+      "top5": [
+        {
+          "name": "gen5_new_23_resonance",
+          "score": 0.45087
+        },
+        {
+          "name": "gen1_new_19",
+          "score": 0.448006
+        },
+        {
+          "name": "gen1_new_29_resonance",
+          "score": 0.446931
+        },
+        {
+          "name": "gen3_new_14_cascade",
+          "score": 0.446786
+        },
+        {
+          "name": "gen5_new_13_phasealign",
+          "score": 0.446257
+        }
+      ]
+    },
+    {
+      "generation": 7,
+      "population_size": 30,
+      "best_formula": "gen5_new_23_resonance",
+      "best_score": 0.45087,
+      "top5": [
+        {
+          "name": "gen5_new_23_resonance",
+          "score": 0.45087
+        },
+        {
+          "name": "gen6_new_29",
+          "score": 0.450187
+        },
+        {
+          "name": "gen1_new_19",
+          "score": 0.448006
+        },
+        {
+          "name": "gen1_new_29_resonance",
+          "score": 0.446931
+        },
+        {
+          "name": "gen3_new_14_cascade",
+          "score": 0.446786
+        }
+      ]
+    },
+    {
+      "generation": 8,
+      "population_size": 30,
+      "best_formula": "gen7_new_16",
+      "best_score": 0.456384,
+      "top5": [
+        {
+          "name": "gen7_new_16",
+          "score": 0.456384
+        },
+        {
+          "name": "gen7_new_11",
+          "score": 0.453318
+        },
+        {
+          "name": "gen7_new_22_phasealign",
+          "score": 0.451208
+        },
+        {
+          "name": "gen5_new_23_resonance",
+          "score": 0.45087
+        },
+        {
+          "name": "gen6_new_29",
+          "score": 0.450187
+        }
+      ]
+    },
+    {
+      "generation": 9,
+      "population_size": 30,
+      "best_formula": "gen7_new_16",
+      "best_score": 0.456384,
+      "top5": [
+        {
+          "name": "gen7_new_16",
+          "score": 0.456384
+        },
+        {
+          "name": "gen7_new_11",
+          "score": 0.453318
+        },
+        {
+          "name": "gen7_new_22_phasealign",
+          "score": 0.451208
+        },
+        {
+          "name": "gen5_new_23_resonance",
+          "score": 0.45087
+        },
+        {
+          "name": "gen6_new_29",
+          "score": 0.450187
+        }
+      ]
+    },
+    {
+      "generation": 10,
+      "population_size": 30,
+      "best_formula": "gen7_new_16",
+      "best_score": 0.456384,
+      "top5": [
+        {
+          "name": "gen7_new_16",
+          "score": 0.456384
+        },
+        {
+          "name": "gen7_new_11",
+          "score": 0.453318
+        },
+        {
+          "name": "gen7_new_22_phasealign",
+          "score": 0.451208
+        },
+        {
+          "name": "gen5_new_23_resonance",
+          "score": 0.45087
+        },
+        {
+          "name": "gen6_new_29",
+          "score": 0.450187
+        }
+      ]
+    },
+    {
+      "generation": 11,
+      "population_size": 30,
+      "best_formula": "gen7_new_16",
+      "best_score": 0.456384,
+      "top5": [
+        {
+          "name": "gen7_new_16",
+          "score": 0.456384
+        },
+        {
+          "name": "gen7_new_11",
+          "score": 0.453318
+        },
+        {
+          "name": "gen7_new_22_phasealign",
+          "score": 0.451208
+        },
+        {
+          "name": "gen5_new_23_resonance",
+          "score": 0.45087
+        },
+        {
+          "name": "gen6_new_29",
+          "score": 0.450187
+        }
+      ]
+    },
+    {
+      "generation": 12,
+      "population_size": 30,
+      "best_formula": "gen11_new_22_phasealign",
+      "best_score": 0.457843,
+      "top5": [
+        {
+          "name": "gen11_new_22_phasealign",
+          "score": 0.457843
+        },
+        {
+          "name": "gen7_new_16",
+          "score": 0.456384
+        },
+        {
+          "name": "gen7_new_11",
+          "score": 0.453318
+        },
+        {
+          "name": "gen7_new_22_phasealign",
+          "score": 0.451208
+        },
+        {
+          "name": "gen5_new_23_resonance",
+          "score": 0.45087
+        }
+      ]
+    },
+    {
+      "generation": 13,
+      "population_size": 30,
+      "best_formula": "gen11_new_22_phasealign",
+      "best_score": 0.457843,
+      "top5": [
+        {
+          "name": "gen11_new_22_phasealign",
+          "score": 0.457843
+        },
+        {
+          "name": "gen7_new_16",
+          "score": 0.456384
+        },
+        {
+          "name": "gen7_new_11",
+          "score": 0.453318
+        },
+        {
+          "name": "gen7_new_22_phasealign",
+          "score": 0.451208
+        },
+        {
+          "name": "gen5_new_23_resonance",
+          "score": 0.45087
+        }
+      ]
+    },
+    {
+      "generation": 14,
+      "population_size": 30,
+      "best_formula": "gen11_new_22_phasealign",
+      "best_score": 0.457843,
+      "top5": [
+        {
+          "name": "gen11_new_22_phasealign",
+          "score": 0.457843
+        },
+        {
+          "name": "gen7_new_16",
+          "score": 0.456384
+        },
+        {
+          "name": "gen7_new_11",
+          "score": 0.453318
+        },
+        {
+          "name": "gen7_new_22_phasealign",
+          "score": 0.451208
+        },
+        {
+          "name": "gen5_new_23_resonance",
+          "score": 0.45087
+        }
+      ]
+    },
+    {
+      "generation": 15,
+      "population_size": 30,
+      "best_formula": "gen11_new_22_phasealign",
+      "best_score": 0.457843,
+      "top5": [
+        {
+          "name": "gen11_new_22_phasealign",
+          "score": 0.457843
+        },
+        {
+          "name": "gen7_new_16",
+          "score": 0.456384
+        },
+        {
+          "name": "gen7_new_11",
+          "score": 0.453318
+        },
+        {
+          "name": "gen7_new_22_phasealign",
+          "score": 0.451208
+        },
+        {
+          "name": "gen5_new_23_resonance",
+          "score": 0.45087
+        }
+      ]
+    },
+    {
+      "generation": 16,
+      "population_size": 30,
+      "best_formula": "gen11_new_22_phasealign",
+      "best_score": 0.457843,
+      "top5": [
+        {
+          "name": "gen11_new_22_phasealign",
+          "score": 0.457843
+        },
+        {
+          "name": "gen7_new_16",
+          "score": 0.456384
+        },
+        {
+          "name": "gen15_new_18",
+          "score": 0.455429
+        },
+        {
+          "name": "gen7_new_11",
+          "score": 0.453318
+        },
+        {
+          "name": "gen7_new_22_phasealign",
+          "score": 0.451208
+        }
+      ]
+    },
+    {
+      "generation": 17,
+      "population_size": 30,
+      "best_formula": "gen11_new_22_phasealign",
+      "best_score": 0.457843,
+      "top5": [
+        {
+          "name": "gen11_new_22_phasealign",
+          "score": 0.457843
+        },
+        {
+          "name": "gen7_new_16",
+          "score": 0.456384
+        },
+        {
+          "name": "gen15_new_18",
+          "score": 0.455429
+        },
+        {
+          "name": "gen7_new_11",
+          "score": 0.453318
+        },
+        {
+          "name": "gen7_new_22_phasealign",
+          "score": 0.451208
+        }
+      ]
+    },
+    {
+      "generation": 18,
+      "population_size": 30,
+      "best_formula": "gen11_new_22_phasealign",
+      "best_score": 0.457843,
+      "top5": [
+        {
+          "name": "gen11_new_22_phasealign",
+          "score": 0.457843
+        },
+        {
+          "name": "gen7_new_16",
+          "score": 0.456384
+        },
+        {
+          "name": "gen15_new_18",
+          "score": 0.455429
+        },
+        {
+          "name": "gen7_new_11",
+          "score": 0.453318
+        },
+        {
+          "name": "gen7_new_22_phasealign",
+          "score": 0.451208
+        }
+      ]
+    },
+    {
+      "generation": 19,
+      "population_size": 30,
+      "best_formula": "gen11_new_22_phasealign",
+      "best_score": 0.457843,
+      "top5": [
+        {
+          "name": "gen11_new_22_phasealign",
+          "score": 0.457843
+        },
+        {
+          "name": "gen7_new_16",
+          "score": 0.456384
+        },
+        {
+          "name": "gen15_new_18",
+          "score": 0.455429
+        },
+        {
+          "name": "gen7_new_11",
+          "score": 0.453318
+        },
+        {
+          "name": "gen18_new_15_cascade",
+          "score": 0.453234
+        }
+      ]
+    },
+    {
+      "generation": 20,
+      "population_size": 30,
+      "best_formula": "gen11_new_22_phasealign",
+      "best_score": 0.457843,
+      "top5": [
+        {
+          "name": "gen11_new_22_phasealign",
+          "score": 0.457843
+        },
+        {
+          "name": "gen7_new_16",
+          "score": 0.456384
+        },
+        {
+          "name": "gen15_new_18",
+          "score": 0.455429
+        },
+        {
+          "name": "gen7_new_11",
+          "score": 0.453318
+        },
+        {
+          "name": "gen18_new_15_cascade",
+          "score": 0.453234
         }
       ]
     }
