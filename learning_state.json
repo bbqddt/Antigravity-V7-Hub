@@ -33,15 +33,15 @@
     0.6666666666666662
   ],
   "cumulative_contribution": [
-    2959.8333333328765,
-    11836.499999998176,
-    8879.166666666668,
-    5918.666666665754,
-    11836.499999998176,
-    8879.0,
-    8878.0,
-    5918.666666665754,
-    11837.166666664842
+    5294.0000000006885,
+    21173.16666666942,
+    15881.666666666668,
+    10587.000000001375,
+    21173.16666666942,
+    15881.5,
+    15880.5,
+    10587.000000001375,
+    21173.833333336086
   ],
   "streak": [
     0.0,
@@ -54,12 +54,12 @@
     0.0,
     0.0
   ],
-  "total_rounds": 17756,
+  "total_rounds": 31761,
   "exploration_mode": false,
   "exploration_rate": 0.0,
   "history": [
     {
-      "round": 17657,
+      "round": 31662,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -85,7 +85,7 @@
       "exploration": false
     },
     {
-      "round": 17658,
+      "round": 31663,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -111,7 +111,7 @@
       "exploration": false
     },
     {
-      "round": 17659,
+      "round": 31664,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -137,7 +137,7 @@
       "exploration": false
     },
     {
-      "round": 17660,
+      "round": 31665,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -163,7 +163,7 @@
       "exploration": false
     },
     {
-      "round": 17661,
+      "round": 31666,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -189,7 +189,7 @@
       "exploration": false
     },
     {
-      "round": 17662,
+      "round": 31667,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -215,7 +215,7 @@
       "exploration": false
     },
     {
-      "round": 17663,
+      "round": 31668,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -241,7 +241,7 @@
       "exploration": false
     },
     {
-      "round": 17664,
+      "round": 31669,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -267,7 +267,7 @@
       "exploration": false
     },
     {
-      "round": 17665,
+      "round": 31670,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -293,7 +293,7 @@
       "exploration": false
     },
     {
-      "round": 17666,
+      "round": 31671,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -319,7 +319,7 @@
       "exploration": false
     },
     {
-      "round": 17667,
+      "round": 31672,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -345,7 +345,7 @@
       "exploration": false
     },
     {
-      "round": 17668,
+      "round": 31673,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -371,7 +371,7 @@
       "exploration": false
     },
     {
-      "round": 17669,
+      "round": 31674,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -397,7 +397,7 @@
       "exploration": false
     },
     {
-      "round": 17670,
+      "round": 31675,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -423,7 +423,7 @@
       "exploration": false
     },
     {
-      "round": 17671,
+      "round": 31676,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -449,7 +449,7 @@
       "exploration": false
     },
     {
-      "round": 17672,
+      "round": 31677,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -475,7 +475,7 @@
       "exploration": false
     },
     {
-      "round": 17673,
+      "round": 31678,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -501,7 +501,7 @@
       "exploration": false
     },
     {
-      "round": 17674,
+      "round": 31679,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -527,7 +527,7 @@
       "exploration": false
     },
     {
-      "round": 17675,
+      "round": 31680,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -553,7 +553,7 @@
       "exploration": false
     },
     {
-      "round": 17676,
+      "round": 31681,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -579,7 +579,7 @@
       "exploration": false
     },
     {
-      "round": 17677,
+      "round": 31682,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -605,7 +605,7 @@
       "exploration": false
     },
     {
-      "round": 17678,
+      "round": 31683,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -631,7 +631,7 @@
       "exploration": false
     },
     {
-      "round": 17679,
+      "round": 31684,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -657,7 +657,7 @@
       "exploration": false
     },
     {
-      "round": 17680,
+      "round": 31685,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -683,7 +683,7 @@
       "exploration": false
     },
     {
-      "round": 17681,
+      "round": 31686,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -709,7 +709,7 @@
       "exploration": false
     },
     {
-      "round": 17682,
+      "round": 31687,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -735,7 +735,7 @@
       "exploration": false
     },
     {
-      "round": 17683,
+      "round": 31688,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -761,7 +761,7 @@
       "exploration": false
     },
     {
-      "round": 17684,
+      "round": 31689,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -787,7 +787,7 @@
       "exploration": false
     },
     {
-      "round": 17685,
+      "round": 31690,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -813,7 +813,7 @@
       "exploration": false
     },
     {
-      "round": 17686,
+      "round": 31691,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -839,7 +839,7 @@
       "exploration": false
     },
     {
-      "round": 17687,
+      "round": 31692,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -865,7 +865,7 @@
       "exploration": false
     },
     {
-      "round": 17688,
+      "round": 31693,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -891,7 +891,7 @@
       "exploration": false
     },
     {
-      "round": 17689,
+      "round": 31694,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -917,7 +917,7 @@
       "exploration": false
     },
     {
-      "round": 17690,
+      "round": 31695,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -943,7 +943,7 @@
       "exploration": false
     },
     {
-      "round": 17691,
+      "round": 31696,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -969,7 +969,7 @@
       "exploration": false
     },
     {
-      "round": 17692,
+      "round": 31697,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -995,7 +995,7 @@
       "exploration": false
     },
     {
-      "round": 17693,
+      "round": 31698,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1021,7 +1021,7 @@
       "exploration": false
     },
     {
-      "round": 17694,
+      "round": 31699,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1047,7 +1047,7 @@
       "exploration": false
     },
     {
-      "round": 17695,
+      "round": 31700,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1073,7 +1073,7 @@
       "exploration": false
     },
     {
-      "round": 17696,
+      "round": 31701,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1099,7 +1099,7 @@
       "exploration": false
     },
     {
-      "round": 17697,
+      "round": 31702,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1125,7 +1125,7 @@
       "exploration": false
     },
     {
-      "round": 17698,
+      "round": 31703,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1151,7 +1151,7 @@
       "exploration": false
     },
     {
-      "round": 17699,
+      "round": 31704,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1177,7 +1177,7 @@
       "exploration": false
     },
     {
-      "round": 17700,
+      "round": 31705,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1203,7 +1203,7 @@
       "exploration": false
     },
     {
-      "round": 17701,
+      "round": 31706,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1229,7 +1229,7 @@
       "exploration": false
     },
     {
-      "round": 17702,
+      "round": 31707,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1255,7 +1255,7 @@
       "exploration": false
     },
     {
-      "round": 17703,
+      "round": 31708,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1281,7 +1281,7 @@
       "exploration": false
     },
     {
-      "round": 17704,
+      "round": 31709,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1307,7 +1307,7 @@
       "exploration": false
     },
     {
-      "round": 17705,
+      "round": 31710,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1333,7 +1333,7 @@
       "exploration": false
     },
     {
-      "round": 17706,
+      "round": 31711,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1359,7 +1359,7 @@
       "exploration": false
     },
     {
-      "round": 17707,
+      "round": 31712,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1385,7 +1385,7 @@
       "exploration": false
     },
     {
-      "round": 17708,
+      "round": 31713,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1411,7 +1411,7 @@
       "exploration": false
     },
     {
-      "round": 17709,
+      "round": 31714,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1437,7 +1437,7 @@
       "exploration": false
     },
     {
-      "round": 17710,
+      "round": 31715,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1463,7 +1463,7 @@
       "exploration": false
     },
     {
-      "round": 17711,
+      "round": 31716,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1489,7 +1489,7 @@
       "exploration": false
     },
     {
-      "round": 17712,
+      "round": 31717,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1515,7 +1515,7 @@
       "exploration": false
     },
     {
-      "round": 17713,
+      "round": 31718,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1541,7 +1541,7 @@
       "exploration": false
     },
     {
-      "round": 17714,
+      "round": 31719,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1567,7 +1567,7 @@
       "exploration": false
     },
     {
-      "round": 17715,
+      "round": 31720,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1593,7 +1593,7 @@
       "exploration": false
     },
     {
-      "round": 17716,
+      "round": 31721,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1619,7 +1619,7 @@
       "exploration": false
     },
     {
-      "round": 17717,
+      "round": 31722,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1645,7 +1645,7 @@
       "exploration": false
     },
     {
-      "round": 17718,
+      "round": 31723,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1671,7 +1671,7 @@
       "exploration": false
     },
     {
-      "round": 17719,
+      "round": 31724,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1697,7 +1697,7 @@
       "exploration": false
     },
     {
-      "round": 17720,
+      "round": 31725,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1723,7 +1723,7 @@
       "exploration": false
     },
     {
-      "round": 17721,
+      "round": 31726,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1749,7 +1749,7 @@
       "exploration": false
     },
     {
-      "round": 17722,
+      "round": 31727,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1775,7 +1775,7 @@
       "exploration": false
     },
     {
-      "round": 17723,
+      "round": 31728,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1801,7 +1801,7 @@
       "exploration": false
     },
     {
-      "round": 17724,
+      "round": 31729,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1827,7 +1827,7 @@
       "exploration": false
     },
     {
-      "round": 17725,
+      "round": 31730,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1853,7 +1853,7 @@
       "exploration": false
     },
     {
-      "round": 17726,
+      "round": 31731,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1879,7 +1879,7 @@
       "exploration": false
     },
     {
-      "round": 17727,
+      "round": 31732,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1905,7 +1905,7 @@
       "exploration": false
     },
     {
-      "round": 17728,
+      "round": 31733,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1931,7 +1931,7 @@
       "exploration": false
     },
     {
-      "round": 17729,
+      "round": 31734,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1957,7 +1957,7 @@
       "exploration": false
     },
     {
-      "round": 17730,
+      "round": 31735,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -1983,7 +1983,7 @@
       "exploration": false
     },
     {
-      "round": 17731,
+      "round": 31736,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2009,7 +2009,7 @@
       "exploration": false
     },
     {
-      "round": 17732,
+      "round": 31737,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2035,7 +2035,7 @@
       "exploration": false
     },
     {
-      "round": 17733,
+      "round": 31738,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2061,7 +2061,7 @@
       "exploration": false
     },
     {
-      "round": 17734,
+      "round": 31739,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2087,7 +2087,7 @@
       "exploration": false
     },
     {
-      "round": 17735,
+      "round": 31740,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2113,7 +2113,7 @@
       "exploration": false
     },
     {
-      "round": 17736,
+      "round": 31741,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2139,7 +2139,7 @@
       "exploration": false
     },
     {
-      "round": 17737,
+      "round": 31742,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2165,7 +2165,7 @@
       "exploration": false
     },
     {
-      "round": 17738,
+      "round": 31743,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2191,7 +2191,7 @@
       "exploration": false
     },
     {
-      "round": 17739,
+      "round": 31744,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2217,7 +2217,7 @@
       "exploration": false
     },
     {
-      "round": 17740,
+      "round": 31745,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2243,7 +2243,7 @@
       "exploration": false
     },
     {
-      "round": 17741,
+      "round": 31746,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2269,7 +2269,7 @@
       "exploration": false
     },
     {
-      "round": 17742,
+      "round": 31747,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2295,7 +2295,7 @@
       "exploration": false
     },
     {
-      "round": 17743,
+      "round": 31748,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2321,7 +2321,7 @@
       "exploration": false
     },
     {
-      "round": 17744,
+      "round": 31749,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2347,7 +2347,7 @@
       "exploration": false
     },
     {
-      "round": 17745,
+      "round": 31750,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2373,7 +2373,7 @@
       "exploration": false
     },
     {
-      "round": 17746,
+      "round": 31751,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2399,7 +2399,7 @@
       "exploration": false
     },
     {
-      "round": 17747,
+      "round": 31752,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2425,7 +2425,7 @@
       "exploration": false
     },
     {
-      "round": 17748,
+      "round": 31753,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2451,7 +2451,7 @@
       "exploration": false
     },
     {
-      "round": 17749,
+      "round": 31754,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2477,7 +2477,7 @@
       "exploration": false
     },
     {
-      "round": 17750,
+      "round": 31755,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2503,7 +2503,7 @@
       "exploration": false
     },
     {
-      "round": 17751,
+      "round": 31756,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2529,7 +2529,7 @@
       "exploration": false
     },
     {
-      "round": 17752,
+      "round": 31757,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2555,7 +2555,7 @@
       "exploration": false
     },
     {
-      "round": 17753,
+      "round": 31758,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2581,7 +2581,7 @@
       "exploration": false
     },
     {
-      "round": 17754,
+      "round": 31759,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2607,7 +2607,7 @@
       "exploration": false
     },
     {
-      "round": 17755,
+      "round": 31760,
       "hits": {
         "statistics": 1,
         "geometry": 4,
@@ -2633,7 +2633,7 @@
       "exploration": false
     },
     {
-      "round": 17756,
+      "round": 31761,
       "hits": {
         "statistics": 1,
         "geometry": 4,
