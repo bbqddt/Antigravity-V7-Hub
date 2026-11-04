@@ -16,10 +16,10 @@
     0.18765131892804582,
     0.035442755985798276,
     0.18765131892804582,
-    0.08155292703011963,
+    0.18765131892804582,
     0.08155292703011918,
     0.035442755985798276,
-    0.18765131892804582
+    0.08155292703011961
   ],
   "recent_perf": [
     0.1666666666666668,
@@ -27,21 +27,21 @@
     0.6666666666666662,
     0.3333333333333331,
     0.6666666666666662,
-    0.5000000000000008,
+    0.6666666666666662,
     0.4999999999999997,
     0.3333333333333331,
-    0.6666666666666662
+    0.5000000000000008
   ],
   "cumulative_contribution": [
-    281239.83332933224,
-    996161.3333197598,
-    944543.6666562755,
-    547402.6666571505,
-    986640.4999882246,
-    996181.666656291,
-    821104.0,
-    547402.6666571505,
-    1017958.1666497627
+    284203.16666301055,
+    1008014.6666524032,
+    956396.9999889189,
+    553329.3333245071,
+    998493.833320868,
+    1008034.9999889344,
+    829994.0,
+    553329.3333245071,
+    1026848.1666497627
   ],
   "streak": [
     0.0,
@@ -54,22 +54,22 @@
     0.0,
     0.0
   ],
-  "total_rounds": 1642208,
+  "total_rounds": 1659988,
   "exploration_mode": false,
   "exploration_rate": 0.0,
   "history": [
     {
-      "round": 1642109,
+      "round": 1659889,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -77,25 +77,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642110,
+      "round": 1659890,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -103,51 +103,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642111,
+      "round": 1659891,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642112,
+      "round": 1659892,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -155,25 +155,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642113,
+      "round": 1659893,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -181,51 +181,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642114,
+      "round": 1659894,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642115,
+      "round": 1659895,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -233,25 +233,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642116,
+      "round": 1659896,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -259,51 +259,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642117,
+      "round": 1659897,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642118,
+      "round": 1659898,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -311,25 +311,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642119,
+      "round": 1659899,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -337,51 +337,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642120,
+      "round": 1659900,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642121,
+      "round": 1659901,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -389,25 +389,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642122,
+      "round": 1659902,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -415,51 +415,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642123,
+      "round": 1659903,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642124,
+      "round": 1659904,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -467,25 +467,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642125,
+      "round": 1659905,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -493,51 +493,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642126,
+      "round": 1659906,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642127,
+      "round": 1659907,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -545,25 +545,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642128,
+      "round": 1659908,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -571,51 +571,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642129,
+      "round": 1659909,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642130,
+      "round": 1659910,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -623,51 +623,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642131,
+      "round": 1659911,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642132,
+      "round": 1659912,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -675,51 +675,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642133,
+      "round": 1659913,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642134,
+      "round": 1659914,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -727,25 +727,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642135,
+      "round": 1659915,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -753,51 +753,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642136,
+      "round": 1659916,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642137,
+      "round": 1659917,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -805,25 +805,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642138,
+      "round": 1659918,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -831,51 +831,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642139,
+      "round": 1659919,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642140,
+      "round": 1659920,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -883,25 +883,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642141,
+      "round": 1659921,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -909,51 +909,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642142,
+      "round": 1659922,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642143,
+      "round": 1659923,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -961,25 +961,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642144,
+      "round": 1659924,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -987,51 +987,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642145,
+      "round": 1659925,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642146,
+      "round": 1659926,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1039,25 +1039,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642147,
+      "round": 1659927,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1065,51 +1065,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642148,
+      "round": 1659928,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642149,
+      "round": 1659929,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1117,25 +1117,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642150,
+      "round": 1659930,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1143,51 +1143,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642151,
+      "round": 1659931,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642152,
+      "round": 1659932,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1195,25 +1195,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642153,
+      "round": 1659933,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1221,51 +1221,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642154,
+      "round": 1659934,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642155,
+      "round": 1659935,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1273,51 +1273,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642156,
+      "round": 1659936,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642157,
+      "round": 1659937,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1325,51 +1325,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642158,
+      "round": 1659938,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642159,
+      "round": 1659939,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1377,25 +1377,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642160,
+      "round": 1659940,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1403,51 +1403,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642161,
+      "round": 1659941,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642162,
+      "round": 1659942,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1455,25 +1455,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642163,
+      "round": 1659943,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1481,51 +1481,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642164,
+      "round": 1659944,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642165,
+      "round": 1659945,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1533,25 +1533,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642166,
+      "round": 1659946,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1559,51 +1559,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642167,
+      "round": 1659947,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642168,
+      "round": 1659948,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1611,25 +1611,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642169,
+      "round": 1659949,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1637,51 +1637,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642170,
+      "round": 1659950,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642171,
+      "round": 1659951,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1689,25 +1689,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642172,
+      "round": 1659952,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1715,51 +1715,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642173,
+      "round": 1659953,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642174,
+      "round": 1659954,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1767,25 +1767,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642175,
+      "round": 1659955,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1793,51 +1793,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642176,
+      "round": 1659956,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642177,
+      "round": 1659957,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1845,25 +1845,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642178,
+      "round": 1659958,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1871,51 +1871,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642179,
+      "round": 1659959,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642180,
+      "round": 1659960,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1923,51 +1923,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642181,
+      "round": 1659961,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642182,
+      "round": 1659962,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -1975,51 +1975,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642183,
+      "round": 1659963,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642184,
+      "round": 1659964,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2027,25 +2027,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642185,
+      "round": 1659965,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2053,51 +2053,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642186,
+      "round": 1659966,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642187,
+      "round": 1659967,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2105,25 +2105,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642188,
+      "round": 1659968,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2131,51 +2131,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642189,
+      "round": 1659969,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642190,
+      "round": 1659970,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2183,25 +2183,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642191,
+      "round": 1659971,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2209,51 +2209,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642192,
+      "round": 1659972,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642193,
+      "round": 1659973,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2261,25 +2261,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642194,
+      "round": 1659974,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2287,51 +2287,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642195,
+      "round": 1659975,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642196,
+      "round": 1659976,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2339,25 +2339,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642197,
+      "round": 1659977,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2365,51 +2365,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642198,
+      "round": 1659978,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642199,
+      "round": 1659979,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2417,25 +2417,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642200,
+      "round": 1659980,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2443,51 +2443,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642201,
+      "round": 1659981,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642202,
+      "round": 1659982,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2495,25 +2495,25 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642203,
+      "round": 1659983,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2521,51 +2521,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642204,
+      "round": 1659984,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642205,
+      "round": 1659985,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2573,51 +2573,51 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642206,
+      "round": 1659986,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642207,
+      "round": 1659987,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
@@ -2625,36 +2625,36 @@
         0.18765131892804582,
         0.035442755985798276,
         0.18765131892804582,
-        0.08155292703011963,
+        0.18765131892804582,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     },
     {
-      "round": 1642208,
+      "round": 1659988,
       "hits": {
         "statistics": 1,
         "geometry": 4,
         "number_theory": 4,
         "modular": 2,
         "chaos": 4,
-        "information": 3,
+        "information": 4,
         "physical_noise": 3,
         "cooccurrence": 2,
-        "positional": 4
+        "positional": 3
       },
       "weights": [
         0.015403358255981481,
         0.18765131892804582,
         0.18765131892804582,
         0.035442755985798276,
+        0.18765131892804582,
         0.18765131892804582,
-        0.08155292703011963,
         0.08155292703011918,
         0.035442755985798276,
-        0.18765131892804582
+        0.08155292703011961
       ],
       "exploration": false
     }
